@@ -26,6 +26,13 @@ body {
 
 a {
   color: $color;
+  transition: all .2s ease;
+  border-bottom: 2px solid rgba($border-color, 0);
+
+  &:hover {
+    border-bottom-color: $border-color;
+    color: darken($color, 10%);
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {
