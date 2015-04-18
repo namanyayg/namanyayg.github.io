@@ -1,0 +1,85 @@
+---
+---
+$color: DODGERBLUE;
+$text-color: mix($color, #666, 20%);
+$heading-color: mix($color, darken($text-color, 20%), 10%);
+
+$border-color: lighten($text-color, 50%);
+$light-color: lighten($text-color, 55%);
+
+//
+// TYPOGRAPHY
+//
+
+body, code {
+  font-size: 1em;
+  font-family: 'Source Code Pro', monospace;
+  color: $text-color;
+  line-height: 1.5;
+}
+
+body {
+  max-width: 40em;
+  margin: 2em auto;
+  text-align: center;
+}
+
+a {
+  color: $color;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $heading-color;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.25em;
+}
+
+p {
+  margin: 0;
+}
+
+p + p { 
+  margin-top: 1em;
+}
+
+code {
+  background: $light-color;
+  border: thin solid $border-color;
+  border-radius: 2px;
+  padding: 1px 2px 3px 2px;
+}
+
+//
+// Other stuff
+//
+.projects {
+  margin: 2em 0 1em;
+  text-align: left;
+}
+.project {
+  padding: 1.25em 1.5em;
+  margin: 0 -.5em;
+  border-top: thin solid #eee;
+  
+  h2 {
+    margin-top: 0;
+    margin-bottom: .4em;
+    
+    &:before {
+      content: '\261E';
+      color: #666;
+      margin-right: .5em;
+    }
+  }
+}
+
+footer {
+  background: $light-color;
+  padding: 2em;
+}
