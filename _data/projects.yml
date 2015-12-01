@@ -2,6 +2,14 @@
   description: My writings on design, code, and other trivialities of living.
   url: http://symmetrycode.com/
 
+- name: Gyan
+  description: A collection of simulations, writings, and other teaching tools I&rsquo;ve worked on.
+  url: http://projects.namanyayg.com/gyan
+
+- name: Karya
+  description: A WIP todo list app, with a twist.
+  url: http://karya.namanyayg.com/
+
 - name: Webstiles
   description: A simple web design deliverable to quickly plan styles of a new website.
   url: http://webstiles.namanyayg.com/
@@ -9,14 +17,6 @@
 - name: KeyZen
   description: A simple app to test your writing speed that I made over a Saturday.
   url: http://namanyayg.github.io/KeyZen/
-
-- name: TLDRtech
-  description: A blog to sum up the latest technology articles.
-  url: http://tldrte.ch/
-
-- name: SHM Simulator
-  description: A quick experiment to see the physics of simple harmonic motion and to play with the canvas tag
-  url: http://namanyayg.github.io/SHM-simulator/
 
 - name: Pretty Open Type
   description: A small collection of my favourite fonts from Google Fonts
