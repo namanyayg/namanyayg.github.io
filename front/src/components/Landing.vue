@@ -8,12 +8,11 @@
 
 <script>
 import Hero from './Hero/Hero'
-// import Works from './Works/Works'
 import Works from './Works/Works'
 import Contact from './Contact/Contact'
 // Scroll Animator handles all scroll functionality
 // and animations used throughout the page
-import ScrollAnimator from './ScrollAnimator'
+// import ScrollAnimator from './ScrollAnimator'
 
 export default {
   name: 'Landing',
@@ -21,7 +20,7 @@ export default {
     Hero,
     Works,
     Contact,
-    ScrollAnimator
+    // ScrollAnimator
   }
 }
 </script>
