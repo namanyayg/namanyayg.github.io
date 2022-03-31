@@ -5,7 +5,7 @@
         .col-md-9.col-2
           .logo-container
             Logo(stroke="#193071").logo
-        .col-md-3.col-6.list.self
+        .col-md-3.col-10.list.self
           p
             strong Namanyay Goel ⚡
           p
