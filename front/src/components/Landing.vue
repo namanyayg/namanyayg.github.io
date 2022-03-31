@@ -8,6 +8,7 @@
 
 <script>
 import Hero from './Hero/Hero'
+// import Works from './Works/Works'
 import Works from './Works/Works'
 import Contact from './Contact/Contact'
 // Scroll Animator handles all scroll functionality

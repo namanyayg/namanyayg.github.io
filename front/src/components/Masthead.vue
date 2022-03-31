@@ -4,8 +4,6 @@
       .logo
         Logo(:stroke="strokeColor")
       nav.menu
-        a.menu--item(href="#works" v-smooth-scroll)
-          span Works
         a.menu--item(href="#contact" v-smooth-scroll)
           span Contact
 </template>

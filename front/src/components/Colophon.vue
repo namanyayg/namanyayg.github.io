@@ -2,18 +2,17 @@
   footer.colophon.page.scene
     .wrap
       .row
-        .col-md-6.col-2
+        .col-md-9.col-2
           .logo-container
             Logo(stroke="#193071").logo
-        .col-md-3.col-6.list
+        .col-md-3.col-6.list.self
           p
             strong Namanyay Goel ⚡
-          p Web & Mobile Consultant
           p
             a(href="https://github.com/namanyayg/nmn.gl") view source
           p
             a(href="https://symmetrycode.com/") symmetrycode &middot; blog
-        .col-md-3.col-4.list
+        //- .col-md-3.col-4.list
           p
             a(href="https://github.com/namanyayg") github
           p
@@ -62,6 +61,9 @@ export default {
 
     &:hover
       color $color--highlight
+
+.self
+  text-align right
 
 p
   margin 0 0 .25em

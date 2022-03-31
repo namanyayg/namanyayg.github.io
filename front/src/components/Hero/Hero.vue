@@ -18,7 +18,7 @@
               strong millions
               span.highlight
             span &nbsp;of people, worldwide.
-        h2.subtitle Hey, I&rsquo;m <strong class="highlight">Namanyay Goel</strong>. Using over 9 years of development experience; I craft <em>exemplary</em> products for mobiles, blockchains, and the <em>worldwide web</em>.
+        h2.subtitle Hey, I&rsquo;m <strong class="highlight">Namanyay Goel</strong>. Using over {{ expYears }} years of development experience; I work with my team to craft <em>exemplary</em> products for the <em>worldwide web</em>.
       .wrap.hero__bottom
         Scroller(color="light").scroller
 </template>
@@ -38,7 +38,12 @@ export default {
     Bg: HeroBg
   },
   computed: {
-    ...mapGetters(['viewType'])
+    ...mapGetters(['viewType']),
+
+    expYears () {
+      const d = new Date()
+      return (d.getFullYear() - 2012)
+    }
   },
   methods: {
     beginAnimation () {
