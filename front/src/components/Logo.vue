@@ -17,6 +17,10 @@ export default {
 }
 </script>
 
-<style>
-.cls-1{fill:none;stroke-linecap:round;stroke-miterlimit:10;stroke-width:40px}
+<style lang="stylus">
+.cls-1
+  fill none
+  stroke-linecap round
+  stroke-miterlimit 10
+  stroke-width 40px
 </style>
