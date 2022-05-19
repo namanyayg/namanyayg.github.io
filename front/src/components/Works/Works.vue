@@ -10,8 +10,8 @@
       .wrap
         .ventures__content
           p Currently reinventing nutrition @ <a href="https://ayom.io/" class="ayom" rel="nofollow">Ayom</a>&nbsp;🥬
-          p and leading web & blockchain development @ <a href="https://dyeus.co/" class="dyeus">Dyeus</a>&nbsp;🌟
-          p &hellip;and a few more <em>exciting</em> products, currently in <span class="stealth">stealth mode</span>&nbsp;‍🚀
+          //- p and leading web & blockchain development @ <a href="https://dyeus.co/" class="dyeus">Dyeus</a>&nbsp;🌟
+          p &hellip;and working on a few more <em>exciting</em> products, currently in <span class="stealth">stealth mode</span>&nbsp;‍🚀
           p <em>while actively hiring: critical thinkers & achievers</em>&nbsp;🧠
     //- .works
       Work(v-for="work in getWorks('featured')" :key="work" :data="works[work]")
