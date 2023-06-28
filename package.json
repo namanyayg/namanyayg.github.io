@@ -1,0 +1,34 @@
+{
+  "name": "namanyayg.github.io",
+  "version": "1.0.0",
+  "description": "A collection of creations by Namanyay Goel",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/namanyayg/namanyayg.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/namanyayg/namanyayg.github.io/issues"
+  },
+  "homepage": "https://github.com/namanyayg/namanyayg.github.io#readme",
+  "dependencies": {
+    "browser-sync": "^2.29.3",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-clean": "^0.4.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-data": "^1.3.1",
+    "gulp-if": "^3.0.0",
+    "gulp-include": "^2.4.1",
+    "gulp-jade": "^1.1.0",
+    "gulp-stylus": "^3.0.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp-util": "^3.0.8",
+    "gulp-zip": "^5.1.0"
+  }
+}

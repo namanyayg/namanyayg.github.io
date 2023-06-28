@@ -12,7 +12,8 @@ var p = {
   clean: require('gulp-clean'),
   browserSync: require('browser-sync'),
   gulpif: require('gulp-if'),
-  zip: require('gulp-zip')
+  zip: require('gulp-zip'),
+  data: require('gulp-data'),
 }
 
 var debug = false
@@ -94,12 +95,17 @@ gulp.task('templates', function() {
   var uglyLevel = debug || publish
 
   gulp.src( src, { base: 'jade/' } )
-  .pipe( p.jade({ 
+  .pipe( p.data(function () {
+    return JSON.parse(
+      fs.readFileSync('./js/data.json')
+    );
+  }) )
+  .pipe( p.jade({
     pretty: uglyLevel,
   }) )
   .pipe( gulp.dest( dest ) )
   .pipe( p.gulpif( !publish, p.browserSync.reload({ stream: true }) ) )
-}) 
+})
 
 
 

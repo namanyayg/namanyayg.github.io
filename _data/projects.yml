@@ -1,10 +1,3 @@
-- name: Symmetrycode
-  description: My writings on design, code, and other trivialities of living.
-  url: http://symmetrycode.com/
-
-- name: Gyan
-  description: A collection of simulations, writings, and other teaching tools I&rsquo;ve worked on.
-  url: http://projects.namanyayg.com/gyan
 
 - name: Webstiles
   description: A simple web design deliverable to quickly plan styles of a new website.
@@ -21,3 +14,13 @@
 - name: CSSCommentSnips
   description: A quick collection of snippets for cooler and better comments
   url: https://github.com/namanyayg/CSSCommentSnips
+
+  https://github.com/namanyayg/dicewhere
+
+  https://github.com/namanyayg/moo
+
+  https://github.com/namanyayg/win95anim
+
+  https://github.com/namanyayg/sympl
+
+  https://github.com/namanyayg/clas
