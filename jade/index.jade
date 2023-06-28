@@ -1,0 +1,87 @@
+extends templates/_layout
+
+block vars
+
+block title
+  title Gyan | Namanyay Goel
+
+block content 
+  header
+    h1 Gyan
+    h2.subtitle A collection of my educational creations
+    h3.credits By <a href="http://namanyayg.com/">Namanyay Goel</a>
+
+  .creations
+    .creation.lccpp
+      a(href="http://namanyayg.com/lccpp")
+        .creation__overlay
+        .creation__img
+          img(src="img/lccpp.png")
+        .creation__text
+          .creation__name Less Confusing C++ <span class="type">Book</span>
+    .creation.collisions
+      a(href="http://projects.namanyayg.com/collisions")
+        .creation__overlay
+        .creation__img
+          img(src="img/collisions.png")
+        .creation__text
+          .creation__name Collisions <span class="type">Simulator</span>
+    .creation.diode
+      a(href="http://projects.namanyayg.com/diode/")
+        .creation__overlay
+        .creation__img
+          img(src="img/diode.png")
+        .creation__text
+          .creation__name P-N Junction Diode <span class="type">Simulator</span>
+    .creation.acgraphs
+      a(href="http://projects.namanyayg.com/acgraphs")
+        .creation__overlay
+        .creation__img
+          img(src="img/acgraphs.png")
+        .creation__text
+          .creation__name AC Graphs <span class="type">Visualization</span>
+    .creation.bandc
+      a(href="http://code-warriors.org/research/mathematical-bulls-and-cows.pdf")
+        .creation__overlay
+        .creation__img
+          img(src="img/bandc.png")
+        .creation__text
+          .creation__name Bulls & Cows <span class="type">Research</span>
+    .creation.acgen
+      a(href="http://projects.namanyayg.com/acgen")
+        .creation__overlay
+        .creation__img
+          img(src="img/acgen.png")
+        .creation__text
+          .creation__name AC Generator <span class="type">Simulator</span>
+    .creation.shm-simulator
+      a(href="http://projects.namanyayg.com/SHM-simulator")
+        .creation__overlay
+        .creation__img
+          img(src="img/shm-simulator.png")
+        .creation__text
+          .creation__name Simple Harmonic Motion <span class="type">Simulator</span>
+    .creation.ac-video
+      a(href="https://www.youtube.com/watch?v=Y6v1jzIAcYQ&feature=youtu.be")
+        .creation__overlay
+        .creation__img
+          img(src="img/ac-video.png")
+        .creation__text
+          .creation__name On AC Generators <span class="type">Video</span>
+    .creation.equipot
+      a(href="http://projects.namanyayg.com/Equipot")
+        .creation__overlay
+        .creation__img
+          img(src="img/equipot.png")
+        .creation__text
+          .creation__name Equipotential Surfaces <span class="type">Simulator</span>
+
+
+  script.
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-41471024-6', 'auto');
+    ga('send', 'pageview');

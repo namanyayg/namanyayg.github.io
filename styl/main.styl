@@ -1,0 +1,229 @@
+/**
+ * Designed and developed by Namanyay Goel
+ * http://namanyayg.com/ | @namanyayg
+ */
+
+@import 'partials/_normalize'
+@import 'partials/_var'
+
+/* ==========================================================================
+   
+    LET'S GET STARTED!
+
+   ========================================================================== */
+
+
+body 
+  font-family 'Source Sans Pro', serif
+  font-weight 300
+  font-size 125%
+  color #353535
+  
+$text-color = desaturate(#0a3d5d, 60%)
+h1, h2, h3
+  font-weight 300
+  color $text-color
+
+
+/* ==========================================================================
+   =Content
+   ========================================================================== */
+
+
+header
+  text-align center
+  
+h1
+  font-size 4em
+  margin 0 0
+  font-weight 700
+  text-transform uppercase
+  text-shadow 1px 1px white, 2px 2px white, 3px 3px rgba(#0a3d5d, .3), 4px 4px rgba(#0a3d5d, .1)
+
+h2
+  margin .375em 0 .65em
+
+h3
+  margin 0 0 1.5em
+  
+  a 
+    color inherit
+    text-decoration none
+    background lighten($text-color, 90%)
+    border-radius 2px
+    padding 0 7px 4px
+    font-weight 400
+    transition all .1s ease
+
+    &:hover
+      background lighten($text-color, 20%)
+      color white
+    
+
+.creations
+  overflow hidden
+  max-width 70em
+  margin 0 auto 4em
+
+.creation
+  width 33.33%
+  box-sizing border-box
+  float left
+  height 0
+  padding-bottom 25%
+  overflow hidden
+  position relative
+  cursor pointer
+  
+  &__overlay
+    content '' 
+    position absolute
+    left 0
+    top 0
+    bottom 0
+    right 0
+
+  &:after
+    content ''
+    position absolute
+    left 0
+    right 0
+    bottom 0
+    height 4em
+    transition all .2s ease
+
+  &__text
+    z-index 3
+    position absolute
+    left 0
+    bottom 0
+    right 0
+    height 4em
+    transition all .2s ease-out
+    
+  &__name
+    text-align center
+    padding 1.5em 1em
+    line-height 1 
+    color white
+    transition all .2s ease-out
+    text-shadow 1px 1px rgba(black, .1)
+
+  .type
+    &:before
+      content '|'
+      opacity .5
+      text-shadow none
+      padding 0 .4em
+      position relative
+      top -1px
+
+  a
+    display block
+    color inherit
+    text-decoration none  
+
+  img
+    width 100%
+      
+  
+  &:hover
+    .creation__text, &:after
+      height 6em
+      
+    .creation__name
+      padding 2.5em 1em
+
+.collisions
+  .creation__overlay
+    background rgba(#0ead15, .05)
+  &:after 
+    background rgba(#0ead15, .6)
+
+.equipot
+  .creation__overlay
+    background rgba(#FF5722, .05)
+  &:after
+    background rgba(#FF5722, .8)
+  
+.acgen
+  .creation__overlay
+    background rgba(#3F51B5, .05)
+  &:after
+    background rgba(#3F51B5, .9)
+  
+.lccpp
+  .creation__overlay
+    background rgba(#2979FF, .05)
+  &:after
+    background rgba(#2979FF, .8)
+
+.shm-simulator
+  .creation__overlay
+    background rgba(#9C27B0, .05)
+  &:after
+    background rgba(#9C27B0, .8)
+    
+.ac-video
+  .creation__overlay
+    background rgba(#FFAB00, .05)
+  &:after
+    background rgba(#FFAB00, .9)
+    
+.diode
+  .creation__overlay
+    background rgba(#ff5589, .06)
+  &:after
+    background rgba(#ff5589, .9)
+
+.bandc
+  .creation__overlay
+    background rgba(#565e8e, .06)
+  &:after
+    background rgba(#565e8e, .9)  
+    
+.acgraphs
+  .creation__overlay
+    background rgba(#009688, .07)
+  &:after
+    background rgba(#009688, .9)  
+
+
+
+/* ==========================================================================
+   =MEDIA
+   ========================================================================== */
+
+@media (max-width 90em) 
+  .creation
+    width 33.3333%
+    padding-bottom 25%
+
+@media (max-width 65em)
+  .creation
+    width 50%
+    padding-bottom 37.5%
+    margin 1.5em 0
+    
+  h1 
+    font-size 3em
+  h2, h3
+    font-size 1em
+    
+@media (max-width 50em)
+  body
+    max-width 25em
+    margin: 0 auto;
+
+  .creation
+    width 100%
+    padding-bottom 75%
+    margin-bottom 2em
+    
+@media (max-width 35em) 
+  body
+    font-size 112.5%
+
+@media (max-width 30em)
+  .type
+    display none

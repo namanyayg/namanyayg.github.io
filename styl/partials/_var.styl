@@ -1,0 +1,27 @@
+/* Colors */
+$prim-color = #e24638
+$sec-color = #2570db
+
+$body-background-color = mix($sec-color, white, 5%)
+
+/* Colors - Not semantic */
+$grey = mix(#999, $sec-color, 60%)
+$dark-grey = lighten($grey, 40%)
+$light-grey = lighten($grey, 20%)
+
+
+/* Global */
+$main-font-family = 'Open Sans', sans-serif
+$sec-font-family = 'Georgia', serif
+
+$main-anchor-color = $prim-color
+$main-anchor-color--hover = darken($prim-color, 20%)
+
+
+/* Root */
+$root-font-size = 100%
+$root-line-height = 1.5
+$root-text-color = darken($prim-color, 80%)
+$sec-text-color = darken($prim-color, 80%)
+
+$light-text-color = lighten($root-text-color, 50%)
