@@ -1,12 +1,8 @@
 # [nmn.gl](https://nmn.gl/) ⚡
 
-Consulting success stories by Namanyay Goel. View at [nmn.gl](https://nmn.gl/).
+Entrepreneurship stories by **Namanyay Goel**. View at [nmn.gl](https://nmn.gl/).
 
 ## Development 🕸
-
-The project consitutes of a Vue frontend coupled with an Express backend.
-
-### Front-end 🚘
 
 Navigate to `front` and install dependencies.
 
