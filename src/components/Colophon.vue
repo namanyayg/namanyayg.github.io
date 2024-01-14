@@ -7,16 +7,7 @@
             Logo(stroke="#193071").logo
         .col-md-3.col-10.list.self
           p
-            strong Namanyay Goel ⚡
-          p
-            a(href="https://github.com/namanyayg/nmn.gl") view source
-          p
-            a(href="https://symmetrycode.com/") symmetrycode &middot; blog
-        //- .col-md-3.col-4.list
-          p
-            a(href="https://github.com/namanyayg") github
-          p
-            a(href="https://twitter.com/namanyayg") twitter
+            strong With love by Namanyay ⚡
 </template>
 
 <script>

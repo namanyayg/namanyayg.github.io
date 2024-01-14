@@ -48,9 +48,8 @@ export default {
   margin 0 auto
 
 body
-  font-family Europa, monospace
+  font-family Europa, Segoe UI, Avenir, Helvetica, monospace
   color $color--body-text
-  user-select none
   -webkit-font-smoothing antialiased
   -moz-osx-font-smoothing grayscale
 

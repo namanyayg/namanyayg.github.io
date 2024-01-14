@@ -5,91 +5,24 @@
         .persp
           .title Contact
           .content
-            p(v-if="isAccepting") Accepting select projects only (as of {{ currentQuarter }}).
-
-            p Write to me at&nbsp;
+            p Write to me at &nbsp;
               a(href="mailto:hi@nmn.gl") hi@nmn.gl
-              |  if you wish to create something extraordinary.
+              |  or find me on
+              a.icon(href="https://www.linkedin.com/in/namanyayg/")
+                LinkedinIcon
+              a.icon(href="https://github.com/namanyayg/")
+                GithubIcon
 </template>
 
 <script>
-import { TweenLite, Power4 } from 'gsap'
+import GithubIcon from '../Icons/GithubIcon.vue'
+import LinkedinIcon from '../Icons/LinkedinIcon.vue'
 
 export default {
   name: 'Contact',
-  data () {
-    return {
-      rfq: {
-        name: null,
-        from: null,
-        message: null,
-        budget: null
-      },
-      isAccepting: true
-    }
-  },
-  computed: {
-    currentQuarter () {
-      const d = new Date()
-      const q = Math.floor((d.getMonth() + 3) / 3)
-      return `Q${q} ${d.getFullYear()}`
-    }
-  },
-  methods: {
-    submitRfq () {
-      console.log(this.rfq)
-      const { rfq } = this
-
-      const $ = el => this.$el.querySelector(el)
-      const $$ = el => this.$el.querySelectorAll(el)
-
-      this.axios.post('/namaste', { rfq })
-        .then(res => {
-          // Make the existing form disappear
-          ;[1, 2, 3, 4, 5].map(i => {
-            TweenLite.to($$(`.control`)[i - 1], 0.5, {
-              rotationY: -20,
-              opacity: 0,
-              ease: Power4.easeIn,
-              delay: 0.125 * (i - 1)
-            })
-          })
-
-          // Bring in the thanks
-          $('.thank-you').style.zIndex = 2
-          TweenLite.to($('.thank-you'), 1, {
-            opacity: 1,
-            y: 0,
-            rotationX: 0,
-            ease: Power4.easeOut,
-            delay: 1
-          })
-        })
-    },
-
-    beginAnimation () {
-      this.$el.classList.remove('scene--set')
-      const $ = el => this.$el.querySelector(el)
-
-      TweenLite.from($('.title'), 1, {
-        rotationX: 80,
-        opacity: 0,
-        ease: Power4.easeOut
-      })
-
-      ;[1, 2, 3].map(i => {
-        TweenLite.from($(`.content p:nth-child(${i})`), 1, {
-          y: 10,
-          rotationX: -10,
-          opacity: 0,
-          ease: Power4.easeOut,
-          delay: 0.25 * i
-        })
-      })
-    }
-  },
-  mounted () {
-    this.$el.addEventListener('enliven', this.beginAnimation)
+  components: {
+    LinkedinIcon,
+    GithubIcon
   }
 }
 </script>
@@ -112,6 +45,18 @@ a
 
   &:hover
     color $color--highlight
+
+.icon
+  color white
+  line-height 1
+  svg
+    transition all .3s ease
+    width 1.5em
+    margin-left .75rem
+    transform translateY(.5rem)
+  &:hover
+    svg
+      fill $color--highlight
 
 .thank-you
   font-size 1.25em
