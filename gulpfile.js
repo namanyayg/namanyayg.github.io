@@ -17,8 +17,8 @@ var p = {
 }
 
 var debug = false
-var publish = false
-var build = false
+var publish = true
+var build = true
 
 
 
@@ -33,7 +33,7 @@ var paths = {
   },
 
   templates: {
-    src: ['jade/*.jade', 'jade/**/*.jade', '!jade/_*.jade', '!jade/**/_*.jade' ],
+    src: ['jade/*.jade', 'jade/**/*.jade', '!jade/_*.jade', '!jade/**/_*.jade'],
     watch: ['jade/**/*.jade', 'jade/*.jade'],
     dest: '.',
   }
@@ -49,7 +49,7 @@ var paths = {
  * or ip:4242 for mobiles
  */
 
-gulp.task('browser-sync', function() {
+gulp.task('browser-sync', function () {
   p.browserSync({
     server: {
       baseDir: ".",
@@ -68,16 +68,16 @@ gulp.task('browser-sync', function() {
  * Compresses and includes .styl
  */
 
-gulp.task('styles', function() {
+gulp.task('styles', function () {
   var src = paths.styles.src
-  var dest = paths.styles.dest 
+  var dest = paths.styles.dest
   var uglyLevel = debug || publish ? 'expanded' : 'compress'
 
-  gulp.src( src )
-  .pipe( p.stylus({ set: [uglyLevel] }) )
-  .pipe( p.autoprefixer() )
-  .pipe( gulp.dest( dest ) )
-  .pipe( p.gulpif( !publish, p.browserSync.reload({ stream: true }) ) )
+  gulp.src(src)
+    .pipe(p.stylus({ set: [uglyLevel] }))
+    .pipe(p.autoprefixer())
+    .pipe(gulp.dest(dest))
+    .pipe(p.gulpif(!publish, p.browserSync.reload({ stream: true })))
 })
 
 
@@ -89,22 +89,22 @@ gulp.task('styles', function() {
  * Compiles and compressed .jade
  */
 
-gulp.task('templates', function() {
+gulp.task('templates', function () {
   var src = paths.templates.src
   var dest = paths.templates.dest
   var uglyLevel = debug || publish
 
-  gulp.src( src, { base: 'jade/' } )
-  .pipe( p.data(function () {
-    return JSON.parse(
-      fs.readFileSync('./js/data.json')
-    );
-  }) )
-  .pipe( p.jade({
-    pretty: uglyLevel,
-  }) )
-  .pipe( gulp.dest( dest ) )
-  .pipe( p.gulpif( !publish, p.browserSync.reload({ stream: true }) ) )
+  gulp.src(src, { base: 'jade/' })
+    .pipe(p.data(function () {
+      return JSON.parse(
+        fs.readFileSync('./js/data.json')
+      );
+    }))
+    .pipe(p.jade({
+      pretty: uglyLevel,
+    }))
+    .pipe(gulp.dest(dest))
+    .pipe(p.gulpif(!publish, p.browserSync.reload({ stream: true })))
 })
 
 
@@ -117,9 +117,9 @@ gulp.task('templates', function() {
  * Sets watching on styles, templates, and scripts
  */
 
-gulp.task('watch', function() {
-  gulp.watch( paths.styles.watch, ['styles'] )
-  gulp.watch( paths.templates.watch, ['templates'] )
+gulp.task('watch', function () {
+  gulp.watch(paths.styles.watch, ['styles'])
+  gulp.watch(paths.templates.watch, ['templates'])
 })
 
 
@@ -130,13 +130,13 @@ gulp.task('watch', function() {
  * Runs on 'gulp'
  */
 
-gulp.task('default', function() {
+gulp.task('default', function () {
   debug = debug || false
   publish = publish || false
   gulp.start('templates', 'styles')
 
-  if ( !publish && !build ) {
+  if (!publish && !build) {
     gulp.start('watch')
-    gulp.start('browser-sync') 
+    gulp.start('browser-sync')
   }
 })

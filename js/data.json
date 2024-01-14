@@ -2,56 +2,56 @@
   "data": [
     {
       "key": "lccpp",
-      "href": "http://namanyayg.com/lccpp",
+      "href": "https://leanpub.com/lessconfusingcpp",
       "name": "Less Confusing C++",
       "type": "Book"
     },
     {
       "key": "collisions",
-      "href": "https://lab.nmn.gl/collisions",
+      "href": "https://nmn.gl/collisions",
       "name": "Collisions",
       "type": "Simulator"
     },
     {
       "key": "diode",
-      "href": "https://lab.nmn.gl/diode/",
+      "href": "https://nmn.gl/diode/",
       "name": "P-N Junction Diode",
       "type": "Simulator"
     },
     {
+      "key": "keyzen",
+      "href": "https://nmn.gl/KeyZen/",
+      "name": "KeyZen Touch Typing Game",
+      "type": "Game"
+    },
+    {
       "key": "acgraphs",
-      "href": "https://lab.nmn.gl/acgraphs",
+      "href": "https://nmn.gl/acgraphs",
       "name": "AC Graphs",
       "type": "Simulator"
     },
     {
       "key": "bandc",
       "oldHref": "http://code-warriors.org/research/mathematical-bulls-and-cows.pdf",
-      "href": "https://lab.nmn.gl/moo",
+      "href": "https://nmn.gl/moo",
       "name": "Bulls & Cows",
       "type": "Research"
     },
     {
       "key": "acgen",
-      "href": "https://lab.nmn.gl/acgen",
+      "href": "https://nmn.gl/acgen",
       "name": "AC Generator",
       "type": "Simulator"
     },
     {
       "key": "shm-simulator",
-      "href": "https://lab.nmn.gl/SHM-simulator",
+      "href": "https://nmn.gl/SHM-simulator",
       "name": "Simple Harmonic Motion",
       "type": "Simulator"
     },
     {
-      "key": "ac-video",
-      "href": "https://www.youtube.com/watch?v=Y6v1jzIAcYQ&feature=youtu.be",
-      "name": "On AC Generators",
-      "type": "Video"
-    },
-    {
       "key": "equipot",
-      "href": "https://lab.nmn.gl/Equipot",
+      "href": "https://nmn.gl/Equipot",
       "name": "Equipotential Surfaces",
       "type": "Simulator"
     }
