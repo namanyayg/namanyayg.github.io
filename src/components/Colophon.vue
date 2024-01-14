@@ -7,7 +7,7 @@
             Logo(stroke="#193071").logo
         .col-md-3.col-10.list.self
           p
-            strong With love by Namanyay ⚡
+            strong With love by Namanyay Goel ⚡
 </template>
 
 <script>
