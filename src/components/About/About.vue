@@ -11,7 +11,7 @@
       .about__intro(ref="about-intro")
         p From the earliest time I can recall, the most deep and meaningful feeling I have had is the <strong class="joy">joy of creation</strong> — which emerged with art, music, and animation — and attained its ultimate direction of product development when I approached andolesence
 
-        p It was a blessing for me to discover and chase my passion from a young age, even if it meant coding until midnight in high school or giving up a US university to explore my many startup ideas.
+        p It was a blessing for me to discover and chase my passion from a young age, even if it meant coding until midnight in high school or dropping out a US university to explore my many startup ideas.
 
         p After years of leading my agency <a  class="dyeus" href="http://dyeus.co/">Dyeus</a>, I’m now working on <span class="metric">Metric</span>, a new way to take the effort out of accounting, with two of my most brilliant friends I got to know 12 years ago.
 
