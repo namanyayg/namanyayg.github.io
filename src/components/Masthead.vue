@@ -8,6 +8,8 @@
           span About
         a.menu--item(href="https://nmn.gl/blog")
           span Blog
+        a.menu--item(href="https://nmn.gl/lab")
+          span Lab
         a.menu--item(href="#contact" v-smooth-scroll)
           span Contact
 </template>
