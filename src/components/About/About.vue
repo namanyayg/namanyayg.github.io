@@ -60,7 +60,7 @@
 
           li <strong class="time">Age 22 <em>(2020)</em></strong>After many on and offs since 2016, decided to get set up a home gym with some new and some second hand equipment and started a serious weightlifting journey following <a href="https://i.stack.imgur.com/OUcEY.png">Phrakture's Greyskull LP</a>.
 
-          li <strong class="time">Age 24 <em>(2022)</em></strong>After working on <em>many</em> crypto projects, growing to a team of 25, and delivering many successes totalling a TVL of $100m+, we decided to take a break and ideate our own product. Spent a few months travelling throughout South East Asia and visited Japan, Thailand, Hong Kong, Dubai, and more.
+          li <strong class="time">Age 24 <em>(2022)</em></strong>Took a sabbatical and spent a few months travelling throughout South East Asia and visited Japan, Thailand, Hong Kong, Dubai, and more.
 
           li <strong class="time">Age 25 <em>(2023)</em></strong>Tanay and Aditya gifted me an electric guitar, resuming my love of music. Also, after lifting for over 3 years, started learning Mixed Martial Arts to increase my speed and skill.
 
