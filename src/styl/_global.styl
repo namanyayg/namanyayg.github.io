@@ -1,0 +1,83 @@
+/* by Namanyay Goel
+   ========================================================================== */
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+}
+
+.page
+  background #fff
+  overflow hidden
+
+a
+  color #222
+  transition all .2s ease
+
+/* Forms
+============================================ */
+
+.control
+  display block
+  margin 0 0 2em
+  position relative
+
+  .label
+    display block
+    margin 0 0 .75rem
+    position absolute
+    top .675rem
+    left 1rem
+    transform-origin center left
+    transition all .3s cubic-bezier(0.645, 0.045, 0.355, 1)
+
+  .element
+    margin-top 2.5em
+    transition all .3s cubic-bezier(0.645, 0.045, 0.355, 1)
+    background #222
+
+    &:focus, &:valid
+      outline none
+
+      + .label
+        transform translate(0, -2.5rem) scale(0.875)
+
+      ~ .foci
+        width 100%
+        left 0
+
+  .foci
+    position absolute
+    height 2px
+    transition all .4s cubic-bezier(0.785, 0.135, 0.15, 0.86)
+    width 0
+    left 50%
+    background #444444
+
+input, textarea, select
+  padding 1em
+  background none
+  display block
+  border none
+  width 100%
+  resize none
+
+select
+  appearance none
+
+textarea
+  height 7.5em
+
+.button, button
+  text-transform uppercase
+  font-weight 700
+  letter-spacing 2px
+  background #222222
+  color white
+  display inline-block
+  padding .75em 1.5em
+  border none
+  outline none
+  transition all .3s cubic-bezier(0.23, 1, 0.32, 1)
+
+  &:hover
+    transform scale(0.9)
