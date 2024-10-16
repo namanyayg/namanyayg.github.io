@@ -8,19 +8,18 @@
         span
           span Crafting&nbsp;
           span
-            strong delightful experiences
+            strong AI applications
             span.highlight
-          span &nbsp;
+          span &nbsp;for
         br
         span
-          span used by&nbsp;
+          span the&nbsp;
           span
-            strong millions
+            strong next generation
             span.highlight
-            span &nbsp;
-          span of people,&nbsp;
-          span worldwide.
-      h2.subtitle Hey, I&rsquo;m <strong class="highlight">Namanyay Goel</strong>. Using over {{ expYears }} years of development experience; I work with my team to craft <em>exemplary</em> products for the <em>worldwide web</em>
+          span &nbsp;
+          span of advancement
+      h2.subtitle Hi, I&rsquo;m <strong class="highlight">Namanyay Goel</strong>. Backed by {{ expYears }} years of consulting experience, I build AI products to improve human knowledge and efficiency.
     .wrap.hero__bottom
       Scroller.scroller(color="light")
 </template>

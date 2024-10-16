@@ -4,8 +4,6 @@
       .logo
         Logo(:stroke="strokeColor")
       nav.menu
-        a.menu--item(href="#about" v-smooth-scroll)
-          span About
         a.menu--item(href="https://nmn.gl/blog")
           span Blog
         a.menu--item(href="https://nmn.gl/lab")

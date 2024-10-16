@@ -9,13 +9,15 @@
   .about
     .wrap
       .about__intro(ref="about-intro")
-        p From the earliest time I can recall, the most deep and meaningful feeling I have had is the <strong class="joy">joy of creation</strong> — which emerged with art, music, and animation — and attained its ultimate direction of product development when I approached andolesence
+        p Nothing excites me more than the <strong class="dyeus">act of creation</strong>, especially on the worldwide web.
 
-        p It was a blessing for me to discover and chase my passion from a young age, even if it meant coding until midnight in high school or dropping out a US university to explore my many startup ideas.
+        p I discovered my passion for programming at the young age of <strong>14 years old</strong>.
 
-        p After years of leading my agency <a  class="dyeus" href="http://dyeus.co/">Dyeus</a>, I’m now working on <span class="ai">some generative AI apps</span>, with two of my most brilliant friends I got to know 12 years ago.
+        p Since high school, I've loved to code until late hours of the night. I started my own agency and worked on 60+ consulting projects for international clients.
 
-      .about__history(ref="about-history")
+        p After 10 years of leading my agency, I’m now working on my own <span class="ai">generative AI applications</span> with two of my most brilliant friends.
+
+      //- .about__history(ref="about-history")
         ol
           p Take a peek into my life&rsquo;s journey by scrolling through some moments that&nbsp;define&nbsp;me:
           li <strong class="time">Age 6 <em>(2005)</em></strong>My mum gave me a white beige mouse and placed me before a beige screen and showed me how to point. She had no idea then, but she had sown a lasting love.
@@ -101,10 +103,6 @@ export default {
     align-items: center;
   }
 
-  .about-intro {
-    padding: 3em 0;
-  }
-
   .title {
     font-size: 4em;
     font-weight: bold;
@@ -173,112 +171,14 @@ gradient-text($gradient, $bg = 'light') {
   }
 }
 
-.about__history,
-.about__intro {
-  width: calc(55% - 2rem);
-  font-size 1.25em
-  line-height 2
-  margin -3rem 0 6rem
-}
-
 .about__intro {
   p:first-child {
     margin-top: 0;
   }
+  font-size: 1.5em;
+  padding: 0 0 3em;
 }
 
-.about__history {
-  width: calc(45% - 1.5rem);
-  height: 23em;
-  font-size: 1em;
-  position relative
-
-  &:hover, &:active, &:focus {
-    &:after {
-      opacity 0
-    }
-  }
-
-  &:after {
-    content: ' '
-    pointer-events none
-    position absolute
-    top 50%
-    bottom 0
-    left 0
-    right 10px
-    background linear-gradient(rgba(255,255,255,0), rgba(255,255,255,1))
-    transition all .5s ease
-  }
-
-  .time {
-    em {
-      opacity .75
-    }
-  }
-
-  ol {
-    list-style none
-    display block
-    margin 0
-    padding 0 0 10em
-    overflow-x hidden
-    height 100%
-    width 100%
-
-    p {
-      // text-transform uppercase
-      font-style italic
-      margin 0 0 1em
-      opacity .75
-    }
-
-    &:hover {
-      &::-webkit-scrollbar,
-      &::-webkit-scrollbar-track,
-      &::-webkit-scrollbar-thumb {
-        opacity: 1;
-      }
-    }
-
-    &::-webkit-scrollbar-track {
-      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.05);
-      border-radius: .75vw;
-      background-color: #F5F5F5;
-      opacity: 0;
-      transition: all .3s ease;
-    }
-
-    &::-webkit-scrollbar {
-      width: .75vw;
-      background-color: #F5F5F5;
-      opacity: 0;
-      transition: all .3s ease;
-    }
-
-    &::-webkit-scrollbar-thumb  {
-      border-radius: .75vw;
-      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
-      background-color: #555;
-      opacity: 0;
-      transition: all .3s ease;
-    }
-  }
-
-  li {
-    > strong:after {
-      content ' — '
-      font-weight 400
-    }
-  }
-
-  li + li {
-    margin-top 1.5em
-  }
-}
-
-@media (max-width: 82.5em) {
-}
 
 @media (max-width: 67.5em) {
   .about {
@@ -314,7 +214,6 @@ gradient-text($gradient, $bg = 'light') {
 @media (max-width: 50em) {
   .about__history, .about__intro {
     font-size 1em
-    width calc(50% - 1em)
   }
 
   .title {
@@ -330,15 +229,8 @@ gradient-text($gradient, $bg = 'light') {
   .about > .wrap {
     flex-direction column
   }
-  .about__history, .about__intro {
-    margin 0
-    width 100%
-  }
   .about__intro {
     margin -2em 0 2em
-  }
-  .about__history {
-    padding: 0 1em
   }
 }
 
