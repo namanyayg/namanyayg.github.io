@@ -250,18 +250,16 @@ export default {
 
 @media (max-width: 32.5em) {
   .title {
-    font-size: 1.675em;
+    font-size: 1.625em;
   }
 
   .subtitle {
-    font-size: 1em;
+    font-size: 1.125em;
   }
 }
 
 @media (max-width: 27.5em) {
   .title {
-    font-size: 1.375em;
-
     .highlight {
       height: 2px !important;
     }

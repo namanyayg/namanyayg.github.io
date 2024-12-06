@@ -232,5 +232,9 @@ gradient-text($gradient, $bg = 'light') {
 }
 
 @media (max-width: 32.5em) {
+  .about .title {
+    font-size: 2.5em;
+    margin: 1em 0 0;
+  }
 }
 </style>
