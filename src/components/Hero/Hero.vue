@@ -8,7 +8,7 @@
         span
           span Crafting&nbsp;
           span
-            strong AI applications
+            strong delightful apps
             span.highlight
           span &nbsp;for
         br
@@ -19,7 +19,7 @@
             span.highlight
           span &nbsp;
           span of advancement
-      h2.subtitle Hi, I&rsquo;m <strong class="highlight">Namanyay Goel</strong>. Backed by {{ expYears }} years of consulting experience, I build AI products to improve human knowledge and efficiency.
+      h2.subtitle Hi, I&rsquo;m <strong class="highlight">Namanyay Goel</strong>. Backed by {{ expYears }} years of consulting experience, I build web applications that bring joy & generate value.
     .wrap.hero__bottom
       Scroller.scroller(color="light")
 </template>

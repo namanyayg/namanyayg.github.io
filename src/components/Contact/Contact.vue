@@ -4,7 +4,7 @@
       .wrap
         .persp
           .title Contact
-              a.icon(href="https://x.com/NamanyayG")
+              //- a.icon(href="https://x.com/NamanyayG")
                 TwitterIcon
               a.icon(href="https://www.linkedin.com/in/namanyayg/")
                 LinkedinIcon
@@ -15,7 +15,7 @@
 <script>
 import LinkedinIcon from '../Icons/LinkedinIcon.vue'
 import GithubIcon from '../Icons/GithubIcon.vue'
-import TwitterIcon from '../Icons/TwitterIcon.vue'
+// import TwitterIcon from '../Icons/TwitterIcon.vue'
 
 export default {
   name: 'Contact',

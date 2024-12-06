@@ -15,7 +15,7 @@
 
         p Since high school, I've loved to code until late hours of the night. I started my own agency and worked on 60+ consulting projects for international clients.
 
-        p After 10 years of leading my agency, I’m now working on my own <span class="ai">generative AI applications</span> with two of my most brilliant friends.
+        p With over 10 years experience in leading my agency, I have built performant apps used by millions of users.
 
       //- .about__history(ref="about-history")
         ol
@@ -213,7 +213,7 @@ gradient-text($gradient, $bg = 'light') {
 
 @media (max-width: 50em) {
   .about__history, .about__intro {
-    font-size 1em
+    font-size 1.25em
   }
 
   .title {
@@ -228,9 +228,6 @@ gradient-text($gradient, $bg = 'light') {
 @media (max-width: 37.5em) {
   .about > .wrap {
     flex-direction column
-  }
-  .about__intro {
-    margin -2em 0 2em
   }
 }
 
