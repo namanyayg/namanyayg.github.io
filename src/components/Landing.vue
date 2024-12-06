@@ -1,6 +1,7 @@
 <template lang="pug">
 .page
   Hero
+  Works
   About
   Contact
   ScrollAnimator
@@ -8,6 +9,7 @@
 
 <script>
 import Hero from "./Hero/Hero";
+import Works from "./Works/Works";
 import About from "./About/About";
 import Contact from "./Contact/Contact";
 // Scroll Animator handles all scroll functionality
@@ -18,6 +20,7 @@ export default {
   name: "Landing",
   components: {
     Hero,
+    Works,
     About,
     Contact,
     // ScrollAnimator

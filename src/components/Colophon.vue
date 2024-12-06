@@ -4,7 +4,8 @@
       .row
         .col-md-9.col-2
           .logo-container
-            Logo(stroke="#193071").logo
+            .logo-container__inner
+              Logo(stroke="#193071").logo
         .col-md-3.col-10.list.self
           p
             strong With love by Namanyay Goel ⚡
@@ -59,7 +60,8 @@ export default {
 p
   margin 0 0 .25em
 
-.logo
+.logo-container__inner
+  display inline-block
   transition all .5s cubic-bezier(0.455, 0.03, 0.515, 0.955)
 
   &:hover
