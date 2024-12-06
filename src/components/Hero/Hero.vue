@@ -18,7 +18,7 @@
             strong next generation
             span.highlight
           span &nbsp;
-          span of advancement
+          span of the web
       h2.subtitle Hi, I&rsquo;m <strong class="highlight">Namanyay Goel</strong>. Backed by {{ expYears }} years of consulting experience, I build web applications that bring joy & generate value.
     .wrap.hero__bottom
       Scroller.scroller(color="light")

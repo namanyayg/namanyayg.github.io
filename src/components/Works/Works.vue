@@ -78,24 +78,19 @@ export default {
       return d.getFullYear() - 2011
     }
   },
-  mounted () {
-    console.log(this.$refs['about-intro'].style.height)
-    // this.$refs['about-history'].style.height = this.$refs['about-intro'].clientHeight + 'px'
-  },
   methods: {
     getWorks (category) {
       const mapping = {
         featured: ['asa', 'autolo', 'asianfanfics', 'lownotes', 'cyankart']
       }
       const works = mapping[category].map(work => data[work])
-      console.log(works)
       return works
     }
   },
 };
 </script>
 
-<style lang="stylus">
+<style lang="stylus" scoped>
 .about {
   .header {
     display: flex;

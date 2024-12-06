@@ -1,41 +1,33 @@
 <template lang="pug">
-  section.scene.work(:class="`work--${data.namespace}`")
-    Media(:data="data")
+  section.scene.lab-item(:class="`lab-item--${data.key}`")
+    a(:href="data.href" target="_blank")
+      LabMedia(:data="data")
     .content
-      header.header
-        .main
-          h1.title
-            span {{ data.title }}
-          .m-subtitle(v-html="data.subtitle")
-          .role(v-if="data.role")
-            span.marker ROLE
-            span {{ data.role.join(' &loz; ') }}
-        .subhead(v-if="data.subtitle")
-          h2.subtitle(v-html="data.subtitle")
-          //- .view-case
-            .button Read Full Case
-      blockquote.quote(v-if="data.quote")
-        p {{ data.quote.content }}
-        footer.foot
-          //- .m-view-case
-            .button Read Case
-          cite.cite
-            // .avatar
-              img(:src="`/static/${ data.quote.by.avatar }`")
-            .person
-              .name {{ data.quote.by.name }}
-              .post {{ data.quote.by.post }}
+        header.header
+          .main
+            h1.item__title
+              span {{ data.name }}
+            .created-at
+              span.marker Created
+              span {{ createdAt }}
+              span.age(v-if="showAge") (Age {{ calculatedAge }})
+        .description(v-html="data.description")
+        .actions
+          a.button.view-project(:href="data.href" target="_blank" :style="{ backgroundColor: data.color }") 
+            | Visit Project →
+          a.github-link(v-if="!data.isClosedSource" target="_blank" :href="`https://github.com/namanyayg/${data.key}`")
+            | Source on Github
 </template>
 
 <script>
 import { TweenLite, Power4 } from 'gsap'
-import Media from './Media'
+import LabMedia from './LabMedia'
 
 export default {
-  name: 'Work',
+  name: 'LabItem',
   props: ['data'],
   components: {
-    Media
+    LabMedia
   },
   methods: {
     beginAnimate (e) {
@@ -55,7 +47,7 @@ export default {
         scale: 1.1,
         ease: Power4.easeInOut
       })
-      TweenLite.from($('.title'), 0.75, {
+      TweenLite.from($('.item__title'), 0.75, {
         opacity: 0,
         x: -40,
         ease: Power4.easeOut,
@@ -91,6 +83,20 @@ export default {
   mounted () {
     // Fire initial animation as soon as `enliven` is dispatched
     this.$el.addEventListener('enliven', this.beginAnimate)
+  },
+  computed: {
+    calculatedAge() {
+      const birthDate = new Date(1998, 6) // July is 6 (0-based)
+      const projectDate = new Date(this.data.createdAt)
+      const age = Math.floor((projectDate - birthDate) / (365.25 * 24 * 60 * 60 * 1000))
+      return age
+    },
+    showAge() {
+      return this.calculatedAge < 18
+    },
+    createdAt() {
+      return new Date(this.data.createdAt).toLocaleDateString('en-US', { year: 'numeric', month: 'short' })
+    }
   }
 }
 </script>
@@ -109,9 +115,9 @@ export default {
 .header
   display flex
   width 100%
+  margin 0 0 1em
 
-.title
-  font-size 4em
+.item__title
   font-weight bold
   margin .5em 0 0
   letter-spacing -.5px
@@ -121,26 +127,13 @@ export default {
     position relative
     text-shadow 3px 3px $color--work-bg, -3px 3px $color--work-bg
 
-    &:after
-      content ''
-      height .125em
-      background linear-gradient(45deg, $color--work-title-underline--light, $color--work-title-underline--dark)
-      position absolute
-      left 0
-      right 0
-      bottom 0
-      overflow hidden
-      z-index -1
-
   .main
     width 40%
 
-.role
+.type
   font-size 1.125em
   .marker
     margin-right .25em
-    text-transform uppercase
-    letter-spacing 2px
 
     &:after
       content ':'
@@ -148,6 +141,12 @@ export default {
       display inline-block
       transform translateY(-2px)
       font-weight 400
+
+.created-at
+  font-size 1.125em
+  margin-top 0.5em
+  .marker
+    margin-right .25em
 
 .subhead
   display flex
@@ -166,6 +165,12 @@ export default {
   font-style italic
   color $color--subtitle-text
   font-weight 300
+
+.description
+  font-size 1.25em
+  p
+    padding 0
+    line-height 1.5
 
 .quote
   font-size 1.375em
@@ -313,4 +318,42 @@ export default {
 
     .button
       padding 1em
+
+.age
+  margin-left 0.5em
+  vertical-align middle
+  font-weight normal
+  color $color--highlight
+  font-weight bold
+
+.actions
+  margin-top 2em
+  display flex
+  gap 1em
+  align-items center
+
+  .button
+    display inline-block
+    padding 0.8em 1.5em
+    border-radius 4px
+    color white
+    text-decoration none
+    font-weight bold
+    transition transform 0.2s ease
+    
+    &:hover
+      transform translateY(-2px)
+
+  .github-link
+    color inherit
+    text-decoration none
+    border-bottom 1px solid currentColor
+    
+    &:hover
+      opacity 0.8
+
+@media (max-width: 50em)
+  .actions
+    flex-direction column
+    align-items flex-start
 </style>
