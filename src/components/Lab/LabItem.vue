@@ -127,6 +127,17 @@ export default {
     position relative
     text-shadow 3px 3px $color--work-bg, -3px 3px $color--work-bg
 
+    &:after
+      content ''
+      height .125em
+      background linear-gradient(45deg, $color--work-title-underline--light, $color--work-title-underline--dark)
+      position absolute
+      left 0
+      right 0
+      bottom 0
+      overflow hidden
+      z-index -1
+
   .main
     width 40%
 
@@ -243,15 +254,6 @@ export default {
     display block
     text-align center
     margin-bottom 0
-
-    &:after
-      content ' '
-      height 2px
-      width 2em
-      background $color--mark
-      position absolute
-      margin-top 1.5em
-      transform translateX(-50%)
 
   .m-subtitle
     display block
