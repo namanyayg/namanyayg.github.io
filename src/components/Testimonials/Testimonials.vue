@@ -1,11 +1,12 @@
 <template lang="pug">
 .testimonials.page.scene.about
+  .about-intro
+    .content
+      .wrap
+        header.header
+          h1.title Testimonials
+          .subtitle Real feedback from real clients
   .wrap
-    .about-intro
-      header.header
-        h2.title Testimonials
-        .subtitle Real feedback from real clients
-    
     .testimonial-container(
       @mouseenter="pauseAutoplay"
       @mouseleave="resumeAutoplay"
@@ -272,11 +273,20 @@ export default {
       width 100%
 
 @media (max-width: 48em)
+  .testimonials
+    padding 0 0 4em
+
   .header
+    flex-direction column
+    align-items start
+
     .title
       font-size 3em
+      margin-bottom 0
+
     .subtitle
       font-size 1.25em
+      margin-bottom 3em
 
   .testimonial-container
     height 20em
@@ -295,8 +305,8 @@ export default {
       font-size 1.125em
 
   .testimonial-container
-    height 24em
+    height 26em
 
   .testimonial-nav-item
-    font-size 0.75em
+    font-size 0.875em
 </style> 
