@@ -6,7 +6,7 @@
         header.header
           h1.title Works
           .subtitle Selected full-stack development projects since 2014
-  .about
+  .works
     .wrap
       .about__works
         WorkItem(v-for="work in getWorks('featured')" :key="work.namespace" :data="work")

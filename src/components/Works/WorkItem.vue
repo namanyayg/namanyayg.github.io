@@ -15,7 +15,7 @@
           //- .view-case
             .button Read Full Case
       blockquote.quote(v-if="data.quote")
-        p {{ data.quote.content }}
+        p(v-html="data.quote.content")
         footer.foot
           //- .m-view-case
             .button Read Case
@@ -103,8 +103,9 @@ export default {
   opacity 0
 
 .work
-  margin 0 0 12em
+  margin 0 auto 12em
   background $color--work-bg
+  max-width 70em
 
 .header
   display flex

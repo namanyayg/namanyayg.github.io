@@ -8,7 +8,7 @@ export default {
     role: ['UI/UX Design', 'Front-End Development'],
     subtitle: 'Simplifying ecommerce fulfillment for dropshippers',
     quote: {
-      content: `Namanyay is easy to work with, and has a great eye for UI/UX detail. He designed the site around our existing branding with clear, concise elements; and I couldn't be happier with the result. The contract initially was for just for design, but he also helped with completing the frontend when our original developer went missing.`,
+      content: `Namanyay is <strong>easy to work with</strong>, and has a <strong>great eye for UI/UX detail</strong>. He designed the site around our existing branding with clear, concise elements; and I couldn't be happier with the result. The contract initially was for just for design, but he also <strong>helped with completing the frontend</strong> when our original developer went missing.`,
       by: {
         name: 'John Green',
         post: 'Partner, Incrane Tech',
@@ -26,7 +26,7 @@ export default {
     subtitle: `Redefining the visual language for Delhi's biggest ecommerce clothing&nbsp;store`,
     color: '#0199cb',
     quote: {
-      content: `Namanyay is a talented developer who is able to work quickly and develop ideas fast. He was able to improve our existing design decisions as well. He came highly recommend and we are certain we made the right choice by choosing him.`,
+      content: `Namanyay is a <strong>talented developer</strong> who is able to <strong>work quickly and develop ideas fast</strong>. He was able to improve our existing design decisions as well. He came highly recommend and we are certain we made the right choice by choosing him.`,
       by: {
         name: 'Abhay Bajaj',
         post: 'CEO, Cyankart',
@@ -46,7 +46,7 @@ export default {
     role: ['UI/UX Design', 'Full-Stack Development'],
     subtitle: `Helping exemplary athletes succeed with collegiate recruiters`,
     quote: {
-      content: `Namanyay is an excellent full-stack developer. Hired him for a startup MVP, which he built in 2.5 months using Vue & Express. He makes great development decisions and wrote an extensible app that we could integrate with our sports statistics & blogging platforms. Highly recommended if you're looking for someone to build a quick MVP.`,
+      content: `Namanyay is an <strong>excellent full-stack developer</strong>. Hired him for a startup MVP, which he built in 2.5 months using Vue & Express. He makes <strong>great development decisions</strong> and wrote an <strong>extensible app</strong> that we could integrate with our sports statistics & blogging platforms. Highly recommended if you're looking for someone to build a quick MVP.`,
       by: {
         name: 'Mitchell Bregman',
         post: 'ASA Recruiting',
@@ -67,8 +67,7 @@ export default {
     role: ['Full-Stack Web Development'],
     subtitle: `Searchable, downloadable music collection of NYC-based composer`,
     quote: {
-      content:
-        'Namanyay built a searchable audio database website for me (a performant full-stack web application using Vue and Express) that exceeded expectations. Namanyay was easy to work with and provided excellent value and skills. Highly recommended.',
+      content: 'Namanyay built a searchable audio database website for me (a performant full-stack web application using Vue and Express) that <strong>exceeded expectations</strong>. Namanyay was <strong>easy to work with</strong> and provided <strong>excellent value and skills</strong>. Highly recommended.',
       by: {
         name: 'Aaron Paul Low',
         post: 'Composer',
@@ -85,8 +84,7 @@ export default {
     role: ['UI/UX Design', 'Front-End Development'],
     subtitle: `Enhancing Japan's largest online fanfiction literature community`,
     quote: {
-      content:
-        'Namanyay is very receptive to client and user needs and ensures that the final product not only meets client expectations, but also provides insight that adds extra value to users. Ad CPM and click through rates have had a significant increase as well after our new responsive design was released.',
+      content: 'Namanyay is <strong>very receptive to client and user needs</strong> and ensures that the final product not only meets client expectations, but also provides insight that adds extra value to users. <strong>Ad CPM and click through rates have had a significant increase</strong> as well after our new responsive design was released.',
       by: {
         name: 'Jason Ado',
         post: 'Jado Interactive',

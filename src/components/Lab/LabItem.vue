@@ -1,17 +1,18 @@
 <template lang="pug">
   section.scene.lab-item(:class="`lab-item--${data.key}`")
-    a(:href="data.href" target="_blank")
+    a.media(:href="data.href" target="_blank")
       LabMedia(:data="data")
     .content
         header.header
           .main
             h1.item__title
               span {{ data.name }}
-            .created-at
+            // .created-at
               span.marker Created
               span {{ createdAt }}
               span.age(v-if="showAge") (Age {{ calculatedAge }})
-        .description(v-html="data.description")
+        // .description(v-html="data.description")
+        .description(v-html="data.shortDescription")
         .actions
           a.button.view-project(:href="data.href" target="_blank" :style="{ backgroundColor: data.color }") 
             | Visit Project →
@@ -108,6 +109,17 @@ export default {
 .scene--set
   opacity 0
 
+.lab-item
+  display flex
+  align-items center
+
+  .media
+    flex 1
+    padding 0 1.5em 0 0
+
+  .content
+    flex 1
+
 .work
   margin 0 0 12em
   background $color--work-bg
@@ -119,7 +131,7 @@ export default {
 
 .item__title
   font-weight bold
-  margin .5em 0 0
+  margin -1em 0 0
   letter-spacing -.5px
 
   span
@@ -247,6 +259,26 @@ export default {
     font-size 1.25em
 
 @media (max-width 50em)
+  .lab-item
+    flex-direction column
+
+  .media
+    width 100%
+    padding 0 !important
+    max-width 40em
+
+  .content
+    width 100%
+
+  .item__title
+    font-size 1.5em
+    text-align left
+    margin 1em 0 .5rem
+  
+  .actions
+    margin-top .75rem !important
+    font-size .875em
+
   .work
     margin 0 0 9em
 
@@ -270,24 +302,6 @@ export default {
   .marker
     display none
 
-  .quote
-    margin 2rem 0 0
-    // text-align center
-
-    p
-      margin 0 0 2rem
-      // Quotes look weird
-      &:before, &:after
-        font-size 1.5em
-      &:before
-        margin -.25em 0 0 -.575em
-      &:after
-        margin -.25em 0 0 0
-
-    .foot
-      justify-content center
-      text-align center
-
 @media (max-width 30em)
   .work
     margin 0 0 7.5em
@@ -299,27 +313,6 @@ export default {
   .m-subtitle
     font-size 1em
 
-  .quote
-    font-size 1em
-
-    p
-      margin 0 0 1rem
-
-      &:before,
-      &:after
-        content none
-
-    .foot
-      .cite
-        font-size .875em
-      .name
-        font-size 1em
-
-  .m-view-case
-    font-size .75em
-
-    .button
-      padding 1em
 
 .age
   margin-left 0.5em

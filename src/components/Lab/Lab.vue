@@ -55,16 +55,8 @@ export default {
     font-weight: 300;
   }
 
-  &__items {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 -2em 3em;
-  }
-
   &-item {
-    width: 50%;
-    padding: 0 2em;
-    margin: 0 0 5em;
+    margin: 0 0 4em;
   }
 }
 
@@ -169,14 +161,6 @@ gradient-text($gradient, $bg = 'light') {
 
   .subtitle {
     font-size: 1em;
-  }
-
-  .lab__items {
-    flex-direction column
-  }
-
-  .lab-item {
-    width 100%
   }
 }
 

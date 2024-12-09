@@ -91,7 +91,7 @@ export default {
   width 100%
   overflow hidden
   border-radius .25em
-  box-shadow 0 .5em 1em rgba(0, 0, 0, .2)
+  box-shadow 0 .5em 1em rgba(0, 0, 0, .1)
   transition transform .3s ease-in-out
 
   .overlay

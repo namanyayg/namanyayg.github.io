@@ -40,6 +40,7 @@ export default {
     width: 100%
     justify-content: space-between
     align-items: center
+    margin 0 0 2em
 
   .title
     font-size: 4em

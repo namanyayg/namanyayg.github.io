@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Landing from '@/components/Landing'
+import Physics from '@/components/Physics/Physics'
 
 Vue.use(Router)
 
@@ -9,6 +10,10 @@ export default new Router({
     {
       path: '/',
       component: Landing
+    },
+    {
+      path: '/physics',
+      component: Physics
     }
   ],
   mode: 'history',

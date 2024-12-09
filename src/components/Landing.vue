@@ -1,15 +1,17 @@
 <template lang="pug">
 .page
   Hero
-  Lab
+  Testimonials
   About
   Works
+  Lab
   Contact
   // ScrollAnimator
 </template>
 
 <script>
 import Hero from "./Hero/Hero";
+import Testimonials from "./Testimonials/Testimonials";
 import Lab from "./Lab/Lab";
 import Works from "./Works/Works";
 import About from "./About/About";
@@ -22,6 +24,7 @@ export default {
   name: "Landing",
   components: {
     Hero,
+    Testimonials,
     Lab,
     Works,
     About,
