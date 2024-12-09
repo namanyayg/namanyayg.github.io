@@ -4,22 +4,21 @@
     Masthead.masthead(back="dark")
     Bg
     .wrap
+      h2.subtitle.intro Hi, I&rsquo;m <strong class="highlight underlined">Namanyay Goel</strong> 👋
       h1.title
         span
-          span Crafting&nbsp;
+          span I build&nbsp;
           span
-            strong delightful apps
+            strong thoughtful apps
             span.highlight
-          span &nbsp;for
+          span &nbsp;that 
         br
         span
-          span the&nbsp;
+          span people&nbsp;
           span
-            strong next generation
+            strong love to use
             span.highlight
-          span &nbsp;
-          span of the web
-      h2.subtitle Hi, I&rsquo;m <strong class="highlight">Namanyay Goel</strong>. Backed by {{ expYears }} years of consulting experience, I build web applications that bring joy & generate value.
+      h2.subtitle Trusted by <strong class="highlight">60+ international clients</strong> with <strong class="highlight">12+ years</strong> experience of making complex businesses simple
     .wrap.hero__bottom
       Scroller.scroller(color="light")
 </template>
@@ -146,7 +145,7 @@ export default {
 }
 
 .title {
-  margin: 0;
+  margin: .5em 0;
   font-weight: 300;
   font-size: 4em;
   color: $color--hero-text;
@@ -167,7 +166,7 @@ export default {
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 0.25rem;
+    bottom: 0.375rem;
     height: 0.375rem;
     transform: perspective(10);
     background: linear-gradient(45deg, darken($color--highlight, 10%), $color--highlight, darken($color--highlight, 20%));
@@ -176,12 +175,10 @@ export default {
 }
 
 .subtitle {
-  margin: 0;
   font-weight: 300;
   font-size: 2em;
   color: $color--hero-subtitle;
   font-style: none;
-  margin: 2em 0 0;
   max-width: 30em;
 
   strong {
@@ -191,6 +188,10 @@ export default {
   .highlight {
     color: $color--hero-text;
   }
+}
+
+.intro {
+  font-size: 2.25em;
 }
 
 .amp {
