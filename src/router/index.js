@@ -6,6 +6,8 @@ import Physics from '@/components/Physics/Physics'
 Vue.use(Router)
 
 export default new Router({
+  mode: 'history',
+  base: process.env.BASE_URL || '/',
   routes: [
     {
       path: '/',
@@ -16,7 +18,6 @@ export default new Router({
       component: Physics
     }
   ],
-  mode: 'history',
   scrollBehavior (to, from, savedPosition) {
     if (savedPosition) {
       return savedPosition
