@@ -1,5 +1,7 @@
 <template lang="pug">
 #physics.physics
+  .masthead-container
+    Masthead(back="dark")
   .physics-intro
     .content
       .wrap
@@ -17,12 +19,14 @@
 </template>
 
 <script>
+import Masthead from '../Masthead'
 import LabItem from '../Lab/LabItem.vue'
 import data from './data.js'
 
 export default {
   name: 'Physics',
   components: {
+    Masthead,
     LabItem
   },
   computed: {

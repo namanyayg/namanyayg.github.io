@@ -1,7 +1,17 @@
 export default {
   data: [
     {
+      key: 'air',
+      isFeatured: true,
+      href: 'https://air.nmn.gl/',
+      name: 'Air Quality Impact & Visualizations',
+      createdAt: '2024-11',
+      color: '#0bb667',
+      shortDescription: 'Real-time air quality impact calculator that transforms complex AQI metrics into <strong>immediately understandable health consequences</strong>. Combines location-based AQI monitoring with <strong>medical research data</strong> to visualize permanent health damage, debunk pollution immunity myths, and drive awareness through shareable health insights'
+    },
+    {
       key: 'aiindians',
+      isFeatured: false,
       href: 'https://aiindians.org',
       name: 'AI Startups in India',
       type: 'AI',
@@ -15,6 +25,7 @@ export default {
     },
     {
       key: 'kevin',
+      isFeatured: true,
       href: 'https://nmn.gl/kevin',
       name: 'Kevin: Open Source AI Software Engineer',
       type: 'AI',
@@ -27,6 +38,7 @@ export default {
     },
     {
       key: 'webstiles',
+      isFeatured: true,
       href: 'http://webstiles.namanyayg.com/',
       name: 'Webstiles In-Browser UI Prototyping',
       type: 'Tool',
@@ -38,6 +50,7 @@ export default {
     },
     {
       key: 'lccpp',
+      isFeatured: true,
       href: 'https://leanpub.com/lessconfusingcpp',
       name: 'Less Confusing C++',
       type: 'Book',
@@ -50,8 +63,9 @@ export default {
     },
     {
       key: 'indiasmile',
+      isFeatured: true,
       href: 'https://indiasmile.org',
-      name: 'IndiaSmile',
+      name: 'IndiaSmile COVID-19 Tracker & Stats',
       type: 'Tool',
       createdAt: '2020-06',
       isClosedSource: true,
@@ -62,8 +76,9 @@ export default {
     },
     {
       key: 'keyzen',
+      isFeatured: true,
       href: 'https://nmn.gl/KeyZen/',
-      name: 'KeyZen Touch Typing',
+      name: 'KeyZen Touch Typing Game',
       type: 'Game',
       createdAt: '2013-10',
       color: '#0bb667',
@@ -73,9 +88,10 @@ export default {
     },
     {
       key: 'bandc',
+      isFeatured: true,
       oldHref: 'https://vixra.org/pdf/1601.0302v1.pdf',
       href: 'https://nmn.gl/moo',
-      name: 'Bulls & Cows',
+      name: 'Bulls & Cows Solver Research',
       type: 'Research',
       createdAt: '2015-11',
       color: '#565e8e',
@@ -88,6 +104,7 @@ export default {
     },
     {
       key: 'physics',
+      isFeatured: true,
       href: '/physics',
       name: 'Physics Simulators Collection',
       type: 'Simulator',
@@ -104,6 +121,6 @@ export default {
                    </ul>
                    <p>Each simulator was built using JavaScript and focuses on visualizing complex physics concepts through interactive animations.</p>`,
       shortDescription: '<strong>Collection of interactive physics simulators</strong> helping students visualize complex concepts. Improved understanding of phenomena like Simple Harmonic Motion and P-N junctions.'
-    },
+    }
   ]
 }

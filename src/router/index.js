@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Landing from '@/components/Landing'
 import Physics from '@/components/Physics/Physics'
+import LabPage from '@/components/Lab/LabPage'
 
 Vue.use(Router)
 
@@ -16,6 +17,10 @@ export default new Router({
     {
       path: '/physics',
       component: Physics
+    },
+    {
+      path: '/lab',
+      component: LabPage
     }
   ],
   scrollBehavior (to, from, savedPosition) {

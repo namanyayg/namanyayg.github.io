@@ -11,8 +11,8 @@
               span.marker Created
               span {{ createdAt }}
               span.age(v-if="showAge") (Age {{ calculatedAge }})
-        // .description(v-html="data.description")
-        .description(v-html="data.shortDescription")
+        .description(v-if="data.shortDescription" v-html="data.shortDescription")
+        .description(v-if="!data.shortDescription" v-html="data.description")
         .actions
           a.button.view-project(:href="data.href" target="_blank" :style="{ backgroundColor: data.color }") 
             | Visit Project →

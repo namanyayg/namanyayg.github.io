@@ -55,4 +55,8 @@ body
 
 h1, h2, h3, h4, h5, h6
   color $color--title-text
+
+.masthead-container
+  background $color--hero-bg--dark
+  background-image radial-gradient(circle, rgba(lighten($color--hero-bg, 5%), 0.8) 10%, rgba($color--hero-bg, 0))
 </style>
