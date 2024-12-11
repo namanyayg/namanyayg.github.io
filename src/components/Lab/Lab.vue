@@ -9,7 +9,7 @@
   .lab
     .wrap
       .lab__items
-        LabItem(v-for="item in getItems('featured')" :key="item.key" :data="item").lab-item
+        LabItem(v-for="item in getItems()" :key="item.key" :data="item").lab-item
 </template>
 
 <script>
@@ -21,6 +21,12 @@ export default {
   components: {
     LabItem
   },
+  props: {
+    showOnlyFeatured: {
+      type: Boolean,
+      default: false
+    }
+  },
   computed: {
     yearsFriends () {
       const d = new Date()
@@ -28,8 +34,12 @@ export default {
     }
   },
   methods: {
-    getItems (category) {
-      return data.data
+    getItems () {
+      const items = data.data
+      if (this.showOnlyFeatured) {
+        return items.filter(item => item.isFeatured)
+      }
+      return items
     }
   }
 }

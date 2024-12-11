@@ -4,7 +4,7 @@
   Testimonials
   About
   Works
-  Lab
+  Lab(:showOnlyFeatured="true")
   Contact
   // ScrollAnimator
 </template>
