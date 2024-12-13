@@ -7,7 +7,7 @@
           .video-container(:style="videoBgStyle")
             .shadow
             video(:poster="posterUrl" autoplay loop muted)
-              source(:src="videoUrl" type="video/mp4")
+              source(:src="videoUrl" type="video/mp4" v-if="hasVideo")
 </template>
 
 <script>
@@ -24,8 +24,9 @@ export default {
     }
   },
   computed: {
-    videoUrl () { return `/static/portfolio/${this.data.media.video}.mp4` },
-    posterUrl () { return `/static/portfolio/${this.data.media.video}.jpg` },
+    videoUrl () { return `/static/portfolio/${this.data.namespace}.mp4` },
+    posterUrl () { return `/static/portfolio/${this.data.namespace}.jpg` },
+    hasVideo () { return this.data.hasVideo },
     videoBgStyle () {
       return {
         background: `linear-gradient(45deg, rgba(0,0,0,.3), rgba(0,0,0,.1)), url(${this.posterUrl})`

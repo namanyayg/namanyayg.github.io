@@ -81,7 +81,7 @@ export default {
   methods: {
     getWorks (category) {
       const mapping = {
-        featured: ['asa', 'autolo', 'asianfanfics', 'lownotes', 'cyankart']
+        featured: ['ayom', 'asa', 'autolo', 'asianfanfics', 'lownotes', 'cyankart']
       }
       const works = mapping[category].map(work => data[work])
       return works

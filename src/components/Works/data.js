@@ -1,9 +1,20 @@
 export default {
+  ayom: {
+    namespace: 'ayom',
+    hasVideo: true,
+    title: 'Ayom',
+    role: ['Lead Engineer & Marketing Consultant'],
+    subtitle: `Multivitamin gummies D2C brand`,
+    description: [
+      `Built an <strong>ultra-performant PWA</strong> with custom conversion-optimized order flow that helped achieve positive cash flow in under 60 days.`,
+      `Built custom modules for upsell, referral, bundling, to increase AOV and LTV.`,
+      `Architected custom analytics dashboard for cross-channel attribution and performance tracking.`,
+      `Reached <strong>$500k revenue</strong> and <strong>25K+ customers</strong> in just 6 months.`
+    ]
+  },
   autolo: {
     namespace: 'autolo',
-    media: {
-      video: 'autolo'
-    },
+    hasVideo: true,
     title: 'Autolo',
     role: ['UI/UX Design', 'Front-End Development'],
     subtitle: 'Simplifying ecommerce fulfillment for dropshippers',
@@ -18,9 +29,7 @@ export default {
   },
   cyankart: {
     namespace: 'cyankart',
-    media: {
-      video: 'cyankart'
-    },
+    hasVideo: true,
     title: 'Cyankart',
     role: ['Front-End Development', 'Shopify'],
     subtitle: `Redefining the visual language for Delhi's biggest ecommerce clothing&nbsp;store`,
@@ -39,9 +48,7 @@ export default {
   },
   asa: {
     namespace: 'astepahead',
-    media: {
-      video: 'astepahead'
-    },
+    hasVideo: true,
     title: 'A Step Ahead',
     role: ['UI/UX Design', 'Full-Stack Development'],
     subtitle: `Helping exemplary athletes succeed with collegiate recruiters`,
@@ -60,9 +67,7 @@ export default {
   },
   lownotes: {
     namespace: 'lownotes',
-    media: {
-      video: 'lownotes'
-    },
+    hasVideo: true,
     title: 'Low Notes Music',
     role: ['Full-Stack Web Development'],
     subtitle: `Searchable, downloadable music collection of NYC-based composer`,
@@ -77,9 +82,7 @@ export default {
   },
   asianfanfics: {
     namespace: 'asianfanfics',
-    media: {
-      video: 'asianfanfics'
-    },
+    hasVideo: true,
     title: 'AsianFanfics',
     role: ['UI/UX Design', 'Front-End Development'],
     subtitle: `Enhancing Japan's largest online fanfiction literature community`,

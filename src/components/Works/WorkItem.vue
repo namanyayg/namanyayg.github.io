@@ -14,6 +14,8 @@
           h2.subtitle(v-html="data.subtitle")
           //- .view-case
             .button Read Full Case
+      .description(v-if="!data.quote")
+        p(v-for="desc in data.description" v-html="desc")
       blockquote.quote(v-if="data.quote")
         p(v-html="data.quote.content")
         footer.foot
@@ -137,7 +139,7 @@ export default {
     width 40%
 
 .role
-  font-size 1.125em
+  font-size 1.25em
   .marker
     margin-right .25em
     text-transform uppercase
@@ -168,7 +170,7 @@ export default {
   color $color--subtitle-text
   font-weight 300
 
-.quote
+.quote, .description
   font-size 1.375em
   margin 3rem 0 0
   position relative
@@ -218,6 +220,14 @@ export default {
     .name
       font-size 1.125em
       font-weight 700
+
+.description
+  margin 2rem 0 0
+  font-size 1.5em
+  line-height 1.6
+  p
+    &:before, &:after
+      content none
 
 .m-view-case
   font-size .875rem
