@@ -4,8 +4,8 @@
     .content
       .wrap
         header.header
-          h1.title Works
-          .subtitle Selected full-stack development projects since 2014
+          h1.title Portfolio
+          .subtitle Selected business solutions built since 2014
   .works
     .wrap
       .about__works

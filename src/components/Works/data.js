@@ -6,7 +6,7 @@ export default {
     role: ['Lead Engineer & Marketing Consultant'],
     subtitle: `Multivitamin gummies D2C brand`,
     description: [
-      `Built an <strong>ultra-performant PWA</strong> with custom conversion-optimized order flow that helped achieve positive cash flow in under 60 days.`,
+      `Built a PWA with custom order flow with a focus on performance, speed, and conversion rate optimization. Helped achieve positive cash flow in under 60 days.`,
       `Built custom modules for upsell, referral, bundling, to increase AOV and LTV.`,
       `Architected custom analytics dashboard for cross-channel attribution and performance tracking.`,
       `Reached <strong>$500k revenue</strong> and <strong>25K+ customers</strong> in just 6 months.`
