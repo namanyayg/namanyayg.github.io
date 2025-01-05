@@ -4,7 +4,7 @@
     Masthead.masthead(back="dark")
     Bg
     .wrap
-      h2.subtitle.intro Hi, I&rsquo;m <strong class="highlight underlined">Namanyay Goel</strong> 👋
+      h2.subtitle.intro Hi, I&rsquo;m <strong class="highlight underlined">Namanyay</strong> 👋
       h1.title
         span
           span I build&nbsp;
@@ -19,6 +19,12 @@
             strong love to use
             span.highlight
       h2.subtitle Trusted by <strong class="highlight">60+ international clients</strong> with <strong class="highlight">12+ years</strong> experience of making complex businesses simple
+      .social-cta
+        a.x-button(href="https://x.com/NamanyayG" target="_blank" rel="noopener") 
+          span Connect on
+          svg.x-icon(xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24")
+            path(fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z")
+          
     .wrap.hero__bottom
       Scroller.scroller(color="light")
 </template>
@@ -110,7 +116,7 @@ export default {
 }
 
 .masthead {
-  margin: 0 0 8em;
+  margin: 0 0 2em;
 }
 
 .hero {
@@ -141,7 +147,7 @@ export default {
 }
 
 .hero__bottom {
-  padding-bottom: 14em;
+  padding-bottom: 10em;
 }
 
 .title {
@@ -191,7 +197,7 @@ export default {
 }
 
 .intro {
-  font-size: 2.25em;
+  font-size: 2.5em;
 }
 
 .amp {
@@ -266,4 +272,36 @@ export default {
     }
   }
 }
+
+.social-cta
+  .x-button
+    margin-top: 1em
+    display: inline-flex
+    align-items: center
+    gap: 0.75em
+    padding: 0.75em 1.5em .825em
+    font-size: 1.5em
+    color: $color--hero-text
+    text-decoration: none
+    font-weight: bold
+    border: 2px solid $color--hero-text
+    border-radius: 8px
+    transition: all 0.3s ease
+    
+    &:hover
+      border-color: $color--highlight
+    
+  .x-icon
+    width: 1.25em
+    height: 1.25em
+    margin-left: -0.5em
+    color: $color--hero-text
+
+@media (max-width: 55em)
+  .social-cta .x-button
+    font-size: 1em
+
+@media (max-width: 32.5em)
+  .social-cta .x-button
+    font-size: 0.875em
 </style>
