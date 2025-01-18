@@ -10,36 +10,18 @@ export default {
       shortDescription: 'Real-time air quality impact calculator that transforms complex AQI metrics into <strong>immediately understandable health consequences</strong>. Combines location-based AQI monitoring with <strong>medical research data</strong> to visualize permanent health damage, debunk pollution immunity myths, and drive awareness through shareable health insights'
     },
     {
-      key: 'aiindians',
-      isFeatured: false,
-      href: 'https://aiindians.org',
-      name: 'AI Startups in India',
-      type: 'AI',
-      createdAt: '2024-06',
-      isClosedSource: false,
-      color: 'rgb(59, 130, 246)',
-      description: `<p>Celebrating the AI developers & entrepreneurs</p>
-                   <p>& tracking their growth via a leaderboard</p>
-                   <p>Featuring 100+ newest AI startups of India</p>`,
-      shortDescription: '<strong>Directory & leaderboard tracking 100+ Indian AI startups</strong>, helping connect entrepreneurs with opportunities. Provides visibility and networking for emerging AI companies.'
-    },
-    {
-      key: 'kevin',
+      key: 'trends-ai',
       isFeatured: true,
-      href: 'https://nmn.gl/kevin',
-      name: 'Kevin: Open Source AI Software Engineer',
-      type: 'AI',
-      createdAt: '2024-03',
-      color: '#23c2bc',
-      description: `<p>It has been a dream of mine to create a bot that could write code for me <em>(so I could delegate the boilerplate and focus on the creative parts of programming)</em>.</p>
-                   <p>Seeing Devin made me realize that my teenage dream is close to becoming reality. For personal satisfaction, I embarked on making my own open-source interface.</p>
-                   <p>The name comes from the legendary phreaker and my childhood hero <strong>Kevin Mitnick</strong> and is a play on Cognition Labs&rsquo; product name.</p>`,
-      shortDescription: '<strong>Open-source AI coding assistant interface</strong> inspired by Devin, focused on automating boilerplate code generation. Increases developer productivity by handling repetitive tasks.'
+      href: 'https://trends.nmn.gl/',
+      name: 'Trend Analyzer & Content Assistant',
+      createdAt: '2025-01',
+      color: '#6f52ff',
+      shortDescription: 'Trend analysis engine that transforms scattered social media discussions into <strong>actionable content insights</strong>. Helps content creators <strong>avoid endless scrolling</strong> by automatically finding and analyzing trends.'
     },
     {
       key: 'webstiles',
       isFeatured: true,
-      href: 'http://webstiles.namanyayg.com/',
+      href: 'https://nmn.gl/webstiles',
       name: 'Webstiles In-Browser UI Prototyping',
       type: 'Tool',
       createdAt: '2013-01',
@@ -87,11 +69,38 @@ export default {
       shortDescription: '<strong>Award-winning touch typing game</strong> with animated keyboard visualization and pastel aesthetics. Helps users improve typing speed through engaging practice.'
     },
     {
+      key: 'aiindians',
+      isFeatured: false,
+      href: 'https://aiindians.org',
+      name: 'AI Startups in India',
+      type: 'AI',
+      createdAt: '2024-06',
+      isClosedSource: false,
+      color: 'rgb(59, 130, 246)',
+      description: `<p>Celebrating the AI developers & entrepreneurs</p>
+                   <p>& tracking their growth via a leaderboard</p>
+                   <p>Featuring 100+ newest AI startups of India</p>`,
+      shortDescription: '<strong>Directory & leaderboard tracking 100+ Indian AI startups</strong>, helping connect entrepreneurs with opportunities. Provides visibility and networking for emerging AI companies.'
+    },
+    {
+      key: 'kevin',
+      isFeatured: false,
+      href: 'https://nmn.gl/kevin',
+      name: 'Kevin: Open Source AI Software Engineer',
+      type: 'AI',
+      createdAt: '2024-03',
+      color: '#23c2bc',
+      description: `<p>It has been a dream of mine to create a bot that could write code for me <em>(so I could delegate the boilerplate and focus on the creative parts of programming)</em>.</p>
+                   <p>Seeing Devin made me realize that my teenage dream is close to becoming reality. For personal satisfaction, I embarked on making my own open-source interface.</p>
+                   <p>The name comes from the legendary phreaker and my childhood hero <strong>Kevin Mitnick</strong> and is a play on Cognition Labs&rsquo; product name.</p>`,
+      shortDescription: '<strong>Open-source AI coding assistant interface</strong> inspired by Devin, focused on automating boilerplate code generation. Increases developer productivity by handling repetitive tasks.'
+    },
+    {
       key: 'bandc',
       isFeatured: true,
       oldHref: 'https://vixra.org/pdf/1601.0302v1.pdf',
       href: 'https://nmn.gl/moo',
-      name: 'Bulls & Cows Solver Research',
+      name: 'Bulls & Cows Solver and Research',
       type: 'Research',
       createdAt: '2015-11',
       color: '#565e8e',

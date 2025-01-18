@@ -3,8 +3,8 @@
   Hero
   Testimonials
   About
-  Works
   Lab(:showOnlyFeatured="true")
+  Works
   Contact
   // ScrollAnimator
 </template>

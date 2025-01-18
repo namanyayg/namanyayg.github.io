@@ -9,7 +9,7 @@
         span
           span I build&nbsp;
           span
-            strong thoughtful apps
+            strong thoughtful products
             span.highlight
           span &nbsp;that 
         br
@@ -18,8 +18,9 @@
           span
             strong love to use
             span.highlight
-      h2.subtitle Trusted by <strong class="highlight">60+ international clients</strong> with <strong class="highlight">12+ years</strong> experience of making complex businesses simple
-      .social-cta
+      h2.subtitle Backed by <strong class="highlight">12+ years</strong> experience and trusted by <strong class="highlight">60+ international clients</strong> to make complex businesses simple
+      h2.subtitle I&rsquo;m now <strong class="highlight">enhancing developer productivity</strong> by building AI solutions
+      // .social-cta
         a.x-button(href="https://x.com/NamanyayG" target="_blank" rel="noopener") 
           span Connect on
           svg.x-icon(xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24")
