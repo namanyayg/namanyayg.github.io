@@ -46,7 +46,7 @@ export default {
     {
       key: 'indiasmile',
       isFeatured: true,
-      href: 'https://indiasmile.org',
+      href: 'https://indiasmile.github.io/',
       name: 'IndiaSmile COVID-19 Tracker & Stats',
       type: 'Tool',
       createdAt: '2020-06',
