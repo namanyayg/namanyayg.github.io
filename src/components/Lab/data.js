@@ -1,13 +1,23 @@
 export default {
   data: [
     {
+      key: 'giga',
+      isFeatured: true,
+      isClosedSource: true,
+      href: 'https://nmn.gl/blog/giga-intro',
+      name: 'Giga: AI Code Analyzer',
+      createdAt: '2025-01',
+      color: '#4041f4',
+      shortDescription: 'AI coding assistant that <strong>maintains deep understanding of your entire codebase</strong> and automates the boring parts of testing, debugging, and third party integrations built exclusively for the web stack.'
+    },
+    {
       key: 'air',
       isFeatured: true,
       href: 'https://air.nmn.gl/',
       name: 'Air Quality Impact & Visualizations',
       createdAt: '2024-11',
       color: '#0bb667',
-      shortDescription: 'Real-time air quality impact calculator that transforms complex AQI metrics into <strong>immediately understandable health consequences</strong>. Combines location-based AQI monitoring with <strong>medical research data</strong> to visualize permanent health damage, debunk pollution immunity myths, and drive awareness through shareable health insights'
+      shortDescription: 'Real-time air quality impact calculator that transforms complex AQI metrics into <strong>immediately understandable health consequences</strong>. Visualizes permanent health damage, debunk pollution immunity myths, and drives awareness through shareable health insights'
     },
     {
       key: 'trends-ai',
