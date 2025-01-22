@@ -11,7 +11,7 @@
       .about__intro(ref="about-intro")
         p Nothing excites me more than the <strong class="dyeus">act of creation</strong>, especially on the worldwide web.
 
-        p I discovered my passion for programming at the young age of <strong>14 years old</strong>.
+        p I discovered my passion for programming at the young age of <strong>13 years old</strong>.
 
         p Since high school, I've loved to code until late hours of the night. I started my own agency and worked on <span class="ayom">60+ consulting projects</span> for international clients.
 
