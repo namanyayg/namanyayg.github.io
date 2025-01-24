@@ -11,15 +11,13 @@
           span
             strong thoughtful products
             span.highlight
-          span &nbsp;that 
-        br
-        span
+          span that&nbsp;
           span people&nbsp;
           span
             strong love to use
             span.highlight
-      h2.subtitle Backed by <strong class="highlight">12+ years</strong> experience and trusted by <strong class="highlight">60+ international clients</strong> to make complex businesses simple
-      h2.subtitle I&rsquo;m now <strong class="highlight">enhancing developer productivity</strong> by building AI solutions
+      h2.subtitle Backed by <strong class="highlight">12+ years</strong> experience and trusted by 60+ international clients to make complex businesses simple
+      h2.subtitle I&rsquo;m now making <strong class="highlight">developers more productive</strong> with AI
       // .social-cta
         a.x-button(href="https://x.com/NamanyayG" target="_blank" rel="noopener") 
           span Connect on

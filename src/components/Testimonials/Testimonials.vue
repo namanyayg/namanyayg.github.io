@@ -305,7 +305,7 @@ export default {
       font-size 1.125em
 
   .testimonial-container
-    height 26em
+    height 30em
 
   .testimonial-nav-item
     font-size 0.875em

@@ -238,7 +238,7 @@ export default {
     font-size 4em
   .subtitle
     font-size 1em
-  .quote
+  .quote, .description
     font-size 1.25em
 
 @media (max-width 50em)
@@ -303,7 +303,7 @@ export default {
   .m-subtitle
     font-size 1em
 
-  .quote
+  .quote, .description
     font-size 1em
 
     p
