@@ -9,8 +9,9 @@
         span
           span I build&nbsp;
           span
-            strong thoughtful products
+            strong thoughtful&nbsp;products
             span.highlight
+          span &nbsp;
           span that&nbsp;
           span people&nbsp;
           span
