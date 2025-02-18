@@ -19,7 +19,7 @@ export default {
     role: ['UI/UX Design', 'Front-End Development'],
     subtitle: 'Simplifying ecommerce fulfillment for dropshippers',
     quote: {
-      content: `Namanyay is <strong>easy to work with</strong>, and has a <strong>great eye for UI/UX detail</strong>. He designed the site around our existing branding with clear, concise elements; and I couldn't be happier with the result. The contract initially was for just for design, but he also <strong>helped with completing the frontend</strong> when our original developer went missing.`,
+      content: `Namanyay is <strong>easy to work with</strong>, and has a <strong>great eye for UI/UX detail</strong>. He designed the site around our existing branding with clear, concise elements; and I couldn't be happier with the result. He also <strong>helped with completing the frontend</strong> when our original developer went missing.`,
       by: {
         name: 'John Green',
         post: 'Partner, Incrane Tech',
@@ -53,7 +53,7 @@ export default {
     role: ['UI/UX Design', 'Full-Stack Development'],
     subtitle: `Helping exemplary athletes succeed with collegiate recruiters`,
     quote: {
-      content: `Namanyay is an <strong>excellent full-stack developer</strong>. Hired him for a startup MVP, which he built in 2.5 months using Vue & Express. He makes <strong>great development decisions</strong> and wrote an <strong>extensible app</strong> that we could integrate with our sports statistics & blogging platforms. Highly recommended if you're looking for someone to build a quick MVP.`,
+      content: `Namanyay is an <strong>excellent full-stack developer</strong>. He makes <strong>great development decisions</strong> and wrote an <strong>extensible app</strong> that we could integrate with our existing platforms. Highly recommended if you're looking for someone to build a quick MVP.`,
       by: {
         name: 'Mitchell Bregman',
         post: 'ASA Recruiting',
