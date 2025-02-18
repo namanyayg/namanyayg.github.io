@@ -45,6 +45,9 @@ export default {
 .scene--set
   opacity 0
 
+.row
+  align-items center
+
 .colophon
   padding 4em 0
 

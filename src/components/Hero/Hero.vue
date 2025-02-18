@@ -251,11 +251,11 @@ export default {
 
 @media (max-width: 32.5em) {
    .masthead {
-    margin: 0 0 1em;
+    margin: 0 0 2em;
   }
 
   .hero__bottom {
-    padding-bottom: 3em;
+    padding-bottom: 4em;
   }
 
   .title {
