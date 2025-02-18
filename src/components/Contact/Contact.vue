@@ -22,6 +22,7 @@ export default {
   components: {
     LinkedinIcon,
     GithubIcon
+    // TwitterIcon
   }
 }
 </script>

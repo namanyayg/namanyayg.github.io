@@ -167,7 +167,7 @@ export default {
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 0.375rem;
+    bottom: 0.3rem;
     height: 0.375rem;
     transform: perspective(10);
     background: linear-gradient(45deg, darken($color--highlight, 10%), $color--highlight, darken($color--highlight, 20%));
@@ -250,6 +250,14 @@ export default {
 }
 
 @media (max-width: 32.5em) {
+   .masthead {
+    margin: 0 0 1em;
+  }
+
+  .hero__bottom {
+    padding-bottom: 3em;
+  }
+
   .title {
     font-size: 1.625em;
   }

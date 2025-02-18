@@ -1,10 +1,10 @@
 <template lang="pug">
 .page
   Hero
+  // Blog
   Testimonials
   About
   Lab(:showOnlyFeatured="true")
-  Blog
   Works
   Contact
   // ScrollAnimator

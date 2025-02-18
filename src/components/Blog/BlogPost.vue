@@ -1,12 +1,9 @@
 <template lang="pug">
 .blog-post
   .blog-post__content
-    .blog-post__image(v-if="data.image")
-      img(:src="data.image" :alt="data.title")
     .blog-post__text
       h2.blog-post__title
         a(:href="data.link" target="_blank") {{ data.title }}
-      p.blog-post__excerpt {{ data.excerpt }}
       .blog-post__meta
         .blog-post__date {{ formatDate(data.date) }}
         .blog-post__metrics
@@ -46,38 +43,27 @@ export default {
 @import '~@/styl/_variables'
 
 .blog-post
-  background rgba(255, 255, 255, 0.05)
-  border 1px solid $color--hero-bg--border
+  background white
+  border 1px solid rgba(0, 0, 0, 0.1)
   border-radius 8px
   overflow hidden
   transition transform 0.3s ease
 
   &:hover
     transform translateY(-4px)
+    box-shadow 0 4px 12px rgba(0, 0, 0, 0.1)
 
   &__content
-    padding 2em
-
-  &__image
-    margin -2em -2em 2em
-    img
-      width 100%
-      height 300px
-      object-fit cover
+    padding 1.5em
 
   &__title
-    font-size 1.75em
-    margin 0 0 0.5em
+    font-size 1.5em
+    margin 0 0 0.75em
     a
-      color $color--hero-title
+      color $color--body-text
       text-decoration none
       &:hover
         color $color--highlight
-
-  &__excerpt
-    color $color--hero-text
-    margin 0 0 1.5em
-    line-height 1.6
 
   &__meta
     display flex
@@ -86,7 +72,7 @@ export default {
     font-size 0.875em
 
   &__date
-    color $color--hero-text--light
+    color $color--subtitle-text
 
   &__metrics
     display flex
@@ -96,7 +82,7 @@ export default {
       display flex
       align-items center
       gap 0.5em
-      color $color--hero-text--light
+      color $color--subtitle-text
 
       i
         font-size 1.2em
@@ -104,8 +90,5 @@ export default {
 @media (max-width: 50em)
   .blog-post
     &__title
-      font-size 1.5em
-
-    &__image img
-      height 200px
+      font-size 1.25em
 </style> 

@@ -5,7 +5,7 @@
       .wrap
         header.header
           h1.title Testimonials
-          .subtitle Real feedback from real clients
+          .subtitle Feedback from worldwide clients
   .wrap
     .testimonial-container(
       @mouseenter="pauseAutoplay"
@@ -295,7 +295,7 @@ export default {
     padding 2em
 
   .quote
-    font-size 1.125em
+    font-size 1em
 
 @media (max-width: 30em)
   .header

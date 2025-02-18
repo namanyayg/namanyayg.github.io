@@ -53,9 +53,8 @@ export default {
 
 .page
   padding 4em 0 2em
-  background-color $color--hero-bg
-  background-image radial-gradient(circle at 25%, $color--hero-bg 10%, $color--hero-bg--dark)
-  color darken($color--hero-text, 10%)
+  background white
+  color $color--body-text
   font-weight 300
 
 .blog
@@ -69,14 +68,14 @@ export default {
   .title
     font-size 4em
     font-weight bold
-    color $color--hero-title
+    color $color--body-text
     margin 0
 
   .subtitle
     font-style italic
     font-size 1.5em
     font-weight 300
-    color $color--hero-subtitle
+    color $color--subtitle-text
 
   &__items
     display grid
@@ -86,7 +85,7 @@ export default {
   &__loading
     text-align center
     font-size 1.2em
-    color $color--hero-text--light
+    color $color--subtitle-text
 
 @media (max-width: 67.5em)
   .blog
