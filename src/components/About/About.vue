@@ -5,17 +5,14 @@
       .wrap
         header.header
           h1.title About
-          .subtitle My origins & where I am now
   .about
     .wrap
       .about__intro(ref="about-intro")
-        p Nothing excites me more than the <strong class="dyeus">act of creation</strong>, especially on the worldwide web.
+        p I discovered my passion for programming at the young age of <strong class="dyeus">13 years old</strong>.
+        
+        p With <span class="ai">over 12 years experience</span> in leading my agency, I have built apps used by millions of users.
 
-        p I discovered my passion for programming at the young age of <strong>13 years old</strong>.
-
-        p Since high school, I've loved to code until late hours of the night. I started my own agency and worked on <span class="ayom">60+ consulting projects</span> for international clients.
-
-        p With <span class="ai">over 10 years experience</span> in leading my agency, I have built performant apps used by millions of users.
+        p These days, I'm writing about AI and building the <strong class="ayom">future of software development</strong>.
 </template>
 
 <script>
@@ -28,7 +25,7 @@ export default {
 @import '~@/styl/_variables'
 
 .page
-  padding 4em 0 2em
+  padding 3em 0 1em
   background-color $color--hero-bg
   background-image radial-gradient(circle at 25%, $color--hero-bg 10%, $color--hero-bg--dark)
   color darken($color--hero-text, 10%)

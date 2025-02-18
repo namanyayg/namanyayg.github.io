@@ -7,18 +7,13 @@
       h2.subtitle.intro Hi, I&rsquo;m <strong class="highlight underlined">Namanyay</strong> 👋
       h1.title
         span
-          span I build&nbsp;
+          span I&nbsp;
           span
-            strong thoughtful&nbsp;products
+            strong write <span class="amp">&amp;</span> code
             span.highlight
           span &nbsp;
-          span that&nbsp;
-          span people&nbsp;
-          span
-            strong love to use
-            span.highlight
-      h2.subtitle Backed by <strong class="highlight">12+ years</strong> experience and trusted by 60+ international clients to make complex businesses simple
-      h2.subtitle I&rsquo;m now making <strong class="highlight">developers more productive</strong> with AI
+          span on the world wide web
+      h2.subtitle Backed by <strong class="highlight">12+ years</strong> of experience, I&rsquo;m now building the <strong class="highlight">future of software development</strong>
       // .social-cta
         a.x-button(href="https://x.com/NamanyayG" target="_blank" rel="noopener") 
           span Connect on
@@ -147,11 +142,11 @@ export default {
 }
 
 .hero__bottom {
-  padding-bottom: 10em;
+  padding-bottom: 8em;
 }
 
 .title {
-  margin: .5em 0;
+  margin: 0;
   font-weight: 300;
   font-size: 4em;
   color: $color--hero-text;
@@ -185,7 +180,10 @@ export default {
   font-size: 2em;
   color: $color--hero-subtitle;
   font-style: none;
+  line-height: 1.75;
   max-width: 30em;
+  margin: 1rem 0;
+  padding: 0;
 
   strong {
     font-weight: bold;
@@ -194,10 +192,6 @@ export default {
   .highlight {
     color: $color--hero-text;
   }
-}
-
-.intro {
-  font-size: 2.5em;
 }
 
 .amp {
@@ -227,11 +221,11 @@ export default {
 
 @media (max-width: 55em) {
   .masthead {
-    margin: 0 0 6em;
+    margin: 0 0 3em;
   }
 
   .hero__bottom {
-    padding-bottom: 9em;
+    padding-bottom: 6em;
   }
 
   .scroller {
