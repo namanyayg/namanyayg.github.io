@@ -5,10 +5,10 @@
         .col-md-9.col-2
           .logo-container
             .logo-container__inner
-              Logo(stroke="#193071").logo
+              Logo(stroke="#ffffff").logo
         .col-md-3.col-10.list.self
           p
-            strong With love by Namanyay Goel ⚡
+            strong With love by Namanyay ⚡
 </template>
 
 <script>
@@ -50,9 +50,11 @@ export default {
 
 .colophon
   padding 4em 0
+  background-color $color--hero-bg
+  color $color--hero-text
 
   a
-    color $color--subtitle-text
+    color $color--hero-text--light
 
     &:hover
       color $color--highlight

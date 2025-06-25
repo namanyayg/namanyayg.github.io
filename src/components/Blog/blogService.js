@@ -16,7 +16,12 @@ const parseMetrics = (entry) => {
 }
 
 const parseEntry = (entry) => {
-  const isFeatured = entry.getAttribute('meta:is_featured') === 'true'
+  const title = entry.getElementsByTagName('title')[0].textContent
+  const categoryElement = entry.getElementsByTagName('category')[0]
+  const isFeatured = categoryElement &&
+    categoryElement.getAttribute('term') === 'featured' &&
+    categoryElement.getAttribute('scheme') === 'http://namanyayg.com/post-types'
+  console.log(title, isFeatured, entry)
   if (!isFeatured) return null
 
   const mediaContent = entry.getElementsByTagName('media:content')[0]
@@ -35,20 +40,40 @@ const parseEntry = (entry) => {
 
 export async function fetchBlogPosts () {
   try {
-    const response = await fetch(RSS_URL)
-    const text = await response.text()
-    const parser = new DOMParser()
-    const xml = parser.parseFromString(text, 'text/xml')
-    const entries = xml.getElementsByTagName('entry')
-
-    const posts = Array.from(entries)
-      .map(parseEntry)
-      .filter(post => post !== null)
-      .slice(0, 3)
-
-    return posts
+    let allPosts = []
+    let page = 1
+    const maxPages = 10 // Safety limit to prevent infinite loops
+    
+    while (allPosts.length < 3 && page <= maxPages) {
+      const pageUrl = page === 1 ? RSS_URL : `${RSS_URL}?page=${page}`
+      const response = await fetch(pageUrl)
+      
+      if (!response.ok) {
+        console.warn(`Failed to fetch page ${page}`)
+        break
+      }
+  
+      const text = await response.text()
+      const parser = new DOMParser()
+      const xml = parser.parseFromString(text, 'text/xml')
+      const entries = xml.getElementsByTagName('entry')
+      
+      if (entries.length === 0) {
+        // No more entries available
+        break
+      }
+      
+      const pagePosts = Array.from(entries)
+        .map(parseEntry)
+        .filter(post => post !== null)
+      
+      allPosts = allPosts.concat(pagePosts)
+      page++
+    }
+    
+    return allPosts.slice(0, 3)
   } catch (error) {
     console.error('Error fetching blog posts:', error)
     return []
   }
-} 
+}

@@ -6,8 +6,8 @@
       nav.menu
         a.menu--item(href="https://nmn.gl/blog")
           span Blog
-        router-link.menu--item(to="/lab")
-          span Lab
+        a.menu--item(href="https://gigamind.dev")
+          span Giga
         a.menu--item(href="#contact" v-smooth-scroll)
           span Contact
 </template>

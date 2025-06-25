@@ -12,7 +12,7 @@
         
         p With <span class="ai">over 12 years experience</span> in leading my agency, I have built apps used by millions of users.
 
-        p These days, I'm writing about AI and building the <strong class="ayom">future of software development</strong>.
+        p These days, I'm writing about AI and building the <a class="ayom" href="https://gigamind.dev">future of software development</a>.
 </template>
 
 <script>
@@ -94,14 +94,18 @@ gradient-text($gradient, $bg = 'light') {
 
 .about {
   .ayom {
+    font-weight: 500;
+    text-decoration: none;
     gradient-text('linear-gradient(to right, rgba(24,138,141,1) 11.2%, rgba(96,221,142,1))', 'dark');
   }
 
   .dyeus {
+    font-weight: 500;
     gradient-text('linear-gradient(to left, rgba(246,191,13,1) 0%, rgb(255 104 104)  90%)', 'dark');
   }
 
   .ai {
+    font-weight: 500;
     gradient-text('linear-gradient(to right, #177800, #82b000)', 'dark');
   }
 }

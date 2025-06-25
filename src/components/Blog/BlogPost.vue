@@ -4,18 +4,6 @@
     .blog-post__text
       h2.blog-post__title
         a(:href="data.link" target="_blank") {{ data.title }}
-      .blog-post__meta
-        .blog-post__date {{ formatDate(data.date) }}
-        .blog-post__metrics
-          .metric(v-if="data.views")
-            i.fas.fa-eye
-            span {{ data.views }}
-          .metric(v-if="data.redditVotes")
-            i.fab.fa-reddit
-            span {{ data.redditVotes }}
-          .metric(v-if="data.hackernewsComments")
-            i.fab.fa-hacker-news
-            span {{ data.hackernewsComments }}
 </template>
 
 <script>
@@ -44,21 +32,22 @@ export default {
 
 .blog-post
   background white
-  border 1px solid rgba(0, 0, 0, 0.1)
+  border 1px solid rgba($color--subtitle-text, 0.2)
   border-radius 8px
   overflow hidden
-  transition transform 0.3s ease
+  transition all 0.5s ease-in-out
+  box-shadow 0 0 2px rgba($color--subtitle-text, 0)
 
   &:hover
     transform translateY(-4px)
-    box-shadow 0 4px 12px rgba(0, 0, 0, 0.1)
+    box-shadow 0 8px 10px rgba($color--subtitle-text, 0.15)
 
   &__content
     padding 1.5em
 
   &__title
     font-size 1.5em
-    margin 0 0 0.75em
+    margin 0
     a
       color $color--body-text
       text-decoration none
@@ -91,4 +80,4 @@ export default {
   .blog-post
     &__title
       font-size 1.25em
-</style> 
+</style>

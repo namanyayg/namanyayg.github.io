@@ -1,5 +1,5 @@
 <template lang="pug">
-#blog.blog.page
+#blog.blog.page(v-show="posts.length")
   .blog-intro
     .content
       .wrap
@@ -8,14 +8,12 @@
           .subtitle Latest thoughts on AI, startups, and life
   .blog
     .wrap
-      .blog__items(v-if="posts.length")
+      .blog__items
         BlogPost(
           v-for="post in posts"
           :key="post.id"
           :data="post"
         ).blog-item
-      .blog__loading(v-else)
-        p Loading latest posts...
 </template>
 
 <script>
@@ -36,6 +34,7 @@ export default {
     async loadPosts () {
       try {
         this.posts = await fetchBlogPosts()
+        console.log(this.posts)
       } catch (error) {
         console.error('Error loading blog posts:', error)
         this.posts = []
@@ -52,7 +51,7 @@ export default {
 @import '~@/styl/_variables'
 
 .page
-  padding 4em 0 2em
+  padding 4em 0
   background white
   color $color--body-text
   font-weight 300

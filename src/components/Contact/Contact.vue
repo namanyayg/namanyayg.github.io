@@ -3,8 +3,8 @@
     .contact
       .wrap
         .persp
-          .title Contact
-              //- a.icon(href="https://x.com/NamanyayG")
+          .title
+              a.icon(href="https://x.com/NamanyayG")
                 TwitterIcon
               a.icon(href="https://www.linkedin.com/in/namanyayg/")
                 LinkedinIcon
@@ -15,14 +15,14 @@
 <script>
 import LinkedinIcon from '../Icons/LinkedinIcon.vue'
 import GithubIcon from '../Icons/GithubIcon.vue'
-// import TwitterIcon from '../Icons/TwitterIcon.vue'
+import TwitterIcon from '../Icons/TwitterIcon.vue'
 
 export default {
   name: 'Contact',
   components: {
     LinkedinIcon,
-    GithubIcon
-    // TwitterIcon
+    GithubIcon,
+    TwitterIcon
   }
 }
 </script>
@@ -34,29 +34,31 @@ export default {
   opacity 0
 
 .page
-  padding 10em 0
-  background-color $color--hero-bg
-  background-image radial-gradient(circle at 25%, $color--hero-bg 10%, $color--hero-bg--dark)
-  color $color--hero-text--light
+  padding 4em
+  background-color $color--work-bg
+  background-image radial-gradient(circle at 25%, $color--work-bg 10%, lighten($color--work-bg, 5%))
+  color $color--body-text
 
 .title
   text-align center
+  margin 0 !important
 
 a
   font-weight 700
-  color white
+  color $color--title-text
 
   &:hover
     color $color--highlight
 
 .icon
-  color white
+  color $color--title-text
   line-height 1
   svg
     transition all .3s ease
     width .875em
-    margin-left 3vw
+    margin-left 5vw
     transform translateY(.5rem)
+    fill $color--title-text
   &:hover
     svg
       fill $color--highlight
@@ -66,8 +68,8 @@ a
   padding 1.5em 2em
   box-sizing border-box
   font-weight 300
-  background $color--alt
-  color rgba(white, .8)
+  background lighten($color--body-text, 50%)
+  color $color--body-text
   position absolute
   top 0
   left 15px
@@ -78,7 +80,7 @@ a
 
   strong
     font-weight 400
-    color white
+    color $color--title-text
 
   p
     margin 0
@@ -100,7 +102,7 @@ a
   font-size 4em
   font-weight 700
   margin 0 0 1em
-  color $color--hero-title
+  color $color--title-text
   transform-origin center bottom
 
 .content
@@ -108,13 +110,13 @@ a
   font-weight 300
 
 .control .element
-  background darken($color--hero-bg--dark, 25%)
+  background lighten($color--body-text, 70%)
 
 .foci
-  background lighten($color--hero-bg, 10%)
+  background lighten($color--work-bg, 5%)
 
 input, textarea, select
-  color $color--hero-text--light
+  color $color--body-text
 
 .button-container
   display flex
