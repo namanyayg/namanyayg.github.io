@@ -1,9 +1,8 @@
 <template lang="pug">
-.blog-post
+a.blog-post(:href="data.link" target="_blank") 
   .blog-post__content
     .blog-post__text
-      h2.blog-post__title
-        a(:href="data.link" target="_blank") {{ data.title }}
+      h2.blog-post__title {{ data.title }}
 </template>
 
 <script>
@@ -37,10 +36,14 @@ export default {
   overflow hidden
   transition all 0.5s ease-in-out
   box-shadow 0 0 2px rgba($color--subtitle-text, 0)
+  color $color--body-text
+  text-decoration none
+  display block
 
   &:hover
     transform translateY(-4px)
     box-shadow 0 8px 10px rgba($color--subtitle-text, 0.15)
+    color $color--highlight
 
   &__content
     padding 1.5em
@@ -48,11 +51,7 @@ export default {
   &__title
     font-size 1.5em
     margin 0
-    a
-      color $color--body-text
-      text-decoration none
-      &:hover
-        color $color--highlight
+    color inherit
 
   &__meta
     display flex

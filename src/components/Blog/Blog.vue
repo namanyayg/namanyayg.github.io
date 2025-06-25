@@ -1,5 +1,6 @@
 <template lang="pug">
-#blog.blog.page(v-show="posts.length")
+#blog.blog.page
+  .container(v-show="posts.length")
   .blog-intro
     .content
       .wrap
