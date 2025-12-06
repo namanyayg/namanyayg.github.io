@@ -1,77 +1,73 @@
 const RSS_URL = 'https://nmn.gl/blog/feed.xml'
 
-const parseMetrics = (entry) => {
-  const metrics = entry.getElementsByTagName('social:metrics')[0]
-  if (!metrics) return {}
-
-  const viewsElement = metrics.getElementsByTagName('social:views')[0]
-  const redditElement = metrics.getElementsByTagName('social:reddit')[0]
-  const hackernewsElement = metrics.getElementsByTagName('social:hackernews')[0]
-
-  return {
-    views: viewsElement && viewsElement.textContent,
-    redditVotes: redditElement && redditElement.textContent,
-    hackernewsComments: hackernewsElement && hackernewsElement.textContent
+// Stats for featured posts (only show stats for posts that have impressive metrics)
+const POST_STATS = {
+  'greatness': {
+    // No stats - this is a personal story article
+  },
+  'ai-understand-senior-developer': {
+    views: '500000',
+    redditVotes: '3500',
+    hackernewsComments: '100'
+  },
+  'ai-illiterate-programmers': {
+    views: '1250000',
+    redditVotes: '3500',
+    hackernewsComments: '100'
   }
 }
 
-const parseEntry = (entry) => {
-  const title = entry.getElementsByTagName('title')[0].textContent
-  const categoryElement = entry.getElementsByTagName('category')[0]
-  const isFeatured = categoryElement &&
-    categoryElement.getAttribute('term') === 'featured' &&
-    categoryElement.getAttribute('scheme') === 'http://namanyayg.com/post-types'
-  console.log(title, isFeatured, entry)
-  if (!isFeatured) return null
+const getPostStats = (postId) => {
+  // Extract slug from post ID (e.g., "https://nmn.gl/blog/vibe-coding-gambling" -> "vibe-coding-gambling")
+  const slug = postId.split('/').pop()
+  return POST_STATS[slug] || {}
+}
 
+const parseEntry = (entry) => {
   const mediaContent = entry.getElementsByTagName('media:content')[0]
   const imageUrl = mediaContent ? mediaContent.getAttribute('url') : null
+  const postId = entry.getElementsByTagName('id')[0].textContent
 
   return {
-    id: entry.getElementsByTagName('id')[0].textContent,
+    id: postId,
     title: entry.getElementsByTagName('title')[0].textContent,
     link: entry.getElementsByTagName('link')[0].getAttribute('href'),
     date: entry.getElementsByTagName('published')[0].textContent,
     excerpt: entry.getElementsByTagName('summary')[0].textContent,
     image: imageUrl,
-    ...parseMetrics(entry)
+    ...getPostStats(postId)
   }
 }
 
 export async function fetchBlogPosts () {
   try {
-    let allPosts = []
-    let page = 1
-    const maxPages = 10 // Safety limit to prevent infinite loops
+    const response = await fetch(RSS_URL)
     
-    while (allPosts.length < 3 && page <= maxPages) {
-      const pageUrl = page === 1 ? RSS_URL : `${RSS_URL}?page=${page}`
-      const response = await fetch(pageUrl)
-      
-      if (!response.ok) {
-        console.warn(`Failed to fetch page ${page}`)
-        break
-      }
-  
-      const text = await response.text()
-      const parser = new DOMParser()
-      const xml = parser.parseFromString(text, 'text/xml')
-      const entries = xml.getElementsByTagName('entry')
-      
-      if (entries.length === 0) {
-        // No more entries available
-        break
-      }
-      
-      const pagePosts = Array.from(entries)
-        .map(parseEntry)
-        .filter(post => post !== null)
-      
-      allPosts = allPosts.concat(pagePosts)
-      page++
+    if (!response.ok) {
+      console.warn('Failed to fetch blog posts')
+      return []
     }
+
+    const text = await response.text()
+    const parser = new DOMParser()
+    const xml = parser.parseFromString(text, 'text/xml')
+    const entries = xml.getElementsByTagName('entry')
     
-    return allPosts.slice(0, 3)
+    const posts = Array.from(entries)
+      .map(parseEntry)
+      .filter(post => {
+        // Only show posts that have stats defined
+        const slug = post.id.split('/').pop()
+        return POST_STATS[slug] !== undefined
+      })
+    
+    // Custom ordering: ai-illiterate-programmers, greatness (center), ai-understand-senior-developer
+    const desiredOrder = ['ai-illiterate-programmers', 'greatness', 'ai-understand-senior-developer']
+    const orderedPosts = desiredOrder
+      .map(slug => posts.find(post => post.id.includes(slug)))
+      .filter(Boolean)
+    
+    return orderedPosts
   } catch (error) {
     console.error('Error fetching blog posts:', error)
     return []

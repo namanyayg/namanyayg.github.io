@@ -15,6 +15,8 @@
           :key="post.id"
           :data="post"
         ).blog-item
+      .blog__view-more
+        a.blog__button(href="https://nmn.gl/blog" target="_blank") read blog →
 </template>
 
 <script>
@@ -79,13 +81,37 @@ export default {
 
   &__items
     display grid
-    grid-template-columns repeat(auto-fit, minmax(300px, 1fr))
+    grid-template-columns repeat(auto-fit, minmax(350px, 1fr))
     gap 2em
+    margin 0 auto
 
   &__loading
     text-align center
     font-size 1.2em
     color $color--subtitle-text
+
+  &__view-more
+    text-align center
+    margin 3em 0 0
+
+  &__button
+    display inline-block
+    padding 0.875em 2em
+    font-size 1.125em
+    font-weight 500
+    color $color--body-text
+    text-decoration none
+    border 2px solid rgba($color--subtitle-text, 0.25)
+    border-radius 8px
+    transition all 0.3s ease
+    background white
+
+    &:hover
+      background $color--highlight
+      border-color $color--highlight
+      color white
+      transform translateY(-2px)
+      box-shadow 0 4px 12px rgba($color--highlight, 0.3)
 
 @media (max-width: 67.5em)
   .blog
@@ -119,8 +145,25 @@ export default {
   .subtitle
     font-size 1em
 
+  .blog
+    &__items
+      grid-template-columns 1fr
+      gap 2em
+
+    &__button
+      font-size 1em
+      padding 0.75em 1.75em
+
 @media (max-width: 32.5em)
-  .blog .title
-    font-size 2.5em
-    margin 1em 0 0
+  .blog
+    .title
+      font-size 2.5em
+      margin 1em 0 0
+
+    &__view-more
+      margin 2.5em 0 0
+
+    &__button
+      font-size 0.95em
+      padding 0.7em 1.5em
 </style> 
