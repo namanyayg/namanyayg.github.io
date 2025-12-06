@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import Landing from '@/components/Landing'
 import Physics from '@/components/Physics/Physics'
 import LabPage from '@/components/Lab/LabPage'
+import MediaGallery from '@/components/Media/MediaGallery'
 
 Vue.use(Router)
 
@@ -21,6 +22,10 @@ export default new Router({
     {
       path: '/lab',
       component: LabPage
+    },
+    {
+      path: '/media',
+      component: MediaGallery
     }
   ],
   scrollBehavior (to, from, savedPosition) {
