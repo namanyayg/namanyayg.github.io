@@ -8,9 +8,9 @@
   .about
     .wrap
       .about__intro(ref="about-intro")
-        p I joined <a class="ai" href="https://gigamind.dev">GigaMind</a> as the CEO in mid September, 2025. We help <span class="ai">large, complex codebases</span> work more efficiently with AI, ushering a new future for software development.
+        p I joined <a class="ai" href="https://gigamind.dev">GigaMind</a> as the CEO in mid September, 2025. We help large, complex codebases work more efficiently with AI, ushering a new future for software development. We <a class="ai" href="https://gigamind.dev/blog/giga-preseed-fundraise">raised our preseed</a> in San Francisco and are growing fast.
 
-        p I also <a href="https://nmn.gl/blog" class="ayom">write about AI often</a>. My articles garnered over four million views in 2025 and I was featured in the New York Times, Futurism, Inc. Magazine, and many more.
+        p I also <a href="https://nmn.gl/blog" class="ayom" style="text-decoration: underline">write about AI often</a>. My articles garnered over four million views in 2025 and I was featured in the New York Times, Futurism, Inc. Magazine, and many more.
 
         p I discovered my passion for programming at the young age of <strong class="dyeus">13 years old</strong>. With over 15 years experience in building, I have built apps used by millions of users.
 </template>
