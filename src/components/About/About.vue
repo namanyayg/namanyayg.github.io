@@ -8,11 +8,13 @@
   .about
     .wrap
       .about__intro(ref="about-intro")
+        p I joined <a class="ayom" href="https://gigamind.dev">GigaMind</a> as the CEO in <strong class="dyeus">mid September</strong>, 2025. We help <span class="ai">large, complex codebases</span> work more efficiently with AI, building the future of software development.
+
+        p These days, I'm writing about AI and building tools that help developers work more efficiently.
+
         p I discovered my passion for programming at the young age of <strong class="dyeus">13 years old</strong>.
         
         p With <span class="ai">over 12 years experience</span> in leading my agency, I have built apps used by millions of users.
-
-        p These days, I'm writing about AI and building the <a class="ayom" href="https://gigamind.dev">future of software development</a>.
 </template>
 
 <script>
