@@ -11,7 +11,7 @@
             span Namanyay
             span.highlight
         h2.subtitle 
-          .subtitle__xl Startup founder <span class="amp">&</span> writer. 
+          .subtitle__xl Technology entrepreneur, founder, <span class="amp">&</span> writer. 
           div Unlocking the next generation of human creativity&nbsp;at&nbsp;
             a(href="https://gigamind.dev" target="_blank" rel="noopener noreferrer") Giga AI
       .hero__image
