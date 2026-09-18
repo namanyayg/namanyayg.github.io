@@ -6,7 +6,7 @@ module.exports = function addPrerender(webpackConfig) {
   webpackConfig.plugins.push(
     new PrerenderSPAPlugin({
       staticDir: path.join(__dirname, '../dist'),
-      routes: ['/', '/physics', '/lab', '/media'],
+      routes: ['/', '/physics', '/lab', '/media', '/press', '/press-kit'],
       renderer: new Renderer({
         renderAfterDocumentEvent: 'render-event'
       })

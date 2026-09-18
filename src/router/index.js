@@ -4,6 +4,8 @@ import Landing from '@/components/Landing'
 import Physics from '@/components/Physics/Physics'
 import LabPage from '@/components/Lab/LabPage'
 import MediaGallery from '@/components/Media/MediaGallery'
+import PressPage from '@/components/Press/PressPage'
+import PressKit from '@/components/Press/PressKit'
 
 Vue.use(Router)
 
@@ -26,6 +28,14 @@ export default new Router({
     {
       path: '/media',
       component: MediaGallery
+    },
+    {
+      path: '/press',
+      component: PressPage
+    },
+    {
+      path: '/press-kit',
+      component: PressKit
     }
   ],
   scrollBehavior (to, from, savedPosition) {

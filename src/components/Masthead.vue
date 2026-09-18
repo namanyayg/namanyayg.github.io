@@ -6,8 +6,10 @@
       nav.menu
         a.menu--item(href="https://nmn.gl/blog")
           span Blog
-        a.menu--item(href="https://gigamind.dev")
-          span Giga
+        router-link.menu--item(to="/press")
+          span Press
+        a.menu--item(href="https://gigacatalyst.com")
+          span Gigacatalyst
         a.menu--item(href="#contact" v-smooth-scroll)
           span Contact
 </template>
@@ -62,7 +64,7 @@ export default {
         delay: 0.75
       })
 
-      ;[1, 2].map(i => {
+      ;[1, 2, 3].map(i => {
         TweenLite.from($(`.menu--item:nth-child(${i}) span`), 1, {
           y: -60,
           ease: Elastic.easeOut.config(1, 0.9),

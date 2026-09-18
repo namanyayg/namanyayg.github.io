@@ -2,6 +2,7 @@
 .page
   Hero
   Blog
+  PressStrip
   About
   Contact
   // ScrollAnimator
@@ -10,6 +11,7 @@
 <script>
 import Hero from './Hero/Hero'
 import Blog from './Blog/Blog'
+import PressStrip from './Press/PressStrip'
 import About from './About/About'
 import Contact from './Contact/Contact'
 // Scroll Animator handles all scroll functionality
@@ -21,6 +23,7 @@ export default {
   components: {
     Hero,
     Blog,
+    PressStrip,
     About,
     Contact
     // ScrollAnimator
