@@ -91,17 +91,12 @@ export default {
   border 1px solid rgba($color--subtitle-text, 0.15)
   border-radius 12px
   overflow hidden
-  transition all 0.3s ease
+  transition transform .3s ease, box-shadow .3s ease, border-color .3s ease
   box-shadow 0 2px 8px rgba($color--subtitle-text, 0.08)
   color $color--body-text
   text-decoration none
   display flex
   flex-direction column
-
-  &:hover
-    transform translateY(-4px)
-    box-shadow 0 8px 24px rgba($color--subtitle-text, 0.12)
-    border-color rgba($color--subtitle-text, 0.25)
 
   &__image-wrapper
     position relative
@@ -115,6 +110,7 @@ export default {
     height 100%
     object-fit cover
     display block
+    transition transform .5s ease
 
   &__metrics
     position absolute
@@ -127,6 +123,7 @@ export default {
     background linear-gradient(to top, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.3) 80%, transparent)
     color white
     font-size 0.9em
+    font-family $font--sans
     font-weight 400
 
     .metric
@@ -199,12 +196,14 @@ export default {
     flex 1
 
   &__author-name
+    font-family $font--sans
     font-weight 600
     color $color--title-text
     margin-bottom 0.125em
     font-size 0.95em
 
   &__date
+    font-family $font--sans
     font-size 0.875em
     color $color--subtitle-text
     font-weight 400
@@ -238,4 +237,13 @@ export default {
         svg
           width 14px
           height 14px
+
+@media (hover: hover)
+  .blog-post:hover
+    transform translateY(-4px)
+    box-shadow 0 8px 24px rgba($color--subtitle-text, 0.12)
+    border-color rgba($color--subtitle-text, 0.25)
+
+    .blog-post__image
+      transform scale(1.03)
 </style>

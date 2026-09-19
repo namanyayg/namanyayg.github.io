@@ -4,11 +4,11 @@
       .wrap
         .persp
           .title
-              a.icon(href="https://x.com/NamanyayG")
+              a.icon(href="https://x.com/NamanyayG" target="_blank" rel="noopener noreferrer")
                 TwitterIcon
-              a.icon(href="https://www.linkedin.com/in/namanyayg/")
+              a.icon(href="https://www.linkedin.com/in/namanyayg/" target="_blank" rel="noopener noreferrer")
                 LinkedinIcon
-              a.icon(href="https://github.com/namanyayg/")
+              a.icon(href="https://github.com/namanyayg/" target="_blank" rel="noopener noreferrer")
                 GithubIcon
 </template>
 
@@ -54,14 +54,15 @@ a
   color $color--title-text
   line-height 1
   svg
-    transition all .3s ease
     width .875em
-    margin-left 5vw
-    transform translateY(.5rem)
+    margin 0 1.25em
+    transform none
+    transition fill .2s ease, transform .2s ease
     fill $color--title-text
   &:hover
     svg
       fill $color--highlight
+      transform translateY(-2px)
 
 .thank-you
   font-size 1.25em

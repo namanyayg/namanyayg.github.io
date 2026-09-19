@@ -64,21 +64,4 @@ export default {
   }
 }
 
-.back-link {
-  text-align: center;
-  font-size: 1.5em;
-  margin: 1em 0 -1em;
-  display: block;
-  font-weight: bold;
-  text-decoration: none;
-  transition: color 0.3s ease;
-
-  > span {
-    border-bottom: 3px solid $color--highlight;
-  }
-
-  &:hover {
-    color: $color--highlight;
-  }
-}
 </style> 

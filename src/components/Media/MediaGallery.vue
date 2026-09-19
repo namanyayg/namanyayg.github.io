@@ -1,11 +1,16 @@
 <template lang="pug">
 #media.media-gallery
+  .masthead-container
+    Masthead(back="dark")
   .media-intro
-    .content
-      .wrap
-        header.header
-          h1.title Media Kit
-          .subtitle Namanyay&rsquo;s high-quality photographs for media usage
+    .wrap
+      router-link.back-link(to="/press-kit")
+        span
+          span.arrow ←
+          span.text Back to Press Kit
+      header.header
+        h1.title Media Kit
+        .subtitle Namanyay&rsquo;s high-quality photographs for media usage
   .media-content
     .wrap
       .media-grid
@@ -13,15 +18,17 @@
 </template>
 
 <script>
+import Masthead from '../Masthead'
 import MediaItem from './MediaItem.vue'
 import mediaData from './data.js'
 
 export default {
   name: 'MediaGallery',
   components: {
+    Masthead,
     MediaItem
   },
-  data() {
+  data () {
     return {
       mediaItems: mediaData
     }
@@ -30,6 +37,8 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
+@import '~@/styl/_variables'
+
 .media-gallery
   .header
     display flex
@@ -48,6 +57,15 @@ export default {
 
 .media-intro
   margin 0 0 3em
+  background $color--hero-bg--dark
+  color $color--hero-text
+  padding 2em 0 3em
+
+.media-intro .title
+  color $color--hero-title
+
+.media-intro .subtitle
+  color $color--hero-text--light
 
 .media-grid
   column-count 2
@@ -95,4 +113,3 @@ export default {
     font-size 2.5em
     margin 1em 0 0
 </style>
-

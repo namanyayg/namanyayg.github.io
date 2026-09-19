@@ -37,7 +37,6 @@ export default {
     async loadPosts () {
       try {
         this.posts = await fetchBlogPosts()
-        console.log(this.posts)
       } catch (error) {
         console.error('Error loading blog posts:', error)
         this.posts = []
@@ -81,7 +80,7 @@ export default {
 
   &__items
     display grid
-    grid-template-columns repeat(auto-fit, minmax(350px, 1fr))
+    grid-template-columns repeat(auto-fit, minmax(min(350px, 100%), 1fr))
     gap 2em
     margin 0 auto
 
@@ -103,7 +102,8 @@ export default {
     text-decoration none
     border 2px solid rgba($color--subtitle-text, 0.25)
     border-radius 8px
-    transition all 0.3s ease
+    font-family $font--sans
+    transition background-color .25s ease, color .25s ease, border-color .25s ease, transform .25s ease, box-shadow .25s ease
     background white
 
     &:hover

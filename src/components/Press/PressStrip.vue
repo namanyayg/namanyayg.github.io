@@ -78,13 +78,6 @@ export default {
   border 1px solid rgba($color--subtitle-text, 0.18)
   transition transform .3s ease, box-shadow .3s ease
 
-  &:hover
-    transform translateY(-4px)
-    box-shadow 0 12px 24px rgba(8, 15, 37, 0.1)
-
-    .shot img
-      transform scale(1.04)
-
 .shot
   position relative
   aspect-ratio 4 / 3
@@ -112,6 +105,7 @@ export default {
     bottom .8em
     color white
     font-size .8em
+    font-family $font--sans
     font-weight 700
     letter-spacing .5px
     text-transform uppercase
@@ -145,23 +139,33 @@ export default {
   text-decoration none
   border 2px solid rgba($color--subtitle-text, 0.25)
   border-radius 8px
-  transition all 0.3s ease
+  font-family $font--sans
+  transition background-color .25s ease, color .25s ease, border-color .25s ease, transform .25s ease, box-shadow .25s ease
   background white
-
-  &:hover
-    background $color--highlight
-    border-color $color--highlight
-    color white
-    transform translateY(-2px)
-    box-shadow 0 4px 12px rgba($color--highlight, 0.3)
 
 .press-strip__link
   font-weight 700
+  font-family $font--sans
   color $color--title-text
   text-decoration none
 
   &:hover
     color $color--highlight
+
+@media (hover: hover)
+  .logo-card:hover
+    transform translateY(-4px)
+    box-shadow 0 12px 24px rgba(8, 15, 37, 0.1)
+
+    .shot img
+      transform scale(1.04)
+
+  .press-strip__button:hover
+    background $color--highlight
+    border-color $color--highlight
+    color white
+    transform translateY(-2px)
+    box-shadow 0 4px 12px rgba($color--highlight, 0.3)
 
 @media (max-width: 67.5em)
   .header

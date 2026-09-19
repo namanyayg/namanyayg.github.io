@@ -138,20 +138,6 @@ export default {
     line-height 1.5
     margin 0
 
-.back-link
-  display inline-block
-  font-size 1.125em
-  font-weight bold
-  text-decoration none
-  color $color--hero-text
-  transition color .3s ease
-
-  > span
-    border-bottom 3px solid $color--highlight
-
-  &:hover
-    color $color--highlight
-
 .stats
   display grid
   grid-template-columns repeat(4, 1fr)
@@ -171,6 +157,7 @@ export default {
 
   &__label
     margin-top .5em
+    font-family $font--sans
     font-size .95em
     color $color--hero-text--light
 
@@ -193,11 +180,11 @@ export default {
 
 .grid
   display grid
-  grid-template-columns repeat(auto-fill, minmax(18em, 1fr))
+  grid-template-columns repeat(auto-fill, minmax(min(18em, 100%), 1fr))
   gap 1.5em
 
   &--featured
-    grid-template-columns repeat(auto-fill, minmax(24em, 1fr))
+    grid-template-columns repeat(auto-fill, minmax(min(24em, 100%), 1fr))
     gap 2em
 
 .filters
@@ -207,6 +194,7 @@ export default {
   margin 0 0 1.5em
 
 .filter
+  font-family $font--sans
   background white
   color $color--body-text
   border 1px solid rgba($color--subtitle-text, 0.3)
@@ -282,30 +270,23 @@ export default {
     min-width 15em
 
 .button
+  font-family $font--sans
   text-align center
   border-radius 8px
   padding .9em 1.5em
   font-size .95em
   letter-spacing 1px
   text-decoration none
-  transition all .3s ease
+  transition background-color .25s ease, color .25s ease, border-color .25s ease, transform .25s ease, box-shadow .25s ease
 
   &--primary
     background $color--highlight
     color white
 
-    &:hover
-      transform translateY(-2px)
-      box-shadow 0 6px 16px rgba($color--highlight, 0.35)
-
   &--ghost
     background rgba(255,255,255,0.06)
     color $color--hero-text
     border 2px solid rgba(255,255,255,0.18)
-
-    &:hover
-      transform translateY(-2px)
-      border-color $color--highlight
 
 .videos
   display grid
@@ -322,17 +303,12 @@ export default {
   border-radius 8px
   text-decoration none
   color $color--body-text
-  transition all .25s ease
-
-  &:hover
-    border-color $color--highlight
-    transform translateY(-2px)
-
-    .video__arrow
-      color $color--highlight
+  font-family $font--sans
+  transition border-color .25s ease, transform .25s ease, color .25s ease
 
   &__creator
     font-size .8em
+    font-family $font--sans
     letter-spacing .5px
     text-transform uppercase
     font-weight 700
@@ -344,6 +320,7 @@ export default {
     text-transform none
     letter-spacing 0
     color $color--subtitle-text
+    font-family $font--sans
 
   &__badge
     background $color--highlight
@@ -367,6 +344,23 @@ export default {
     font-weight 700
     font-size 1.25em
     color $color--title-text
+
+@media (hover: hover)
+  .button
+    &--primary:hover
+      transform translateY(-2px)
+      box-shadow 0 6px 16px rgba($color--highlight, 0.35)
+
+    &--ghost:hover
+      transform translateY(-2px)
+      border-color $color--highlight
+
+  .video:hover
+    border-color $color--highlight
+    transform translateY(-2px)
+
+    .video__arrow
+      color $color--highlight
 
 @media (max-width: 60em)
   .stats

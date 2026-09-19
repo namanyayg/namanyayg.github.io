@@ -161,13 +161,14 @@ export default {
   height 20em // Fixed height to prevent layout shifts
   cursor pointer
   
-  &:hover
+  .testimonial-content
+    transition transform 0.3s ease, box-shadow 0.3s ease
+
+@media (hover: hover)
+  .testimonial-container:hover
     .testimonial-content
       transform translateY(-2px)
       box-shadow 0 4px 12px rgba(0,0,0,0.1)
-      
-  .testimonial-content
-    transition transform 0.3s ease, box-shadow 0.3s ease
 
 .testimonial
   position absolute
@@ -245,7 +246,7 @@ export default {
   padding 0.5em 1em
   color $color--subtitle-text
   cursor pointer
-  transition all 0.3s ease
+  transition color .3s ease, transform .3s ease
   position relative
   
   &::after
@@ -256,7 +257,7 @@ export default {
     width 0
     height 2px
     background $color--highlight
-    transition all 0.3s ease
+    transition width .3s ease
     transform translateX(-50%)
   
   &:hover

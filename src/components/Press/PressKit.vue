@@ -204,50 +204,29 @@ export default {
     line-height 1.5
     margin 0
 
-.back-link
-  display inline-block
-  font-size 1.125em
-  font-weight bold
-  text-decoration none
-  color $color--hero-text
-  transition color .3s ease
-
-  > span
-    border-bottom 3px solid $color--highlight
-
-  &:hover
-    color $color--highlight
-
 .quick-actions
   display flex
   gap .75em
   flex-wrap wrap
 
 .button
+  font-family $font--sans
   text-align center
   border-radius 8px
   padding .9em 1.5em
   font-size .95em
   letter-spacing 1px
   text-decoration none
-  transition all .3s ease
+  transition background-color .25s ease, color .25s ease, border-color .25s ease, transform .25s ease, box-shadow .25s ease
 
   &--primary
     background $color--highlight
     color white
 
-    &:hover
-      transform translateY(-2px)
-      box-shadow 0 6px 16px rgba($color--highlight, 0.35)
-
   &--ghost
     background rgba(255,255,255,0.06)
     color $color--hero-text
     border 2px solid $color--hero-bg--border
-
-    &:hover
-      transform translateY(-2px)
-      border-color $color--highlight
 
 .kit-section
   padding 3.5em 0
@@ -366,10 +345,6 @@ export default {
       object-fit cover
       object-position top
 
-    &:hover
-      transform translateY(-4px)
-      box-shadow 0 12px 24px rgba(8, 15, 37, 0.1)
-
   &__meta
     display flex
     justify-content space-between
@@ -424,9 +399,6 @@ export default {
     border-radius 8px
     margin 0 0 .5em
     transition transform .3s ease
-
-  &:hover img
-    transform translateY(-4px)
 
 .kit-section--contact
   padding-bottom 4em !important
@@ -494,4 +466,21 @@ export default {
 
   .coverage, .photos
     grid-template-columns 1fr
+
+@media (hover: hover)
+  .button
+    &--primary:hover
+      transform translateY(-2px)
+      box-shadow 0 6px 16px rgba($color--highlight, 0.35)
+
+    &--ghost:hover
+      transform translateY(-2px)
+      border-color $color--highlight
+
+  .coverage__item:hover
+    transform translateY(-4px)
+    box-shadow 0 12px 24px rgba(8, 15, 37, 0.1)
+
+  .photo:hover img
+    transform translateY(-4px)
 </style>

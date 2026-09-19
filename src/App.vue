@@ -48,13 +48,18 @@ export default {
   margin 0 auto
 
 body
-  font-family Europa, Segoe UI, Avenir, Helvetica, monospace
+  font-family $font--serif
+  font-size 1.0625em
+  line-height 1.6
   color $color--body-text
   -webkit-font-smoothing antialiased
   -moz-osx-font-smoothing grayscale
 
 h1, h2, h3, h4, h5, h6
   color $color--title-text
+  font-family $font--serif
+  font-weight 600
+  letter-spacing -0.01em
 
 .masthead-container
   background $color--hero-bg--dark

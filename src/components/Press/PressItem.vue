@@ -52,17 +52,6 @@ export default {
   border 1px solid rgba($color--subtitle-text, 0.18)
   transition transform .3s ease, box-shadow .3s ease, border-color .3s ease
 
-  &:hover
-    transform translateY(-4px)
-    box-shadow 0 14px 28px rgba(8, 15, 37, 0.12)
-    border-color rgba($color--highlight, 0.6)
-
-    .thumb img
-      transform scale(1.04)
-
-    .read
-      color $color--highlight
-
 .thumb
   position relative
   aspect-ratio 16 / 10
@@ -83,6 +72,7 @@ export default {
     top .75em
     left .75em
     font-size .7em
+    font-family $font--sans
     letter-spacing 1.5px
     text-transform uppercase
     font-weight 700
@@ -99,6 +89,7 @@ export default {
 
 .meta
   font-size .8em
+  font-family $font--sans
   letter-spacing .5px
   text-transform uppercase
   color $color--subtitle-text
@@ -127,6 +118,7 @@ export default {
 
 .read
   margin-top auto
+  font-family $font--sans
   font-weight 700
   font-size .875em
   color $color--title-text
@@ -142,4 +134,16 @@ export default {
 @media (max-width: 50em)
   .press-item--large .headline
     font-size 1.25em
+
+@media (hover: hover)
+  .press-item:hover
+    transform translateY(-4px)
+    box-shadow 0 14px 28px rgba(8, 15, 37, 0.12)
+    border-color rgba($color--highlight, 0.6)
+
+    .thumb img
+      transform scale(1.04)
+
+    .read
+      color $color--highlight
 </style>

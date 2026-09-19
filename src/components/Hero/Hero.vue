@@ -72,13 +72,6 @@ export default {
         y: 20,
       });
 
-      TweenLite.from($(".hero__role"), 1, {
-        delay: 0.75,
-        ease: Power4.easeOut,
-        opacity: 0,
-        y: 20,
-      });
-
       TweenLite.from($(".hero__image"), 1.2, {
         delay: 0.5,
         ease: Power4.easeOut,
@@ -164,75 +157,34 @@ export default {
 .hero__image {
   flex: 1;
   max-width: 400px;
-  animation: float 8s ease-in-out infinite;
   
   .image-card {
     position: relative;
-    border-radius: 16px;
+    aspect-ratio: 4 / 5;
     overflow: hidden;
-    box-shadow: 
-      0 2px 4px rgba(0, 0, 0, 0.1),
-      0 8px 16px rgba(0, 0, 0, 0.15),
-      0 16px 32px rgba(0, 0, 0, 0.2),
-      inset 0 0 0 1px rgba(255, 255, 255, 0.05);
-    transform: perspective(1000px) rotateY(-1deg) rotateX(0.5deg);
-    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.02) 100%);
-    
-    &:before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, transparent 50%, rgba(0, 0, 0, 0.1) 100%);
-      z-index: 1;
-      opacity: 0.5;
-      transition: opacity 0.6s ease;
-    }
-    
-    &:hover {
-      transform: perspective(1000px) rotateY(0deg) rotateX(0deg) translateY(-4px);
-      box-shadow: 
-        0 4px 8px rgba(0, 0, 0, 0.15),
-        0 12px 24px rgba(0, 0, 0, 0.2),
-        0 20px 40px rgba(0, 0, 0, 0.25),
-        inset 0 0 0 1px rgba(255, 255, 255, 0.08);
-      
-      &:before {
-        opacity: 0.4;
-      }
-      
-      img {
-        transform: scale(1.0);
-      }
-    }
+    border-radius: 12px;
+    transition: transform .4s ease, box-shadow .4s ease;
+    box-shadow: 0 12px 32px rgba(0,0,0,.35), inset 0 0 0 1px rgba(255,255,255,.06);
   }
   
   img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
+    object-position: 60% 35%;
     display: block;
-    transform: scale(1.3);
-    transform-origin: 60% 35%;
-    transition: transform 0.6s cubic-bezier(0.23, 1, 0.32, 1);
-    position: relative;
+    transition: transform .6s cubic-bezier(0.23, 1, 0.32, 1);
   }
 }
 
-@keyframes float {
-  0%, 100% {
-    transform: translateY(0px) translateX(0px);
-  }
-  25% {
-    transform: translateY(-5px) translateX(2px);
-  }
-  50% {
-    transform: translateY(-3px) translateX(-2px);
-  }
-  75% {
-    transform: translateY(-7px) translateX(1px);
+@media (hover: hover) {
+  .image-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 40px rgba(0,0,0,.4), inset 0 0 0 1px rgba(255,255,255,.08);
+
+    img {
+      transform: scale(1.03);
+    }
   }
 }
 
@@ -251,7 +203,7 @@ export default {
 
 .title {
   margin: 0 0 0.5em 0;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 4em;
   color: $color--hero-text;
   line-height: 1.2;
@@ -259,7 +211,7 @@ export default {
   .name-wrapper {
     position: relative;
     display: inline-block;
-    font-weight: 700;
+    font-weight: 600;
   }
 
   .highlight {
@@ -274,7 +226,7 @@ export default {
 }
 
 .subtitle {
-  font-weight: 300;
+  font-weight: 400;
   font-size: 2em;
   color: $color--hero-subtitle;
   font-style: none;
@@ -283,7 +235,6 @@ export default {
   padding: 0;
 
   .amp {
-    font-family: 'adobe-caslon-pro';
     line-height: 1;
     font-style: italic;
   }
@@ -323,9 +274,6 @@ export default {
     font-size: 1.25em;
   }
 
-  .hero__role {
-    font-size: 1.25em;
-  }
 }
 
 @media (max-width: 62.5em) {
