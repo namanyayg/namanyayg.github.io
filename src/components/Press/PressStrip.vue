@@ -80,7 +80,7 @@ export default {
 
 .shot
   position relative
-  aspect-ratio 4 / 3
+  aspect-ratio 16 / 9
   overflow hidden
   background #eef1f7
 
@@ -120,6 +120,9 @@ export default {
   line-height 1.4
   height 2.8em
   overflow hidden
+  display -webkit-box
+  -webkit-line-clamp 2
+  -webkit-box-orient vertical
   color $color--body-text
 
 .actions

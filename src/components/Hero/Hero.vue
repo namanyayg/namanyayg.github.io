@@ -12,8 +12,8 @@
             span.highlight
         h2.subtitle 
           .subtitle__xl Technology entrepreneur, founder, <span class="amp">&</span> writer. 
-          div Helping founders find their first customers&nbsp;at&nbsp;
-            a(href="https://pumpgtm.com" target="_blank" rel="noopener noreferrer") PumpGTM
+          div Helping fast-moving startups scale and automate GTM&nbsp;at&nbsp;
+            a(href="https://pumpgtm.com" target="_blank" rel="noopener noreferrer") PumpGTM.com
       .hero__image
         .image-card
           img(src="/static/202507-namanyay-interview.jpeg" alt="Namanyay Goel")
