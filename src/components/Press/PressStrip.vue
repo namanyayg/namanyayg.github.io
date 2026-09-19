@@ -104,7 +104,7 @@ export default {
     right .9em
     bottom .8em
     color white
-    font-size .8em
+    font-size .95em
     font-family $font--sans
     font-weight 700
     letter-spacing .5px
@@ -114,9 +114,9 @@ export default {
     text-overflow ellipsis
 
 .headline
-  margin .8em .9em .95em
+  margin .9em 1em 1.1em
   padding 0
-  font-size .85em
+  font-size 1.125em
   line-height 1.4
   height 2.8em
   overflow hidden
