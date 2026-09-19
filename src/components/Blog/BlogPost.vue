@@ -118,7 +118,8 @@ export default {
     left 0
     right 0
     display flex
-    gap 2em
+    flex-wrap wrap
+    gap .5em 1.5em
     padding 1.25em 1.5em
     background linear-gradient(to top, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.3) 80%, transparent)
     color white

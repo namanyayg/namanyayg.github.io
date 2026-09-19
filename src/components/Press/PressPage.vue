@@ -323,7 +323,7 @@ export default {
     border-color $color--highlight
     color $color--title-text
 
-  &--active
+  &--active, &--active:hover
     background $color--title-text
     border-color $color--title-text
     color white

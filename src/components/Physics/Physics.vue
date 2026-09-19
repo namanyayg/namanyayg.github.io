@@ -46,6 +46,8 @@ export default {
     width: 100%;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 0 1.5em;
   }
 
   .title {
@@ -61,6 +63,20 @@ export default {
 
   &__item {
     margin: 0 0 4em;
+  }
+
+  @media (max-width: 40em) {
+    .header {
+      display: block;
+    }
+
+    .title {
+      font-size: 2.75em;
+    }
+
+    .subtitle {
+      font-size: 1.25em;
+    }
   }
 }
 
