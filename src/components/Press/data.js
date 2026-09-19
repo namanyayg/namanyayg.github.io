@@ -4,7 +4,7 @@ export const stats = [
   { value: '4M+', label: 'readers of my essays in 2025' },
   { value: '30+', label: 'outlets that covered my work' },
   { value: '8', label: 'YouTube creators, 4M+ combined subscribers' },
-  { value: 'YC S26', label: 'PumpGTM, backed by Y Combinator' }
+  { value: 'YC P26', label: 'PumpGTM, backed by Y Combinator', url: 'https://pumpgtm.com' }
 ]
 
 export const featured = ['nyt-hardfork', 'inc-young-coders', 'futurism', 'register', 'marketplace-2026', 'sftrou-823']

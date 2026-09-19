@@ -64,8 +64,8 @@ export default {
 
 .logos
   display grid
-  grid-template-columns repeat(6, 1fr)
-  gap 1.25em
+  grid-template-columns repeat(3, 1fr)
+  gap 1.5em
 
 .logo-card
   display flex
@@ -176,9 +176,6 @@ export default {
     text-align left
     font-size 1.25em
     margin-top .5em
-
-  .logos
-    grid-template-columns repeat(3, 1fr)
 
 @media (max-width: 50em)
   .title

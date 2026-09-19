@@ -16,7 +16,7 @@
           | Inc., Futurism, The Register, and Marketplace. This page has the essays, the coverage, quotes you can use,
           | and how to reach me.
       .stats
-        .stat(v-for="s in stats" :key="s.label")
+        component.stat(v-for="s in stats" :key="s.label" :is="s.url ? 'a' : 'div'" :href="s.url" :target="s.url ? '_blank' : null" :rel="s.url ? 'noopener noreferrer' : null" :class="{ 'stat--link': s.url }")
           .stat__value {{ s.value }}
           .stat__label {{ s.label }}
 
@@ -49,7 +49,7 @@
           h2 Writing a story? Recording an episode?
           p
             | I'm happy to talk about what AI is doing to junior developers and the craft of programming, vibe coding and the bill it leaves behind, why B2B SaaS is under pressure, and what it's like to build a company as a solo founder in Y Combinator. I'm building PumpGTM, an AI agent that finds buyers and runs outreach for founders.
-          p.small I reply to press requests within one business day. Based in San Francisco, available on Pacific hours and happy to record remotely.
+          p.small Based in San Francisco, available on Pacific hours and happy to record remotely.
         .contact-card__actions
           a.button.button--primary(:href="pressMailto") Email me for press
           router-link.button.button--ghost(to="/press-kit") Press kit &amp; bio
@@ -58,7 +58,7 @@
   section.press-section.press-section--quotes
     .wrap
       h2.section-title Quotable
-      p.section-lede Cleared for use with attribution to Namanyay Goel. For anything longer, email me and I'll reply the same day.
+      p.section-lede Cleared for use with attribution to Namanyay Goel. For longer conversations, email me.
       .quotes
         blockquote.quote(v-for="q in quotes" :key="q.text")
           p.quote__text “{{ q.text }}”
@@ -174,6 +174,13 @@ export default {
   border 1px solid $color--hero-bg--border
   border-radius 8px
   background rgba(255, 255, 255, 0.03)
+  text-decoration none
+  color inherit
+  transition border-color .25s ease, background-color .25s ease
+
+  &--link:hover
+    border-color $color--highlight
+    background rgba(255, 255, 255, 0.06)
 
   &__value
     font-size 2.25em
@@ -391,11 +398,11 @@ export default {
   text-decoration none
   transition background-color .25s ease, color .25s ease, border-color .25s ease, transform .25s ease, box-shadow .25s ease
 
-  &--primary
+  &--primary, &--primary:hover
     background $color--highlight
-    color white
+    color $color--hero-bg--dark
 
-  &--ghost
+  &--ghost, &--ghost:hover
     background rgba(255,255,255,0.06)
     color $color--hero-text
     border 2px solid rgba(255,255,255,0.18)

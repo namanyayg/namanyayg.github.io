@@ -55,31 +55,58 @@ export default {
     display: flex
     justify-content: space-between
 
+gradient-text($gradient, $bg = 'light') {
+  @supports (mix-blend-mode: lighten) {
+    display: inline-block;
+    position: relative;
+
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: unquote($gradient);
+      pointer-events: none;
+    }
+
+    if ($bg == 'light') {
+      color: #000;
+      background: #fff;
+      mix-blend-mode: multiply;
+
+      &::before {
+        mix-blend-mode: screen;
+      }
+    } else {
+      color: #fff;
+      background: #000;
+      mix-blend-mode: lighten;
+
+      &::before {
+        mix-blend-mode: multiply;
+      }
+    }
+  }
+}
+
 .about {
   .ayom {
     font-weight: 500;
     text-decoration: none;
-    color: $color--highlight;
-    border-bottom: 1px solid rgba($color--highlight, .4);
-    transition: border-color .2s ease;
+    gradient-text('linear-gradient(to right, rgba(24,138,141,1) 11.2%, rgba(96,221,142,1))', 'dark');
   }
 
   .dyeus {
     font-weight: 500;
-    color: $color--highlight;
-    border-bottom: 1px solid rgba($color--highlight, .4);
-    transition: border-color .2s ease;
+    gradient-text('linear-gradient(to left, rgba(246,191,13,1) 0%, rgb(255 104 104)  90%)', 'dark');
   }
 
   .ai {
     font-weight: 500;
-    color: $color--highlight;
-    border-bottom: 1px solid rgba($color--highlight, .4);
-    transition: border-color .2s ease;
-  }
-
-  .ayom:hover, .dyeus:hover, .ai:hover {
-    border-bottom-color: $color--highlight;
+    gradient-text('linear-gradient(to right, #177800, #82b000)', 'dark');
   }
 }
 

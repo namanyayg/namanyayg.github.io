@@ -59,7 +59,7 @@
     .wrap
       h2.section-title Fast facts
       .facts
-        .fact(v-for="f in facts" :key="f.label")
+        component.fact(v-for="f in facts" :key="f.label" :is="f.url ? 'a' : 'div'" :href="f.url" :target="f.url ? '_blank' : null" :rel="f.url ? 'noopener noreferrer' : null" :class="{ 'fact--link': f.url }")
           .fact__value {{ f.value }}
           .fact__label {{ f.label }}
 
@@ -113,7 +113,7 @@
             |  · LinkedIn
             | &nbsp;
             a(href="https://www.linkedin.com/in/namanyayg/" target="_blank" rel="noopener") /in/namanyayg
-          p.small San Francisco, CA · Pacific time · remote recording is fine · I reply within one business day.
+          p.small San Francisco, CA · Pacific time · remote recording is fine.
         a.button.button--primary(:href="mailto") Email Namanyay
 </template>
 
@@ -133,7 +133,7 @@ export default {
         { value: '13', label: 'age I started programming' },
         { value: '14', label: 'age of my first developer job' },
         { value: '5M+', label: 'visitors to IndiaSmile during COVID' },
-        { value: 'YC S26', label: 'PumpGTM, Y Combinator' },
+        { value: 'YC P26', label: 'PumpGTM, Y Combinator', url: 'https://pumpgtm.com' },
         { value: '30+', label: 'outlets that covered my work' },
         { value: '2', label: 'journal editorial boards' },
         { value: '1', label: 'registered utility model (DPMA, 2026)' }
@@ -233,8 +233,11 @@ export default {
 .kit-section
   padding 3.5em 0
 
-  & + &
+  & + &:not(.kit-section--facts)
     padding-top 0
+
+.kit-section--facts + .kit-section
+  padding-top 3.5em !important
 
 .section-title
   font-size 1.75em
@@ -269,6 +272,12 @@ export default {
   border 1px solid rgba($color--subtitle-text, 0.18)
   border-radius 8px
   padding 1.25em 1.5em
+  display block
+  text-decoration none
+  transition border-color .25s ease
+
+  &--link:hover
+    border-color $color--highlight
 
   &__value
     font-size 2em
