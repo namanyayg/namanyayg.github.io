@@ -80,7 +80,7 @@ export default {
 
   &__items
     display grid
-    grid-template-columns repeat(auto-fit, minmax(min(350px, 100%), 1fr))
+    grid-template-columns repeat(auto-fit, minmax(unquote("min(350px, 100%)"), 1fr))
     gap 2em
     margin 0 auto
 
@@ -166,4 +166,4 @@ export default {
     &__button
       font-size 0.95em
       padding 0.7em 1.5em
-</style> 
+</style>

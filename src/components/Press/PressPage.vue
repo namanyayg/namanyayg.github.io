@@ -180,11 +180,11 @@ export default {
 
 .grid
   display grid
-  grid-template-columns repeat(auto-fill, minmax(min(18em, 100%), 1fr))
+  grid-template-columns repeat(auto-fill, minmax(unquote("min(18em, 100%)"), 1fr))
   gap 1.5em
 
   &--featured
-    grid-template-columns repeat(auto-fill, minmax(min(24em, 100%), 1fr))
+    grid-template-columns repeat(auto-fill, minmax(unquote("min(24em, 100%)"), 1fr))
     gap 2em
 
 .filters

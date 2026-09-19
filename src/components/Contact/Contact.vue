@@ -55,7 +55,7 @@ a
   line-height 1
   svg
     width .875em
-    margin 0 1.25em
+    margin 0
     transform none
     transition fill .2s ease, transform .2s ease
     fill $color--title-text
@@ -100,6 +100,10 @@ a
     perspective-origin center right
 
 .title
+  display flex
+  justify-content center
+  align-items center
+  gap 1.25em
   font-size 4em
   font-weight 700
   margin 0 0 1em
