@@ -8,8 +8,8 @@
           span Blog
         router-link.menu--item(to="/press")
           span Press
-        a.menu--item(href="https://gigacatalyst.com")
-          span Gigacatalyst
+        a.menu--item(href="https://pumpgtm.com" target="_blank" rel="noopener noreferrer")
+          span PumpGTM
         router-link.menu--item(to="/#contact")
           span Contact
 </template>

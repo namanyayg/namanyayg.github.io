@@ -11,9 +11,10 @@
       header.header
         h1.title In the press
         p.subtitle
-          | My essays on AI and software have reached over four million readers and been discussed by
-          | The New York Times, Inc., Futurism, The Register, Marketplace, and dozens of creators.
-          | Here is the full record.
+          | I write about what AI is doing to software: to the people who build it, and to the companies that sell it.
+          | Three of my essays reached more than four million readers and were picked up by The New York Times,
+          | Inc., Futurism, The Register, and Marketplace. This page has the essays, the coverage, quotes you can use,
+          | and how to reach me.
       .stats
         .stat(v-for="s in stats" :key="s.label")
           .stat__value {{ s.value }}
@@ -25,20 +26,43 @@
       .grid.grid--featured
         PressItem(v-for="item in featuredItems" :key="item.id" :data="item" :large="true")
 
+  section.press-section.press-section--essays
+    .wrap
+      h2.section-title The essays behind the coverage
+      p.section-lede Most stories about my work trace back to one of these three pieces. Each links to the original so you can quote the source.
+      .essays
+        a.essay(v-for="e in essays" :key="e.id" :href="e.url" target="_blank" rel="noopener")
+          .essay__meta
+            span.essay__date {{ e.date }}
+            span.essay__reach {{ e.reach }}
+          h3.essay__title {{ e.title }}
+          p.essay__summary {{ e.summary }}
+          p.essay__coverage
+            strong Covered by:
+            |  {{ e.coverage }}
+          span.essay__read Read the essay →
+
   section.press-section.press-section--contact#press-contact
     .wrap
       .contact-card
         .contact-card__text
           h2 Writing a story? Recording an episode?
           p
-            | I'm happy to talk about AI and the future of software engineering, what happens to junior
-            | developers, vibe coding, building a company as a solo founder in Y Combinator, and how B2B
-            | software changes when customers can build their own features.
+            | I'm happy to talk about what AI is doing to junior developers and the craft of programming, vibe coding and the bill it leaves behind, why B2B SaaS is under pressure, and what it's like to build a company as a solo founder in Y Combinator. I'm building PumpGTM, an AI agent that finds buyers and runs outreach for founders.
           p.small I reply to press requests within one business day. Based in San Francisco, available on Pacific hours and happy to record remotely.
         .contact-card__actions
           a.button.button--primary(:href="pressMailto") Email me for press
           router-link.button.button--ghost(to="/press-kit") Press kit &amp; bio
           router-link.button.button--ghost(to="/media") Photos
+
+  section.press-section.press-section--quotes
+    .wrap
+      h2.section-title Quotable
+      p.section-lede Cleared for use with attribution to Namanyay Goel. For anything longer, email me and I'll reply the same day.
+      .quotes
+        blockquote.quote(v-for="q in quotes" :key="q.text")
+          p.quote__text “{{ q.text }}”
+          footer.quote__context {{ q.context }}
 
   section.press-section
     .wrap
@@ -65,13 +89,13 @@
 <script>
 import Masthead from '../Masthead'
 import PressItem from './PressItem'
-import items, { stats, featured, videos } from './data'
+import items, { stats, featured, videos, essays, quotes } from './data'
 
 const FILTERS = [
   { key: 'all', label: 'Everything' },
   { key: 'article', label: 'Articles' },
   { key: 'podcast', label: 'Podcasts & radio' },
-  { key: 'launch', label: 'Company' },
+  { key: 'launch', label: 'Launches' },
   { key: 'community', label: 'Community' }
 ]
 
@@ -83,6 +107,8 @@ export default {
       items,
       stats,
       videos,
+      essays,
+      quotes,
       filters: FILTERS,
       activeFilter: 'all'
     }
@@ -186,6 +212,92 @@ export default {
   &--featured
     grid-template-columns repeat(auto-fill, minmax(unquote("min(24em, 100%)"), 1fr))
     gap 2em
+
+.essays
+  display grid
+  grid-template-columns repeat(auto-fit, minmax(unquote("min(20em, 100%)"), 1fr))
+  gap 1.5em
+
+.essay
+  display flex
+  flex-direction column
+  padding 1.75em
+  border 1px solid rgba($color--title-text, .1)
+  border-radius 12px
+  text-decoration none
+  color inherit
+  transition transform .3s ease, box-shadow .3s ease, border-color .3s ease
+
+  &__meta
+    font-family $font--sans
+    font-size .75em
+    text-transform uppercase
+    letter-spacing 1.5px
+    color $color--body-text
+
+  &__reach
+    &::before
+      content ' · '
+
+  &__title
+    font-family $font--serif
+    font-size 1.375em
+    font-weight 600
+    color $color--title-text
+
+  &__summary
+    font-size .95em
+    line-height 1.55
+
+  &__coverage
+    font-size .875em
+
+    strong
+      font-family $font--sans
+      font-size .75em
+      letter-spacing 1px
+      text-transform uppercase
+
+  &__read
+    margin-top auto
+    font-family $font--sans
+    font-size .875em
+    font-weight 700
+    color $color--title-text
+
+.quotes
+  display grid
+  grid-template-columns repeat(auto-fit, minmax(unquote("min(18em, 100%)"), 1fr))
+  gap 1.5em
+
+.quote
+  margin 0
+  padding 1.5em 1.75em
+  border-left 3px solid $color--highlight
+  background rgba($color--hero-bg, .03)
+
+  &__text
+    margin 0 0 .75em
+    font-family $font--serif
+    font-size 1.25em
+    font-style italic
+    line-height 1.45
+    color $color--title-text
+
+  &__context
+    font-family $font--sans
+    font-size .75em
+    text-transform uppercase
+    letter-spacing 1.5px
+
+@media (hover: hover)
+  .essay:hover
+    transform translateY(-3px)
+    box-shadow 0 8px 24px rgba($color--subtitle-text, .12)
+    border-color $color--highlight
+
+  .essay__read:hover
+    color $color--highlight
 
 .filters
   display flex

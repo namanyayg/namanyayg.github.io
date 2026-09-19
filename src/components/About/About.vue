@@ -8,7 +8,7 @@
   .about
     .wrap
       .about__intro(ref="about-intro")
-        p I'm working on <a class="ai" href="https://gigacatalyst.com/">Gigacatalyst</a> in San Francisco. We're backed by Y Combinator and are growing fast.
+        p I'm building <a class="ai" href="https://pumpgtm.com/">PumpGTM</a> in San Francisco, an AI agent that finds the buyers who are ready to talk and runs your outreach. We're backed by Y Combinator.
 
         p I also <a href="https://nmn.gl/blog" class="ayom" style="text-decoration: underline">write about AI often</a>. My articles garnered over four million views in 2025 and I was featured in the New York Times, Futurism, Inc. Magazine, and many more.
 

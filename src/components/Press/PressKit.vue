@@ -20,14 +20,14 @@
     .wrap.two-col
       .col
         h2.section-title One line
-        p.copy Namanyay Goel is the founder of Gigacatalyst (Y Combinator P26) and a writer on AI and software engineering whose essays reached more than four million readers in 2025.
+        p.copy Namanyay Goel is the founder of PumpGTM (Y Combinator) and a writer on AI and software whose essays reached more than four million readers.
         h2.section-title Short bio
         p.copy
           | Namanyay Goel is a San Francisco based founder and writer. He started programming at 13, took his
           | first professional job as a web developer at 14, and has spent the years since building products used
           | by millions of people, from India's most-visited independent COVID tracker to developer tools used by
-          | engineering teams at fast-growing companies. Today he runs Gigacatalyst, a Y Combinator company that
-          | lets software companies build the features their customers ask for in minutes, just by talking to an AI.
+          | engineering teams at fast-growing companies. Today he runs PumpGTM, a Y Combinator-backed company building
+          | an AI agent that finds the buyers who are ready to talk and runs a founder's outreach for them.
           | His writing on how AI is changing the craft of programming has been covered by The New York Times,
           | Inc., Futurism, The Register, and Marketplace.
       .col
@@ -50,7 +50,8 @@
           | and was debated on Startups For the Rest of Us.
         p.copy
           | He moved to San Francisco in 2025, was selected for On Deck Founders and the inaugural Solo Founders
-          | Program, raised a pre-seed round, and was accepted into Y Combinator (P26 batch, spring 2026) with Gigacatalyst.
+          | Program, raised a pre-seed round, and was accepted into Y Combinator (spring 2026). His first company there,
+          | Gigacatalyst, was wound down in 2026; he now builds PumpGTM, a go-to-market agent for founders.
           | He holds a registered German utility model for a method of analysing and summarising software codebases,
           | serves on the editorial boards of two peer-reviewed journals, and has judged international hackathons.
 
@@ -132,7 +133,7 @@ export default {
         { value: '13', label: 'age I started programming' },
         { value: '14', label: 'age of my first developer job' },
         { value: '5M+', label: 'visitors to IndiaSmile during COVID' },
-        { value: 'YC P26', label: 'Gigacatalyst, Y Combinator' },
+        { value: 'YC S26', label: 'PumpGTM, Y Combinator' },
         { value: '30+', label: 'outlets that covered my work' },
         { value: '2', label: 'journal editorial boards' },
         { value: '1', label: 'registered utility model (DPMA, 2026)' }
@@ -141,7 +142,8 @@ export default {
         'What AI is doing to junior developers, and what “illiterate programmers” means in practice',
         'Vibe coding: where it works, where it quietly breaks, and the security bill that arrives later',
         'Why AI is killing B2B SaaS that refuses to evolve, and what customers build for themselves now',
-        'Running a company as a solo founder inside Y Combinator',
+        'Running a company as a solo founder inside Y Combinator, and shutting a product down to start the next one',
+        'Founder-led sales: how early-stage companies actually find their first customers with AI',
         'Building developer tools that keep AI honest about large codebases',
         'Starting a career at 14 and what early access to the internet did for a kid in New Delhi',
         'India to San Francisco: the O-1 visa, immigration as a founder, and building in the US'
@@ -155,13 +157,13 @@ export default {
         { year: '2020', text: 'Build IndiaSmile, an open-source COVID tracker: 5M+ visitors, 600k a day at peak.' },
         { year: '2025', text: '“AI is Creating a Generation of Illiterate Programmers” reaches 1.3M readers; NYT, Inc., Futurism coverage.' },
         { year: '2025', text: 'Move to San Francisco. On Deck Founders, Recurse Center, Solo Founders Program. Raise a pre-seed round. O-1A visa approved.' },
-        { year: '2026', text: '“AI is Killing B2B SaaS” hits the Hacker News front page. Accepted into Y Combinator (P26) with Gigacatalyst. German utility model registered.' }
+        { year: '2026', text: '“AI is Killing B2B SaaS” hits the Hacker News front page. Accepted into Y Combinator (spring 2026). German utility model registered. Launch PumpGTM.' }
       ]
     }
   },
   computed: {
     selected () {
-      const ids = ['nyt-hardfork', 'inc-young-coders', 'futurism', 'register', 'marketplace-2026', 'inc42-autopilot', 'sftrou-823', 'yc-x']
+      const ids = ['nyt-hardfork', 'inc-young-coders', 'futurism', 'register', 'marketplace-2026', 'inc42-autopilot', 'sftrou-823', 'itpro']
       return ids.map(id => items.find(i => i.id === id)).filter(Boolean)
     },
     mailto () {
@@ -440,7 +442,6 @@ export default {
     font-size .95em
     color $color--hero-text--light
     margin 0
-
 
 @media (max-width: 60em)
   .two-col

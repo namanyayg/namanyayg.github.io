@@ -4,10 +4,48 @@ export const stats = [
   { value: '4M+', label: 'readers of my essays in 2025' },
   { value: '30+', label: 'outlets that covered my work' },
   { value: '8', label: 'YouTube creators, 4M+ combined subscribers' },
-  { value: 'YC P26', label: 'Gigacatalyst, backed by Y Combinator' }
+  { value: 'YC S26', label: 'PumpGTM, backed by Y Combinator' }
 ]
 
-export const featured = ['nyt-hardfork', 'inc-young-coders', 'futurism', 'register', 'marketplace-2026', 'yc-x']
+export const featured = ['nyt-hardfork', 'inc-young-coders', 'futurism', 'register', 'marketplace-2026', 'sftrou-823']
+
+// The essays that generated the coverage. Journalists want the primary source.
+export const essays = [
+  {
+    id: 'illiterate-programmers',
+    title: 'AI is Creating a Generation of Illiterate Programmers',
+    date: 'Jan 2025',
+    url: 'https://nmn.gl/blog/ai-illiterate-programmers',
+    reach: '1.3M readers',
+    summary: 'After twelve years of coding I noticed I had stopped being able to work without an AI assistant. The essay argues that AI tooling is quietly eroding the fundamentals of a whole generation of developers, and what to do about it.',
+    coverage: 'NYT Hard Fork, Inc., Futurism, The Register, Marketplace Tech, Hacker News front page, ThePrimeagen, Tech With Tim'
+  },
+  {
+    id: 'junior-devs',
+    title: 'New Junior Developers Can’t Actually Code',
+    date: 'Feb 2025',
+    url: 'https://nmn.gl/blog/ai-and-learning',
+    reach: 'Widely syndicated',
+    summary: 'A follow-up written after dozens of conversations with new developers: the code works, but ask why and you get blank stares. On what struggling through problems used to teach and how to keep learning with AI in the loop.',
+    coverage: 'ITPro, Diginomica, Inside Higher Ed, Developpez, ForrestKnight, Code Monkey'
+  },
+  {
+    id: 'killing-b2b-saas',
+    title: 'AI is Killing B2B SaaS',
+    date: 'Feb 2026',
+    url: 'https://nmn.gl/blog/ai-killing-b2b-saas',
+    reach: 'Hacker News front page',
+    summary: 'Why the most profitable business model on Earth is under threat when every customer believes they can vibe-code something better, what the market is already pricing in, and which SaaS companies survive.',
+    coverage: 'Startups For the Rest of Us, TechPlanet, Inc42, Hacker News'
+  }
+]
+
+// Short quotes cleared for use with attribution to Namanyay Goel.
+export const quotes = [
+  { text: 'We’re trading deep understanding for quick fixes, and while it feels great in the moment, we’re going to pay for this later.', context: 'on junior developers and AI, quoted by ITPro' },
+  { text: 'I hate the term vibe coding for what I do. It implies recklessness.', context: 'to Inc42, Feb 2026' },
+  { text: 'How do you keep asking customers for renewal, when every customer feels they can get something better built with AI?', context: 'from “AI is Killing B2B SaaS”' }
+]
 
 export default [
   {
@@ -22,12 +60,11 @@ export default [
   {
     id: 'yc-x',
     outlet: 'Y Combinator',
-    label: 'Y Combinator',
     title: 'Gigacatalyst launch — “Congrats on the launch, @namanyayg!”',
     date: 'May 2026',
     type: 'launch',
     url: 'https://x.com/ycombinator/status/2054962444607652196',
-    note: '$1M in pipeline unblocked and 800 features shipped for customers in 6 weeks.'
+    note: 'Y Combinator announcing my first company; PumpGTM is the follow-up.'
   },
   {
     id: 'yc-launch',

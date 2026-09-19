@@ -12,8 +12,8 @@
             span.highlight
         h2.subtitle 
           .subtitle__xl Technology entrepreneur, founder, <span class="amp">&</span> writer. 
-          div Unlocking the next generation of human creativity&nbsp;at&nbsp;
-            a(href="https://gigacatalyst.com" target="_blank" rel="noopener noreferrer") Gigacatalyst
+          div Helping founders find their first customers&nbsp;at&nbsp;
+            a(href="https://pumpgtm.com" target="_blank" rel="noopener noreferrer") PumpGTM
       .hero__image
         .image-card
           img(src="/static/202507-namanyay-interview.jpeg" alt="Namanyay Goel")
