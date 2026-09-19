@@ -20,7 +20,7 @@
     .wrap.two-col
       .col
         h2.section-title One line
-        p.copy Namanyay Goel is the founder of Gigacatalyst (Y Combinator S26) and a writer on AI and software engineering whose essays reached more than four million readers in 2025.
+        p.copy Namanyay Goel is the founder of Gigacatalyst (Y Combinator P26) and a writer on AI and software engineering whose essays reached more than four million readers in 2025.
         h2.section-title Short bio
         p.copy
           | Namanyay Goel is a San Francisco based founder and writer. He started programming at 13, took his
@@ -50,7 +50,7 @@
           | and was debated on Startups For the Rest of Us.
         p.copy
           | He moved to San Francisco in 2025, was selected for On Deck Founders and the inaugural Solo Founders
-          | Program, raised a pre-seed round, and was accepted into Y Combinator's Spring 2026 batch with Gigacatalyst.
+          | Program, raised a pre-seed round, and was accepted into Y Combinator (P26 batch, spring 2026) with Gigacatalyst.
           | He holds a registered German utility model for a method of analysing and summarising software codebases,
           | serves on the editorial boards of two peer-reviewed journals, and has judged international hackathons.
 
@@ -132,7 +132,7 @@ export default {
         { value: '13', label: 'age I started programming' },
         { value: '14', label: 'age of my first developer job' },
         { value: '5M+', label: 'visitors to IndiaSmile during COVID' },
-        { value: 'YC S26', label: 'Gigacatalyst, Y Combinator' },
+        { value: 'YC P26', label: 'Gigacatalyst, Y Combinator' },
         { value: '30+', label: 'outlets that covered my work' },
         { value: '2', label: 'journal editorial boards' },
         { value: '1', label: 'registered utility model (DPMA, 2026)' }
@@ -155,7 +155,7 @@ export default {
         { year: '2020', text: 'Build IndiaSmile, an open-source COVID tracker: 5M+ visitors, 600k a day at peak.' },
         { year: '2025', text: '“AI is Creating a Generation of Illiterate Programmers” reaches 1.3M readers; NYT, Inc., Futurism coverage.' },
         { year: '2025', text: 'Move to San Francisco. On Deck Founders, Recurse Center, Solo Founders Program. Raise a pre-seed round. O-1A visa approved.' },
-        { year: '2026', text: '“AI is Killing B2B SaaS” hits the Hacker News front page. Accepted into Y Combinator (Spring 2026) with Gigacatalyst. German utility model registered.' }
+        { year: '2026', text: '“AI is Killing B2B SaaS” hits the Hacker News front page. Accepted into Y Combinator (P26) with Gigacatalyst. German utility model registered.' }
       ]
     }
   },
@@ -387,7 +387,10 @@ export default {
 
   .headline
     display block
-    padding .4em .9em 1em
+    margin .4em .9em 1em
+    padding 0
+    height 2.8em
+    overflow hidden
     font-size .95em
     line-height 1.4
     color $color--title-text
@@ -430,26 +433,31 @@ export default {
 
 .contact-card
   display flex
-  justify-content space-between
+  gap 2.5em
   align-items center
-  gap 2em
+  justify-content space-between
   padding 2.5em
   border-radius 12px
-  background linear-gradient(135deg, lighten($color--highlight, 42%), #fff 70%)
-  border 1px solid rgba($color--highlight, 0.35)
+  background-color $color--hero-bg
+  background-image radial-gradient(circle at 20%, $color--hero-bg 10%, $color--hero-bg--dark)
+  border 1px solid $color--hero-bg--border
+  color $color--hero-subtitle
 
   h2
     font-size 1.875em
     font-weight bold
-    color $color--title-text
+    color $color--hero-title
     margin 0 0 .5em
 
   p
     font-size 1.125em
-    margin 0 0 .5em
+    line-height 1.55
+    margin 0 0 .75em
+    max-width 40em
+    color $color--hero-subtitle
 
   a
-    color $color--title-text
+    color $color--hero-title
     font-weight 700
     text-decoration none
 
@@ -458,8 +466,9 @@ export default {
 
   .small
     font-size .95em
-    color $color--subtitle-text
+    color $color--hero-text--light
     margin 0
+
 
 @media (max-width: 60em)
   .two-col

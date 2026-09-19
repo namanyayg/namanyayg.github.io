@@ -4,7 +4,7 @@ export const stats = [
   { value: '4M+', label: 'readers of my essays in 2025' },
   { value: '30+', label: 'outlets that covered my work' },
   { value: '8', label: 'YouTube creators, 4M+ combined subscribers' },
-  { value: 'YC S26', label: 'Gigacatalyst, backed by Y Combinator' }
+  { value: 'YC P26', label: 'Gigacatalyst, backed by Y Combinator' }
 ]
 
 export const featured = ['nyt-hardfork', 'inc-young-coders', 'futurism', 'register', 'marketplace-2026', 'yc-x']
@@ -22,6 +22,7 @@ export default [
   {
     id: 'yc-x',
     outlet: 'Y Combinator',
+    label: 'Y Combinator',
     title: 'Gigacatalyst launch — “Congrats on the launch, @namanyayg!”',
     date: 'May 2026',
     type: 'launch',
@@ -39,6 +40,7 @@ export default [
   {
     id: 'sftrou-823',
     outlet: 'Startups For the Rest of Us',
+    label: 'Startups For the Rest of Us',
     title: 'Ep. 823 — Hot Take Tuesday: Is AI Killing B2B SaaS?',
     date: 'Mar 2026',
     type: 'podcast',
@@ -48,6 +50,7 @@ export default [
   {
     id: 'marketplace-2026',
     outlet: 'Marketplace (APM)',
+    label: 'Marketplace',
     title: '“Vibe coding”: how sites like Moltbook can disrupt the AI industry',
     date: 'Mar 2026',
     type: 'radio',
@@ -56,6 +59,7 @@ export default [
   {
     id: 'inc42-autopilot',
     outlet: 'Inc42',
+    label: 'Inc42',
     title: 'Software Enters The Autopilot Era',
     date: 'Feb 2026',
     type: 'article',
@@ -162,6 +166,7 @@ export default [
   {
     id: 'inc-young-coders',
     outlet: 'Inc.',
+    label: 'Inc.',
     title: 'A New AI Worry: Many Young Coders No Longer Know How Their Code Really Works',
     date: 'Feb 2025',
     type: 'article',
@@ -170,6 +175,7 @@ export default [
   {
     id: 'futurism',
     outlet: 'Futurism',
+    label: 'Futurism',
     title: 'Young Coders Are Using AI for Everything, Giving “Blank Stares” When Asked How Programs Actually Work',
     date: 'Feb 2025',
     type: 'article',
@@ -186,6 +192,7 @@ export default [
   {
     id: 'nyt-hardfork',
     outlet: 'The New York Times · Hard Fork',
+    label: 'The New York Times',
     title: 'How “Based” Is Grok 3? + Vibecoding 101',
     date: 'Feb 2025',
     type: 'podcast',
@@ -195,6 +202,7 @@ export default [
   {
     id: 'register',
     outlet: 'The Register',
+    label: 'The Register',
     title: 'Hey programmers — is AI making us dumber?',
     date: 'Feb 2025',
     type: 'article',

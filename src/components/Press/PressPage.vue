@@ -238,13 +238,15 @@ export default {
   justify-content space-between
   padding 2.5em
   border-radius 12px
-  background linear-gradient(135deg, lighten($color--highlight, 42%), #fff 70%)
-  border 1px solid rgba($color--highlight, 0.35)
+  background-color $color--hero-bg
+  background-image radial-gradient(circle at 20%, $color--hero-bg 10%, $color--hero-bg--dark)
+  border 1px solid $color--hero-bg--border
+  color $color--hero-subtitle
 
   h2
     font-size 1.875em
     font-weight bold
-    color $color--title-text
+    color $color--hero-title
     margin 0 0 .5em
 
   p
@@ -252,11 +254,26 @@ export default {
     line-height 1.55
     margin 0 0 .75em
     max-width 40em
+    color $color--hero-subtitle
+
+  a
+    color $color--hero-title
+    font-weight 700
+    text-decoration none
+
+    &:hover
+      color $color--highlight
 
   .small
     font-size .95em
-    color $color--subtitle-text
+    color $color--hero-text--light
     margin 0
+
+  &__actions
+    display flex
+    flex-direction column
+    gap .75em
+    min-width 15em
 
   &__actions
     display flex
@@ -282,13 +299,13 @@ export default {
       box-shadow 0 6px 16px rgba($color--highlight, 0.35)
 
   &--ghost
-    background white
-    color $color--title-text
-    border 2px solid rgba($color--subtitle-text, 0.3)
+    background rgba(255,255,255,0.06)
+    color $color--hero-text
+    border 2px solid rgba(255,255,255,0.18)
 
     &:hover
       transform translateY(-2px)
-      border-color $color--title-text
+      border-color $color--highlight
 
 .videos
   display grid

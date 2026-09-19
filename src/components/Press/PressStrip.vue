@@ -6,8 +6,11 @@
       .subtitle My writing on AI and software engineering gets picked up by the places developers and founders actually read.
     .logos
       router-link.logo-card(v-for="item in featuredItems" :key="item.id" to="/press" :title="item.title")
-        img(:src="`/static/press/${item.id}.jpg`" :alt="item.outlet" loading="lazy")
-        span.outlet {{ item.outlet }}
+        .shot
+          img(:src="`/static/press/${item.id}.jpg`" :alt="item.outlet" loading="lazy")
+          .shade
+          span.outlet {{ item.label || item.outlet }}
+        p.headline {{ item.title }}
     .actions
       router-link.press-strip__button(to="/press") all press coverage →
       a.press-strip__link(:href="pressMailto") Journalist or podcaster? Get in touch →
@@ -65,33 +68,65 @@ export default {
   gap 1.25em
 
 .logo-card
-  display block
+  display flex
+  flex-direction column
   text-decoration none
   color $color--title-text
-  border-radius 8px
+  border-radius 10px
   overflow hidden
   background white
   border 1px solid rgba($color--subtitle-text, 0.18)
   transition transform .3s ease, box-shadow .3s ease
 
+  &:hover
+    transform translateY(-4px)
+    box-shadow 0 12px 24px rgba(8, 15, 37, 0.1)
+
+    .shot img
+      transform scale(1.04)
+
+.shot
+  position relative
+  aspect-ratio 4 / 3
+  overflow hidden
+  background #eef1f7
+
   img
-    display block
+    position absolute
+    inset 0
     width 100%
-    aspect-ratio 16 / 10
+    height 100%
     object-fit cover
     object-position top
+    transition transform .4s ease
+
+  .shade
+    position absolute
+    inset 0
+    background linear-gradient(to top, rgba(8, 15, 37, 0.85) 0%, rgba(8, 15, 37, 0.35) 45%, rgba(8, 15, 37, 0) 70%)
 
   .outlet
-    display block
-    padding .75em .9em
+    position absolute
+    left .9em
+    right .9em
+    bottom .8em
+    color white
     font-size .8em
     font-weight 700
     letter-spacing .5px
     text-transform uppercase
+    white-space nowrap
+    overflow hidden
+    text-overflow ellipsis
 
-  &:hover
-    transform translateY(-4px)
-    box-shadow 0 12px 24px rgba(8, 15, 37, 0.1)
+.headline
+  margin .8em .9em .95em
+  padding 0
+  font-size .85em
+  line-height 1.4
+  height 2.8em
+  overflow hidden
+  color $color--body-text
 
 .actions
   display flex
