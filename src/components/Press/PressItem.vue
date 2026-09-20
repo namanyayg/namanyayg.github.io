@@ -112,7 +112,7 @@ export default {
 .note
   font-size .95em
   line-height 1.5
-  font-weight 300
+  font-weight 400
   margin 0 0 1em
   color $color--body-text
 

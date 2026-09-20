@@ -140,7 +140,9 @@ export default {
 .press
   background white
   color $color--body-text
-  font-weight 300
+  font-weight 400
+  font-size 1.0625em
+  line-height 1.6
 
 .press-intro
   padding 2em 0 3em
@@ -237,7 +239,7 @@ export default {
 
   &__meta
     font-family $font--sans
-    font-size .75em
+    font-size .8125em
     text-transform uppercase
     letter-spacing 1.5px
     color $color--body-text
@@ -253,22 +255,26 @@ export default {
     color $color--title-text
 
   &__summary
-    font-size .95em
-    line-height 1.55
+    font-size 1em
+    line-height 1.6
+    color $color--body-text
 
   &__coverage
-    font-size .875em
+    font-size .95em
+    line-height 1.5
+    color $color--body-text
 
     strong
       font-family $font--sans
-      font-size .75em
+      font-size .8em
       letter-spacing 1px
       text-transform uppercase
+      color $color--title-text
 
   &__read
     margin-top auto
     font-family $font--sans
-    font-size .875em
+    font-size .95em
     font-weight 700
     color $color--title-text
 
@@ -293,9 +299,10 @@ export default {
 
   &__context
     font-family $font--sans
-    font-size .75em
+    font-size .8125em
     text-transform uppercase
     letter-spacing 1.5px
+    color $color--body-text
 
 @media (hover: hover)
   .essay:hover

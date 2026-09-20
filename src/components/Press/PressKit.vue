@@ -182,7 +182,9 @@ export default {
 .press-kit
   background white
   color $color--body-text
-  font-weight 300
+  font-weight 400
+  font-size 1.0625em
+  line-height 1.6
 
 .kit-intro
   padding 2em 0 3em
