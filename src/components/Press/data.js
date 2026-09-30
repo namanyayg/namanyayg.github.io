@@ -3,13 +3,53 @@
 export const stats = [
   { value: '4M+', label: 'readers of my essays in 2025' },
   { value: '30+', label: 'outlets that covered my work' },
-  { value: '8', label: 'YouTube creators, 4M+ combined subscribers' },
+  { value: '3', label: 'podcast guest appearances' },
   { value: 'YC P26', label: 'Gigacatalyst, backed by Y Combinator' }
 ]
 
 export const featured = ['nyt-hardfork', 'inc-young-coders', 'futurism', 'register', 'marketplace-2026', 'yc-x']
 
 export default [
+  {
+    id: 'solo-founders-podcast',
+    outlet: 'Solo Founders Podcast',
+    label: 'Solo Founders',
+    title: 'Searching For A Co-Founder Is How You Get A Bad One — 4 VC-Backed Solo Founders',
+    date: 'Aug 2026',
+    type: 'podcast',
+    url: 'https://podcasts.apple.com/us/podcast/searching-for-a-co-founder-is-how-you-get-a-bad-one/id1881721449?i=1000784403426',
+    note: 'Guest, with Julian Weisser and three founders from the first Solo Founders cohort.'
+  },
+  {
+    id: 'yc-pumpgtm',
+    outlet: 'Y Combinator',
+    label: 'Y Combinator',
+    title: 'PumpGTM — find and engage buyers across LinkedIn, email and X',
+    date: '2026',
+    type: 'launch',
+    url: 'https://www.ycombinator.com/companies/pumpgtm',
+    note: 'Second product from Giga Next, Inc.; runs go-to-market for 10+ YC companies.'
+  },
+  {
+    id: 'developpez-better-way',
+    outlet: 'Developpez.com',
+    label: 'Developpez.com',
+    title: 'Il existe une meilleure façon de coder avec l\'IA',
+    date: 'May 2026',
+    type: 'article',
+    url: 'https://programmation.developpez.com/actu/383271/Il-existe-une-meilleure-facon-de-coder-avec-l-IA-par-Namanyay-Goel/',
+    note: 'French translation of “There\'s a Better Way to Code with AI” for the largest French-speaking developer community.'
+  },
+  {
+    id: 'developpez-open-source',
+    outlet: 'Developpez.com',
+    label: 'Developpez.com',
+    title: 'L\'IA signifie la mort de l\'open source',
+    date: 'Apr 2026',
+    type: 'article',
+    url: 'https://intelligence-artificielle.developpez.com/actu/382713/L-IA-signifie-la-mort-de-l-open-source-par-Namanyay-Goel/',
+    note: 'French translation of “AI Means the Death of Open Source”.'
+  },
   {
     id: 'ivan-turkovic',
     outlet: 'Ivan Turkovic',
@@ -301,5 +341,6 @@ export const videos = [
   { id: 'chaiaurcode', creator: 'Chai aur Code', title: 'New Junior Developers Can’t Actually Code', url: 'https://www.youtube.com/watch?v=BQTaBibVbo4', subs: '600k+' },
   { id: 'singhinusa', creator: 'Singh in USA', title: 'DeepSeek R1: Illiterate Programmers Need to Listen!!', url: 'https://youtu.be/l3bMo7oIQhU', subs: '1M+' },
   { id: 'donthedeveloper', creator: 'DonTheDeveloper', title: 'AI is Creating a Generation of Bad Software Engineers', url: 'https://www.youtube.com/watch?v=NYcqIAr6Rnw' },
+  { id: 'solofounders', creator: 'Solo Founders Podcast (Julian Weisser)', title: 'Searching For A Co-Founder Is How You Get A Bad One', url: 'https://podcasts.apple.com/us/podcast/searching-for-a-co-founder-is-how-you-get-a-bad-one/id1881721449?i=1000784403426', guest: true },
   { id: 'bigthinking', creator: 'Big Thinking #20 (Zaid Al Kazemi)', title: 'Solving AI Hallucinations — Namanyay Goel', url: 'https://www.youtube.com/watch?v=oSrchZdmtCc', guest: true }
 ]

@@ -133,7 +133,7 @@ export default {
         { value: '14', label: 'age of my first developer job' },
         { value: '5M+', label: 'visitors to IndiaSmile during COVID' },
         { value: 'YC P26', label: 'Gigacatalyst, Y Combinator' },
-        { value: '30+', label: 'outlets that covered my work' },
+        { value: '35+', label: 'outlets that covered my work' },
         { value: '2', label: 'journal editorial boards' },
         { value: '1', label: 'registered utility model (DPMA, 2026)' }
       ],
@@ -141,7 +141,7 @@ export default {
         'What AI is doing to junior developers, and what “illiterate programmers” means in practice',
         'Vibe coding: where it works, where it quietly breaks, and the security bill that arrives later',
         'Why AI is killing B2B SaaS that refuses to evolve, and what customers build for themselves now',
-        'Running a company as a solo founder inside Y Combinator',
+        'Running a company as a solo founder inside Y Combinator (and why searching for a co-founder gets you a bad one)',
         'Building developer tools that keep AI honest about large codebases',
         'Starting a career at 14 and what early access to the internet did for a kid in New Delhi',
         'India to San Francisco: the O-1 visa, immigration as a founder, and building in the US'
@@ -155,7 +155,7 @@ export default {
         { year: '2020', text: 'Build IndiaSmile, an open-source COVID tracker: 5M+ visitors, 600k a day at peak.' },
         { year: '2025', text: '“AI is Creating a Generation of Illiterate Programmers” reaches 1.3M readers; NYT, Inc., Futurism coverage.' },
         { year: '2025', text: 'Move to San Francisco. On Deck Founders, Recurse Center, Solo Founders Program. Raise a pre-seed round. O-1A visa approved.' },
-        { year: '2026', text: '“AI is Killing B2B SaaS” hits the Hacker News front page. Accepted into Y Combinator (P26) with Gigacatalyst. German utility model registered.' }
+        { year: '2026', text: '“AI is Killing B2B SaaS” hits the Hacker News front page. Accepted into Y Combinator (P26) with Gigacatalyst; launch PumpGTM. German utility model registered. Guest on the Solo Founders Podcast.' }
       ]
     }
   },
