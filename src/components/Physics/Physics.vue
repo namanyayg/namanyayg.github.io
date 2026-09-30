@@ -46,6 +46,8 @@ export default {
     width: 100%;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 0 1.5em;
   }
 
   .title {
@@ -62,23 +64,20 @@ export default {
   &__item {
     margin: 0 0 4em;
   }
-}
 
-.back-link {
-  text-align: center;
-  font-size: 1.5em;
-  margin: 1em 0 -1em;
-  display: block;
-  font-weight: bold;
-  text-decoration: none;
-  transition: color 0.3s ease;
+  @media (max-width: 40em) {
+    .header {
+      display: block;
+    }
 
-  > span {
-    border-bottom: 3px solid $color--highlight;
-  }
+    .title {
+      font-size: 2.75em;
+    }
 
-  &:hover {
-    color: $color--highlight;
+    .subtitle {
+      font-size: 1.25em;
+    }
   }
 }
+
 </style> 

@@ -20,14 +20,14 @@
     .wrap.two-col
       .col
         h2.section-title One line
-        p.copy Namanyay Goel is the founder of Gigacatalyst (Y Combinator P26) and a writer on AI and software engineering whose essays reached more than four million readers in 2025.
+        p.copy Namanyay Goel is the founder of PumpGTM (Y Combinator) and a writer on AI and software whose essays reached more than four million readers.
         h2.section-title Short bio
         p.copy
           | Namanyay Goel is a San Francisco based founder and writer. He started programming at 13, took his
           | first professional job as a web developer at 14, and has spent the years since building products used
           | by millions of people, from India's most-visited independent COVID tracker to developer tools used by
-          | engineering teams at fast-growing companies. Today he runs Gigacatalyst, a Y Combinator company that
-          | lets software companies build the features their customers ask for in minutes, just by talking to an AI.
+          | engineering teams at fast-growing companies. Today he runs PumpGTM, a Y Combinator-backed company building
+          | an AI agent that finds the buyers who are ready to talk and runs a founder's outreach for them.
           | His writing on how AI is changing the craft of programming has been covered by The New York Times,
           | Inc., Futurism, The Register, and Marketplace.
       .col
@@ -50,7 +50,8 @@
           | and was debated on Startups For the Rest of Us.
         p.copy
           | He moved to San Francisco in 2025, was selected for On Deck Founders and the inaugural Solo Founders
-          | Program, raised a pre-seed round, and was accepted into Y Combinator (P26 batch, spring 2026) with Gigacatalyst.
+          | Program, raised a pre-seed round, and was accepted into Y Combinator (spring 2026). His first company there,
+          | Gigacatalyst, was wound down in 2026; he now builds PumpGTM, a go-to-market agent for founders.
           | He holds a registered German utility model for a method of analysing and summarising software codebases,
           | serves on the editorial boards of two peer-reviewed journals, and has judged international hackathons.
 
@@ -58,7 +59,7 @@
     .wrap
       h2.section-title Fast facts
       .facts
-        .fact(v-for="f in facts" :key="f.label")
+        component.fact(v-for="f in facts" :key="f.label" :is="f.url ? 'a' : 'div'" :href="f.url" :target="f.url ? '_blank' : null" :rel="f.url ? 'noopener noreferrer' : null" :class="{ 'fact--link': f.url }")
           .fact__value {{ f.value }}
           .fact__label {{ f.label }}
 
@@ -112,7 +113,7 @@
             |  · LinkedIn
             | &nbsp;
             a(href="https://www.linkedin.com/in/namanyayg/" target="_blank" rel="noopener") /in/namanyayg
-          p.small San Francisco, CA · Pacific time · remote recording is fine · I reply within one business day.
+          p.small San Francisco, CA · Pacific time · remote recording is fine.
         a.button.button--primary(:href="mailto") Email Namanyay
 </template>
 
@@ -132,8 +133,8 @@ export default {
         { value: '13', label: 'age I started programming' },
         { value: '14', label: 'age of my first developer job' },
         { value: '5M+', label: 'visitors to IndiaSmile during COVID' },
-        { value: 'YC P26', label: 'Gigacatalyst, Y Combinator' },
-        { value: '35+', label: 'outlets that covered my work' },
+        { value: 'YC P26', label: 'PumpGTM, Y Combinator', url: 'https://pumpgtm.com' },
+        { value: '30+', label: 'outlets that covered my work' },
         { value: '2', label: 'journal editorial boards' },
         { value: '1', label: 'registered utility model (DPMA, 2026)' }
       ],
@@ -141,7 +142,8 @@ export default {
         'What AI is doing to junior developers, and what “illiterate programmers” means in practice',
         'Vibe coding: where it works, where it quietly breaks, and the security bill that arrives later',
         'Why AI is killing B2B SaaS that refuses to evolve, and what customers build for themselves now',
-        'Running a company as a solo founder inside Y Combinator (and why searching for a co-founder gets you a bad one)',
+        'Running a company as a solo founder inside Y Combinator, and shutting a product down to start the next one',
+        'Founder-led sales: how early-stage companies actually find their first customers with AI',
         'Building developer tools that keep AI honest about large codebases',
         'Starting a career at 14 and what early access to the internet did for a kid in New Delhi',
         'India to San Francisco: the O-1 visa, immigration as a founder, and building in the US'
@@ -155,13 +157,13 @@ export default {
         { year: '2020', text: 'Build IndiaSmile, an open-source COVID tracker: 5M+ visitors, 600k a day at peak.' },
         { year: '2025', text: '“AI is Creating a Generation of Illiterate Programmers” reaches 1.3M readers; NYT, Inc., Futurism coverage.' },
         { year: '2025', text: 'Move to San Francisco. On Deck Founders, Recurse Center, Solo Founders Program. Raise a pre-seed round. O-1A visa approved.' },
-        { year: '2026', text: '“AI is Killing B2B SaaS” hits the Hacker News front page. Accepted into Y Combinator (P26) with Gigacatalyst; launch PumpGTM. German utility model registered. Guest on the Solo Founders Podcast.' }
+        { year: '2026', text: '“AI is Killing B2B SaaS” hits the Hacker News front page. Accepted into Y Combinator (spring 2026). German utility model registered. Launch PumpGTM. Guest on the Solo Founders Podcast.' }
       ]
     }
   },
   computed: {
     selected () {
-      const ids = ['nyt-hardfork', 'inc-young-coders', 'futurism', 'register', 'marketplace-2026', 'inc42-autopilot', 'sftrou-823', 'yc-x']
+      const ids = ['nyt-hardfork', 'inc-young-coders', 'futurism', 'register', 'marketplace-2026', 'inc42-autopilot', 'sftrou-823', 'itpro']
       return ids.map(id => items.find(i => i.id === id)).filter(Boolean)
     },
     mailto () {
@@ -180,7 +182,9 @@ export default {
 .press-kit
   background white
   color $color--body-text
-  font-weight 300
+  font-weight 400
+  font-size 1.0625em
+  line-height 1.6
 
 .kit-intro
   padding 2em 0 3em
@@ -204,56 +208,38 @@ export default {
     line-height 1.5
     margin 0
 
-.back-link
-  display inline-block
-  font-size 1.125em
-  font-weight bold
-  text-decoration none
-  color $color--hero-text
-  transition color .3s ease
-
-  > span
-    border-bottom 3px solid $color--highlight
-
-  &:hover
-    color $color--highlight
-
 .quick-actions
   display flex
   gap .75em
   flex-wrap wrap
 
 .button
+  font-family $font--sans
   text-align center
   border-radius 8px
   padding .9em 1.5em
   font-size .95em
   letter-spacing 1px
   text-decoration none
-  transition all .3s ease
+  transition background-color .25s ease, color .25s ease, border-color .25s ease, transform .25s ease, box-shadow .25s ease
 
   &--primary
     background $color--highlight
     color white
-
-    &:hover
-      transform translateY(-2px)
-      box-shadow 0 6px 16px rgba($color--highlight, 0.35)
 
   &--ghost
     background rgba(255,255,255,0.06)
     color $color--hero-text
     border 2px solid $color--hero-bg--border
 
-    &:hover
-      transform translateY(-2px)
-      border-color $color--highlight
-
 .kit-section
   padding 3.5em 0
 
-  & + &
+  & + &:not(.kit-section--facts)
     padding-top 0
+
+.kit-section--facts + .kit-section
+  padding-top 3.5em !important
 
 .section-title
   font-size 1.75em
@@ -288,6 +274,12 @@ export default {
   border 1px solid rgba($color--subtitle-text, 0.18)
   border-radius 8px
   padding 1.25em 1.5em
+  display block
+  text-decoration none
+  transition border-color .25s ease
+
+  &--link:hover
+    border-color $color--highlight
 
   &__value
     font-size 2em
@@ -366,10 +358,6 @@ export default {
       object-fit cover
       object-position top
 
-    &:hover
-      transform translateY(-4px)
-      box-shadow 0 12px 24px rgba(8, 15, 37, 0.1)
-
   &__meta
     display flex
     justify-content space-between
@@ -425,9 +413,6 @@ export default {
     margin 0 0 .5em
     transition transform .3s ease
 
-  &:hover img
-    transform translateY(-4px)
-
 .kit-section--contact
   padding-bottom 4em !important
 
@@ -469,7 +454,6 @@ export default {
     color $color--hero-text--light
     margin 0
 
-
 @media (max-width: 60em)
   .two-col
     grid-template-columns 1fr
@@ -494,4 +478,21 @@ export default {
 
   .coverage, .photos
     grid-template-columns 1fr
+
+@media (hover: hover)
+  .button
+    &--primary:hover
+      transform translateY(-2px)
+      box-shadow 0 6px 16px rgba($color--highlight, 0.35)
+
+    &--ghost:hover
+      transform translateY(-2px)
+      border-color $color--highlight
+
+  .coverage__item:hover
+    transform translateY(-4px)
+    box-shadow 0 12px 24px rgba(8, 15, 37, 0.1)
+
+  .photo:hover img
+    transform translateY(-4px)
 </style>

@@ -194,7 +194,7 @@ export default {
       this.clear()
       this.update()
       this.render()
-      requestAnimationFrame(this.draw)
+      this.raf = requestAnimationFrame(this.draw)
     }
   },
   created () {
@@ -203,8 +203,25 @@ export default {
     setTimeout(() => {
       this.setDimensions()
       this.init()
-      requestAnimationFrame(this.draw)
+      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        this.render()
+        return
+      }
+      this.raf = requestAnimationFrame(this.draw)
     }, 42)
+    this.resizeHandler = () => {
+      clearTimeout(this.resizeTimeout)
+      this.resizeTimeout = setTimeout(() => {
+        this.setDimensions()
+        this.init()
+      }, 150)
+    }
+    window.addEventListener('resize', this.resizeHandler)
+  },
+  beforeDestroy () {
+    cancelAnimationFrame(this.raf)
+    window.removeEventListener('resize', this.resizeHandler)
+    clearTimeout(this.resizeTimeout)
   }
 }
 </script>

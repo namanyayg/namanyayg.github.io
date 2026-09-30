@@ -67,10 +67,13 @@ p
 
 .logo-container__inner
   display inline-block
-  transition all .5s cubic-bezier(0.455, 0.03, 0.515, 0.955)
+  transition transform .4s ease
 
   &:hover
-    transform rotate(360deg)
+    transform rotate(15deg)
+
+strong
+  font-family $font--sans
 
 @media (max-width 36em)
   .colophon

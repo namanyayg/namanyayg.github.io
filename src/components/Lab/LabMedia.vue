@@ -93,6 +93,7 @@ export default {
   border-radius .25em
   box-shadow 0 .5em 1em rgba(0, 0, 0, .1)
   transition transform .3s ease-in-out
+  z-index 2
 
   .overlay
     content ''
@@ -104,11 +105,6 @@ export default {
     z-index 2
     opacity .15
     transition opacity .3s ease-in-out
-
-  &:hover
-    transform translateY(-.5em)
-    .overlay
-      opacity 0.05
 
 img
   display block
@@ -191,9 +187,13 @@ img
   video
     display block
     width 100%
-    object-fit cover
-    position relative
-    z-index 2
+  object-fit cover
+
+@media (hover: hover)
+  .image-container:hover
+    transform translateY(-.5em)
+    .overlay
+      opacity 0.05
 
 @media (max-width 40em)
   .video-container

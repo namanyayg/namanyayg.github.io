@@ -36,13 +36,6 @@ export default {
   border-radius 4px
   transition transform 0.3s ease, box-shadow 0.3s ease
 
-  &:hover
-    transform translateY(-4px)
-    box-shadow 0 12px 24px rgba(0,0,0,0.15)
-    
-    .overlay
-      opacity 1
-
 .image-container
   position relative
   width 100%
@@ -54,9 +47,6 @@ export default {
     height auto
     display block
     transition transform 0.3s ease
-
-  &:hover img
-    transform scale(1.05)
 
 .overlay
   position absolute
@@ -94,6 +84,21 @@ export default {
     font-size 1em
     padding 0.875em 1.5em
 
+@media (hover: hover)
+  .media-item:hover
+    transform translateY(-4px)
+    box-shadow 0 12px 24px rgba(0,0,0,0.15)
+
+    .overlay
+      opacity 1
+
+  .image-container:hover img
+    transform scale(1.05)
+
+  .download-btn .button:hover
+    transform translateY(-2px)
+    box-shadow 0 6px 16px rgba(0,0,0,0.3)
+
 @media (max-width 30em)
   .media-item
     margin-bottom 1em
@@ -102,4 +107,3 @@ export default {
     font-size 0.9em
     padding 0.75em 1.25em
 </style>
-

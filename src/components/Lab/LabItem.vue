@@ -14,9 +14,9 @@
         .description(v-if="data.shortDescription" v-html="data.shortDescription")
         .description(v-if="!data.shortDescription" v-html="data.description")
         .actions
-          a.button.view-project(:href="data.href" target="_blank" :style="{ backgroundColor: data.color }") 
+          a.button.view-project(:href="data.href" target="_blank" :style="{ backgroundColor: data.color }")
             | Visit Project →
-          a.github-link(v-if="!data.isClosedSource" target="_blank" :href="`https://github.com/namanyayg/${data.key}`")
+          a.github-link(v-if="!data.isClosedSource" target="_blank" rel="noopener noreferrer" :href="'https://github.com/namanyayg/' + data.key")
             | Source on Github
 </template>
 
@@ -86,16 +86,16 @@ export default {
     this.$el.addEventListener('enliven', this.beginAnimate)
   },
   computed: {
-    calculatedAge() {
+    calculatedAge () {
       const birthDate = new Date(1998, 6) // July is 6 (0-based)
       const projectDate = new Date(this.data.createdAt)
       const age = Math.floor((projectDate - birthDate) / (365.25 * 24 * 60 * 60 * 1000))
       return age
     },
-    showAge() {
+    showAge () {
       return this.calculatedAge < 18
     },
-    createdAt() {
+    createdAt () {
       return new Date(this.data.createdAt).toLocaleDateString('en-US', { year: 'numeric', month: 'short' })
     }
   }
@@ -274,7 +274,7 @@ export default {
     font-size 1.5em
     text-align left
     margin 1em 0 .5rem
-  
+
   .actions
     margin-top .75rem !important
     font-size .875em
@@ -312,8 +312,6 @@ export default {
 
   .m-subtitle
     font-size 1em
-
-
 .age
   margin-left 0.5em
   vertical-align middle
@@ -333,19 +331,22 @@ export default {
     border-radius 4px
     color white
     text-decoration none
+    font-family $font--sans
     font-weight bold
     transition transform 0.2s ease
-    
-    &:hover
-      transform translateY(-2px)
 
   .github-link
     color inherit
     text-decoration none
     border-bottom 1px solid currentColor
-    
+
     &:hover
       opacity 0.8
+
+@media (hover: hover)
+  .actions
+    .button:hover
+      transform translateY(-2px)
 
 @media (max-width: 50em)
   .actions
