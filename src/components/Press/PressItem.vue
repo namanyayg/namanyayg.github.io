@@ -1,16 +1,16 @@
 <template lang="pug">
-  a.press-item(:href="data.url" target="_blank" rel="noopener" :class="{ 'press-item--large': large }")
+  a.press-item(:href="data.url" target="_blank" rel="noopener noreferrer" :class="{ 'press-item--large': large }")
     .thumb
-      img(:src="`/static/press/${data.id}.jpg`" :alt="`${data.outlet}: ${data.title}`" loading="lazy")
-      span.type {{ typeLabel }}
+      img(:src="`/static/press/${data.id}.jpg`" alt="" loading="lazy")
     .body
+      h3.headline {{ data.title }}
       .meta
         span.outlet {{ data.outlet }}
         span.dot ·
         span.date {{ data.date }}
-      h3.headline {{ data.title }}
+        span.dot ·
+        span.type {{ typeLabel }}
       p.note(v-if="data.note && large") {{ data.note }}
-      span.read Read →
 </template>
 
 <script>
@@ -42,22 +42,27 @@ export default {
 @import '~@/styl/_variables'
 
 .press-item
-  display flex
-  flex-direction column
-  background white
-  border-radius 8px
-  overflow hidden
+  display grid
+  grid-template-columns 6em minmax(0, 1fr)
+  align-content start
+  gap 1.25em
+  padding 1.25em 0
+  border-top 1px solid rgba($color--title-text, .25)
   text-decoration none
   color $color--body-text
-  border 1px solid rgba($color--subtitle-text, 0.18)
-  transition transform .3s ease, box-shadow .3s ease, border-color .3s ease
+
+  &:focus-visible
+    outline 2px solid #a55c00
+    outline-offset 5px
+
+  &:hover .headline
+    text-decoration underline
+    text-underline-offset .18em
 
 .thumb
-  position relative
   aspect-ratio 16 / 10
   overflow hidden
   background #f3f5fa
-  border-bottom 1px solid rgba($color--subtitle-text, 0.12)
 
   img
     width 100%
@@ -65,35 +70,15 @@ export default {
     object-fit cover
     object-position top
     display block
-    transition transform .4s ease
-
-  .type
-    position absolute
-    top .75em
-    left .75em
-    font-size .7em
-    font-family $font--sans
-    letter-spacing 1.5px
-    text-transform uppercase
-    font-weight 700
-    padding .35em .7em
-    border-radius 3px
-    background rgba(8, 15, 37, 0.85)
-    color white
 
 .body
-  padding 1.25em 1.25em 1.35em
-  display flex
-  flex-direction column
-  flex 1
+  min-width 0
 
 .meta
   font-size .8em
   font-family $font--sans
-  letter-spacing .5px
-  text-transform uppercase
-  color $color--subtitle-text
-  margin 0 0 .6em
+  color $color--body-text
+  line-height 1.6
 
   .outlet
     font-weight 700
@@ -104,46 +89,36 @@ export default {
 
 .headline
   font-size 1.125em
-  line-height 1.35
+  line-height 1.4
   font-weight 600
   color $color--title-text
-  margin 0 0 .75em
+  margin 0 0 .5em
 
 .note
-  font-size .95em
-  line-height 1.5
-  font-weight 400
-  margin 0 0 1em
-  color $color--body-text
-
-.read
-  margin-top auto
-  font-family $font--sans
-  font-weight 700
-  font-size .875em
-  color $color--title-text
-  transition color .2s ease
+  font-size 1em
+  line-height 1.6
+  margin .75em 0 0
 
 .press-item--large
+  display flex
+  flex-direction column
+  gap 1.25em
+  padding 0 0 1.5em
+  border-top 0
+  border-bottom 1px solid rgba($color--title-text, .25)
+
+  .thumb
+    width 100%
+    aspect-ratio 16 / 9
+
   .headline
     font-size 1.5em
 
-  .body
-    padding 1.5em
+@media (max-width: 40em)
+  .press-item
+    grid-template-columns 4.5em minmax(0, 1fr)
+    gap 1em
 
-@media (max-width: 50em)
   .press-item--large .headline
     font-size 1.25em
-
-@media (hover: hover)
-  .press-item:hover
-    transform translateY(-4px)
-    box-shadow 0 14px 28px rgba(8, 15, 37, 0.12)
-    border-color rgba($color--highlight, 0.6)
-
-    .thumb img
-      transform scale(1.04)
-
-    .read
-      color $color--highlight
 </style>

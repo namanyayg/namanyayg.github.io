@@ -6,7 +6,7 @@
       <nav aria-label="Main navigation"><router-link to="/lab/">Lab</router-link><a href="https://nmn.gl/blog">Blog</a><router-link to="/press">Press</router-link><router-link to="/#contact">Contact</router-link></nav>
     </header>
     <slot/>
-    <footer class="archive-footer"><router-link to="/lab/">The Lab</router-link><span>A continuing archive by Namanyay Goel.</span><router-link to="/">Back to the main site</router-link></footer>
+    <footer class="archive-footer"><router-link to="/lab/">The Lab</router-link><span>My projects, since 2012.</span><router-link to="/">Back to the main site</router-link></footer>
   </div>
 </template>
 <script>

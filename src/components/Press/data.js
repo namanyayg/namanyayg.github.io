@@ -17,7 +17,7 @@ export const essays = [
     date: 'Jan 2025',
     url: 'https://nmn.gl/blog/ai-illiterate-programmers',
     reach: '1.3M readers',
-    summary: 'After twelve years of coding I noticed I had stopped being able to work without an AI assistant. The essay argues that AI tooling is quietly eroding the fundamentals of a whole generation of developers, and what to do about it.',
+    summary: 'After twelve years of coding, I noticed I could no longer work without an AI assistant. I wrote about what that dependence was doing to my understanding of programming.',
     coverage: 'NYT Hard Fork, Inc., Futurism, The Register, Marketplace Tech, Hacker News front page, ThePrimeagen, Tech With Tim'
   },
   {
@@ -26,7 +26,7 @@ export const essays = [
     date: 'Feb 2025',
     url: 'https://nmn.gl/blog/ai-and-learning',
     reach: 'Widely syndicated',
-    summary: 'A follow-up written after dozens of conversations with new developers: the code works, but ask why and you get blank stares. On what struggling through problems used to teach and how to keep learning with AI in the loop.',
+    summary: 'After dozens of conversations with new developers, I wrote about the gap between getting code to run and understanding how it works, and how to keep learning with AI.',
     coverage: 'ITPro, Diginomica, Inside Higher Ed, Developpez, ForrestKnight, Code Monkey'
   },
   {
@@ -35,7 +35,7 @@ export const essays = [
     date: 'Feb 2026',
     url: 'https://nmn.gl/blog/ai-killing-b2b-saas',
     reach: 'Hacker News front page',
-    summary: 'Why the most profitable business model on Earth is under threat when every customer believes they can vibe-code something better, what the market is already pricing in, and which SaaS companies survive.',
+    summary: 'What happens to SaaS when customers think they can build the software themselves with AI? I look at what that means for renewals and the companies selling the software.',
     coverage: 'Startups For the Rest of Us, TechPlanet, Inc42, Hacker News'
   }
 ]
@@ -56,7 +56,7 @@ export default [
     date: 'Aug 2026',
     type: 'podcast',
     url: 'https://podcasts.apple.com/us/podcast/searching-for-a-co-founder-is-how-you-get-a-bad-one/id1881721449?i=1000784403426',
-    note: 'Guest, with Julian Weisser and three founders from the first Solo Founders cohort.'
+    note: 'I joined Julian Weisser and three founders from the first Solo Founders cohort.'
   },
   {
     id: 'yc-pumpgtm',
@@ -366,7 +366,7 @@ export default [
     date: 'Apr 2015',
     type: 'article',
     url: 'https://opensource.googleblog.com/2015/04/google-code-in-2014-wrap-up-with.html',
-    note: 'One of 25 grand-prize winners worldwide, at 16. Google flew my family to Mountain View.'
+    note: 'I was one of 25 grand-prize winners worldwide, at 16.'
   }
 ]
 

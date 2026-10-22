@@ -1,5 +1,5 @@
 <template lang="pug">
-#press.press
+main#press.press
   .masthead-container
     Masthead(back="dark")
   .press-intro
@@ -9,12 +9,9 @@
           span.arrow ←
           span.text Back to Portfolio
       header.header
-        h1.title In the press
+        h1.title My work in the press
         p.subtitle
-          | I write about what AI is doing to software: to the people who build it, and to the companies that sell it.
-          | Three of my essays reached more than four million readers and were picked up by The New York Times,
-          | Inc., Futurism, The Register, and Marketplace. This page has the essays, the coverage, quotes you can use,
-          | and how to reach me.
+          | My writing on AI and software has reached more than four million readers, with coverage in The New York Times, Inc., Futurism, The Register and Marketplace.
       .stats
         component.stat(v-for="s in stats" :key="s.label" :is="s.url ? 'a' : 'div'" :href="s.url" :target="s.url ? '_blank' : null" :rel="s.url ? 'noopener noreferrer' : null" :class="{ 'stat--link': s.url }")
           .stat__value {{ s.value }}
@@ -28,14 +25,13 @@
 
   section.press-section.press-section--essays
     .wrap
-      h2.section-title The essays behind the coverage
-      p.section-lede Most stories about my work trace back to one of these three pieces. Each links to the original so you can quote the source.
+      h2.section-title My essays
       .essays
-        a.essay(v-for="e in essays" :key="e.id" :href="e.url" target="_blank" rel="noopener")
+        a.essay(v-for="e in essays" :key="e.id" :href="e.url" target="_blank" rel="noopener noreferrer")
+          h3.essay__title {{ e.title }}
           .essay__meta
             span.essay__date {{ e.date }}
             span.essay__reach {{ e.reach }}
-          h3.essay__title {{ e.title }}
           p.essay__summary {{ e.summary }}
           p.essay__coverage
             strong Covered by:
@@ -46,19 +42,19 @@
     .wrap
       .contact-card
         .contact-card__text
-          h2 Writing a story? Recording an episode?
+          h2 Press enquiries
           p
-            | I'm happy to talk about what AI is doing to junior developers and the craft of programming, vibe coding and the bill it leaves behind, why B2B SaaS is under pressure, and what it's like to build a company as a solo founder in Y Combinator. I'm building PumpGTM, an AI agent that finds buyers and runs outreach for founders.
-          p.small Based in San Francisco, available on Pacific hours and happy to record remotely.
+            | I’m available for interviews on AI, programming and building a company as a solo founder. I’m building PumpGTM, an AI agent that finds buyers and runs outreach for founders.
+          p.small San Francisco · Pacific time · Available for remote recording
         .contact-card__actions
           a.button.button--primary(:href="pressMailto") Email me for press
-          router-link.button.button--ghost(to="/press-kit") Press kit &amp; bio
-          router-link.button.button--ghost(to="/media") Photos
+          router-link(to="/press-kit") Press kit &amp; bio
+          router-link(to="/media") Download photos
 
   section.press-section.press-section--quotes
     .wrap
-      h2.section-title Quotable
-      p.section-lede Cleared for use with attribution to Namanyay Goel. For longer conversations, email me.
+      h2.section-title In my words
+      p.section-lede Cleared for use with attribution to Namanyay Goel.
       .quotes
         blockquote.quote(v-for="q in quotes" :key="q.text")
           p.quote__text “{{ q.text }}”
@@ -67,17 +63,17 @@
   section.press-section
     .wrap
       h2.section-title All coverage
-      .filters
-        button.filter(v-for="f in filters" :key="f.key" :class="{ 'filter--active': activeFilter === f.key }" @click="activeFilter = f.key") {{ f.label }}
-      .grid
+      .filters(role="group" aria-label="Filter coverage")
+        button.filter(v-for="f in filters" :key="f.key" :class="{ 'filter--active': activeFilter === f.key }" :aria-pressed="activeFilter === f.key" @click="activeFilter = f.key") {{ f.label }}
+      .grid(aria-live="polite")
         PressItem(v-for="item in filteredItems" :key="item.id" :data="item")
 
   section.press-section.press-section--videos
     .wrap
       h2.section-title Videos &amp; podcasts
-      p.section-lede Creators with a combined audience of more than four million subscribers made videos about my writing. I've also been a guest on shows about AI and startups.
+      p.section-lede Interviews and responses to my writing from creators with more than four million subscribers combined.
       .videos
-        a.video(v-for="v in videos" :key="v.id" :href="v.url" target="_blank" rel="noopener")
+        a.video(v-for="v in videos" :key="v.id" :href="v.url" target="_blank" rel="noopener noreferrer")
           span.video__creator
             | {{ v.creator }}
             span.video__badge(v-if="v.guest") guest
@@ -147,7 +143,6 @@ export default {
 .press-intro
   padding 2em 0 3em
   background-color $color--hero-bg
-  background-image radial-gradient(circle at 25%, $color--hero-bg 10%, $color--hero-bg--dark)
   color $color--hero-subtitle
 
   .header
@@ -156,6 +151,8 @@ export default {
 
   .title
     font-size 4em
+    line-height 1.15
+    text-wrap balance
     font-weight bold
     color $color--hero-title
     margin 0 0 .5em
@@ -172,10 +169,8 @@ export default {
   gap 1.5em
 
 .stat
-  padding 1.25em 1.5em
-  border 1px solid $color--hero-bg--border
-  border-radius 8px
-  background rgba(255, 255, 255, 0.03)
+  padding 1em 0 0
+  border-top 1px solid rgba(255, 255, 255, .25)
   text-decoration none
   color inherit
   transition border-color .25s ease, background-color .25s ease
@@ -185,7 +180,7 @@ export default {
     background rgba(255, 255, 255, 0.06)
 
   &__value
-    font-size 2.25em
+    font-size 1.5em
     font-weight 700
     color $color--highlight
     line-height 1
@@ -215,7 +210,7 @@ export default {
 
 .grid
   display grid
-  grid-template-columns repeat(auto-fill, minmax(unquote("min(18em, 100%)"), 1fr))
+  grid-template-columns repeat(2, minmax(0, 1fr))
   gap 1.5em
 
   &--featured
@@ -230,18 +225,14 @@ export default {
 .essay
   display flex
   flex-direction column
-  padding 1.75em
-  border 1px solid rgba($color--title-text, .1)
-  border-radius 12px
+  padding 1.25em 0
+  border-top 1px solid rgba($color--title-text, .25)
   text-decoration none
   color inherit
-  transition transform .3s ease, box-shadow .3s ease, border-color .3s ease
 
   &__meta
     font-family $font--sans
     font-size .8125em
-    text-transform uppercase
-    letter-spacing 1.5px
     color $color--body-text
 
   &__reach
@@ -249,6 +240,7 @@ export default {
       content ' · '
 
   &__title
+    margin 0 0 .6em
     font-family $font--serif
     font-size 1.375em
     font-weight 600
@@ -267,7 +259,7 @@ export default {
     strong
       font-family $font--sans
       font-size .8em
-      letter-spacing 1px
+      letter-spacing 0
       text-transform uppercase
       color $color--title-text
 
@@ -285,9 +277,8 @@ export default {
 
 .quote
   margin 0
-  padding 1.5em 1.75em
-  border-left 3px solid $color--highlight
-  background rgba($color--hero-bg, .03)
+  padding 1.25em 0
+  border-top 1px solid rgba($color--title-text, .25)
 
   &__text
     margin 0 0 .75em
@@ -300,18 +291,14 @@ export default {
   &__context
     font-family $font--sans
     font-size .8125em
-    text-transform uppercase
-    letter-spacing 1.5px
     color $color--body-text
 
 @media (hover: hover)
   .essay:hover
-    transform translateY(-3px)
-    box-shadow 0 8px 24px rgba($color--subtitle-text, .12)
     border-color $color--highlight
 
-  .essay__read:hover
-    color $color--highlight
+  .essay:hover .essay__read
+    text-decoration underline
 
 .filters
   display flex
@@ -324,8 +311,8 @@ export default {
   background white
   color $color--body-text
   border 1px solid rgba($color--subtitle-text, 0.3)
-  border-radius 999px
-  padding .5em 1.1em
+  border-radius 0
+  padding .65em 1.1em
   font-size .875em
   font-weight 500
   letter-spacing 0
@@ -350,17 +337,15 @@ export default {
   gap 2.5em
   align-items center
   justify-content space-between
-  padding 2.5em
-  border-radius 12px
-  background-color $color--hero-bg
-  background-image radial-gradient(circle at 20%, $color--hero-bg 10%, $color--hero-bg--dark)
-  border 1px solid $color--hero-bg--border
-  color $color--hero-subtitle
+  padding 2em 0
+  border-top 1px solid rgba($color--title-text, .25)
+  border-bottom 1px solid rgba($color--title-text, .25)
+  color $color--body-text
 
   h2
     font-size 1.875em
     font-weight bold
-    color $color--hero-title
+    color $color--title-text
     margin 0 0 .5em
 
   p
@@ -368,26 +353,20 @@ export default {
     line-height 1.55
     margin 0 0 .75em
     max-width 40em
-    color $color--hero-subtitle
+    color $color--body-text
 
   a
-    color $color--hero-title
+    color $color--title-text
     font-weight 700
-    text-decoration none
+    text-decoration underline
 
     &:hover
-      color $color--highlight
+      text-decoration underline
 
   .small
     font-size .95em
-    color $color--hero-text--light
+    color $color--body-text
     margin 0
-
-  &__actions
-    display flex
-    flex-direction column
-    gap .75em
-    min-width 15em
 
   &__actions
     display flex
@@ -398,21 +377,17 @@ export default {
 .button
   font-family $font--sans
   text-align center
-  border-radius 8px
+  border-radius 0
   padding .9em 1.5em
   font-size .95em
-  letter-spacing 1px
+  letter-spacing 0
   text-decoration none
-  transition background-color .25s ease, color .25s ease, border-color .25s ease, transform .25s ease, box-shadow .25s ease
+  transition background-color .2s ease, color .2s ease
 
   &--primary, &--primary:hover
     background $color--highlight
     color $color--hero-bg--dark
 
-  &--ghost, &--ghost:hover
-    background rgba(255,255,255,0.06)
-    color $color--hero-text
-    border 2px solid rgba(255,255,255,0.18)
 
 .videos
   display grid
@@ -424,13 +399,13 @@ export default {
   grid-template-columns 1fr auto
   grid-template-rows auto auto
   column-gap 1em
-  padding 1em 1.25em
-  border 1px solid rgba($color--subtitle-text, 0.18)
-  border-radius 8px
+  padding 1.25em 0
+  border-top 1px solid rgba($color--title-text, .25)
+  border-radius 0
   text-decoration none
   color $color--body-text
   font-family $font--sans
-  transition border-color .25s ease, transform .25s ease, color .25s ease
+  transition border-color .2s ease
 
   &__creator
     font-size .8em
@@ -445,17 +420,13 @@ export default {
     font-weight 400
     text-transform none
     letter-spacing 0
-    color $color--subtitle-text
+    color $color--body-text
     font-family $font--sans
 
   &__badge
-    background $color--highlight
-    color white
-    font-weight 700
-    padding .1em .5em
-    border-radius 3px
-    text-transform uppercase
-    font-size .85em
+    color $color--body-text
+    font-weight 400
+    font-size 1em
 
   &__title
     grid-column 1
@@ -474,19 +445,14 @@ export default {
 @media (hover: hover)
   .button
     &--primary:hover
-      transform translateY(-2px)
-      box-shadow 0 6px 16px rgba($color--highlight, 0.35)
+      background darken($color--highlight, 8%)
 
-    &--ghost:hover
-      transform translateY(-2px)
-      border-color $color--highlight
 
   .video:hover
     border-color $color--highlight
-    transform translateY(-2px)
 
     .video__arrow
-      color $color--highlight
+      text-decoration underline
 
 @media (max-width: 60em)
   .stats
@@ -507,11 +473,41 @@ export default {
     font-size 1.125em
 
   .stats
-    grid-template-columns 1fr
+    grid-template-columns repeat(2, minmax(0, 1fr))
 
   .grid, .grid--featured
     grid-template-columns 1fr
 
   .section-title
     font-size 1.75em
+
+.press
+  a, button
+    text-underline-offset .2em
+
+    &:focus-visible
+      outline 2px solid #a55c00
+      outline-offset 5px
+
+  ::selection
+    background #ffe1ad
+    color $color--title-text
+
+  .button--primary
+    color $color--hero-bg--dark
+    text-decoration none
+
+  .press-intro a:focus-visible
+    outline-color $color--highlight
+
+@media (max-width: 40em)
+  .wrap
+    width 88%
+
+  .header
+    margin-top 1.5em
+
+  .contact-card__actions a
+    padding-top .6em
+    padding-bottom .6em
 </style>

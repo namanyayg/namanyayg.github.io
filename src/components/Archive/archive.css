@@ -334,7 +334,7 @@
   margin:.8rem 0 1.2rem;
 }
 .archive-article-heading .archive-date {
-  margin:0;
+  margin:0 0 1.2rem;
 }
 .archive-deck {
   font-size:clamp(1.2rem,2vw,1.55rem);

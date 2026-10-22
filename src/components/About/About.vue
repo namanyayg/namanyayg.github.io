@@ -10,9 +10,9 @@
       .about__intro(ref="about-intro")
         p I'm building <a class="ai" href="https://pumpgtm.com/">PumpGTM</a> in San Francisco, an AI agent that finds the buyers who are ready to talk and runs your outreach. We're backed by Y Combinator.
 
-        p I also <a href="https://nmn.gl/blog" class="ayom" style="text-decoration: underline">write about AI often</a>. My articles garnered over four million views in 2025 and I was featured in the New York Times, Futurism, Inc. Magazine, and many more.
+        p I also <a href="https://nmn.gl/blog" class="ayom" style="text-decoration: underline">write about AI often</a>. My articles received over four million views in 2025, with coverage in The New York Times, Futurism and Inc. Magazine.
 
-        p I discovered my passion for programming at the young age of <strong class="dyeus">13 years old</strong>. With over 15 years experience in building, I have built apps used by millions of users.
+        p I started programming at <strong class="dyeus">13</strong> and have since built apps used by millions of people.
 </template>
 
 <script>

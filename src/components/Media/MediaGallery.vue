@@ -10,7 +10,7 @@
           span.text Back to Press Kit
       header.header
         h1.title Media Kit
-        .subtitle Namanyay&rsquo;s high-quality photographs for media usage
+        .subtitle My photos for editorial use
   .media-content
     .wrap
       .media-grid

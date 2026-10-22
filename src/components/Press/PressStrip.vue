@@ -3,7 +3,7 @@
   .wrap
     header.header
       h1.title Featured in
-      .subtitle My writing on AI and software engineering gets picked up by the places developers and founders actually read.
+      .subtitle Coverage of my writing on AI and software engineering.
     .logos
       router-link.logo-card(v-for="item in featuredItems" :key="item.id" to="/press" :title="item.title")
         .shot

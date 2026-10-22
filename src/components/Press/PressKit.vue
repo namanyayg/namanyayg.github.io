@@ -1,5 +1,5 @@
 <template lang="pug">
-#press-kit.press-kit
+main#press-kit.press-kit
   .masthead-container
     Masthead(back="dark")
   .kit-intro
@@ -10,50 +10,44 @@
           span.text Back to Press
       header.header
         h1.title Press kit
-        p.subtitle Everything a journalist, producer, or awards committee needs about me, in one place. Copy freely.
+        p.subtitle My background, writing and photos for editorial use.
       .quick-actions
-        a.button.button--primary(:href="mailto") Email Namanyay
-        router-link.button.button--ghost(to="/media") Download photos
-        a.button.button--ghost(href="https://nmn.gl/blog" target="_blank" rel="noopener") Read the blog
+        a.button.button--primary(:href="mailto") Email me
+        router-link(to="/media") Download photos
+        a(href="https://nmn.gl/blog" target="_blank" rel="noopener noreferrer") Read the blog
 
   section.kit-section
     .wrap.two-col
       .col
         h2.section-title One line
-        p.copy Namanyay Goel is the founder of PumpGTM (Y Combinator) and a writer on AI and software whose essays reached more than four million readers.
+        p.copy I’m the founder of PumpGTM (Y Combinator). I write about AI and software, and my essays have reached more than four million readers.
         h2.section-title Short bio
         p.copy
-          | Namanyay Goel is a San Francisco based founder and writer. He started programming at 13, took his
-          | first professional job as a web developer at 14, and has spent the years since building products used
-          | by millions of people, from India's most-visited independent COVID tracker to developer tools used by
-          | engineering teams at fast-growing companies. Today he runs PumpGTM, a Y Combinator-backed company building
-          | an AI agent that finds the buyers who are ready to talk and runs a founder's outreach for them.
-          | His writing on how AI is changing the craft of programming has been covered by The New York Times,
-          | Inc., Futurism, The Register, and Marketplace.
+          | I’m a founder and writer in San Francisco. I started programming at 13 and took my first developer job at 14.
+          | Since then, I’ve built products used by millions of people, including IndiaSmile and tools for engineering teams.
+          | I now run PumpGTM, a Y Combinator-backed company building an AI agent that finds buyers and runs outreach for founders.
+          | I also write about what AI is doing to programming. My essays have been covered by The New York Times,
+          | Inc., Futurism, The Register and Marketplace.
       .col
         h2.section-title Long bio
         p.copy
-          | Namanyay Goel (b. 1998, New Delhi) is a technology entrepreneur, engineer, and writer. He taught himself
-          | design and web development at 12 and by 14 was the frontend developer for MakeUseOf, a technology
-          | publication with millions of monthly readers, working remotely while finishing school. At 16 he was one of
-          | 25 Google Code-in grand prize winners worldwide.
+          | I grew up in New Delhi and taught myself design and web development at 12. By 14, I was working remotely
+          | as a frontend developer for MakeUseOf, a technology publication with millions of monthly readers,
+          | while finishing school. At 16, I was one of 25 Google Code-in grand prize winners worldwide.
         p.copy
-          | He spent eight years running a software agency in New Delhi, shipping products for clients in the US, UK,
-          | and Dubai, and co-founded consumer and fintech products including Ayom and Metric Books. During the
-          | pandemic he built IndiaSmile, an open-source COVID tracker that served more than five million visitors at
-          | peaks of 600,000 a day.
+          | I spent eight years running a software agency in New Delhi, building products for clients in the US, UK
+          | and Dubai. I also co-founded Ayom and Metric Books. During the pandemic, my team and I built IndiaSmile,
+          | an open-source COVID tracker that served more than five million visitors, with peaks of 600,000 a day.
         p.copy
-          | In 2025 his essay “AI is Creating a Generation of Illiterate Programmers” became one of the most-discussed
-          | pieces of writing in software that year, reaching more than a million readers and prompting coverage from
-          | The New York Times' Hard Fork, Inc., Futurism, The Register, and creators with a combined audience above
-          | four million. He followed it with “AI is Killing B2B SaaS” in 2026, which reached the Hacker News front page
-          | and was debated on Startups For the Rest of Us.
+          | In 2025, I wrote “AI is Creating a Generation of Illiterate Programmers”. It reached more than a million readers
+          | and was covered by The New York Times’ Hard Fork, Inc., Futurism, The Register and creators with a combined
+          | audience above four million. I followed it with “AI is Killing B2B SaaS” in 2026. That essay reached the Hacker News
+          | front page and was discussed on Startups For the Rest of Us.
         p.copy
-          | He moved to San Francisco in 2025, was selected for On Deck Founders and the inaugural Solo Founders
-          | Program, raised a pre-seed round, and was accepted into Y Combinator (spring 2026). His first company there,
-          | Gigacatalyst, was wound down in 2026; he now builds PumpGTM, a go-to-market agent for founders.
-          | He holds a registered German utility model for a method of analysing and summarising software codebases,
-          | serves on the editorial boards of two peer-reviewed journals, and has judged international hackathons.
+          | I moved to San Francisco in 2025 and joined On Deck Founders and the inaugural Solo Founders Program.
+          | I got into Y Combinator in spring 2026 and now build PumpGTM.
+          | I hold a registered German utility model for analysing and summarising software codebases.
+          | I also serve on the editorial boards of two peer-reviewed journals and have judged international hackathons.
 
   section.kit-section.kit-section--facts
     .wrap
@@ -80,7 +74,7 @@
     .wrap
       h2.section-title Selected coverage
       .coverage
-        a.coverage__item(v-for="item in selected" :key="item.id" :href="item.url" target="_blank" rel="noopener")
+        a.coverage__item(v-for="item in selected" :key="item.id" :href="item.url" target="_blank" rel="noopener noreferrer")
           img(:src="`/static/press/${item.id}.jpg`" :alt="item.outlet" loading="lazy")
           .coverage__meta
             span.outlet {{ item.outlet }}
@@ -91,7 +85,7 @@
   section.kit-section
     .wrap
       h2.section-title Photos
-      p.copy Hi-resolution, cleared for editorial use with credit “Courtesy Namanyay Goel”.
+      p.copy High-resolution, cleared for editorial use with credit “Courtesy Namanyay Goel”.
       .photos
         a.photo(v-for="p in photos" :key="p.id" :href="`/static/${p.filename}`" download)
           img(:src="`/static/${p.filename}`" :alt="p.title" loading="lazy")
@@ -109,12 +103,11 @@
             a(:href="mailto") hi@nmn.gl
             |  · X
             | &nbsp;
-            a(href="https://x.com/NamanyayG" target="_blank" rel="noopener") @NamanyayG
+            a(href="https://x.com/NamanyayG" target="_blank" rel="noopener noreferrer") @NamanyayG
             |  · LinkedIn
             | &nbsp;
-            a(href="https://www.linkedin.com/in/namanyayg/" target="_blank" rel="noopener") /in/namanyayg
-          p.small San Francisco, CA · Pacific time · remote recording is fine.
-        a.button.button--primary(:href="mailto") Email Namanyay
+            a(href="https://www.linkedin.com/in/namanyayg/" target="_blank" rel="noopener noreferrer") /in/namanyayg
+          p.small San Francisco, CA · Pacific time · Available for remote recording.
 </template>
 
 <script>
@@ -129,35 +122,36 @@ export default {
     return {
       photos: mediaData,
       facts: [
-        { value: '4M+', label: 'readers in 2025' },
+        { value: '4M+', label: 'readers of my essays in 2025' },
         { value: '13', label: 'age I started programming' },
         { value: '14', label: 'age of my first developer job' },
         { value: '5M+', label: 'visitors to IndiaSmile during COVID' },
         { value: 'YC P26', label: 'PumpGTM, Y Combinator', url: 'https://pumpgtm.com' },
         { value: '30+', label: 'outlets that covered my work' },
-        { value: '2', label: 'journal editorial boards' },
-        { value: '1', label: 'registered utility model (DPMA, 2026)' }
+        { value: '2', label: 'journal editorial boards I serve on' },
+        { value: '1', label: 'utility model I registered (DPMA, 2026)' }
       ],
       topics: [
-        'What AI is doing to junior developers, and what “illiterate programmers” means in practice',
-        'Vibe coding: where it works, where it quietly breaks, and the security bill that arrives later',
-        'Why AI is killing B2B SaaS that refuses to evolve, and what customers build for themselves now',
-        'Running a company as a solo founder inside Y Combinator, and shutting a product down to start the next one',
-        'Founder-led sales: how early-stage companies actually find their first customers with AI',
-        'Building developer tools that keep AI honest about large codebases',
-        'Starting a career at 14 and what early access to the internet did for a kid in New Delhi',
-        'India to San Francisco: the O-1 visa, immigration as a founder, and building in the US'
+        'How junior developers learn to program with AI',
+        'Where vibe coding works and where it causes problems',
+        'What AI means for SaaS companies when customers can build their own software',
+        'My experience as a solo founder in Y Combinator',
+        'How founders find their first customers with AI',
+        'How I build AI tools that understand large codebases',
+        'My first developer job at 14 in New Delhi',
+        'My move from India to San Francisco to build a company'
       ],
       milestones: [
-        { year: '2011', text: 'Start freelancing as a web designer and developer at 13.' },
-        { year: '2013', text: 'Frontend developer at MakeUseOf (2–3M monthly readers), age 14.' },
-        { year: '2014', text: 'Google Code-in grand prize winner; publish Webstiles, an open-source prototyping tool.' },
-        { year: '2016', text: 'Publish a mathematical solver for Bulls and Cows; 5,500+ downloads.' },
-        { year: '2017', text: 'Organise HackIndia and BharatHacks, two of India\'s largest student hackathons.' },
-        { year: '2020', text: 'Build IndiaSmile, an open-source COVID tracker: 5M+ visitors, 600k a day at peak.' },
-        { year: '2025', text: '“AI is Creating a Generation of Illiterate Programmers” reaches 1.3M readers; NYT, Inc., Futurism coverage.' },
-        { year: '2025', text: 'Move to San Francisco. On Deck Founders, Recurse Center, Solo Founders Program. Raise a pre-seed round. O-1A visa approved.' },
-        { year: '2026', text: '“AI is Killing B2B SaaS” hits the Hacker News front page. Accepted into Y Combinator (spring 2026). German utility model registered. Launch PumpGTM. Guest on the Solo Founders Podcast.' }
+        { year: '2011', text: 'I started freelancing as a web designer and developer at 13.' },
+        { year: '2013', text: 'I joined MakeUseOf as a frontend developer at 14. The site had 2–3M monthly readers.' },
+        { year: '2013', text: 'I published Webstiles, the prototyping tool I used with clients.' },
+        { year: '2014', text: 'I won a Google Code-in grand prize.' },
+        { year: '2016', text: 'I published a mathematical solver for Bulls and Cows, which reached 5,500+ downloads.' },
+        { year: '2017', text: 'I organised HackIndia and BharatHacks, two of India\'s largest student hackathons.' },
+        { year: '2020', text: 'My team and I built IndiaSmile. Our COVID tracker reached 5M+ visitors, with 600k a day at peak.' },
+        { year: '2025', text: 'My essay “AI is Creating a Generation of Illiterate Programmers” reached 1.3M readers, with coverage in NYT, Inc. and Futurism.' },
+        { year: '2025', text: 'I moved to San Francisco and joined On Deck Founders, Recurse Center and the Solo Founders Program.' },
+        { year: '2026', text: 'My essay “AI is Killing B2B SaaS” reached the Hacker News front page. I got into Y Combinator in spring, registered a German utility model and launched PumpGTM. I was also a guest on the Solo Founders Podcast.' }
       ]
     }
   },
@@ -189,7 +183,6 @@ export default {
 .kit-intro
   padding 2em 0 3em
   background-color $color--hero-bg
-  background-image radial-gradient(circle at 25%, $color--hero-bg 10%, $color--hero-bg--dark)
   color $color--hero-subtitle
 
   .header
@@ -210,27 +203,27 @@ export default {
 
 .quick-actions
   display flex
-  gap .75em
+  gap 1em 2em
+  align-items center
   flex-wrap wrap
+
+  a
+    color $color--hero-text
 
 .button
   font-family $font--sans
   text-align center
-  border-radius 8px
+  border-radius 0
   padding .9em 1.5em
   font-size .95em
-  letter-spacing 1px
+  letter-spacing 0
   text-decoration none
-  transition background-color .25s ease, color .25s ease, border-color .25s ease, transform .25s ease, box-shadow .25s ease
+  transition background-color .2s ease, color .2s ease
 
   &--primary
     background $color--highlight
-    color white
+    color $color--hero-bg--dark
 
-  &--ghost
-    background rgba(255,255,255,0.06)
-    color $color--hero-text
-    border 2px solid $color--hero-bg--border
 
 .kit-section
   padding 3.5em 0
@@ -247,7 +240,7 @@ export default {
   color $color--title-text
   margin 0 0 .75em
 
-  & + .section-title
+  .copy + &
     margin-top 1.5em
 
 .copy
@@ -261,7 +254,6 @@ export default {
   gap 3em
 
 .kit-section--facts
-  background #f6f8fc
   padding 3em 0 !important
 
 .facts
@@ -270,10 +262,8 @@ export default {
   gap 1.25em
 
 .fact
-  background white
-  border 1px solid rgba($color--subtitle-text, 0.18)
-  border-radius 8px
-  padding 1.25em 1.5em
+  border-top 1px solid rgba($color--title-text, .25)
+  padding 1.25em 0
   display block
   text-decoration none
   transition border-color .25s ease
@@ -282,7 +272,7 @@ export default {
     border-color $color--highlight
 
   &__value
-    font-size 2em
+    font-size 1.5em
     font-weight 700
     color $color--title-text
     line-height 1
@@ -290,7 +280,7 @@ export default {
   &__label
     margin-top .5em
     font-size .95em
-    color $color--subtitle-text
+    color $color--body-text
 
 .topics
   list-style none
@@ -300,19 +290,10 @@ export default {
   li
     font-size 1.125em
     line-height 1.5
-    padding .75em 0 .75em 1.5em
+    padding .75em 0
     position relative
     border-bottom 1px solid rgba($color--subtitle-text, 0.15)
 
-    &:before
-      content ''
-      position absolute
-      left 0
-      top 1.35em
-      width .6em
-      height .6em
-      border-radius 50%
-      background $color--highlight
 
 .timeline
   list-style none
@@ -333,7 +314,6 @@ export default {
     color $color--title-text
 
 .kit-section--coverage
-  background #f6f8fc
   padding 3em 0 !important
 
 .coverage
@@ -344,12 +324,9 @@ export default {
   &__item
     display block
     background white
-    border 1px solid rgba($color--subtitle-text, 0.18)
-    border-radius 8px
-    overflow hidden
+    border-bottom 1px solid rgba($color--title-text, .25)
     text-decoration none
     color $color--body-text
-    transition transform .3s ease, box-shadow .3s ease
 
     img
       display block
@@ -360,25 +337,23 @@ export default {
 
   &__meta
     display flex
-    justify-content space-between
-    padding .9em .9em 0
+    flex-wrap wrap
+    gap .25em 1em
+    padding .9em 0 0
     font-size .75em
-    letter-spacing .5px
-    text-transform uppercase
+    letter-spacing 0
 
     .outlet
       font-weight 700
       color $color--title-text
 
     .date
-      color $color--subtitle-text
+      color $color--body-text
 
   .headline
     display block
-    margin .4em .9em 1em
+    margin .4em 0 1em
     padding 0
-    height 2.8em
-    overflow hidden
     font-size .95em
     line-height 1.4
     color $color--title-text
@@ -391,7 +366,7 @@ export default {
   text-decoration none
 
   &:hover
-    color $color--highlight
+    text-decoration underline
 
 .photos
   display grid
@@ -401,7 +376,7 @@ export default {
 .photo
   display block
   text-decoration none
-  color $color--subtitle-text
+  color $color--body-text
   font-size .85em
 
   img
@@ -409,9 +384,8 @@ export default {
     width 100%
     aspect-ratio 4 / 5
     object-fit cover
-    border-radius 8px
+    border-radius 0
     margin 0 0 .5em
-    transition transform .3s ease
 
 .kit-section--contact
   padding-bottom 4em !important
@@ -421,17 +395,14 @@ export default {
   gap 2.5em
   align-items center
   justify-content space-between
-  padding 2.5em
-  border-radius 12px
-  background-color $color--hero-bg
-  background-image radial-gradient(circle at 20%, $color--hero-bg 10%, $color--hero-bg--dark)
-  border 1px solid $color--hero-bg--border
-  color $color--hero-subtitle
+  padding 2em 0
+  border-top 1px solid rgba($color--title-text, .25)
+  color $color--body-text
 
   h2
     font-size 1.875em
     font-weight bold
-    color $color--hero-title
+    color $color--title-text
     margin 0 0 .5em
 
   p
@@ -439,19 +410,19 @@ export default {
     line-height 1.55
     margin 0 0 .75em
     max-width 40em
-    color $color--hero-subtitle
+    color $color--body-text
 
   a
-    color $color--hero-title
+    color $color--title-text
     font-weight 700
     text-decoration none
 
     &:hover
-      color $color--highlight
+      text-decoration underline
 
   .small
     font-size .95em
-    color $color--hero-text--light
+    color $color--body-text
     margin 0
 
 @media (max-width: 60em)
@@ -474,7 +445,7 @@ export default {
     font-size 1.125em
 
   .facts
-    grid-template-columns 1fr
+    grid-template-columns repeat(2, minmax(0, 1fr))
 
   .coverage, .photos
     grid-template-columns 1fr
@@ -482,17 +453,42 @@ export default {
 @media (hover: hover)
   .button
     &--primary:hover
-      transform translateY(-2px)
-      box-shadow 0 6px 16px rgba($color--highlight, 0.35)
+      background darken($color--highlight, 8%)
 
-    &--ghost:hover
-      transform translateY(-2px)
-      border-color $color--highlight
 
   .coverage__item:hover
-    transform translateY(-4px)
-    box-shadow 0 12px 24px rgba(8, 15, 37, 0.1)
+    text-decoration underline
 
   .photo:hover img
-    transform translateY(-4px)
+    opacity .9
+
+.press-kit
+  a, button
+    text-underline-offset .2em
+
+    &:focus-visible
+      outline 2px solid #a55c00
+      outline-offset 5px
+
+  ::selection
+    background #ffe1ad
+    color $color--title-text
+
+  .button--primary
+    color $color--hero-bg--dark
+    text-decoration none
+
+  .kit-intro a:focus-visible
+    outline-color $color--highlight
+
+@media (max-width: 40em)
+  .wrap
+    width 88%
+
+  .header
+    margin-top 1.5em
+
+  .quick-actions a
+    padding-top .6em
+    padding-bottom .6em
 </style>

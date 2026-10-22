@@ -5,7 +5,7 @@
       .wrap
         header.header
           h1.title Lab
-          .subtitle My personal open-source passion projects
+          .subtitle Projects and experiments
   .lab
     .wrap
       nav.lab-categories(v-if="!showOnlyFeatured" aria-label="Project categories")

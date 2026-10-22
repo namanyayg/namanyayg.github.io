@@ -5,10 +5,10 @@
     "year": 2012,
     "dateLabel": "November 2012",
     "category": "experiments",
-    "summary": "A single-page website, written in plain JavaScript at fourteen.",
+    "summary": "A single-page website I made at fourteen.",
     "paragraphs": [
-      "Clas gave a small website the feel of an application: click a section and the old panel fades into the next. The original project also came with two tutorials explaining how it worked.",
-      "The restored demo keeps its early-web character, with repaired navigation and a contact form that stays inside the exhibit."
+      "I made Clas when I was fourteen. Clicking a section fades one panel into the next, all in plain JavaScript. I also wrote two tutorials explaining how it worked.",
+      "You can try it again below. The navigation works, but the old contact form doesn’t send messages."
     ],
     "image": "/static/lab/clas.png",
     "dateNote": "The original Git history begins on 5 November 2012.",
@@ -20,6 +20,10 @@
       [
         "Source",
         "https://github.com/namanyayg/clas"
+      ],
+      [
+        "Archived site · 14 September 2013",
+        "https://web.archive.org/web/20130914023459/http://demos.namanyayg.com/clas/"
       ]
     ]
   },
@@ -29,10 +33,10 @@
     "year": 2012,
     "dateLabel": "November 2012",
     "category": "design",
-    "summary": "A responsive CSS starting point that later powered Webstiles.",
+    "summary": "My CSS starting point for new websites, before I made Webstiles.",
     "paragraphs": [
-      "Sympl bundled a small responsive grid and typography defaults into a stylesheet. It was a way to start a page quickly while keeping control of the HTML and CSS.",
-      "The original stylesheet survives. The accompanying demo page was recreated in 2026 to make its grid and type easy to explore."
+      "I kept needing a responsive grid and sensible type defaults when I started a new site, so I put them into one stylesheet. That became Sympl, which I later used for Webstiles.",
+      "The stylesheet is original. The demo page was rebuilt in 2026 to show how the grid and type work."
     ],
     "image": "/static/lab/sympl.png",
     "dateNote": "The original Git history begins on 6 November 2012.",
@@ -44,6 +48,10 @@
       [
         "Source",
         "https://github.com/namanyayg/sympl"
+      ],
+      [
+        "Archived site · 9 November 2012",
+        "https://web.archive.org/web/20121109054602/http://sympl.namanyayg.com/"
       ]
     ]
   },
@@ -53,10 +61,10 @@
     "year": 2013,
     "dateLabel": "January 2013",
     "category": "design",
-    "summary": "A way to sketch a website’s visual language directly in the browser.",
+    "summary": "How I showed clients a design before building their whole website.",
     "paragraphs": [
-      "Webstiles brought colors, typography and interface elements together in a browser-based design sheet. It helped clients compare directions before a full website was built.",
-      "The early portfolio describes Webstiles as part of the client workflow and records that its responsive template was built on Sympl."
+      "I made Webstiles when I started working with clients. I needed a way to show them colors, type and interface elements before spending time on the full website.",
+      "I’d make a Webstile, send it over, and work through their feedback. It became part of my usual workflow. The responsive template runs on Sympl."
     ],
     "image": "/static/lab/webstiles.png",
     "dateNote": "January 2013 is the date recorded in the existing portfolio.",
@@ -68,6 +76,10 @@
       [
         "Source",
         "https://github.com/namanyayg/webstiles"
+      ],
+      [
+        "Archived site · 7 January 2013",
+        "https://web.archive.org/web/20130107223029/http://webstiles.namanyayg.com/"
       ]
     ]
   },
@@ -77,10 +89,10 @@
     "year": 2013,
     "dateLabel": "June 2013",
     "category": "experiments",
-    "summary": "Four colored squares recreate a familiar piece of computing history.",
+    "summary": "My attempt to recreate the Windows 95 launch animation in CSS.",
     "paragraphs": [
-      "A small animation study based on the Windows 95 launch commercial, built with CSS. The whole composition starts with the four colors of the Windows flag.",
-      "The restored version preserves the animation and adds pause and reduced-motion controls."
+      "I recreated the Windows 95 launch animation with four colored squares and CSS. It’s a small experiment in what you can do with keyframes and transforms.",
+      "The restored demo has a pause button and respects reduced-motion preferences."
     ],
     "image": "/static/lab/win95anim.png",
     "dateNote": "The original Git history begins on 4 June 2013.",
@@ -92,6 +104,10 @@
       [
         "Source",
         "https://github.com/namanyayg/win95anim"
+      ],
+      [
+        "Archived site · 12 June 2013",
+        "https://web.archive.org/web/20130612053206/http://namanyayg.com/lab/win95anim/"
       ]
     ]
   },
@@ -101,13 +117,13 @@
     "year": 2013,
     "dateLabel": "c. 2013",
     "category": "experiments",
-    "summary": "A sideways-scrolling website for a fictional band from Mars.",
+    "summary": "I made a sideways-scrolling website for a fictional band from Mars.",
     "paragraphs": [
-      "A sideways-scrolling website for a fictional band from Mars.",
-      "The original files were recovered from Cloudnommy and restored as a static demo. Keyboard navigation moves between the colorful full-screen panels. The fictional contact controls are disabled."
+      "MusiCose was my website for a fictional Martian band, with colorful panels that move sideways across the screen. You can use the keyboard to move between them.",
+      "The original site works again as a static demo. Its fictional contact controls are disabled."
     ],
     "image": "/static/lab/musicose.png",
-    "dateNote": "Surviving source files carry October 2013 timestamps; the original launch date is not established.",
+    "dateNote": "Wayback preserves the site on 16 April 2013. Surviving source files carry October 2013 timestamps; the original launch date is not established.",
     "links": [
       [
         "Open the demo",
@@ -116,6 +132,10 @@
       [
         "Source",
         "https://github.com/namanyayg/old-experiments/tree/main/musicose"
+      ],
+      [
+        "Archived site · 16 April 2013",
+        "https://web.archive.org/web/20130416153252/http://demos.namanyayg.com/musicose/"
       ]
     ]
   },
@@ -125,10 +145,9 @@
     "year": 2013,
     "dateLabel": "c. 2013",
     "category": "experiments",
-    "summary": "An early JavaScript experiment in moving from one image to the next.",
+    "summary": "An early image slider I wrote in JavaScript.",
     "paragraphs": [
-      "An early JavaScript experiment in moving from one image to the next.",
-      "The original files were recovered from Cloudnommy and restored as a static demo. The externally hosted photos were missing, so the restored demo identifies its solid-color substitutes. Slide controls and autoplay work again."
+      "I made MinSlide to move between images, with slide controls and autoplay. The controls work again, but the original hosted photos are gone. The restored demo uses labeled solid-color slides in their place."
     ],
     "image": "/static/lab/min-slide.png",
     "dateNote": "Surviving source files carry October 2013 timestamps; the original launch date is not established.",
@@ -149,10 +168,10 @@
     "year": 2013,
     "dateLabel": "October 2013",
     "category": "games",
-    "summary": "A typing game with a pastel keyboard and a very practical motivation.",
+    "summary": "I wanted to type faster, so I made a game to practise.",
     "paragraphs": [
-      "KeyZen grew out of an obsession with typing faster. It turns practice into a small game, with an animated keyboard showing each key.",
-      "The existing portfolio records that it was built in a few hours for a hackathon and won first prize."
+      "I was obsessed with improving my typing speed. My reasoning was simple: faster typing meant faster programming. So I made KeyZen in a few hours at a hackathon.",
+      "I especially enjoyed making the pastel keyboard and animating the keys. The game won first prize that day."
     ],
     "image": "/static/lab/keyzen.png",
     "dateNote": "October 2013 is the date recorded in the existing portfolio.",
@@ -160,6 +179,10 @@
       [
         "Play KeyZen",
         "https://nmn.gl/KeyZen/"
+      ],
+      [
+        "Archived site · 4 January 2016",
+        "https://web.archive.org/web/20160104185051/http://projects.namanyayg.com/KeyZen/"
       ]
     ]
   },
@@ -169,16 +192,46 @@
     "year": 2013,
     "dateLabel": "2013–2014",
     "category": "design",
-    "summary": "An early portfolio introduces a teenage designer already working on MakeUseOf.",
+    "summary": "My teenage freelance portfolio, while I was working at MakeUseOf.",
     "paragraphs": [
-      "The surviving homepage opens with “Hello, I’m Namanyay Goel” and describes a freelance designer and front-end developer. Its work section includes MakeUseOf, MakeUseOf TV, a music website and Webstiles.",
-      "There is already a considered client process: ask questions, make a first draft, gather feedback, then deliver the finished site. Webstiles appears both as a project and as a tool used during that process.",
-      "The page’s HTML survives, but its linked stylesheet and project thumbnails were not found. The excerpt below is presented as an archival transcription, rather than a reconstruction of the missing design."
+      "I was working as a freelance designer and front-end developer, and had started working with MakeUseOf. My portfolio included their main site, MakeUseOf TV, a music website and Webstiles.",
+      "I’d already written out how I worked with clients, from the first questions through drafts and feedback to the finished site. Webstiles was both a project in the portfolio and something I used in that process.",
+      "The HTML remains, but the stylesheet and project thumbnails are missing. You can read the original introduction below; the old design hasn’t been reconstructed."
     ],
     "image": "/static/lab/portfolio-2013.png",
     "dateNote": "The page’s supporting files are dated October 2013; its surviving HTML was last modified on 9 January 2014.",
     "excerpt": "Hello, I’m Namanyay Goel, a freelance designer & front end developer. I also work at MakeUseOf as their UI designer/front end developer.",
-    "textOnly": true
+    "textOnly": true,
+    "links": [
+      [
+        "Archived site · 18 June 2013",
+        "https://web.archive.org/web/20130618011659/http://namanyayg.com/"
+      ]
+    ]
+  },
+  {
+    "slug": "tldrtech",
+    "title": "TLDR;Tech",
+    "year": 2014,
+    "dateLabel": "May–June 2014",
+    "category": "design",
+    "summary": "A tech news blog I started with two friends, with short summaries and a theme I designed.",
+    "paragraphs": [
+      "Two friends and I started TLDR;Tech to publish short tech news summaries. I spent a lot of time on the design and building the theme, but we only kept it going for a few weeks.",
+      "The screenshot is from June 2014. Wayback also has the homepage, with our news posts and the original design."
+    ],
+    "image": "/static/archive/tldrtech.webp",
+    "dateNote": "I linked to tldrte.ch in a blog post on 28 May 2014. The earliest Wayback homepage capture is dated 2 June 2014; the screenshot shows news from 5 June. These are surviving records, not a confirmed launch date.",
+    "links": [
+      [
+        "Archived site · 2 June 2014",
+        "https://web.archive.org/web/20140602031309/http://tldrte.ch/"
+      ],
+      [
+        "My notes on building the theme",
+        "https://nmn.gl/blog/images-and-excerpts-a-few-practical-problems-with-ghost"
+      ]
+    ]
   },
   {
     "slug": "agrobot-cropstor",
@@ -186,10 +239,10 @@
     "year": 2014,
     "dateLabel": "c. August 2014",
     "category": "design",
-    "summary": "Two agricultural product concepts, complete with interfaces, branding and motion.",
+    "summary": "My competition work on irrigation and crop storage.",
     "paragraphs": [
-      "Agrobot presented a sensor-based irrigation system with moisture tracking. Cropstor approached the other end of the process with a warehouse interface for recording farmers and their produce.",
-      "The JAD project brought the two ideas into one visual world. Product pages, phone mockups, interface screens and short videos survive from the competition work."
+      "I worked on two agricultural product concepts for JAD. Agrobot used moisture readings to show how a sensor-based irrigation system could work. Cropstor was a warehouse interface for recording farmers and their produce.",
+      "These are the original product pages, phone mockups and animation from that project."
     ],
     "image": "/static/archive/agrobot.webp",
     "dateNote": "The surviving product pages and assets are timestamped 1 August 2014. This dates the recovered edition, not a verified public launch.",
@@ -200,11 +253,11 @@
       ],
       [
         "agrobot-screen.webp",
-        "Agrobot’s recovered mobile interface."
+        "Agrobot’s mobile interface."
       ],
       [
         "cropstor-screen.webp",
-        "A recovered warehouse interface screen."
+        "A warehouse interface screen."
       ]
     ],
     "video": "agrobot-rotation.mp4",
@@ -216,13 +269,19 @@
     "year": 2014,
     "dateLabel": "2014",
     "category": "design",
-    "summary": "A website for the technology club at DPS Vasant Kunj.",
+    "summary": "The site I made for my school’s technology club.",
     "paragraphs": [
-      "“Hello world. We’re the Code Warriors.” The club homepage brought a school technology community onto the web, with a design built around its projects and competitions.",
-      "The surviving edition announces Code Wars 2014. This exhibit preserves the homepage design; student records and registration systems are not part of the archive."
+      "“Hello world. We’re the Code Warriors.” I made this site for the technology club at DPS Vasant Kunj, with pages about our projects and competitions.",
+      "This is the homepage announcing Code Wars 2014."
     ],
     "image": "/static/archive/code-warriors.webp",
-    "dateNote": "The page itself names Code Wars 2014; the recovered files are dated November 2014."
+    "dateNote": "The page itself names Code Wars 2014; the recovered files are dated November 2014.",
+    "links": [
+      [
+        "Earlier homepage · 17 May 2014",
+        "https://web.archive.org/web/20140517183302/http://code-warriors.org/"
+      ]
+    ]
   },
   {
     "slug": "code-in",
@@ -230,10 +289,10 @@
     "year": 2014,
     "dateLabel": "December 2014–January 2015",
     "category": "learning",
-    "summary": "An early open-source notebook of utilities, tests and tutorials.",
+    "summary": "My tools and tutorials from Google Code-in with FOSSASIA.",
     "paragraphs": [
-      "The Code-in collection moves between practical tools and explanations of how the web works. It includes an angle converter, a JSON validator, a wallpaper, and writing about Jekyll, automated testing and p5.js.",
-      "Other tutorials document moving a MediaWiki installation and working on web infrastructure. Together they capture the shift from building individual pages to understanding the systems behind them."
+      "I worked on small utilities during Code-in, including an angle converter and a JSON validator. I also made an LXDE wallpaper and wrote tutorials about Jekyll, automated testing and p5.js.",
+      "You can read four of those tutorials below, including one about moving a MediaWiki installation."
     ],
     "image": "/static/archive/code-in.webp",
     "dateNote": "The surviving repository runs from 8 December 2014 to 17 January 2015.",
@@ -251,10 +310,9 @@
     "year": 2015,
     "dateLabel": "February 2015",
     "category": "learning",
-    "summary": "Interactive simulations for ideas that are easier to understand when they move.",
+    "summary": "I turned my physics coursework into browser simulations.",
     "paragraphs": [
-      "A collection of browser experiments turns physics coursework into something that can be manipulated and observed. The collection includes oscillation, collisions and electrical behavior.",
-      "The original simulations remain accessible from the Physics collection."
+      "I wanted to play with the physics I was learning in class, so I made simulations for things like oscillation and collisions. You can change the inputs and watch what happens in the Physics collection."
     ],
     "image": "/static/lab/physics.png",
     "dateNote": "February 2015 is the date recorded in the existing portfolio.",
@@ -262,6 +320,10 @@
       [
         "Explore the simulations",
         "https://nmn.gl/physics/"
+      ],
+      [
+        "Archived site · 13 December 2015",
+        "https://web.archive.org/web/20151213040721/http://projects.namanyayg.com/gyan/"
       ]
     ]
   },
@@ -271,14 +333,20 @@
     "year": 2015,
     "dateLabel": "May 2015",
     "category": "apps",
-    "summary": "Three things to do today, with enough room to actually do them.",
+    "summary": "My to-do app for choosing three priorities each day.",
     "paragraphs": [
-      "Karya asks for three priorities in the morning and a check-in at night. Its original interface deliberately keeps the list short so that choosing what matters is part of the task.",
-      "The recovered app includes task views and an account system. The small version below revisits the original three-item interaction and stores your list only in this browser."
+      "I built Karya around a short list: three priorities in the morning, then a check-in at night. Choosing what goes on the list is part of using it.",
+      "You can try that idea below. This version saves your list in your browser and doesn’t use the original app’s accounts or server."
     ],
     "image": "/static/archive/karya.webp",
     "dateNote": "The first surviving commit is dated 11 May 2015; the last is from November 2015.",
-    "interactive": "karya"
+    "interactive": "karya",
+    "links": [
+      [
+        "Archived site · 13 December 2015",
+        "https://web.archive.org/web/20151213040659/http://karya.namanyayg.com/"
+      ]
+    ]
   },
   {
     "slug": "libo",
@@ -286,10 +354,10 @@
     "year": 2015,
     "dateLabel": "August 2015",
     "category": "apps",
-    "summary": "A household-budgeting concept with a complete mobile design.",
+    "summary": "My mobile app concept for household budgeting.",
     "paragraphs": [
-      "Libo’s homepage presents an app to make household budgeting easier. Its interface includes an expenditure overview, an add-expense flow and a record of spending.",
-      "The recovered project includes the landing page, an interactive phone layout and several original splash screens. The screens below preserve the competition-era design."
+      "I designed Libo to show household expenses and spending history, with a flow for adding a new expense.",
+      "These are the original landing page and mobile screens from the competition project."
     ],
     "image": "/static/archive/libo.webp",
     "dateNote": "The repository records work on 27–28 August 2015.",
@@ -306,10 +374,9 @@
     "year": 2015,
     "dateLabel": "c. October 2015",
     "category": "design",
-    "summary": "A mobile app mockup made for C.O.R.E.",
+    "summary": "An app mockup I made for C.O.R.E.",
     "paragraphs": [
-      "The Digital India concept packages news and program information into a mobile interface. Its surviving page includes the original screen compositions and names the C.O.R.E. event.",
-      "This is a visual record of the app mockup, with the original design preserved in the screenshot."
+      "I made this Digital India mockup for C.O.R.E. It puts news and program information into a mobile interface. The screenshot shows the original screens."
     ],
     "image": "/static/archive/digital-india.webp",
     "dateNote": "The HTML, stylesheet and images carry 27 October 2015 timestamps."
@@ -320,10 +387,10 @@
     "year": 2015,
     "dateLabel": "November 2015",
     "category": "games",
-    "summary": "A puzzle, an optimal strategy and a research paper written in 48 hours.",
+    "summary": "We studied Bulls & Cows and wrote a paper in 48 hours.",
     "paragraphs": [
-      "For the C.O.R.E. hackathon, Aditya and I studied the number-guessing game Bulls & Cows and the algorithms used to solve it. The work became a research paper and a JavaScript demonstration.",
-      "The existing portfolio records a first-place finish and describes this as our first experience using LaTeX."
+      "Aditya and I spent the C.O.R.E. hackathon studying Bulls & Cows and the algorithms used to solve it. We wrote a research paper and a JavaScript demo in 48 hours.",
+      "It was our first time using LaTeX, and the project won first prize."
     ],
     "image": "/static/lab/bandc.png",
     "dateNote": "November 2015 is the date recorded in the existing portfolio.",
@@ -335,6 +402,10 @@
       [
         "Read the paper",
         "https://vixra.org/pdf/1601.0302v1.pdf"
+      ],
+      [
+        "Archived site · 30 March 2018",
+        "https://web.archive.org/web/20180330133815/http://projects.namanyayg.com/moo/"
       ]
     ]
   },
@@ -344,13 +415,19 @@
     "year": 2016,
     "dateLabel": "June–August 2016",
     "category": "apps",
-    "summary": "A shopping search engine built to compare prices across stores.",
+    "summary": "My search engine for comparing prices across stores.",
     "paragraphs": [
-      "Unexpend brought product search and comparison into one interface. The surviving code includes result templates, caching, and parsers for Amazon and Flipkart.",
-      "Its original cover artwork survives below. The historic shopping APIs and price data are not connected to this exhibit."
+      "I built Unexpend to compare products across stores. It had parsers for Amazon and Flipkart, and a cache for search results.",
+      "This is the original cover artwork. The shopping APIs and prices are no longer connected."
     ],
     "image": "/static/archive/unexpend.webp",
-    "dateNote": "The surviving Git history begins on 23 June 2016 and continues into August 2016."
+    "dateNote": "The surviving Git history begins on 23 June 2016 and continues into August 2016.",
+    "links": [
+      [
+        "Archived site · 11 August 2016",
+        "https://web.archive.org/web/20160811135946/http://unexpend.com/"
+      ]
+    ]
   },
   {
     "slug": "playtogether",
@@ -358,10 +435,10 @@
     "year": 2016,
     "dateLabel": "October 2016",
     "category": "apps",
-    "summary": "A shared YouTube player for watching the same thing at the same time.",
+    "summary": "I made a shared YouTube player so people could watch together.",
     "paragraphs": [
-      "PlayTogether takes a YouTube link and shares playback actions through Socket.IO. Its first day of commits already includes fixes for playing multiple videos and resetting the player.",
-      "The surviving interface is a compact prototype: paste a link, start a room, and keep the players in sync. This archive preserves its interface and idea; it does not reconnect the old room server."
+      "I used Socket.IO to share playback actions between YouTube players. You could paste a link, start a room and watch together, with everyone’s player kept in sync.",
+      "This is the original prototype. The room server is no longer connected."
     ],
     "image": "/static/archive/playtogether.webp",
     "dateNote": "The surviving repository contains four commits from 1 October 2016."
@@ -372,13 +449,19 @@
     "year": 2016,
     "dateLabel": "October 2016",
     "category": "apps",
-    "summary": "The University of Washington campus, mapped through classes and events.",
+    "summary": "My campus map for classes and events at the University of Washington.",
     "paragraphs": [
-      "DubMaps was built around a realtime map of UW, with active classes and scheduled events attached to buildings. The source includes building locations, class schedules and event information.",
-      "The building plot below is newly drawn from the original coordinates. It preserves the geography of the project without publishing student-related datasets or presenting a 2016 timetable as current."
+      "I put classes and scheduled events on a map of the UW campus, attached to the buildings where they happened.",
+      "The map here was redrawn from the original building coordinates. It doesn’t include personal records or old class schedules."
     ],
     "image": "/static/archive/dubmaps.svg",
-    "dateNote": "The repository begins on 15 October 2016 and continues through 17 October 2016."
+    "dateNote": "The repository begins on 15 October 2016 and continues through 17 October 2016.",
+    "links": [
+      [
+        "Archived site · 22 October 2016",
+        "https://web.archive.org/web/20161022171215/http://dubmaps.com/"
+      ]
+    ]
   },
   {
     "slug": "lccpp",
@@ -386,10 +469,10 @@
     "year": 2017,
     "dateLabel": "June 2017",
     "category": "learning",
-    "summary": "A free programming book written to make school coursework easier to follow.",
+    "summary": "I rewrote my school’s C++ coursework as a free book.",
     "paragraphs": [
-      "Less Confusing C++ reorganizes introductory C++ material for high-school students. It grew out of wanting a clearer route through the course than the available study material provided.",
-      "The manuscript and exports were already preserved in Dropbox. The book remains part of the archive through its existing publication."
+      "I was frustrated with the study material for my introductory C++ course. I thought the structure could be much clearer, so I wrote the book I wanted to learn from.",
+      "I made it free because I was writing for other students. You can read Less Confusing C++ on Leanpub."
     ],
     "image": "/static/lab/lccpp.png",
     "dateNote": "June 2017 is the publication date recorded in the existing portfolio, rather than a verified manuscript start date.",
@@ -397,6 +480,10 @@
       [
         "Read the book",
         "https://leanpub.com/lessconfusingcpp"
+      ],
+      [
+        "Archived site · 26 August 2019",
+        "https://web.archive.org/web/20190826044032/https://leanpub.com/lessconfusingcpp"
       ]
     ]
   },
@@ -406,22 +493,27 @@
     "year": 2018,
     "dateLabel": "May–July 2018",
     "category": "design",
-    "summary": "The portfolio grows into a full visual presentation of client work.",
+    "summary": "My 2018 portfolio, with client mockups and animated transitions.",
     "paragraphs": [
-      "The 2018 edition introduces a web and blockchain consultant. Project mockups, rich backgrounds and animated transitions make the work itself the center of the page.",
-      "The original build survives alongside its artwork. These screenshots were captured from that recovered build, including the original portfolio layout.",
-      "A later 2023 snapshot keeps the same lineage while changing the introduction to web and mobile consulting. Both editions are shown here as a record of how the site evolved."
+      "I was working as a web and blockchain consultant when I made this edition of my portfolio. I used project mockups and animated transitions to show the client work.",
+      "These screenshots come from the original build. By November 2023, I’d kept the same layout and changed the introduction to web and mobile consulting."
     ],
     "image": "/static/archive/portfolio-2018.webp",
     "dateNote": "The portfolio repository starts on 9 May 2018; its animation and responsive-layout commits continue into July. The later snapshot is dated November 2023.",
     "gallery": [
       [
         "portfolio-2018-work.webp",
-        "Client-work layout from the recovered 2018 build."
+        "Client-work layout from the 2018 build."
       ],
       [
         "portfolio-2023.webp",
         "The later web and mobile consulting edition, preserved in a November 2023 snapshot."
+      ]
+    ],
+    "links": [
+      [
+        "Archived site · 16 August 2018",
+        "https://web.archive.org/web/20180816163628/http://nmn.gl/"
       ]
     ]
   },
@@ -431,10 +523,10 @@
     "year": 2020,
     "dateLabel": "June 2020",
     "category": "apps",
-    "summary": "COVID-19 information alongside ways to help people through isolation.",
+    "summary": "We made a COVID tracker and community during lockdown.",
     "paragraphs": [
-      "IndiaSmile combined pandemic statistics with a community and resources for staying informed. Its purpose extended from tracking numbers to finding ways to stay connected during lockdown.",
-      "The original portfolio describes a WhatsApp and Telegram community of more than 2,500 members and the challenge of adapting the backend as traffic grew."
+      "When COVID hit, I wanted a way for my friends and family to stay informed, and somewhere to unwind. My team and I made IndiaSmile, combining pandemic statistics with resources and a WhatsApp and Telegram community.",
+      "The community grew to more than 2,500 members. As traffic increased, I had to adapt the backend to keep up."
     ],
     "image": "/static/lab/indiasmile.png",
     "dateNote": "June 2020 is the date recorded in the existing portfolio.",
@@ -442,6 +534,10 @@
       [
         "Visit IndiaSmile",
         "https://indiasmile.github.io/"
+      ],
+      [
+        "Archived site · 8 March 2021",
+        "https://web.archive.org/web/20210308150157/https://indiasmile.org///"
       ]
     ]
   },
@@ -451,14 +547,13 @@
     "year": 2021,
     "dateLabel": "2020–2021",
     "category": "design",
-    "summary": "A design studio with an illustrated world of its own.",
+    "summary": "My studio’s website, with custom illustrations and a 3D animation.",
     "paragraphs": [
-      "Nataco’s site brought custom illustration, expressive typography and a playful 3D scene into a design-and-development studio website. Its pages covered web applications, Shopify work and design subscriptions.",
-      "The repository starts under the Dyeus name in February 2020. A June 2021 commit renames the site Nataco, giving the archive a clear record of that transition.",
-      "The original homepage, service-page artwork and animated hero survive. The film below is the recovered hero animation; the gallery shows the site and its illustration system."
+      "At Nataco, we worked on web applications, Shopify sites and design subscriptions. Our website combined custom illustrations with expressive type and a 3D scene.",
+      "You can see the original animation and illustrations below. Wayback also preserves an earlier Nataco homepage from August 2020, with a different design."
     ],
     "image": "/static/archive/nataco.webp",
-    "dateNote": "First repository commit: 23 February 2020. The Dyeus → Nataco rename is dated 24 June 2021.",
+    "dateNote": "The recovered site repository starts on 23 February 2020 and includes a Dyeus → Nataco rename on 24 June 2021. A separate Nataco homepage was already archived on 13 August 2020; the repository rename does not date the brand’s beginning.",
     "gallery": [
       [
         "nataco-services.webp",
@@ -470,11 +565,17 @@
       ],
       [
         "nataco-illustration-2.svg",
-        "Another surviving illustration from the same collection."
+        "Another illustration from the same collection."
       ]
     ],
     "video": "nataco-hero.webm",
-    "videoCaption": "The original Nataco hero animation. Use the player controls to watch or pause."
+    "videoCaption": "The original Nataco hero animation. Use the player controls to watch or pause.",
+    "links": [
+      [
+        "Earlier homepage · 13 August 2020",
+        "https://web.archive.org/web/20200813062639/https://nataco.us/"
+      ]
+    ]
   },
   {
     "slug": "kevin",
@@ -482,10 +583,9 @@
     "year": 2024,
     "dateLabel": "March 2024",
     "category": "apps",
-    "summary": "An open-source interface for an AI software engineer.",
+    "summary": "My open-source interface for an AI software engineer.",
     "paragraphs": [
-      "Kevin explores an idea that had been around since the teenage projects: let software take care of the repetitive programming work so that more time goes into the idea itself.",
-      "The interface was inspired by Devin and named for Kevin Mitnick."
+      "I’d wanted to make a bot that could write code for me for a long time. Kevin was my open-source interface for an AI software engineer, inspired by Devin and named for Kevin Mitnick."
     ],
     "image": "/static/lab/kevin.png",
     "dateNote": "March 2024 is the date recorded in the existing portfolio.",
@@ -502,9 +602,9 @@
     "year": 2024,
     "dateLabel": "June 2024",
     "category": "apps",
-    "summary": "A directory and leaderboard for India’s AI builders.",
+    "summary": "My directory and leaderboard for India’s AI builders.",
     "paragraphs": [
-      "AI Indians brings emerging Indian AI startups into one directory, with a leaderboard tracking their growth. It was built to make the people and products easier to discover."
+      "I made AI Indians to bring Indian AI startups into one directory, with a leaderboard tracking their growth."
     ],
     "image": "/static/lab/aiindians.png",
     "dateNote": "June 2024 is the date recorded in the existing portfolio.",
@@ -512,6 +612,10 @@
       [
         "Explore the source",
         "https://github.com/namanyayg/aiindians"
+      ],
+      [
+        "Archived site · 11 June 2024",
+        "https://web.archive.org/web/20240611143154/http://aiindians.org/"
       ]
     ]
   },
@@ -521,9 +625,9 @@
     "year": 2024,
     "dateLabel": "November 2024",
     "category": "apps",
-    "summary": "An attempt to make the consequences of air pollution tangible.",
+    "summary": "I used illustrations to explain what an air-quality reading means.",
     "paragraphs": [
-      "Air translates air-quality measurements into visual explanations of their impact. The project combines a calculator with shareable illustrations to help people understand the significance of an AQI reading."
+      "I made Air to explain AQI readings with a calculator and illustrations people could share."
     ],
     "image": "/static/lab/air.png",
     "dateNote": "November 2024 is the date recorded in the existing portfolio.",
@@ -531,6 +635,10 @@
       [
         "Explore Air",
         "https://air.nmn.gl/"
+      ],
+      [
+        "Archived site · 15 November 2024",
+        "https://web.archive.org/web/20241115112513/https://air.nmn.gl/"
       ]
     ]
   },
@@ -540,9 +648,9 @@
     "year": 2025,
     "dateLabel": "January 2025",
     "category": "apps",
-    "summary": "An AI coding assistant built around understanding a whole codebase.",
+    "summary": "My AI coding assistant, built around understanding a whole codebase.",
     "paragraphs": [
-      "Giga extends the long-running interest in programming tools into AI-assisted development. Its focus is maintaining codebase context while helping with testing, debugging and integrations."
+      "I built Giga to keep codebase context available while helping with testing, debugging and integrations."
     ],
     "image": "/static/lab/giga.png",
     "dateNote": "January 2025 is the date recorded in the existing portfolio.",
@@ -550,6 +658,10 @@
       [
         "Read the introduction",
         "https://nmn.gl/blog/giga-intro"
+      ],
+      [
+        "Archived site · 11 March 2025",
+        "https://web.archive.org/web/20250311091535/http://gigamind.dev/"
       ]
     ]
   },
@@ -559,9 +671,9 @@
     "year": 2025,
     "dateLabel": "January 2025",
     "category": "apps",
-    "summary": "Turning scattered online discussions into useful research.",
+    "summary": "My tool for finding recurring topics in online discussions.",
     "paragraphs": [
-      "The Trend Analyzer gathers discussions and looks for recurring topics, helping writers and builders move from browsing feeds to understanding what people are talking about."
+      "I made Trend Analyzer to gather online discussions and find recurring topics, so there was less scrolling to do when researching something."
     ],
     "image": "/static/lab/trends-ai.png",
     "dateNote": "January 2025 is the date recorded in the existing portfolio.",
@@ -569,6 +681,10 @@
       [
         "Open Trend Analyzer",
         "https://trends.nmn.gl/"
+      ],
+      [
+        "Archived site · 19 June 2025",
+        "https://web.archive.org/web/20250619095730/https://trends.nmn.gl/"
       ]
     ]
   }

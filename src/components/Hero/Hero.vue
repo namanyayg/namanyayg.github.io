@@ -11,8 +11,8 @@
             span Namanyay
             span.highlight
         h2.subtitle 
-          .subtitle__xl Technology entrepreneur, founder, <span class="amp">&</span> writer. 
-          div Helping fast-moving startups scale and automate GTM&nbsp;at&nbsp;
+          .subtitle__xl I’m a founder <span class="amp">&</span> writer.
+          div I’m building an AI agent for founders at&nbsp;
             a(href="https://pumpgtm.com" target="_blank" rel="noopener noreferrer") PumpGTM.com
       .hero__image
         .image-card
