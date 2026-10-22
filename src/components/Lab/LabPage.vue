@@ -34,7 +34,7 @@
             <div class="archive-year-stories">
               <article v-for="item in group.items" :key="item.slug" class="archive-story" :data-project="item.slug">
                 <router-link v-if="!item.textOnly" :to="'/lab/' + item.slug + '/'" class="archive-image-link"><img :src="item.image" :alt="item.title + ' archive preview'" width="1440" height="1000" loading="lazy" decoding="async"/></router-link>
-                <router-link v-else :to="'/lab/' + item.slug + '/'" class="archive-type-preview"><span>“Hello, I’m<br/>Namanyay Goel.”</span><small>From the 2013–2014 homepage</small></router-link>
+                <router-link v-else-if="item.previewText" :to="'/lab/' + item.slug + '/'" class="archive-type-preview"><span>{{ item.previewText }}</span><small v-if="item.previewCaption">{{ item.previewCaption }}</small></router-link>
                 <p class="archive-date">{{ item.dateLabel }} · {{ categoryName(item.category) }}</p>
                 <h3><router-link :to="'/lab/' + item.slug + '/'">{{ item.title }}</router-link></h3>
                 <p>{{ item.summary }}</p>

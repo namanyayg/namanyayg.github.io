@@ -46,3 +46,11 @@ Verified Wayback links are attached to the corresponding catalogue entries. Capt
 TLDR;Tech is documented in the author’s 28 May 2014 Ghost development post and a Wayback capture dated 2 June 2014. Its screenshot is the existing public blog image showing news from 5 June 2014, converted to WebP. The 2014 homepage identifies Ghost 0.4; the later retrospective’s WordPress reference was not used as technical provenance. The new description was checked against those sources and passed through the same first-person humanizer review as the other entries.
 
 Archive links were opened and their contents checked against the projects. A surviving HTML capture does not guarantee that every image, stylesheet or interactive feature also survives.
+
+## Additional recovered projects
+
+Seven entries were added from selected original source: beta+, Exun 2013, Richie, Proxydo, Techathlon, Visionary and Karma. Their date annotations distinguish Git dates, archive-entry timestamps and page dates from unverified launch dates. All new summaries and stories were reviewed in first person using the humanizer rules; they do not invent memories, users or outcomes.
+
+The beta+ masthead preview uses original HTML, CSS and graphics, with a height constraint to correct the logo clipping in a modern browser. External embeds and scripts were blocked during rendering. Exun shows original RV/palette illustrations and the original background arranged into a new exhibit, explicitly labeled as such. The original parody copy is not reproduced. No live account, payment, cloud-provisioning or messaging integration was restored.
+
+The five projects without a reviewed visual exhibit use text entries. Techathlon is explicitly not yet playable. Karma’s constant-score analyzer is described as unfinished. Visionary’s timetable parser is not presented as a general document reader. Operational source, provider credentials, personal records and server paths are excluded from this public catalogue.

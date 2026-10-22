@@ -207,7 +207,37 @@
         "Archived site · 18 June 2013",
         "https://web.archive.org/web/20130618011659/http://namanyayg.com/"
       ]
-    ]
+    ],
+    "previewText": "“Hello, I’m Namanyay Goel.”",
+    "previewCaption": "From the 2013–2014 homepage"
+  },
+  {
+    "slug": "betaplus",
+    "title": "beta+",
+    "year": 2013,
+    "dateLabel": "February–March 2013",
+    "category": "design",
+    "summary": "A website I designed for an electronic musician in Philadelphia.",
+    "paragraphs": [
+      "I designed and built a site for beta+, an electronic musician in Philadelphia. It brought the music, videos and upcoming shows together, with a blue masthead and a custom icon font.",
+      "The original delivery ZIP still has the HTML, styles and graphics. This preview shows the masthead, with a small fix to keep the logo from being cropped."
+    ],
+    "image": "/static/archive/betaplus.webp",
+    "dateNote": "The delivery ZIP contains files dated 26 February–1 March 2013. Its credits identify me as the designer and developer; those file dates do not establish the launch date."
+  },
+  {
+    "slug": "exun-2013",
+    "title": "Exun 2013",
+    "year": 2013,
+    "dateLabel": "November 2013",
+    "category": "design",
+    "summary": "Our Breaking Bad parody for a school design competition.",
+    "paragraphs": [
+      "I worked with Panini Pandey and Aditya Garg on a fictional brand inspired by Breaking Bad for Exun 2013. We made angular blue illustrations and wrote out the thinking behind the shapes and colors.",
+      "I’ve kept the original RV and palette graphics here, arranged together for this archive. The design was a competition parody."
+    ],
+    "image": "/static/archive/exun-2013.webp",
+    "dateNote": "The recovered folder identifies Exun 2013, and its HTML is dated 29 November 2013. The original page credits our team at Code Warriors."
   },
   {
     "slug": "tldrtech",
@@ -464,6 +494,62 @@
     ]
   },
   {
+    "slug": "richie",
+    "title": "Richie",
+    "year": 2016,
+    "dateLabel": "June 2016",
+    "category": "apps",
+    "summary": "A budgeting bot I could talk to through chat.",
+    "paragraphs": [
+      "I built Richie to track a budget through messages. It could record income and spending, account for recurring expenses, and tell you how much was left for the day or week.",
+      "The code connects a Messenger-style webhook to a message handler and a small local database. Forty commits survive from 6 June 2016. The account connection is no longer running."
+    ],
+    "textOnly": true,
+    "dateNote": "The repository contains 40 commits dated 6 June 2016. The original message handler establishes the budgeting features described here."
+  },
+  {
+    "slug": "proxydo",
+    "title": "Proxydo",
+    "year": 2016,
+    "dateLabel": "2016–2017",
+    "category": "apps",
+    "summary": "My small tool for creating temporary proxy servers on DigitalOcean.",
+    "paragraphs": [
+      "I wrote Proxydo to create a small server, install a proxy and return its address. It also had controls for removing servers when they were no longer needed.",
+      "The surviving code records an early attempt at automating infrastructure. This entry documents the idea; the old service isn’t running."
+    ],
+    "textOnly": true,
+    "dateNote": "Repository history runs from 25 June 2016 to 6 September 2017. The original server routes establish the provisioning and removal behavior."
+  },
+  {
+    "slug": "techathlon",
+    "title": "Techathlon",
+    "year": 2016,
+    "dateLabel": "2016",
+    "category": "games",
+    "summary": "Our Code Warriors puzzle hunt, with clues hidden across web pages.",
+    "paragraphs": [
+      "Techathlon was our 2016 puzzle hunt at Code Warriors. The surviving site has puzzle pages, a leaderboard and a deliberately misleading 404 page with a clue hidden in its source.",
+      "I’m keeping its place in the timeline while the remaining puzzle files are recovered. The original game isn’t playable here yet."
+    ],
+    "textOnly": true,
+    "dateNote": "The original homepage names Techathlon 2016. Several puzzle files survive but have not yet been recovered for this archive."
+  },
+  {
+    "slug": "visionary",
+    "title": "Visionary",
+    "year": 2016,
+    "dateLabel": "October 2016",
+    "category": "apps",
+    "summary": "A DubHacks prototype for reading a timetable from an image.",
+    "paragraphs": [
+      "I worked on Visionary at DubHacks in 2016. The prototype sent a timetable image through Microsoft’s OCR service, then pulled out the weekdays, courses and rooms into structured data.",
+      "The parser survives in the original code. It expected a particular timetable layout; this wasn’t a general-purpose document reader."
+    ],
+    "textOnly": true,
+    "dateNote": "The DubHacks repository contains two commits on 16 October 2016. Its OCR request and parsing code establish the behavior described here."
+  },
+  {
     "slug": "lccpp",
     "title": "Less Confusing C++",
     "year": 2017,
@@ -516,6 +602,20 @@
         "https://web.archive.org/web/20180816163628/http://nmn.gl/"
       ]
     ]
+  },
+  {
+    "slug": "karma",
+    "title": "Karma",
+    "year": 2019,
+    "dateLabel": "2019",
+    "category": "apps",
+    "summary": "My dashboard for finding freelance opportunities on Reddit.",
+    "paragraphs": [
+      "I built Karma to collect posts from freelance-job communities on Reddit and read them in one place. It filtered out some listings, linked back to the original posts, and let me hide ones I wasn’t interested in.",
+      "The dashboard and collection code survive. I’d started an analyzer, but its scoring was still a placeholder."
+    ],
+    "textOnly": true,
+    "dateNote": "The surviving repository commit is dated 8 October 2019, with a migration file dated July 2019. The source names the forhire, DesignJobs and jobbit communities."
   },
   {
     "slug": "indiasmile",
