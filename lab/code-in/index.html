@@ -1,0 +1,404 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Google Code-in &amp; FOSSASIA | The Lab</title><meta name="title" content="Google Code-in &amp; FOSSASIA | The Lab"><meta name="description" content="An early open-source notebook of utilities, tests and tutorials."><meta name="keywords" content="Namanyay Goel, Founder, Writer, AI, Machine Learning, Web Development, App Development, Gigamind, Giga AI"><meta name="author" content="Namanyay Goel"><meta name="theme-color" content="#1a1a2e"><meta property="og:type" content="website"><meta property="og:url" content="https://nmn.gl/lab/code-in/"><meta property="og:image" content="https://nmn.gl/static/archive/code-in.webp"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:site_name" content="Namanyay Goel"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:url" content="https://nmn.gl/lab/code-in/"><meta name="twitter:image" content="https://nmn.gl/static/archive/code-in.webp"><meta name="robots" content="index, follow"><meta name="language" content="English"><link rel="canonical" href="https://nmn.gl/lab/code-in/"><link rel="stylesheet" href="https://use.typekit.net/qfj0txf.css"><link href="/static/css/app.92c2542e22e9ada936eff982addffca5.css" rel="stylesheet"><meta property="og:title" content="Google Code-in &amp; FOSSASIA | The Lab"><meta property="og:description" content="An early open-source notebook of utilities, tests and tutorials."><meta name="twitter:title" content="Google Code-in &amp; FOSSASIA | The Lab"><meta name="twitter:description" content="An early open-source notebook of utilities, tests and tutorials."></head><body><div id="app"><div class="archive-shell"><a href="#archive-content" class="archive-skip">Skip to content</a> <header class="archive-site-nav"><a href="/" class="archive-home router-link-active" aria-label="Namanyay Goel home"><a href="/" class="router-link-active"><svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="30" preserveAspectRatio="xMidYMid meet" viewBox="0 0 406 405.47"><path stroke="#28251f" d="M265 264.47v-122C265 74.91 210.27 20 142.71 20S20 74.77 20 142.32v243.15" class="cls-1"></path> <path stroke="#28251f" d="M141 142.47v121c0 67.56 55.71 122 123.26 122S386 331.66 386 264.1V20.47" class="cls-1"></path></svg></a><span>Namanyay Goel</span></a> <nav aria-label="Main navigation"><a href="/lab/" class="router-link-active">Lab</a><a href="https://nmn.gl/blog">Blog</a><a href="/press" class="">Press</a><a href="/#contact" class="">Contact</a></nav></header> <main id="archive-content" class="archive-article"><nav aria-label="Breadcrumb" class="archive-breadcrumb"><a href="/lab/" class="router-link-active">The Lab</a><span aria-hidden="true">/</span><a href="/lab/#year-2014" class="">2014</a></nav> <header class="archive-article-heading"><p class="archive-date">December 2014–January 2015 · Learning &amp; research</p><h1>Google Code-in &amp; FOSSASIA</h1><p class="archive-deck">An early open-source notebook of utilities, tests and tutorials.</p></header> <figure class="archive-hero-figure"><a href="/static/archive/code-in.webp" aria-label="View full image: Google Code-in &amp; FOSSASIA"><img src="/static/archive/code-in.webp" alt="Google Code-in &amp; FOSSASIA archive preview" width="1440" height="1000"></a></figure> <div class="archive-article-columns"><aside class="archive-source"><h2>From the archive</h2><p>The surviving repository runs from 8 December 2014 to 17 January 2015.</p></aside> <div class="archive-prose"><p>The Code-in collection moves between practical tools and explanations of how the web works. It includes an angle converter, a JSON validator, a wallpaper, and writing about Jekyll, automated testing and p5.js.</p><p>Other tutorials document moving a MediaWiki installation and working on web infrastructure. Together they capture the shift from building individual pages to understanding the systems behind them.</p><!----> <!----></div></div> <!----> <section aria-label="Original designs" class="archive-gallery"><figure><a href="/static/archive/codein-wallpaper.webp"><img src="/static/archive/codein-wallpaper.webp" alt="An original LXDE wallpaper from the Code-in collection." loading="lazy" decoding="async"></a><figcaption>An original LXDE wallpaper from the Code-in collection.</figcaption></figure></section> <section class="archive-readings"><h2>The original notebook</h2><p>Writing from the 2014–2015 collection, preserved as historical tutorials.</p><details><summary>Running jekyll locally for FOSSASIA</summary><div class="archive-transcript"><p>Github Pages allows one to use Jekyll on their site. Github compiles everything on their own servers and serves them to visitors.</p>
+
+<p>However, for testing and development, it is a wise idea to have Jekyll running on your local environment. This quick guide will run you through getting jekyll running on your computer.</p>
+
+<h2>Why Jekyll</h2>
+
+<p>We've begun to use Jekyll for FOSSASIA's Google Code-in site. This tutorial was because of a task on GCI. </p>
+
+<p>Jekyll is useful for sites hosted on Github because it allows using Coffeescript and SASS. You get to separate out the data from the template by using Jekyll Data Files. You can use Variables and YAML Front Matter for more advance customization. </p>
+
+<p>In our case, we primarily used Jekyll to separate logic from data by using Data Files, and to use SASS for better stylesheets. FOSSASIA's GCI site allows students to add their own information and photos. Previously, students would have to copy-paste a section of HTML code and make changes in the HTML to get themselves to appear on the site. This was difficult for inexperienced students and often led to problems in code, like syntax errors and uneven indenting - all very confusing to maintain. Adding a new student's info almost always resulted in a merge conflict, and all merges had to be done manually.</p>
+
+<p>The new version with jekyll has a <code>students.json</code> file in it's <code>_data</code> directory. The file is an array of objects, one for each student. A student can add information like their social media links, their photo, and their image simply by editing this JSON file. For social media profiles, they simply need to enter their username, not the whole URL - the template handles the rest.</p>
+
+<p>The template code is now separate and is run by nested loops using Liquid. This ensure perfect uniformity and making changes are easier. For example, if we want to change the animation style, it is simply one change instead of changing every occurrence. </p>
+
+<p>Using SCSS allows the site to run SCSS-lint, which ensures that the CSS written is uniform and free of errors. Variables and nesting by SCSS is also useful in the website's design.</p>
+
+<h2>Setting Up</h2>
+
+<p>First, you should have a local copy of the fossasia site. You'll notice a file called 'Gemfile' in the root, this is required for installing and configuring the gem.</p>
+
+<p>You also need Ruby and Node.JS installed. Windows users can get ruby from RubyInstaller.</p>
+
+<p>Next, we'll install Bundler. Bundler is the package manager for Ruby, that will make managing installs of Jekyll and other gems very easy. Install Bundler by running <code>gem install bundler</code> in the command line.</p>
+
+<p>Navigate to the fossasia.github.io folder (where the <code>Gemfile</code> is located) on the command line. Run <code>bundle install</code> to install dependencies for the <code>github-pages</code> gem. The pages gem installs many dependencies, which include jekyll, jekyll-coffeescript, jekyll-sass-converter - All very useful for an average development project.See the full list here. We don't exactly use many of these dependencies, but it is important to have all to exactly mimic Github. Apart from that, the pages gem isn't really much different from the normal jekyll gem.</p>
+
+<h2>Running!</h2>
+
+<p>Running <code>bundle exec jekyll serve</code> in the repo's directory will compile and run your site <em>exactly</em> how Github would compile and run it. You'll be able to see the site on your computer by visiting <code>localhost:4000</code>. Congrats!</p>
+
+<p></p>
+
+
+
+<p>Made with ♥ for Code-In</p></div></details><details><summary>Mocking, Spying, and Stubbing</summary><div class="archive-transcript"><p>In test-driven development (TDD), mocking, spying, and stubbing are three important methods. Mocking allows checking functions without dependencies, increasing speed and reducing chances of error; spying allows to check the 'indirect output' of code; stubbing allows to simulate functions to reduce their complexity and increase speed for testing.</p>
+
+<p>In the post, I'll be talking about testing through Mocha and Sinon.JS, both based on Node JS.</p>
+
+<h2>The mailer</h2>
+
+<p>In this post we'll be discussing on running tests on a mailer function. This takes two arguments, <code>req</code> (request), and <code>res</code> (response). The function looks like this: </p>
+
+<pre><code>function rootPost(req, res) {
+    var email =  {
+        from: 'Fossasia &lt;fossasia@fossasia.com&gt;',
+        to: req.body.to,
+        subject: req.body.subject, 
+        text: req.body.message,
+    };
+
+
+    mailer.send(email, function(error, info) {
+
+        if ( error ) {
+            req.flash('info', error);
+        } else {
+            req.flash('info', 'Email sent sucessfully!');
+        }
+
+        res.render('index', { flash: req.flash('info') });
+    });
+}
+</code></pre>
+
+<p><code>req.body</code> contains all information of the email (subject, message, etc). </p>
+
+<p>The inner <code>mailer</code> function is what actually sends the email. It calls many dependencies, and we'll have to mock it for efficient testing. </p>
+
+<p><code>req.flash()</code> gives useful information on if the mailer is sent or not. We'll need to spy on this method.</p>
+
+<p>The function can be considered finished when it finally runs <code>res.render(...)</code>. We'll need to mock <code>res.render()</code> to check for that.</p>
+
+<h2>Supplying arguments</h2>
+
+<p>The basic structure of our test will be as follows:</p>
+
+<pre><code>var testRequest = {};
+
+testRequest.body =  {
+    to: 'mail@namanyayg.com',
+    subject: 'Test', 
+    message: 'Test',
+};
+
+...    
+
+testResponse = {
+    render: function() {
+        ...
+    }
+}; 
+
+routes.rootPost(testRequest, testResponse); 
+// This is the rootPost function as above
+</code></pre>
+
+<p>We'll be supplying <code>testRequest</code> and <code>testResponse</code> to the rootPost function. <code>testRequest.body</code> be an object with the email's info. </p>
+
+<h2>Spying</h2>
+
+<p>Sinon.JS provides a <code>.spy()</code> method to create a test spy that records some basic information about the function it is spying on, how many times it's called, what arguments it was supplied with, etc. The <code>.spy()</code> method does not modify the function in question.</p>
+
+<p>We'll be spying on an existing method, namely, the <code>req.flash()</code> method. At the end of the test, we'll need to check if the arguments passed to <code>req.flash()</code> contain 'Email Sent Successfully!' or not. If not, the the function has failed and there's some problem in the test.</p>
+
+<p>Create a spy is simple - You simply use the <code>sinon.spy()</code> method. Since we need to spy on <code>req.flash()</code>, we'll do this:</p>
+
+<pre><code>testRequest.flash = sinon.spy();
+</code></pre>
+
+<p>With this one-liner, we'll be able to check if the arguments passed to <code>testRequst.flash()</code> have 'Email sent successfully!' or not.</p>
+
+<h2>Mocking and stubbing</h2>
+
+<p>In Sinon, one way to mock a function is to create a stub. A stub is like a glorified spy, it can do everything that a spy can <em>and</em> it is able to modify the function itself.</p>
+
+<p>The syntax to create a stub is:</p>
+
+<pre><code>var stubFoo = sinon.stub(parentObject, 'childFunction', function() {
+    // This holds what parentObject.childFunction() is replaced with
+});
+</code></pre>
+
+<p>We'll be stubbing the <code>mailer.send()</code> function, since we don't want it to <em>actually</em> send an email, but just check if it <em>can</em> send an email and if it has correct parameters. In the mock, we'll check if the arguments we receive match the arguments we supplied, if yes, we'll run the anonymous function that <code>mailer.send()</code> accepts as it's second argument.</p>
+
+<pre><code>var mailerSpy = sinon.stub(mailer, 'send', function(arguments, callback) {
+    // Compares test request body and actual body
+    assert.equal( arguments.to, testRequest.body.to, 'To field does not match' );
+    assert.equal( arguments.subject, testRequest.body.subject, 'Subject does not match' );
+    assert.equal( arguments.text, testRequest.body.message, 'Message body does not match' );
+    console.log('      - Given arguments match used arguments')
+
+    // Runs the function we supply as the second argument in mailer.send();
+    callback();
+
+    return false;
+});
+</code></pre>
+
+<h2>Modifying</h2>
+
+<p>At the end of the callback, <code>res.render()</code> is called. We already have spied on <code>req.flash()</code> and we can check inside <code>res.render()</code>'s mock if it's value matches to 'Email sent successfully!'.</p>
+
+<p>At the start, we supplied <code>testResponse</code> to <code>routers.rootPost()</code> in place of <code>res</code>. Hence, we need to create <code>testResponse.render()</code> in our test to mock <code>res.render()</code>. </p>
+
+<p>We create a new method in <code>testResponse</code>, <code>render</code>. Here we'll output the value of the second argument we found from our <code>testRequest.flash()</code> spy. It will either be an error or 'Email sent successfully'. We will check if it the latter, if so, the test is considered to have passed.</p>
+
+<pre><code>testResponse = {
+    render: function() {
+        console.log( '      -', testRequest.flash.args[0][1] )
+
+        assert.equal(testRequest.flash.args[0][1], 'Email sent sucessfully!')
+        done();
+    }
+};
+</code></pre>
+
+<h2>Wrapping it up</h2>
+
+<p>We run our test through Mocha, and if we seen a green radical sign check mark that means the test passed. We successfully mocked two functions and spied on one. </p>
+
+<p>Made with ♥ for Code-In</p></div></details><details><summary>p5.js Introduction</summary><div class="archive-transcript"><p>p5.js is an easy-to-use JavaScript library that is a 'software sketchbook', letting artists, designers, and hobbyists use the web as a visual development tool. It is inspired by the Processing project.</p>
+
+  <h2>Getting Started</h2>
+
+  <p>Create a <code>index.html</code> file on your computer with some skeleton code:</p>
+
+<pre><code>&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;p5.js&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+  <p>Just before the <code>&lt;/body&gt;</code>, create two <code>&lt;script&gt;</code> tags linking to the p5 library and your local JavaScript file.</p>
+
+<pre><code>&lt;body&gt;
+&lt;script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/p5.js/0.3.12/p5.min.js" /&gt;
+&lt;script type="text/javascript" src="scripts.js" /&gt;
+&lt;/body&gt;
+</code></pre>
+
+  <p>Create the file <code>scripts.js</code> in the same folder as your <code>index.html</code> file. Place the following starter code in <code>scripts.js</code> (taken from p5)</p>
+
+<pre><code>function setup() {
+
+}
+
+function draw() {
+  ellipse(50, 50, 80, 80);
+}
+</code></pre>
+
+  <p>Open <code>index.html</code> with a modern browser such as Chrome or Firefox. You should see a circle on your browser.</p>
+
+  <p>You'll see something like the following:</p>
+  
+
+
+  <h2>Multiple instances in one page</h2>
+  <p>Often it is needed to 'embed' examples in a HTML document (such as this page does). To do that, p5 allows creation of a <em>namespace</em>.</p>
+  <p>A namespace works by creating a namespaced function that takes a single argument. Create a new variable that makes a new instance of <code>p5</code>. The instance takes two variables, the first being the namespaced function, the second being the ID of the HTML container you want the sketch rendered in.</p>
+<pre><code>var namespace = function( sketch ) {
+...
+}
+
+var p5Instance = new p5(namespace, 'containerID');
+</code></pre>
+
+  <p>I have been using this method to create the above circle like this:</p>
+<pre><code>&lt;div id="ex1"&gt;&lt;/div&gt;</code></pre>
+<pre><code>var ex1 = function( s ) {
+}
+
+var one = new p5(ex1, 'ex1');
+</code></pre>
+  <p>Which renders the canvas inside <code>&lt;div id="ex1"&gt;&lt;/div&gt;</code>. I've used <code>s</code> instead of <code>sketch</code> because it is shorter to repeat.</p>
+
+  <p>Inside the namespaced function, you can use all p5 methods, functions, and variables normally—they just have to be accessed through the argument that the instance passes (in my case, <code>s</code>).</p>
+
+<pre><code>var ex1 = function( s ) {
+  
+  var someVariable = 42;
+
+  function helper() {
+    console.log('I aid in sketching');
+  }
+
+  s.setup = function() {
+    ...
+  }
+
+  s.draw = function() {
+    ...
+  }
+}
+
+var one = new p5(ex1, 'ex1');
+</code></pre>
+
+  <p>The syntax is a bit different from p5's regular syntax, it seems more <em>object-like</em>. This is because we're using a namespaced function now, rather than exposing everything to the global scope. Variables and functions can be declared normally, but to use p5's method, they need to follow the above syntax.</p>
+
+  <p>Inside the <code>s.setup()</code> and <code>s.draw()</code> blocks, you again need to use the <code>s</code> object to refer to p5 methods such as <code>ellipse()</code> or <code>fill()</code>. </p>
+
+  <p>The complete code for making the ellipse above is as follows: </p>
+
+<pre><code>&lt;html&gt;
+&lt;head&gt;&lt;title&gt;p5&lt;/title&gt;&lt;/head&gt;
+&lt;body&gt;
+  ...
+  &lt;div id="ex1"&gt;&lt;/div&gt;
+  ...
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<pre><code>var ex1 = function( s ) {
+  s.setup = function() {
+  }
+
+  s.draw = function() {
+    s.ellipse(50, 50, 80, 80);
+  }
+}
+
+var one = new p5(ex1, 'ex1');
+</code></pre>
+
+  <h2>My experience</h2>
+  <p>p5.js turned out to be extremely easy to use with an intuitive syntax. It wasn't difficult to pick the library and get going with p5. It scaled well, and allowed expansive and complicated designs while keeping the syntax simple.</p>
+
+  <p>I've created a simple drawing through p5 that shows a star that follow's the user's mouse:</p>
+  
+
+  <p>Complete code of the above drawing is below (Note: it uses a namespaced function as explained above).</p>
+
+<pre><code>&lt;html&gt;
+&lt;head&gt;&lt;title&gt;p5&lt;/title&gt;&lt;/head&gt;
+&lt;body&gt;
+  ...
+  &lt;div id="ex2"&gt;&lt;/div&gt;
+  ...
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<pre><code>var ex2 = function( s ) {
+
+  var opacity = 200;
+  var step = 3;
+  var round = 0;
+  // Opacity, step, and round are used to 
+  // make the star blink
+
+  s.setup = function() {
+    s.createCanvas(640, 480);
+  }
+
+  s.draw = function() {
+    s.stroke(0, 0, 0, 0);
+    s.background(30, 144, 255);
+
+    // Increases/decreases opacity 
+    // appropriately
+    if ( round % 2 == 0 )
+      opacity += step;
+    else 
+      opacity -= step;
+    if ( opacity &gt;= 255 || opacity &lt;= 200 )
+      round++;
+
+    s.fill(255, opacity); // Change fill through (rgb, a)
+
+    star(s.mouseX, s.mouseY); // Follow the mouse
+  }
+
+  function star(x, y) {
+    // Modified p5 code to create
+    // a 5-pointed star
+
+    s.translate(x, y); // Sets origin to center of the star
+    s.rotate(s.frameCount / 200); // Rotates the star 
+
+    var angle = (Math.PI * 2) / 5;
+    var halfAngle = angle/2.0;
+    s.beginShape();
+    for (var a = 0; a &lt; Math.PI * 2; a += angle) {
+      var sx = s.cos(a) * 50;
+      var sy = s.sin(a) * 50;
+      s.vertex(sx, sy);
+      sx = s.cos(a+halfAngle) * 30;
+      sy = s.sin(a+halfAngle) * 30;
+      s.vertex(sx, sy);
+    }
+    s.endShape(s.CLOSE);
+  }
+}
+
+var ex2 = new p5(ex2, 'ex2');
+</code></pre>
+
+<p>Made with ♥ for Code-In</p></div></details><details><summary>Moving foss.vn to a new server</summary><div class="archive-transcript"><p>foss.vn is FOSSASIA's wiki, running on Mediawiki. I worked on a task that required me to move the site to a new server.</p>
+
+<p>I had the old server's SSH details, while the new server had only FTP access and a separate MySQL database host.</p>
+
+<p>I referred to the official guide for directions, then came up with my own solutions to a few problem that came while I was moving servers.</p>
+
+<p>A quick guide on porting mediawiki installations is:</p>
+
+<ol>
+<li>Move database</li>
+<li>Move all files</li>
+<li>Done</li>
+</ol>
+
+<h2>Moving the database</h2>
+
+<p>We first export the database using mysqldump.</p>
+
+<pre><code>mysqldump -h hostname -u userid --password --default-character-set=binary dbname &gt; backup.sql
+</code></pre>
+
+<p>You'll be asked for a password.</p>
+
+<p>The <code>backup.sql</code> file is what we need to import to the new database.</p>
+
+<p>To import via the command line, run:</p>
+
+<pre><code>mysql -u new-userid -h new-hostname -p new-dbname &lt; dump_of_wikidb.sql
+</code></pre>
+
+<p>This requires that a table named <code>new-dbname</code> is ready on the <code>new-hostname</code>, with <code>new-userid</code> having complete rights. If this is not there, you'll need to configure additional details.</p>
+
+<h2>Moving the files</h2>
+
+<p>Mediawiki requires an exact copy of the current files uploaded to the remote server.</p>
+
+<p>The most straightforward solution is to download all files and upload them. However, this is going to take a long time and will require lots of manual input.</p>
+
+<p>I moved the files to the new server by using ncftp. It is a command line ftp tool. Using ncftpput allows to recursively upload the entire directory to the required directory on the server.</p>
+
+<pre><code>cd mediawiki-directory
+ncftpput -u username -v -R -z remote-host remote-directory *
+</code></pre>
+
+<p>Run the above command. This asks for the password, enter it and let ncftpput finish. It can take a while depending on the size of your install.</p>
+
+<p>Once you've moved the database and the files, you'll need to make changes in the LocalSettings.php files to edit the mysql login data.</p>
+
+<h2>Wrapping up</h2>
+
+<p>Once you've moved files and the database, it's time to test! Visit the URL provided by your host and have a look. You should see all content there, with perhaps some styling errors. The errors go as soon as you redirect the domain.</p>
+
+
+
+
+<p>Made with ♥ for Code-In</p></div></details></section> <!----> <nav aria-label="More from the timeline" class="archive-pagination"><a href="/lab/code-warriors/" class="">← Code Warriors</a><a href="/lab/physics/" class="">Physics, made visible →</a></nav></main> <footer class="archive-footer"><a href="/lab/" class="router-link-active">The Lab</a><span>A continuing archive by Namanyay Goel.</span><a href="/" class="router-link-active">Back to the main site</a></footer></div> <!----></div><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-JV95HHT64S&amp;cx=c&amp;gtm=4e6ak1"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-30368451-1"></script><script>window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-30368451-1');</script><script type="text/javascript" src="/static/js/manifest.2ae2e69a05c33dfc65f8.js"></script><script type="text/javascript" src="/static/js/vendor.ae3fa6440662bf382c51.js"></script><script type="text/javascript" src="/static/js/app.8ade7badf42308be664d.js"></script></body></html>
