@@ -8,8 +8,15 @@
           .subtitle My personal open-source passion projects
   .lab
     .wrap
-      .lab__items
-        LabItem(v-for="item in getItems()" :key="item.key" :data="item").lab-item
+      nav.lab-categories(v-if="!showOnlyFeatured" aria-label="Project categories")
+        a(v-for="group in groups" :key="group.key" :href="'#lab-' + group.key") {{ group.name }}
+      .lab__items(v-if="showOnlyFeatured")
+        LabItem(v-for="item in featuredItems" :key="item.key" :data="item").lab-item
+      template(v-else)
+        section.lab-group(v-for="group in groups" :key="group.key" :id="'lab-' + group.key" :aria-labelledby="'lab-heading-' + group.key")
+          h2.lab-group__title(:id="'lab-heading-' + group.key") {{ group.name }}
+          .lab__items
+            LabItem(v-for="item in group.items" :key="item.key" :data="item" heading-tag="h3").lab-item
 </template>
 
 <script>
@@ -28,24 +35,38 @@ export default {
     }
   },
   computed: {
-    yearsFriends () {
-      const d = new Date()
-      return d.getFullYear() - 2011
-    }
-  },
-  methods: {
-    getItems () {
-      const items = data.data
-      if (this.showOnlyFeatured) {
-        return items.filter(item => item.isFeatured)
-      }
-      return items
+    featuredItems () {
+      return data.data.filter(item => item.isFeatured)
+    },
+    groups () {
+      return data.categories.map(category => ({
+        ...category,
+        items: data.data.filter(item => item.category === category.key)
+      })).filter(category => category.items.length)
     }
   }
 }
 </script>
 
 <style lang="stylus">
+.lab-categories
+  display flex
+  flex-wrap wrap
+  gap .75rem 1.5rem
+  margin 0 0 3rem
+  a
+    color inherit
+    text-underline-offset .25em
+
+.lab-group
+  scroll-margin-top 2rem
+  &__title
+    font-size 1.75rem
+    margin 0 0 2rem
+    padding-top 1rem
+    border-top 1px solid rgba(0, 0, 0, .12)
+
+
 .lab {
   .header {
     display: flex;

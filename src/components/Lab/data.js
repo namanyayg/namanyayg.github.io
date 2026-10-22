@@ -1,7 +1,15 @@
 export default {
+  categories: [
+    { key: 'apps', name: 'Apps & tools' },
+    { key: 'design', name: 'Design & development' },
+    { key: 'games', name: 'Games & puzzles' },
+    { key: 'learning', name: 'Learning & research' },
+    { key: 'experiments', name: 'Web experiments' }
+  ],
   data: [
     {
       key: 'giga',
+      category: 'apps',
       isFeatured: true,
       isClosedSource: true,
       href: 'https://nmn.gl/blog/giga-intro',
@@ -12,6 +20,7 @@ export default {
     },
     {
       key: 'air',
+      category: 'apps',
       isFeatured: true,
       href: 'https://air.nmn.gl/',
       name: 'Air Quality Impact & Visualizations',
@@ -21,6 +30,7 @@ export default {
     },
     {
       key: 'trends-ai',
+      category: 'apps',
       isFeatured: true,
       href: 'https://trends.nmn.gl/',
       name: 'Trend Analyzer & Content Assistant',
@@ -30,6 +40,7 @@ export default {
     },
     {
       key: 'webstiles',
+      category: 'design',
       isFeatured: true,
       href: 'https://nmn.gl/webstiles',
       name: 'Webstiles In-Browser UI Prototyping',
@@ -42,6 +53,7 @@ export default {
     },
     {
       key: 'lccpp',
+      category: 'learning',
       isFeatured: true,
       href: 'https://leanpub.com/lessconfusingcpp',
       name: 'Less Confusing C++',
@@ -55,6 +67,7 @@ export default {
     },
     {
       key: 'indiasmile',
+      category: 'apps',
       isFeatured: true,
       href: 'https://indiasmile.github.io/',
       name: 'IndiaSmile COVID-19 Tracker & Stats',
@@ -68,6 +81,7 @@ export default {
     },
     {
       key: 'keyzen',
+      category: 'games',
       isFeatured: true,
       href: 'https://nmn.gl/KeyZen/',
       name: 'KeyZen Touch Typing Game',
@@ -80,6 +94,7 @@ export default {
     },
     {
       key: 'aiindians',
+      category: 'apps',
       isFeatured: false,
       href: 'https://aiindians.org',
       name: 'AI Startups in India',
@@ -94,6 +109,7 @@ export default {
     },
     {
       key: 'kevin',
+      category: 'apps',
       isFeatured: false,
       href: 'https://nmn.gl/kevin',
       name: 'Kevin: Open Source AI Software Engineer',
@@ -107,6 +123,7 @@ export default {
     },
     {
       key: 'bandc',
+      category: 'games',
       isFeatured: true,
       oldHref: 'https://vixra.org/pdf/1601.0302v1.pdf',
       href: 'https://nmn.gl/moo',
@@ -122,7 +139,55 @@ export default {
       shortDescription: '<strong>Award-winning research paper and interactive demo</strong> analyzing optimal algorithms for Bulls & Cows game. Combined theoretical analysis with practical implementation.'
     },
     {
+      key: 'sympl',
+      category: 'design',
+      isFeatured: false,
+      href: 'https://nmn.gl/sympl/',
+      name: 'Sympl.css',
+      color: '#1769aa',
+      shortDescription: 'A small responsive CSS grid with typography defaults, built to give new web projects a simple starting point.'
+    },
+    {
+      key: 'clas',
+      category: 'experiments',
+      isFeatured: false,
+      href: 'https://nmn.gl/clas/',
+      name: 'Clas',
+      color: '#337da5',
+      shortDescription: 'An early single-page website experiment with fading navigation, built in plain JavaScript and accompanied by two tutorials.'
+    },
+    {
+      key: 'musicose',
+      category: 'experiments',
+      isFeatured: false,
+      href: 'https://nmn.gl/old-experiments/musicose/',
+      sourceHref: 'https://github.com/namanyayg/old-experiments/tree/main/musicose',
+      name: 'MusiCose',
+      color: '#008780',
+      shortDescription: 'A sideways-scrolling website for a fictional Martian band, with colorful full-screen panels and keyboard navigation.'
+    },
+    {
+      key: 'win95anim',
+      category: 'experiments',
+      isFeatured: false,
+      href: 'https://nmn.gl/win95anim/',
+      name: 'Windows 95 CSS Animation',
+      color: '#856628',
+      shortDescription: 'The animated Windows 95 commercial logo recreated with four squares, CSS keyframes and transforms.'
+    },
+    {
+      key: 'min-slide',
+      category: 'experiments',
+      isFeatured: false,
+      href: 'https://nmn.gl/old-experiments/min-slide/',
+      sourceHref: 'https://github.com/namanyayg/old-experiments/tree/main/min-slide',
+      name: 'MinSlide',
+      color: '#12396b',
+      shortDescription: 'A tiny JavaScript slider with keyboard controls. The restored demo uses colors in place of its missing original images.'
+    },
+    {
       key: 'physics',
+      category: 'learning',
       isFeatured: true,
       href: '/physics',
       name: 'Physics Simulators Collection',

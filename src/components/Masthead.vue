@@ -6,6 +6,8 @@
       nav.menu
         a.menu--item(href="https://nmn.gl/blog")
           span Blog
+        router-link.menu--item(to="/lab")
+          span Lab
         router-link.menu--item(to="/press")
           span Press
         a.menu--item(href="https://pumpgtm.com" target="_blank" rel="noopener noreferrer")
@@ -48,11 +50,11 @@ export default {
         delay: 0.75
       })
 
-      ;[1, 2, 3, 4].map(i => {
-        TweenLite.from($('.menu--item:nth-child(' + i + ') span'), 1, {
+      this.$el.querySelectorAll('.menu--item span').forEach((item, i) => {
+        TweenLite.from(item, 1, {
           y: -60,
           ease: Elastic.easeOut.config(1, 0.9),
-          delay: 0.25 * i + 0.75
+          delay: 0.25 * (i + 1) + 0.75
         })
       })
     }

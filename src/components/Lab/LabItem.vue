@@ -1,11 +1,11 @@
 <template lang="pug">
   section.scene.lab-item(:class="`lab-item--${data.key}`")
-    a.media(:href="data.href" target="_blank")
+    a.media(:href="data.href" target="_blank" rel="noopener noreferrer")
       LabMedia(:data="data")
     .content
         header.header
           .main
-            h1.item__title
+            component.item__title(:is="headingTag")
               span {{ data.name }}
             // .created-at
               span.marker Created
@@ -14,9 +14,9 @@
         .description(v-if="data.shortDescription" v-html="data.shortDescription")
         .description(v-if="!data.shortDescription" v-html="data.description")
         .actions
-          a.button.view-project(:href="data.href" target="_blank" :style="{ backgroundColor: data.color }")
+          a.button.view-project(:href="data.href" target="_blank" rel="noopener noreferrer" :style="{ backgroundColor: data.color }")
             | Visit Project →
-          a.github-link(v-if="!data.isClosedSource" target="_blank" rel="noopener noreferrer" :href="'https://github.com/namanyayg/' + data.key")
+          a.github-link(v-if="!data.isClosedSource" target="_blank" rel="noopener noreferrer" :href="data.sourceHref || 'https://github.com/namanyayg/' + data.key")
             | Source on Github
 </template>
 
@@ -26,7 +26,10 @@ import LabMedia from './LabMedia'
 
 export default {
   name: 'LabItem',
-  props: ['data'],
+  props: {
+    data: Object,
+    headingTag: { type: String, default: 'h2' }
+  },
   components: {
     LabMedia
   },
@@ -130,6 +133,7 @@ export default {
   margin 0 0 1em
 
 .item__title
+  font-size 2em
   font-weight bold
   margin -1em 0 0
   letter-spacing -.5px

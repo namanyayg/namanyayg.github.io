@@ -27,8 +27,10 @@ export default {
     async fetchViewType () {
       const { $route } = this
       const viewHash = await this.fetchViewTypeFromRoute($route)
-      // make sure to delete the viewHash when loaded
-      this.$router.replace($route.fullPath.replace(viewHash, ''))
+      // Remove only the legacy view-mode hash; preserve normal section links.
+      if (viewHash) {
+        await this.$router.replace($route.fullPath.replace(viewHash, ''))
+      }
     }
   },
   created () {

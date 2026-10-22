@@ -1,5 +1,5 @@
 <template lang="pug">
-#lab.lab
+.lab-page
   .masthead-container
     Masthead(back="dark")
   .lab-intro
@@ -21,6 +21,9 @@ export default {
   components: {
     Masthead,
     Lab
+  },
+  mounted () {
+    document.title = 'Lab — Namanyay Goel'
   }
 }
 </script>

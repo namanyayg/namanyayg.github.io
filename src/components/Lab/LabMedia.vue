@@ -2,7 +2,7 @@
   .media(@mousemove="tiltMockup")
     .image-container
       .overlay(:style="{ backgroundColor: data.color }")
-      img(:src="labImageUrl")
+      img(:src="labImageUrl" :alt="data.name + ' preview'" loading="lazy" decoding="async")
     // .bg(:style="mediaBgStyle" )
     // p wtf
     // .item-container
@@ -13,7 +13,7 @@
     //         video(:poster="posterUrl" autoplay loop muted)
     //           source(:src="videoUrl" type="video/mp4")
     //     .item(v-else)
-    //       img(:src="labImageUrl")
+    //       img(:src="labImageUrl" :alt="data.name + ' preview'" loading="lazy" decoding="async")
 </template>
 
 <script>
