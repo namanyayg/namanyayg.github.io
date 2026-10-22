@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <router-view/>
-    <Colophon/>
+    <Colophon v-if="!$route.path.startsWith('/lab')"/>
   </div>
 </template>
 

@@ -1,0 +1,575 @@
+[
+  {
+    "slug": "clas",
+    "title": "Clas",
+    "year": 2012,
+    "dateLabel": "November 2012",
+    "category": "experiments",
+    "summary": "A single-page website, written in plain JavaScript at fourteen.",
+    "paragraphs": [
+      "Clas gave a small website the feel of an application: click a section and the old panel fades into the next. The original project also came with two tutorials explaining how it worked.",
+      "The restored demo keeps its early-web character, with repaired navigation and a contact form that stays inside the exhibit."
+    ],
+    "image": "/static/lab/clas.png",
+    "dateNote": "The original Git history begins on 5 November 2012.",
+    "links": [
+      [
+        "Explore Clas",
+        "https://nmn.gl/clas/"
+      ],
+      [
+        "Source",
+        "https://github.com/namanyayg/clas"
+      ]
+    ]
+  },
+  {
+    "slug": "sympl",
+    "title": "Sympl.css",
+    "year": 2012,
+    "dateLabel": "November 2012",
+    "category": "design",
+    "summary": "A responsive CSS starting point that later powered Webstiles.",
+    "paragraphs": [
+      "Sympl bundled a small responsive grid and typography defaults into a stylesheet. It was a way to start a page quickly while keeping control of the HTML and CSS.",
+      "The original stylesheet survives. The accompanying demo page was recreated in 2026 to make its grid and type easy to explore."
+    ],
+    "image": "/static/lab/sympl.png",
+    "dateNote": "The original Git history begins on 6 November 2012.",
+    "links": [
+      [
+        "Try the grid",
+        "https://nmn.gl/sympl/"
+      ],
+      [
+        "Source",
+        "https://github.com/namanyayg/sympl"
+      ]
+    ]
+  },
+  {
+    "slug": "webstiles",
+    "title": "Webstiles",
+    "year": 2013,
+    "dateLabel": "January 2013",
+    "category": "design",
+    "summary": "A way to sketch a website’s visual language directly in the browser.",
+    "paragraphs": [
+      "Webstiles brought colors, typography and interface elements together in a browser-based design sheet. It helped clients compare directions before a full website was built.",
+      "The early portfolio describes Webstiles as part of the client workflow and records that its responsive template was built on Sympl."
+    ],
+    "image": "/static/lab/webstiles.png",
+    "dateNote": "January 2013 is the date recorded in the existing portfolio.",
+    "links": [
+      [
+        "Open Webstiles",
+        "https://nmn.gl/webstiles/"
+      ],
+      [
+        "Source",
+        "https://github.com/namanyayg/webstiles"
+      ]
+    ]
+  },
+  {
+    "slug": "win95anim",
+    "title": "Windows 95, in CSS",
+    "year": 2013,
+    "dateLabel": "June 2013",
+    "category": "experiments",
+    "summary": "Four colored squares recreate a familiar piece of computing history.",
+    "paragraphs": [
+      "A small animation study based on the Windows 95 launch commercial, built with CSS. The whole composition starts with the four colors of the Windows flag.",
+      "The restored version preserves the animation and adds pause and reduced-motion controls."
+    ],
+    "image": "/static/lab/win95anim.png",
+    "dateNote": "The original Git history begins on 4 June 2013.",
+    "links": [
+      [
+        "Play the animation",
+        "https://nmn.gl/win95anim/"
+      ],
+      [
+        "Source",
+        "https://github.com/namanyayg/win95anim"
+      ]
+    ]
+  },
+  {
+    "slug": "musicose",
+    "title": "MusiCose",
+    "year": 2013,
+    "dateLabel": "c. 2013",
+    "category": "experiments",
+    "summary": "A sideways-scrolling website for a fictional band from Mars.",
+    "paragraphs": [
+      "A sideways-scrolling website for a fictional band from Mars.",
+      "The original files were recovered from Cloudnommy and restored as a static demo. Keyboard navigation moves between the colorful full-screen panels. The fictional contact controls are disabled."
+    ],
+    "image": "/static/lab/musicose.png",
+    "dateNote": "Surviving source files carry October 2013 timestamps; the original launch date is not established.",
+    "links": [
+      [
+        "Open the demo",
+        "https://nmn.gl/old-experiments/musicose/"
+      ],
+      [
+        "Source",
+        "https://github.com/namanyayg/old-experiments/tree/main/musicose"
+      ]
+    ]
+  },
+  {
+    "slug": "min-slide",
+    "title": "MinSlide",
+    "year": 2013,
+    "dateLabel": "c. 2013",
+    "category": "experiments",
+    "summary": "An early JavaScript experiment in moving from one image to the next.",
+    "paragraphs": [
+      "An early JavaScript experiment in moving from one image to the next.",
+      "The original files were recovered from Cloudnommy and restored as a static demo. The externally hosted photos were missing, so the restored demo identifies its solid-color substitutes. Slide controls and autoplay work again."
+    ],
+    "image": "/static/lab/min-slide.png",
+    "dateNote": "Surviving source files carry October 2013 timestamps; the original launch date is not established.",
+    "links": [
+      [
+        "Open the demo",
+        "https://nmn.gl/old-experiments/min-slide/"
+      ],
+      [
+        "Source",
+        "https://github.com/namanyayg/old-experiments/tree/main/min-slide"
+      ]
+    ]
+  },
+  {
+    "slug": "keyzen",
+    "title": "KeyZen",
+    "year": 2013,
+    "dateLabel": "October 2013",
+    "category": "games",
+    "summary": "A typing game with a pastel keyboard and a very practical motivation.",
+    "paragraphs": [
+      "KeyZen grew out of an obsession with typing faster. It turns practice into a small game, with an animated keyboard showing each key.",
+      "The existing portfolio records that it was built in a few hours for a hackathon and won first prize."
+    ],
+    "image": "/static/lab/keyzen.png",
+    "dateNote": "October 2013 is the date recorded in the existing portfolio.",
+    "links": [
+      [
+        "Play KeyZen",
+        "https://nmn.gl/KeyZen/"
+      ]
+    ]
+  },
+  {
+    "slug": "portfolio-2013",
+    "title": "The freelance years begin",
+    "year": 2013,
+    "dateLabel": "2013–2014",
+    "category": "design",
+    "summary": "An early portfolio introduces a teenage designer already working on MakeUseOf.",
+    "paragraphs": [
+      "The surviving homepage opens with “Hello, I’m Namanyay Goel” and describes a freelance designer and front-end developer. Its work section includes MakeUseOf, MakeUseOf TV, a music website and Webstiles.",
+      "There is already a considered client process: ask questions, make a first draft, gather feedback, then deliver the finished site. Webstiles appears both as a project and as a tool used during that process.",
+      "The page’s HTML survives, but its linked stylesheet and project thumbnails were not found. The excerpt below is presented as an archival transcription, rather than a reconstruction of the missing design."
+    ],
+    "image": "/static/lab/portfolio-2013.png",
+    "dateNote": "The page’s supporting files are dated October 2013; its surviving HTML was last modified on 9 January 2014.",
+    "excerpt": "Hello, I’m Namanyay Goel, a freelance designer & front end developer. I also work at MakeUseOf as their UI designer/front end developer.",
+    "textOnly": true
+  },
+  {
+    "slug": "agrobot-cropstor",
+    "title": "Agrobot & Cropstor",
+    "year": 2014,
+    "dateLabel": "c. August 2014",
+    "category": "design",
+    "summary": "Two agricultural product concepts, complete with interfaces, branding and motion.",
+    "paragraphs": [
+      "Agrobot presented a sensor-based irrigation system with moisture tracking. Cropstor approached the other end of the process with a warehouse interface for recording farmers and their produce.",
+      "The JAD project brought the two ideas into one visual world. Product pages, phone mockups, interface screens and short videos survive from the competition work."
+    ],
+    "image": "/static/archive/agrobot.webp",
+    "dateNote": "The surviving product pages and assets are timestamped 1 August 2014. This dates the recovered edition, not a verified public launch.",
+    "gallery": [
+      [
+        "cropstor.webp",
+        "The original Cropstor product page."
+      ],
+      [
+        "agrobot-screen.webp",
+        "Agrobot’s recovered mobile interface."
+      ],
+      [
+        "cropstor-screen.webp",
+        "A recovered warehouse interface screen."
+      ]
+    ],
+    "video": "agrobot-rotation.mp4",
+    "videoCaption": "Original project motion study, preserved from the 2014 files."
+  },
+  {
+    "slug": "code-warriors",
+    "title": "Code Warriors",
+    "year": 2014,
+    "dateLabel": "2014",
+    "category": "design",
+    "summary": "A website for the technology club at DPS Vasant Kunj.",
+    "paragraphs": [
+      "“Hello world. We’re the Code Warriors.” The club homepage brought a school technology community onto the web, with a design built around its projects and competitions.",
+      "The surviving edition announces Code Wars 2014. This exhibit preserves the homepage design; student records and registration systems are not part of the archive."
+    ],
+    "image": "/static/archive/code-warriors.webp",
+    "dateNote": "The page itself names Code Wars 2014; the recovered files are dated November 2014."
+  },
+  {
+    "slug": "code-in",
+    "title": "Google Code-in & FOSSASIA",
+    "year": 2014,
+    "dateLabel": "December 2014–January 2015",
+    "category": "learning",
+    "summary": "An early open-source notebook of utilities, tests and tutorials.",
+    "paragraphs": [
+      "The Code-in collection moves between practical tools and explanations of how the web works. It includes an angle converter, a JSON validator, a wallpaper, and writing about Jekyll, automated testing and p5.js.",
+      "Other tutorials document moving a MediaWiki installation and working on web infrastructure. Together they capture the shift from building individual pages to understanding the systems behind them."
+    ],
+    "image": "/static/archive/code-in.webp",
+    "dateNote": "The surviving repository runs from 8 December 2014 to 17 January 2015.",
+    "gallery": [
+      [
+        "codein-wallpaper.webp",
+        "An original LXDE wallpaper from the Code-in collection."
+      ]
+    ],
+    "reading": true
+  },
+  {
+    "slug": "physics",
+    "title": "Physics, made visible",
+    "year": 2015,
+    "dateLabel": "February 2015",
+    "category": "learning",
+    "summary": "Interactive simulations for ideas that are easier to understand when they move.",
+    "paragraphs": [
+      "A collection of browser experiments turns physics coursework into something that can be manipulated and observed. The collection includes oscillation, collisions and electrical behavior.",
+      "The original simulations remain accessible from the Physics collection."
+    ],
+    "image": "/static/lab/physics.png",
+    "dateNote": "February 2015 is the date recorded in the existing portfolio.",
+    "links": [
+      [
+        "Explore the simulations",
+        "https://nmn.gl/physics/"
+      ]
+    ]
+  },
+  {
+    "slug": "karya",
+    "title": "Karya",
+    "year": 2015,
+    "dateLabel": "May 2015",
+    "category": "apps",
+    "summary": "Three things to do today, with enough room to actually do them.",
+    "paragraphs": [
+      "Karya asks for three priorities in the morning and a check-in at night. Its original interface deliberately keeps the list short so that choosing what matters is part of the task.",
+      "The recovered app includes task views and an account system. The small version below revisits the original three-item interaction and stores your list only in this browser."
+    ],
+    "image": "/static/archive/karya.webp",
+    "dateNote": "The first surviving commit is dated 11 May 2015; the last is from November 2015.",
+    "interactive": "karya"
+  },
+  {
+    "slug": "libo",
+    "title": "Libo",
+    "year": 2015,
+    "dateLabel": "August 2015",
+    "category": "apps",
+    "summary": "A household-budgeting concept with a complete mobile design.",
+    "paragraphs": [
+      "Libo’s homepage presents an app to make household budgeting easier. Its interface includes an expenditure overview, an add-expense flow and a record of spending.",
+      "The recovered project includes the landing page, an interactive phone layout and several original splash screens. The screens below preserve the competition-era design."
+    ],
+    "image": "/static/archive/libo.webp",
+    "dateNote": "The repository records work on 27–28 August 2015.",
+    "gallery": [
+      [
+        "libo-splash.webp",
+        "An original Libo mobile screen."
+      ]
+    ]
+  },
+  {
+    "slug": "digital-india",
+    "title": "Digital India",
+    "year": 2015,
+    "dateLabel": "c. October 2015",
+    "category": "design",
+    "summary": "A mobile app mockup made for C.O.R.E.",
+    "paragraphs": [
+      "The Digital India concept packages news and program information into a mobile interface. Its surviving page includes the original screen compositions and names the C.O.R.E. event.",
+      "This is a visual record of the app mockup, with the original design preserved in the screenshot."
+    ],
+    "image": "/static/archive/digital-india.webp",
+    "dateNote": "The HTML, stylesheet and images carry 27 October 2015 timestamps."
+  },
+  {
+    "slug": "bandc",
+    "title": "Bulls & Cows",
+    "year": 2015,
+    "dateLabel": "November 2015",
+    "category": "games",
+    "summary": "A puzzle, an optimal strategy and a research paper written in 48 hours.",
+    "paragraphs": [
+      "For the C.O.R.E. hackathon, Aditya and I studied the number-guessing game Bulls & Cows and the algorithms used to solve it. The work became a research paper and a JavaScript demonstration.",
+      "The existing portfolio records a first-place finish and describes this as our first experience using LaTeX."
+    ],
+    "image": "/static/lab/bandc.png",
+    "dateNote": "November 2015 is the date recorded in the existing portfolio.",
+    "links": [
+      [
+        "Try the solver",
+        "https://nmn.gl/moo/"
+      ],
+      [
+        "Read the paper",
+        "https://vixra.org/pdf/1601.0302v1.pdf"
+      ]
+    ]
+  },
+  {
+    "slug": "unexpend",
+    "title": "Unexpend",
+    "year": 2016,
+    "dateLabel": "June–August 2016",
+    "category": "apps",
+    "summary": "A shopping search engine built to compare prices across stores.",
+    "paragraphs": [
+      "Unexpend brought product search and comparison into one interface. The surviving code includes result templates, caching, and parsers for Amazon and Flipkart.",
+      "Its original cover artwork survives below. The historic shopping APIs and price data are not connected to this exhibit."
+    ],
+    "image": "/static/archive/unexpend.webp",
+    "dateNote": "The surviving Git history begins on 23 June 2016 and continues into August 2016."
+  },
+  {
+    "slug": "playtogether",
+    "title": "PlayTogether",
+    "year": 2016,
+    "dateLabel": "October 2016",
+    "category": "apps",
+    "summary": "A shared YouTube player for watching the same thing at the same time.",
+    "paragraphs": [
+      "PlayTogether takes a YouTube link and shares playback actions through Socket.IO. Its first day of commits already includes fixes for playing multiple videos and resetting the player.",
+      "The surviving interface is a compact prototype: paste a link, start a room, and keep the players in sync. This archive preserves its interface and idea; it does not reconnect the old room server."
+    ],
+    "image": "/static/archive/playtogether.webp",
+    "dateNote": "The surviving repository contains four commits from 1 October 2016."
+  },
+  {
+    "slug": "dubmaps",
+    "title": "DubMaps",
+    "year": 2016,
+    "dateLabel": "October 2016",
+    "category": "apps",
+    "summary": "The University of Washington campus, mapped through classes and events.",
+    "paragraphs": [
+      "DubMaps was built around a realtime map of UW, with active classes and scheduled events attached to buildings. The source includes building locations, class schedules and event information.",
+      "The building plot below is newly drawn from the original coordinates. It preserves the geography of the project without publishing student-related datasets or presenting a 2016 timetable as current."
+    ],
+    "image": "/static/archive/dubmaps.svg",
+    "dateNote": "The repository begins on 15 October 2016 and continues through 17 October 2016."
+  },
+  {
+    "slug": "lccpp",
+    "title": "Less Confusing C++",
+    "year": 2017,
+    "dateLabel": "June 2017",
+    "category": "learning",
+    "summary": "A free programming book written to make school coursework easier to follow.",
+    "paragraphs": [
+      "Less Confusing C++ reorganizes introductory C++ material for high-school students. It grew out of wanting a clearer route through the course than the available study material provided.",
+      "The manuscript and exports were already preserved in Dropbox. The book remains part of the archive through its existing publication."
+    ],
+    "image": "/static/lab/lccpp.png",
+    "dateNote": "June 2017 is the publication date recorded in the existing portfolio, rather than a verified manuscript start date.",
+    "links": [
+      [
+        "Read the book",
+        "https://leanpub.com/lessconfusingcpp"
+      ]
+    ]
+  },
+  {
+    "slug": "portfolio-2018",
+    "title": "A portfolio in motion",
+    "year": 2018,
+    "dateLabel": "May–July 2018",
+    "category": "design",
+    "summary": "The portfolio grows into a full visual presentation of client work.",
+    "paragraphs": [
+      "The 2018 edition introduces a web and blockchain consultant. Project mockups, rich backgrounds and animated transitions make the work itself the center of the page.",
+      "The original build survives alongside its artwork. These screenshots were captured from that recovered build, including the original portfolio layout.",
+      "A later 2023 snapshot keeps the same lineage while changing the introduction to web and mobile consulting. Both editions are shown here as a record of how the site evolved."
+    ],
+    "image": "/static/archive/portfolio-2018.webp",
+    "dateNote": "The portfolio repository starts on 9 May 2018; its animation and responsive-layout commits continue into July. The later snapshot is dated November 2023.",
+    "gallery": [
+      [
+        "portfolio-2018-work.webp",
+        "Client-work layout from the recovered 2018 build."
+      ],
+      [
+        "portfolio-2023.webp",
+        "The later web and mobile consulting edition, preserved in a November 2023 snapshot."
+      ]
+    ]
+  },
+  {
+    "slug": "indiasmile",
+    "title": "IndiaSmile",
+    "year": 2020,
+    "dateLabel": "June 2020",
+    "category": "apps",
+    "summary": "COVID-19 information alongside ways to help people through isolation.",
+    "paragraphs": [
+      "IndiaSmile combined pandemic statistics with a community and resources for staying informed. Its purpose extended from tracking numbers to finding ways to stay connected during lockdown.",
+      "The original portfolio describes a WhatsApp and Telegram community of more than 2,500 members and the challenge of adapting the backend as traffic grew."
+    ],
+    "image": "/static/lab/indiasmile.png",
+    "dateNote": "June 2020 is the date recorded in the existing portfolio.",
+    "links": [
+      [
+        "Visit IndiaSmile",
+        "https://indiasmile.github.io/"
+      ]
+    ]
+  },
+  {
+    "slug": "nataco",
+    "title": "Nataco",
+    "year": 2021,
+    "dateLabel": "2020–2021",
+    "category": "design",
+    "summary": "A design studio with an illustrated world of its own.",
+    "paragraphs": [
+      "Nataco’s site brought custom illustration, expressive typography and a playful 3D scene into a design-and-development studio website. Its pages covered web applications, Shopify work and design subscriptions.",
+      "The repository starts under the Dyeus name in February 2020. A June 2021 commit renames the site Nataco, giving the archive a clear record of that transition.",
+      "The original homepage, service-page artwork and animated hero survive. The film below is the recovered hero animation; the gallery shows the site and its illustration system."
+    ],
+    "image": "/static/archive/nataco.webp",
+    "dateNote": "First repository commit: 23 February 2020. The Dyeus → Nataco rename is dated 24 June 2021.",
+    "gallery": [
+      [
+        "nataco-services.webp",
+        "The original services page."
+      ],
+      [
+        "nataco-illustration-1.svg",
+        "An original illustration from the site’s visual system."
+      ],
+      [
+        "nataco-illustration-2.svg",
+        "Another surviving illustration from the same collection."
+      ]
+    ],
+    "video": "nataco-hero.webm",
+    "videoCaption": "The original Nataco hero animation. Use the player controls to watch or pause."
+  },
+  {
+    "slug": "kevin",
+    "title": "Kevin",
+    "year": 2024,
+    "dateLabel": "March 2024",
+    "category": "apps",
+    "summary": "An open-source interface for an AI software engineer.",
+    "paragraphs": [
+      "Kevin explores an idea that had been around since the teenage projects: let software take care of the repetitive programming work so that more time goes into the idea itself.",
+      "The interface was inspired by Devin and named for Kevin Mitnick."
+    ],
+    "image": "/static/lab/kevin.png",
+    "dateNote": "March 2024 is the date recorded in the existing portfolio.",
+    "links": [
+      [
+        "Explore the source",
+        "https://github.com/namanyayg/kevin-coder-ai"
+      ]
+    ]
+  },
+  {
+    "slug": "aiindians",
+    "title": "AI Indians",
+    "year": 2024,
+    "dateLabel": "June 2024",
+    "category": "apps",
+    "summary": "A directory and leaderboard for India’s AI builders.",
+    "paragraphs": [
+      "AI Indians brings emerging Indian AI startups into one directory, with a leaderboard tracking their growth. It was built to make the people and products easier to discover."
+    ],
+    "image": "/static/lab/aiindians.png",
+    "dateNote": "June 2024 is the date recorded in the existing portfolio.",
+    "links": [
+      [
+        "Explore the source",
+        "https://github.com/namanyayg/aiindians"
+      ]
+    ]
+  },
+  {
+    "slug": "air",
+    "title": "Air",
+    "year": 2024,
+    "dateLabel": "November 2024",
+    "category": "apps",
+    "summary": "An attempt to make the consequences of air pollution tangible.",
+    "paragraphs": [
+      "Air translates air-quality measurements into visual explanations of their impact. The project combines a calculator with shareable illustrations to help people understand the significance of an AQI reading."
+    ],
+    "image": "/static/lab/air.png",
+    "dateNote": "November 2024 is the date recorded in the existing portfolio.",
+    "links": [
+      [
+        "Explore Air",
+        "https://air.nmn.gl/"
+      ]
+    ]
+  },
+  {
+    "slug": "giga",
+    "title": "Giga",
+    "year": 2025,
+    "dateLabel": "January 2025",
+    "category": "apps",
+    "summary": "An AI coding assistant built around understanding a whole codebase.",
+    "paragraphs": [
+      "Giga extends the long-running interest in programming tools into AI-assisted development. Its focus is maintaining codebase context while helping with testing, debugging and integrations."
+    ],
+    "image": "/static/lab/giga.png",
+    "dateNote": "January 2025 is the date recorded in the existing portfolio.",
+    "links": [
+      [
+        "Read the introduction",
+        "https://nmn.gl/blog/giga-intro"
+      ]
+    ]
+  },
+  {
+    "slug": "trends-ai",
+    "title": "Trend Analyzer",
+    "year": 2025,
+    "dateLabel": "January 2025",
+    "category": "apps",
+    "summary": "Turning scattered online discussions into useful research.",
+    "paragraphs": [
+      "The Trend Analyzer gathers discussions and looks for recurring topics, helping writers and builders move from browsing feeds to understanding what people are talking about."
+    ],
+    "image": "/static/lab/trends-ai.png",
+    "dateNote": "January 2025 is the date recorded in the existing portfolio.",
+    "links": [
+      [
+        "Open Trend Analyzer",
+        "https://trends.nmn.gl/"
+      ]
+    ]
+  }
+]
