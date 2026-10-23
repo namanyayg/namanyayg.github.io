@@ -1,0 +1,27 @@
+#restoration-note{position:relative;z-index:9999;box-sizing:border-box;width:100%;padding:12px 20px;background:#f5f2ea;color:#28251f;font:14px/1.5 Arial,sans-serif;display:flex;gap:12px 28px;flex-wrap:wrap;border-bottom:1px solid #ccc6b9}#restoration-note a{color:#28251f!important;text-decoration:underline!important;font-weight:600;white-space:nowrap}#restoration-note span{max-width:75ch}a[aria-disabled=true]{opacity:.65;cursor:default}button:disabled{cursor:default}a:focus-visible,button:focus-visible{outline:2px solid currentColor;outline-offset:4px}.scene--set{opacity:1!important}body{font-family:Roboto,Arial,sans-serif}.page--hero,.page--philosophy{font-family:Lato,Arial,sans-serif}.mobile__header,.page--cont{font-family:'Source Sans 3',Arial,sans-serif}.logo h1{height:100%}.logo img{max-width:100%;object-fit:contain}img{max-width:100%}html{scroll-behavior:smooth}.mobile--1 .expenditure-perc{opacity:1;stroke-dasharray:196 311}.archive-disabled-form{padding:1.5em}.archive-disabled-form input{max-width:100%}.archive-screen-nav{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;padding:20px}.archive-screen-nav button{background:#fff;border:1px solid #555;padding:8px 14px;cursor:pointer;color:#222;font:15px Arial}.archive-screen-nav button[aria-pressed=true]{background:#222;color:white}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}.work .video-container{aspect-ratio:4/3;background-size:cover!important;background-position:center!important}@media(max-width:600px){
+  body[data-archive-site="exun-2013"] .page--hero{height:auto;min-height:70vh;padding:2rem 0}
+  body[data-archive-site="exun-2013"] .page--hero h1{font-size:clamp(2rem,9vw,3.5rem)}
+  body[data-archive-site="exun-2013"] .page--hero img{max-width:80%;margin:2rem auto}
+  body[data-archive-site="exun-2013"] .hero-sales{width:85%;margin:auto;font-size:1.1rem}
+  body[data-archive-site="exun-2013"] .wrap{width:88%}
+  body[data-archive-site="exun-2013"] .sympl{float:none;width:100%;margin:0;box-sizing:border-box}
+  body[data-archive-site="exun-2013"] .philosophy__img img{max-width:75%;margin:auto;display:block}
+  body[data-archive-site="exun-2013"] .page__title{font-size:2rem}
+  body[data-archive-site="digital-india"] .wrap{width:100%;box-sizing:border-box;padding:0 10px}
+  body[data-archive-site="digital-india"] .main__header{padding:2rem 0 0}
+  body[data-archive-site="digital-india"] .mobile{width:100%;box-sizing:border-box;font-size:12px;margin:3rem auto}
+  body[data-archive-site="libo"] .intro{height:auto;padding:2rem 0}
+  body[data-archive-site="libo"] .intro .wrap{flex-direction:column;width:88%}
+  body[data-archive-site="libo"] .intro__text{min-width:0;width:100%}
+  body[data-archive-site="libo"] .intro .logo{width:18rem;max-width:100%;margin:-5rem 0 -5rem -1rem}
+  body[data-archive-site="libo"] .intro__title{font-size:1.8rem}
+  body[data-archive-site="libo"] .intro__subtitle{font-size:1.1rem}
+  body[data-archive-site="libo"] .intro__img{max-width:240px;padding-top:1rem}
+  body[data-archive-site="libo"] .try .wrap{width:100%}
+  body[data-archive-site="libo"] .mobile-cont{width:540px;zoom:.65;margin:2rem auto 0}
+  body[data-archive-site="libo"] .try__demo .mobile{transform:scale(.8)}
+  body[data-archive-site="libo"] .try__text{padding:0 1rem}
+}
+@media(max-width:360px){body[data-archive-site="libo"] .mobile-cont{zoom:.56}}
+body[data-archive-site="digital-india"] .wrap{max-width:100%}
+body[data-archive-site="digital-india"] .mobile{max-width:500px}

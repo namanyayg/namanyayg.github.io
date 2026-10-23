@@ -27,7 +27,7 @@ The timeline was assembled on 22 October 2026 from existing portfolio records, o
 
 Screenshots were rendered locally from recovered public-facing HTML/CSS/builds. Original forms, analytics, remote APIs and account servers were not reactivated. External font stylesheets were allowed when available; rendering is not a claim of pixel-perfect historical browser output. Some older screenshots use fallback fonts. Videos and two Nataco illustrations are original files, not generated replacements.
 
-The 2018 and 2023 portfolio screenshots were rendered from their original compiled frontend builds in an isolated browser with remote application requests blocked. Nataco was rendered from its static HTML with scripts removed. Only selected screenshots, images, illustrations and short videos are deployed; no server source/configuration, private databases or customer records are included.
+The 2018 and 2023 portfolio screenshots were rendered from their original compiled frontend builds in an isolated browser with remote application requests blocked. Nataco was rendered from its static HTML with scripts removed. Selected static restorations now accompany the screenshots, illustrations and videos. No server source/configuration, private databases or customer records are included.
 
 The DubMaps diagram is newly generated from original building coordinates and labeled accordingly. Student datasets and live schedule behavior are excluded. Karya's interactive list is a new local-storage implementation of the original three-item idea, identified as such. It has no server or account integration.
 
@@ -51,6 +51,20 @@ Archive links were opened and their contents checked against the projects. A sur
 
 Seven entries were added from selected original source: beta+, Exun 2013, Richie, Proxydo, Techathlon, Visionary and Karma. Their date annotations distinguish Git dates, archive-entry timestamps and page dates from unverified launch dates. All new summaries and stories were reviewed in first person using the humanizer rules; they do not invent memories, users or outcomes.
 
-The beta+ masthead preview uses original HTML, CSS and graphics, with a height constraint to correct the logo clipping in a modern browser. External embeds and scripts were blocked during rendering. Exun shows original RV/palette illustrations and the original background arranged into a new exhibit, explicitly labeled as such. The original parody copy is not reproduced. No live account, payment, cloud-provisioning or messaging integration was restored.
+The beta+ masthead preview uses original HTML, CSS and graphics, with a height constraint to correct the logo clipping in a modern browser. External embeds and scripts were blocked during rendering. Exun now shows the original page layout and its three illustrations. The restored page replaces the original parody copy with short, factual descriptions, and identifies that edit at the top. No live account, payment, cloud-provisioning or messaging integration was restored.
 
 The five projects without a reviewed visual exhibit use text entries. Techathlon is explicitly not yet playable. Karma’s constant-score analyzer is described as unfinished. Visionary’s timetable parser is not presented as a general document reader. Operational source, provider credentials, personal records and server paths are excluded from this public catalogue.
+
+## Browsable exhibits and galleries
+
+The articles put project links and visual exhibits before the longer notes. Galleries show full-width images, with thumbnail navigation and direct full-size links. Phone screenshots retain a narrower measure. The timeline shows each entry’s image count.
+
+Nine standalone static sites are under `static/restored/`: Exun 2013, beta+, Nataco, Agrobot/Cropstor, Libo, Digital India, Code Warriors, and the 2018 and 2023 portfolios. Their archive bars explain the surviving material and any changes. The snapshots carry `noindex,follow` to keep search focused on the editorial Lab pages.
+
+Original executable scripts, analytics, forms and embeds are excluded. A restrictive Content Security Policy prevents application requests and form submissions. The only new executable file switches between Libo and Digital India’s original screen layouts locally. Libo retains disabled input fields with the original prototype placeholders and sample purchase amounts. Placeholder press claims from the unfinished Libo landing page are omitted.
+
+The portfolio snapshots were serialized after rendering the original builds in an isolated browser. Animation-dependent hidden sections are made visible; still images replace unavailable portfolio videos. The dynamically calculated experience count and contact availability were removed from the 2023 snapshot. Contact forms are excluded from both editions. Missing Code Warriors background photography is left missing and identified in the caption. Only Nataco’s recovered homepage and services page are linked; obsolete enquiries are unavailable.
+
+New screenshots also show the current restored Clas, Sympl, Webstiles, MusiCose, MinSlide and Bulls and Cows demos, plus the original physics visualizations. Sympl’s demonstration page and MinSlide’s substitute colors remain identified as restorations. KeyZen’s start screen loads, but the hosted game did not start during verification; its article says so.
+
+Backend-only or incomplete recoveries retain explicit limits instead of invented screenshots. This applies to Richie, Proxydo, Visionary, Karma and Techathlon. The 2013 portfolio’s missing stylesheet request returned a Wayback 404 during this pass; its previously verified homepage archive remains linked.

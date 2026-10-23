@@ -1,0 +1,490 @@
+/**
+ * Made by Namanyay Goel
+ * http://namanyayg.com/ | @namanyayg
+ * DPS Vasant Kunj
+ * 
+ * For the cool people at Google
+ * and Camp K12
+ *
+ * Made with love
+ */
+
+/* ==========================================================================
+   
+    LET'S GET STARTED!
+
+   ========================================================================== */
+
+body {
+  font-family: 'Lato', 'Open Sans', sans-serif;
+  color: #444;
+  margin: 5.5em 0 0;
+  background: #f6f6f6;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Roboto Slab', 'Rockwell', sans-serif;
+}
+
+a {
+  color: #50c729;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  color: #44a923;
+}
+
+/* ==========================================================================
+   =CORE
+   ========================================================================== */
+
+.wrap {
+  max-width: 90%;
+  width: 70em;
+  margin: 0 auto;
+}
+
+a.button,
+.members,
+.cw__form,
+.post {
+  -webkit-box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+}
+
+a.button:hover {
+  -webkit-transform: scale(1.02);
+  -ms-transform: scale(1.02);
+  transform: scale(1.02);
+  background: #fff;
+  -webkit-box-shadow: 0 3px 7px rgba(0,0,0,0.3);
+  box-shadow: 0 3px 7px rgba(0,0,0,0.3);
+}
+
+a.button {
+  text-decoration: none;
+  padding: 1em 1.25em;
+  border-radius: 2px;
+  display: inline-block;
+  background: rgba(255,255,255,0.9);
+  color: rgba(0,0,0,0.5);
+  font-weight: 500;
+  font-family: 'Lato', 'Open Sans', sans-serif;
+  font-weight: 900;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.button.button--green {
+  background: rgba(80,199,41,0.9);
+  color: #fff;
+  -webkit-text-stroke: 0;
+}
+
+.button.button--green:hover {
+  background: #50c729;
+}
+
+.button.button--yellow {
+  background: rgba(255,235,59,0.9);
+  color: inherit;
+  -webkit-text-stroke: 0;
+}
+
+.button.button--yellow:hover {
+  background: #ffeb3b;
+}
+
+.button.button--blue {
+  background: rgba(255,87,34,0.9);
+  color: #fff;
+  -webkit-text-stroke: 0;
+}
+
+.button.button--blue:hover {
+  background: #ff5722;
+}
+
+.text--title {
+  margin: 0;
+  font-family: Roboto Slab;
+  font-weight: 300;
+  font-size: 2.5em;
+  padding: 0.25em 0;
+  text-shadow: 0 2px 1px rgba(0,0,0,0.2);
+}
+
+.text--subtitle {
+  text-transform: uppercase;
+  letter-spacing: 0.4em;
+  line-height: 2;
+  color: rgba(255,255,255,0.7);
+}
+
+.page-section {
+  text-align: center;
+  background: none;
+  -webkit-background-size: cover;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+  height: 100vh;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-top: 15vh;
+  position: relative;
+}
+
+.page__title {
+  font-size: 3em;
+  text-align: center;
+  font-weight: 100;
+  letter-spacing: -1px;
+}
+
+.main__text {
+  font-size: 1.25em;
+  font-weight: 300;
+  line-height: 1.75;
+}
+
+.section--dark {
+  color: rgba(0,0,0,0.7);
+}
+
+.section--dark .text--subtitle {
+  color: rgba(0,0,0,0.5);
+}
+
+.section--left {
+  text-align: left;
+  margin-left: 10%;
+  max-width: 50%;
+}
+
+/* ==========================================================================
+   =MASTHEAD
+   ========================================================================== */
+
+.masthead {
+  height: 4em;
+  background: #37474f;
+  -webkit-box-shadow: 0 0 5px rgba(0,0,0,0.3);
+  box-shadow: 0 0 5px rgba(0,0,0,0.3);
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 100;
+  clear: both;
+}
+
+.masthead .wrap {
+  clear: both;
+}
+
+.masthead a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.masthead .logo {
+  font-family: Jokerman;
+  font-size: 3em;
+  line-height: 1;
+  padding: 0.16666666666666666em 0;
+  float: left;
+}
+
+.masthead .menu {
+  float: right;
+  overflow: hidden;
+}
+
+.masthead .menu a {
+  background: #314047;
+  color: rgba(255,255,255,0.8);
+  display: block;
+  text-align: center;
+  padding: 1.5em 1.5em 1.375em;
+  line-height: 1;
+  font-family: 'Roboto Slab';
+  float: left;
+  border-bottom: 0.125em solid #50c729;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.masthead .menu a:hover {
+  background: #50c729;
+  color: #fff;
+}
+
+.dark .masthead {
+  background: rgba(255,255,255,0.5);
+}
+
+.dark .masthead .menu a {
+  background: rgba(255,255,255,0.5);
+  color: rgba(0,0,0,0.5);
+}
+
+.dark .masthead .menu a:hover {
+  background: rgba(80,199,41,0.7);
+  color: #fff;
+}
+
+/* ==========================================================================
+   =HOME
+   ========================================================================== */
+
+.page-section .button {
+  margin-top: 1.25em;
+}
+
+.section--hero {
+  margin-top: -5.5em;
+}
+
+.section--hero h1 {
+  font-size: 3em;
+}
+
+.bg-layer {
+  background: -webkit-gradient(linear, top left, bottom left, from(#000), to(transparent));
+  background: -webkit-linear-gradient(#000 40%, transparent);
+  background: linear-gradient(#000 40%, transparent);
+  opacity: 0.4;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+}
+
+.bg-main {
+  position: relative;
+  z-index: 2;
+  height: 85vh;
+}
+
+.hero__desc {
+  padding: 0.25em 0 0;
+  font-family: roboto;
+  position: absolute;
+  bottom: 0.25em;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: rgba(0,0,0,0.5);
+  font-size: 2em;
+}
+
+.section--cw {
+  background-image: url("../img/work.jpg");
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.section--win {
+  background-image: url("../img/prize.jpg");
+}
+
+/* ==========================================================================
+   =ABOUT	
+   ========================================================================== */
+
+.members {
+  clear: both;
+  background: #fff;
+  overflow: hidden;
+  border-radius: 2px;
+  padding: 1em;
+  margin: 1.5em 0;
+}
+
+.member {
+  float: left;
+  width: 25%;
+  padding: 1em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.member__img {
+  width: 4em;
+  height: auto;
+  border-radius: 6em;
+  float: left;
+  margin-right: 1.25em;
+}
+
+.member__name {
+  font-size: 1.125em;
+  line-height: 1;
+  position: relative;
+  top: 1.25em;
+}
+
+/* ==========================================================================
+   =REGISTER	
+   ========================================================================== */
+
+.register {
+  text-align: center;
+}
+
+.cw__form {
+  width: 20em;
+  padding: 1em;
+  background: #fff;
+  border-radius: 2px;
+  font-size: 1.25em;
+  font-weight: 300;
+  margin: 1.5em auto;
+}
+
+.cw__form .button {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+.cw__form label {
+  display: block;
+  margin: 0 0 1em;
+  position: relative;
+}
+
+input,
+select {
+  border: none;
+  border: 2px solid #eee;
+  padding: 0.75em;
+  width: 100%;
+  display: block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 1em;
+  font-family: 'Lato', 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+
+input:hover,
+select:hover {
+  border-color: #ddd;
+}
+
+input:active,
+select:active,
+input:focus,
+select:focus {
+  border-color: #50c729;
+  outline: none;
+}
+
+.place {
+  color: #999;
+  position: absolute;
+  top: 0.75em;
+  left: 0.75em;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+input:focus + .place,
+.place--float {
+  -webkit-transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  transform: scale(0.7);
+  background: #fff;
+  padding: 0.2em;
+  top: -0.8em;
+}
+
+.place--invisible {
+  opacity: 0;
+}
+
+/* ==========================================================================
+   =BLOG
+   ========================================================================== */
+
+.post {
+  background: #fff;
+  padding: 1.5em;
+  border-radius: 2px;
+  margin-bottom: 1.5em;
+}
+
+.post__title {
+  font-size: 1.5em;
+  margin: 0 0 0.5em;
+  font-weight: 400;
+  -webkit-text-stroke: 0;
+}
+
+.post__footer {
+  background: #f8fafa;
+  padding: 1em 1.5em;
+  margin: 1.5em -1.5em -1.5em;
+}
+
+.post__footer p {
+  margin: 0;
+}
+
+.post__content > p:last-child:after {
+  content: '…';
+}
+
+.post .button {
+  padding: 0.75em 1em;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.column-left {
+  width: 49%;
+  float: left;
+}
+
+.column-right {
+  margin-left: 51%;
+}
+
+.content--hidden {
+  max-height: 0;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.content--hidden--show {
+  max-height: 10em;
+  margin: -1.5em 0 -2.5em;
+  opacity: 1;
+}
+
+.readmore--hidden {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0;
+  opacity: 0;
+}

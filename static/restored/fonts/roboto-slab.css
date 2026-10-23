@@ -1,0 +1,14 @@
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(/static/restored/fonts/roboto-slab-0.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/static/restored/fonts/roboto-slab-1.ttf) format('truetype');
+}

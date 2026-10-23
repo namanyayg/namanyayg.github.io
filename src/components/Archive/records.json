@@ -8,9 +8,9 @@
     "summary": "A single-page website I made at fourteen.",
     "paragraphs": [
       "I made Clas when I was fourteen. Clicking a section fades one panel into the next, all in plain JavaScript. I also wrote two tutorials explaining how it worked.",
-      "You can try it again below. The navigation works, but the old contact form doesn’t send messages."
+      "You can open the restored demo above. The navigation works, but the old contact form doesn’t send messages."
     ],
-    "image": "/static/lab/clas.png",
+    "image": "/static/archive/clas-about.webp",
     "dateNote": "The original Git history begins on 5 November 2012.",
     "links": [
       [
@@ -25,6 +25,13 @@
         "Archived site · 14 September 2013",
         "https://web.archive.org/web/20130914023459/http://demos.namanyayg.com/clas/"
       ]
+    ],
+    "imageCaption": "Clas’s restored About panel.",
+    "gallery": [
+      [
+        "clas-motive.webp",
+        "The Motive panel, reached through the original fading navigation."
+      ]
     ]
   },
   {
@@ -38,7 +45,7 @@
       "I kept needing a responsive grid and sensible type defaults when I started a new site, so I put them into one stylesheet. That became Sympl, which I later used for Webstiles.",
       "The stylesheet is original. The demo page was rebuilt in 2026 to show how the grid and type work."
     ],
-    "image": "/static/lab/sympl.png",
+    "image": "/static/archive/sympl-desktop.webp",
     "dateNote": "The original Git history begins on 6 November 2012.",
     "links": [
       [
@@ -53,6 +60,14 @@
         "Archived site · 9 November 2012",
         "https://web.archive.org/web/20121109054602/http://sympl.namanyayg.com/"
       ]
+    ],
+    "imageCaption": "The 2026 demo of the original Sympl stylesheet.",
+    "gallery": [
+      [
+        "sympl-phone.webp",
+        "The same grid at phone width. This demo page was rebuilt in 2026.",
+        "portrait"
+      ]
     ]
   },
   {
@@ -66,7 +81,7 @@
       "I made Webstiles when I started working with clients. I needed a way to show them colors, type and interface elements before spending time on the full website.",
       "I’d make a Webstile, send it over, and work through their feedback. It became part of my usual workflow. The responsive template runs on Sympl."
     ],
-    "image": "/static/lab/webstiles.png",
+    "image": "/static/archive/webstiles-homepage.webp",
     "dateNote": "January 2013 is the date recorded in the existing portfolio.",
     "links": [
       [
@@ -80,6 +95,17 @@
       [
         "Archived site · 7 January 2013",
         "https://web.archive.org/web/20130107223029/http://webstiles.namanyayg.com/"
+      ]
+    ],
+    "imageCaption": "The original Webstiles landing page.",
+    "gallery": [
+      [
+        "webstiles-demo.webp",
+        "The Webstiles design worksheet."
+      ],
+      [
+        "webstiles-type.webp",
+        "Typography, form controls and colors in the worksheet."
       ]
     ]
   },
@@ -122,7 +148,7 @@
       "MusiCose was my website for a fictional Martian band, with colorful panels that move sideways across the screen. You can use the keyboard to move between them.",
       "The original site works again as a static demo. Its fictional contact controls are disabled."
     ],
-    "image": "/static/lab/musicose.png",
+    "image": "/static/archive/musicose-home.webp",
     "dateNote": "Wayback preserves the site on 16 April 2013. Surviving source files carry October 2013 timestamps; the original launch date is not established.",
     "links": [
       [
@@ -137,6 +163,13 @@
         "Archived site · 16 April 2013",
         "https://web.archive.org/web/20130416153252/http://demos.namanyayg.com/musicose/"
       ]
+    ],
+    "imageCaption": "The restored MusiCose homepage.",
+    "gallery": [
+      [
+        "musicose-work.webp",
+        "The band’s work panel and original navigation."
+      ]
     ]
   },
   {
@@ -149,7 +182,7 @@
     "paragraphs": [
       "I made MinSlide to move between images, with slide controls and autoplay. The controls work again, but the original hosted photos are gone. The restored demo uses labeled solid-color slides in their place."
     ],
-    "image": "/static/lab/min-slide.png",
+    "image": "/static/archive/min-slide-first.webp",
     "dateNote": "Surviving source files carry October 2013 timestamps; the original launch date is not established.",
     "links": [
       [
@@ -159,6 +192,13 @@
       [
         "Source",
         "https://github.com/namanyayg/old-experiments/tree/main/min-slide"
+      ]
+    ],
+    "imageCaption": "MinSlide with its restored controls. The missing photographs are represented by colors.",
+    "gallery": [
+      [
+        "min-slide-next.webp",
+        "The next slide after using the original slider."
       ]
     ]
   },
@@ -173,18 +213,21 @@
       "I was obsessed with improving my typing speed. My reasoning was simple: faster typing meant faster programming. So I made KeyZen in a few hours at a hackathon.",
       "I especially enjoyed making the pastel keyboard and animating the keys. The game won first prize that day."
     ],
-    "image": "/static/lab/keyzen.png",
+    "image": "/static/archive/keyzen-start.webp",
     "dateNote": "October 2013 is the date recorded in the existing portfolio.",
     "links": [
       [
-        "Play KeyZen",
+        "Open original demo",
         "https://nmn.gl/KeyZen/"
       ],
       [
         "Archived site · 4 January 2016",
         "https://web.archive.org/web/20160104185051/http://projects.namanyayg.com/KeyZen/"
       ]
-    ]
+    ],
+    "restoreNote": "The original start screen survives, but the hosted game currently does not start.",
+    "imageCaption": "The KeyZen start screen.",
+    "gallery": []
   },
   {
     "slug": "portfolio-2013",
@@ -209,7 +252,8 @@
       ]
     ],
     "previewText": "“Hello, I’m Namanyay Goel.”",
-    "previewCaption": "From the 2013–2014 homepage"
+    "previewCaption": "From the 2013–2014 homepage",
+    "restoreNote": "The homepage text survives in Wayback. The original stylesheet and project thumbnails are still missing."
   },
   {
     "slug": "betaplus",
@@ -222,8 +266,27 @@
       "I designed and built a site for beta+, an electronic musician in Philadelphia. It brought the music, videos and upcoming shows together, with a blue masthead and a custom icon font.",
       "The original delivery ZIP still has the HTML, styles and graphics. This preview shows the masthead, with a small fix to keep the logo from being cropped."
     ],
-    "image": "/static/archive/betaplus.webp",
-    "dateNote": "The delivery ZIP contains files dated 26 February–1 March 2013. Its credits identify me as the designer and developer; those file dates do not establish the launch date."
+    "image": "/static/archive/betaplus-page.webp",
+    "dateNote": "The delivery ZIP contains files dated 26 February–1 March 2013. Its credits identify me as the designer and developer; those file dates do not establish the launch date.",
+    "imageCaption": "The original beta+ masthead.",
+    "gallery": [
+      [
+        "betaplus-music.webp",
+        "The release countdown and music-page layout. Old embeds are omitted."
+      ],
+      [
+        "betaplus-mobile.webp",
+        "The restored beta+ design at phone width.",
+        "portrait"
+      ]
+    ],
+    "links": [
+      [
+        "Open restored site",
+        "/static/restored/betaplus/"
+      ]
+    ],
+    "restoreNote": "The original page layout, with obsolete music embeds and contact details removed."
   },
   {
     "slug": "exun-2013",
@@ -234,10 +297,32 @@
     "summary": "Our Breaking Bad parody for a school design competition.",
     "paragraphs": [
       "I worked with Panini Pandey and Aditya Garg on a fictional brand inspired by Breaking Bad for Exun 2013. We made angular blue illustrations and wrote out the thinking behind the shapes and colors.",
-      "I’ve kept the original RV and palette graphics here, arranged together for this archive. The design was a competition parody."
+      "You can browse the original page layout again, including the RV, palette and prop illustrations. I’ve edited the old parody copy for this archive."
     ],
-    "image": "/static/archive/exun-2013.webp",
-    "dateNote": "The recovered folder identifies Exun 2013, and its HTML is dated 29 November 2013. The original page credits our team at Code Warriors."
+    "image": "/static/archive/exun-2013-page.webp",
+    "dateNote": "The recovered folder identifies Exun 2013, and its HTML is dated 29 November 2013. The original page credits our team at Code Warriors.",
+    "imageCaption": "The original Exun layout, restored with edited parody copy.",
+    "gallery": [
+      [
+        "exun-2013-detail-0.webp",
+        "The RV illustration in the original design-philosophy section."
+      ],
+      [
+        "exun-2013-detail-1.webp",
+        "The blue palette illustration and its original layout."
+      ],
+      [
+        "exun-2013-detail-2.webp",
+        "The original faceted prop illustration."
+      ]
+    ],
+    "links": [
+      [
+        "Open restored site",
+        "/static/restored/exun-2013/"
+      ]
+    ],
+    "restoreNote": "The original layout and artwork, with edited parody copy."
   },
   {
     "slug": "tldrtech",
@@ -274,12 +359,20 @@
       "I worked on two agricultural product concepts for JAD. Agrobot used moisture readings to show how a sensor-based irrigation system could work. Cropstor was a warehouse interface for recording farmers and their produce.",
       "These are the original product pages, phone mockups and animation from that project."
     ],
-    "image": "/static/archive/agrobot.webp",
+    "image": "/static/archive/agrobot-cropstor-page.webp",
     "dateNote": "The surviving product pages and assets are timestamped 1 August 2014. This dates the recovered edition, not a verified public launch.",
     "gallery": [
       [
-        "cropstor.webp",
-        "The original Cropstor product page."
+        "agrobot-cropstor-products.webp",
+        "The Agrobot and Cropstor product concepts."
+      ],
+      [
+        "agrobot-cropstor-cropstor-page.webp",
+        "The original Cropstor presentation page."
+      ],
+      [
+        "agrobot-cropstor-cropstor-detail.webp",
+        "A closer look at the warehouse-management concept."
       ],
       [
         "agrobot-screen.webp",
@@ -291,7 +384,15 @@
       ]
     ],
     "video": "agrobot-rotation.mp4",
-    "videoCaption": "Original project motion study, preserved from the 2014 files."
+    "videoCaption": "Original project motion study, preserved from the 2014 files.",
+    "imageCaption": "The JAD project homepage.",
+    "links": [
+      [
+        "Open restored site",
+        "/static/restored/agrobot-cropstor/"
+      ]
+    ],
+    "restoreNote": "Restored from the original files. Open any image at full size."
   },
   {
     "slug": "code-warriors",
@@ -304,14 +405,34 @@
       "“Hello world. We’re the Code Warriors.” I made this site for the technology club at DPS Vasant Kunj, with pages about our projects and competitions.",
       "This is the homepage announcing Code Wars 2014."
     ],
-    "image": "/static/archive/code-warriors.webp",
+    "image": "/static/archive/code-warriors-page.webp",
     "dateNote": "The page itself names Code Wars 2014; the recovered files are dated November 2014.",
     "links": [
+      [
+        "Open restored site",
+        "/static/restored/code-warriors/"
+      ],
       [
         "Earlier homepage · 17 May 2014",
         "https://web.archive.org/web/20140517183302/http://code-warriors.org/"
       ]
-    ]
+    ],
+    "imageCaption": "The Code Warriors homepage. Its missing background photograph is not reconstructed.",
+    "gallery": [
+      [
+        "code-warriors-competition.webp",
+        "The original Code Wars 2014 section."
+      ],
+      [
+        "code-warriors-team.webp",
+        "The original competition photograph and layout."
+      ],
+      [
+        "code-warriors-blog.webp",
+        "The blog layout, including the original placeholder post previews."
+      ]
+    ],
+    "restoreNote": "Restored from the original files. Open any image at full size."
   },
   {
     "slug": "code-in",
@@ -344,7 +465,7 @@
     "paragraphs": [
       "I wanted to play with the physics I was learning in class, so I made simulations for things like oscillation and collisions. You can change the inputs and watch what happens in the Physics collection."
     ],
-    "image": "/static/lab/physics.png",
+    "image": "/static/archive/physics-simulation-1.webp",
     "dateNote": "February 2015 is the date recorded in the existing portfolio.",
     "links": [
       [
@@ -354,6 +475,13 @@
       [
         "Archived site · 13 December 2015",
         "https://web.archive.org/web/20151213040721/http://projects.namanyayg.com/gyan/"
+      ]
+    ],
+    "imageCaption": "The AC generator simulator.",
+    "gallery": [
+      [
+        "physics-simulation-2.webp",
+        "The P–N junction diode visualization."
       ]
     ]
   },
@@ -389,14 +517,37 @@
       "I designed Libo to show household expenses and spending history, with a flow for adding a new expense.",
       "These are the original landing page and mobile screens from the competition project."
     ],
-    "image": "/static/archive/libo.webp",
+    "image": "/static/archive/libo-page.webp",
     "dateNote": "The repository records work on 27–28 August 2015.",
     "gallery": [
+      [
+        "libo-overview.webp",
+        "The original expense overview, with the prototype’s sample amounts.",
+        "portrait"
+      ],
+      [
+        "libo-add.webp",
+        "The Add Expenditure screen. This archive does not save purchases.",
+        "portrait"
+      ],
+      [
+        "libo-history.webp",
+        "The original purchase-history screen.",
+        "portrait"
+      ],
       [
         "libo-splash.webp",
         "An original Libo mobile screen."
       ]
-    ]
+    ],
+    "imageCaption": "Libo’s original landing-page design.",
+    "links": [
+      [
+        "Open restored site",
+        "/static/restored/libo/"
+      ]
+    ],
+    "restoreNote": "Browse the original prototype screens with their sample amounts. Purchases are not saved."
   },
   {
     "slug": "digital-india",
@@ -408,8 +559,24 @@
     "paragraphs": [
       "I made this Digital India mockup for C.O.R.E. It puts news and program information into a mobile interface. The screenshot shows the original screens."
     ],
-    "image": "/static/archive/digital-india.webp",
-    "dateNote": "The HTML, stylesheet and images carry 27 October 2015 timestamps."
+    "image": "/static/archive/digital-india-home.webp",
+    "dateNote": "The HTML, stylesheet and images carry 27 October 2015 timestamps.",
+    "imageCaption": "The original Digital India app homepage.",
+    "gallery": [
+      [
+        "digital-india-hospital.webp",
+        "The hospital-services mockup. Its buttons are not connected to real services.",
+        "portrait"
+      ]
+    ],
+    "imagePortrait": true,
+    "links": [
+      [
+        "Open restored site",
+        "/static/restored/digital-india/"
+      ]
+    ],
+    "restoreNote": "A browsable app mockup. Hospital services are not connected."
   },
   {
     "slug": "bandc",
@@ -422,7 +589,7 @@
       "Aditya and I spent the C.O.R.E. hackathon studying Bulls & Cows and the algorithms used to solve it. We wrote a research paper and a JavaScript demo in 48 hours.",
       "It was our first time using LaTeX, and the project won first prize."
     ],
-    "image": "/static/lab/bandc.png",
+    "image": "/static/archive/bandc-game.webp",
     "dateNote": "November 2015 is the date recorded in the existing portfolio.",
     "links": [
       [
@@ -437,7 +604,9 @@
         "Archived site · 30 March 2018",
         "https://web.archive.org/web/20180330133815/http://projects.namanyayg.com/moo/"
       ]
-    ]
+    ],
+    "imageCaption": "The original Bulls and Cows interface.",
+    "gallery": []
   },
   {
     "slug": "unexpend",
@@ -505,7 +674,8 @@
       "The code connects a Messenger-style webhook to a message handler and a small local database. Forty commits survive from 6 June 2016. The account connection is no longer running."
     ],
     "textOnly": true,
-    "dateNote": "The repository contains 40 commits dated 6 June 2016. The original message handler establishes the budgeting features described here."
+    "dateNote": "The repository contains 40 commits dated 6 June 2016. The original message handler establishes the budgeting features described here.",
+    "restoreNote": "The budgeting logic survives, but I haven’t recovered the chat interface."
   },
   {
     "slug": "proxydo",
@@ -519,7 +689,8 @@
       "The surviving code records an early attempt at automating infrastructure. This entry documents the idea; the old service isn’t running."
     ],
     "textOnly": true,
-    "dateNote": "Repository history runs from 25 June 2016 to 6 September 2017. The original server routes establish the provisioning and removal behavior."
+    "dateNote": "Repository history runs from 25 June 2016 to 6 September 2017. The original server routes establish the provisioning and removal behavior.",
+    "restoreNote": "The server code survives. I haven’t recovered a standalone interface."
   },
   {
     "slug": "techathlon",
@@ -533,7 +704,8 @@
       "I’m keeping its place in the timeline while the remaining puzzle files are recovered. The original game isn’t playable here yet."
     ],
     "textOnly": true,
-    "dateNote": "The original homepage names Techathlon 2016. Several puzzle files survive but have not yet been recovered for this archive."
+    "dateNote": "The original homepage names Techathlon 2016. Several puzzle files survive but have not yet been recovered for this archive.",
+    "restoreNote": "Only part of the puzzle site is readable. I haven’t recovered enough to make it playable."
   },
   {
     "slug": "visionary",
@@ -547,7 +719,8 @@
       "The parser survives in the original code. It expected a particular timetable layout; this wasn’t a general-purpose document reader."
     ],
     "textOnly": true,
-    "dateNote": "The DubHacks repository contains two commits on 16 October 2016. Its OCR request and parsing code establish the behavior described here."
+    "dateNote": "The DubHacks repository contains two commits on 16 October 2016. Its OCR request and parsing code establish the behavior described here.",
+    "restoreNote": "The timetable parser survives, but there is no recovered OCR demo to run here."
   },
   {
     "slug": "lccpp",
@@ -582,26 +755,68 @@
     "summary": "My 2018 portfolio, with client mockups and animated transitions.",
     "paragraphs": [
       "I was working as a web and blockchain consultant when I made this edition of my portfolio. I used project mockups and animated transitions to show the client work.",
-      "These screenshots come from the original build. By November 2023, I’d kept the same layout and changed the introduction to web and mobile consulting."
+      "I’ve restored both editions so you can browse them again. The 2018 version includes the original client-work layouts; the later snapshot preserves the design I was using in November 2023."
     ],
-    "image": "/static/archive/portfolio-2018.webp",
+    "image": "/static/archive/portfolio-2018-page.webp",
     "dateNote": "The portfolio repository starts on 9 May 2018; its animation and responsive-layout commits continue into July. The later snapshot is dated November 2023.",
     "gallery": [
       [
-        "portfolio-2018-work.webp",
-        "Client-work layout from the 2018 build."
+        "portfolio-2018-astepahead.webp",
+        "The A Step Ahead case-study layout."
       ],
       [
-        "portfolio-2023.webp",
-        "The later web and mobile consulting edition, preserved in a November 2023 snapshot."
+        "portfolio-2018-autolo.webp",
+        "The Autolo case-study layout."
+      ],
+      [
+        "portfolio-2018-asianfanfics.webp",
+        "The AsianFanfics case-study layout."
+      ],
+      [
+        "portfolio-2018-lownotes.webp",
+        "The Low Notes Music case-study layout."
+      ],
+      [
+        "portfolio-2023-page.webp",
+        "The introduction from the November 2023 design snapshot."
+      ],
+      [
+        "portfolio-2023-ventures.webp",
+        "The ventures section from the later portfolio."
+      ],
+      [
+        "portfolio-original-astepahead.webp",
+        "The original A Step Ahead screenshot saved with my 2018 portfolio."
+      ],
+      [
+        "portfolio-original-autolo.webp",
+        "The original Autolo screenshot saved with my 2018 portfolio."
+      ],
+      [
+        "portfolio-original-asianfanfics.webp",
+        "The original AsianFanfics screenshot saved with my 2018 portfolio."
+      ],
+      [
+        "portfolio-original-lownotes.webp",
+        "The original Low Notes Music screenshot saved with my 2018 portfolio."
       ]
     ],
     "links": [
       [
+        "Open 2018 portfolio",
+        "/static/restored/portfolio-2018/"
+      ],
+      [
+        "Open 2023 portfolio",
+        "/static/restored/portfolio-2023/"
+      ],
+      [
         "Archived site · 16 August 2018",
         "https://web.archive.org/web/20180816163628/http://nmn.gl/"
       ]
-    ]
+    ],
+    "imageCaption": "The restored 2018 portfolio introduction.",
+    "restoreNote": "Static snapshots of the two editions, with contact forms removed."
   },
   {
     "slug": "karma",
@@ -615,7 +830,8 @@
       "The dashboard and collection code survive. I’d started an analyzer, but its scoring was still a placeholder."
     ],
     "textOnly": true,
-    "dateNote": "The surviving repository commit is dated 8 October 2019, with a migration file dated July 2019. The source names the forhire, DesignJobs and jobbit communities."
+    "dateNote": "The surviving repository commit is dated 8 October 2019, with a migration file dated July 2019. The source names the forhire, DesignJobs and jobbit communities.",
+    "restoreNote": "I’ve recovered the application source, but not a working archive of its job feed."
   },
   {
     "slug": "indiasmile",
@@ -650,14 +866,22 @@
     "summary": "My studio’s website, with custom illustrations and a 3D animation.",
     "paragraphs": [
       "At Nataco, we worked on web applications, Shopify sites and design subscriptions. Our website combined custom illustrations with expressive type and a 3D scene.",
-      "You can see the original animation and illustrations below. Wayback also preserves an earlier Nataco homepage from August 2020, with a different design."
+      "The original animation and illustrations are here too. Wayback also preserves an earlier Nataco homepage from August 2020, with a different design."
     ],
-    "image": "/static/archive/nataco.webp",
+    "image": "/static/archive/nataco-page.webp",
     "dateNote": "The recovered site repository starts on 23 February 2020 and includes a Dyeus → Nataco rename on 24 June 2021. A separate Nataco homepage was already archived on 13 August 2020; the repository rename does not date the brand’s beginning.",
     "gallery": [
       [
-        "nataco-services.webp",
-        "The original services page."
+        "nataco-studio.webp",
+        "The studio introduction and original illustrations."
+      ],
+      [
+        "nataco-services-home.webp",
+        "The services section of the homepage."
+      ],
+      [
+        "nataco-services-page.webp",
+        "The restored What We Do page."
       ],
       [
         "nataco-illustration-1.svg",
@@ -672,10 +896,16 @@
     "videoCaption": "The original Nataco hero animation. Use the player controls to watch or pause.",
     "links": [
       [
+        "Open restored site",
+        "/static/restored/nataco/"
+      ],
+      [
         "Earlier homepage · 13 August 2020",
         "https://web.archive.org/web/20200813062639/https://nataco.us/"
       ]
-    ]
+    ],
+    "imageCaption": "Nataco’s restored homepage and original 3D scene.",
+    "restoreNote": "The homepage and services page survive here. The original animation is also below."
   },
   {
     "slug": "kevin",

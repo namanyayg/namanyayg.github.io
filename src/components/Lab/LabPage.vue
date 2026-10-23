@@ -37,7 +37,7 @@
                 <router-link v-else-if="item.previewText" :to="'/lab/' + item.slug + '/'" class="archive-type-preview"><span>{{ item.previewText }}</span><small v-if="item.previewCaption">{{ item.previewCaption }}</small></router-link>
                 <p class="archive-date">{{ item.dateLabel }} · {{ categoryName(item.category) }}</p>
                 <h3><router-link :to="'/lab/' + item.slug + '/'">{{ item.title }}</router-link></h3>
-                <p>{{ item.summary }}</p>
+                <p>{{ item.summary }}</p><router-link class="archive-read" :to="'/lab/' + item.slug + '/'">{{ item.textOnly ? 'Read the project notes' : 'View project' }}<span v-if="item.gallery && item.gallery.length"> · {{ item.gallery.length + 1 }} images</span><span aria-hidden="true"> ↗</span></router-link>
               </article>
             </div>
           </section>
