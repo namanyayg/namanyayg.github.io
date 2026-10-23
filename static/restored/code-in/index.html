@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head><meta content="default-src 'none'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; font-src 'self' data:; script-src 'self'; connect-src 'none'; form-action 'none'; base-uri 'none'; object-src 'none'" http-equiv="Content-Security-Policy"/>
+<meta charset="utf-8"/>
+<title>Angle Converter</title>
+<link href="css/main.css" rel="stylesheet"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/><meta content="noindex,follow" name="robots"/><link href="/static/restored/recovery.css" rel="stylesheet"/><link href="/static/restored/fonts/lato.css" rel="stylesheet"/><link href="/static/restored/fonts/roboto.css" rel="stylesheet"/><link href="/static/restored/fonts/aleo.css" rel="stylesheet"/><link href="/static/restored/fonts/open-sans.css" rel="stylesheet"/><link href="/static/restored/fonts/archivo-black.css" rel="stylesheet"/><link href="/static/restored/fonts/source-code.css" rel="stylesheet"/><link href="/static/restored/fonts/space-grotesk.css" rel="stylesheet"/></head>
+<body data-archive-site="code-in"><div id="recovery-note"><a href="/lab/code-in/">Back to Code-in: angle converter</a><span>Original 2014 interface with new local conversion code. The full-circle conversion has been corrected.</span></div>
+<h1>Angle Converter</h1>
+<p>Type in a unit for autocomplete and convert values</p>
+<label>
+<span>Convert</span>
+<input aria-label="Value" class="value" placeholder="Enter a quantity/value" type="text"/>
+</label>
+<label>
+<span>from</span>
+<input aria-label="From unit" class="from" list="angle-units" placeholder="Start typing a unit" type="text"/>
+</label>
+<label>
+<span>to</span>
+<input aria-label="To unit" class="to" list="angle-units" placeholder="Start typing a unit" type="text"/>
+</label>
+<div class="result">
+<span>Result</span>
+<span aria-live="polite" class="ans"></span>
+</div>
+<datalist id="angle-units"><option value="degree"></option><option value="radian"></option><option value="arcminute"></option><option value="arcsecond"></option><option value="full circle"></option></datalist><script defer="True" src="/static/restored/local-demos.js"></script></body>
+</html>
