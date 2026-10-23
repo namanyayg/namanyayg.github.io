@@ -294,26 +294,22 @@
     "year": 2013,
     "dateLabel": "November 2013",
     "category": "design",
-    "summary": "Our Breaking Bad parody for a school design competition.",
+    "summary": "A school design competition entry, with blue, angular illustrations.",
     "paragraphs": [
-      "I worked with Panini Pandey and Aditya Garg on a fictional brand inspired by Breaking Bad for Exun 2013. We made angular blue illustrations and wrote out the thinking behind the shapes and colors.",
-      "You can browse the original page layout again, including the RV, palette and prop illustrations. I’ve edited the old parody copy for this archive."
+      "I worked with Panini Pandey and Aditya Garg on this design for Exun 2013. We made angular blue illustrations and wrote out the thinking behind the shapes and colors.",
+      "I’ve kept the RV and palette artwork here, along with the original page layout. The copy has been edited for this archive."
     ],
-    "image": "/static/archive/exun-2013-page.webp",
+    "image": "/static/archive/exun-design.webp",
     "dateNote": "The recovered folder identifies Exun 2013, and its HTML is dated 29 November 2013. The original page credits our team at Code Warriors.",
-    "imageCaption": "The original Exun layout, restored with edited parody copy.",
+    "imageCaption": "The restored Exun 2013 page.",
     "gallery": [
       [
-        "exun-2013-detail-0.webp",
-        "The RV illustration in the original design-philosophy section."
+        "exun-rv.webp",
+        "The original RV illustration and its page layout."
       ],
       [
-        "exun-2013-detail-1.webp",
-        "The blue palette illustration and its original layout."
-      ],
-      [
-        "exun-2013-detail-2.webp",
-        "The original faceted prop illustration."
+        "exun-palette.webp",
+        "The original palette illustration and blue facets."
       ]
     ],
     "links": [
@@ -322,7 +318,7 @@
         "/static/restored/exun-2013/"
       ]
     ],
-    "restoreNote": "The original layout and artwork, with edited parody copy."
+    "restoreNote": "Original layout and artwork, with edited copy."
   },
   {
     "slug": "tldrtech",
