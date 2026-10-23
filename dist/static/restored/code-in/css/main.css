@@ -1,0 +1,70 @@
+body, input {
+  font-size: 1.25em;
+  font-family: Segoe UI;
+  width: 20em;
+  margin: 3em auto;
+  color: #444
+}
+
+label {
+  display: block;
+  margin: .75em 0;
+}
+
+label > span:first-child, .result span:first-child {
+  width: 4em;
+  display: inline-block;
+  vertical-align: center;
+  text-align: right;
+  padding-right: .5em;
+}
+
+label > span:first-child:after, .result span:first-child:after {
+  content: ':'
+}
+
+input {
+  font-size: 1em;
+  display: inline-block;
+  vertical-align: center;
+}
+
+span input {
+  display: block;
+}
+
+h1 {
+  font-family: Segoe UI Light;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+h1 + p {
+  text-align: center;
+  font-style: italic;
+  color: #999;
+  margin: -.5em 0 2em;
+}
+
+input {
+  margin: 0;
+  border: thin solid #eee;
+  padding: .5em 1em;
+  width: 13em;
+}
+
+.tt-dropdown-menu {
+  width: 13em;
+  padding: 0 1em;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
+  box-shadow: 0 1px 2px rgba(0,0,0,.2);
+}
+
+.empty {
+  font-style: italic;
+  color: #999;
+  padding: 1em 0;
+}

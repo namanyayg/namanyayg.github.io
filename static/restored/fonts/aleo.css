@@ -1,0 +1,21 @@
+@font-face {
+  font-family: 'Aleo';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(/static/restored/fonts/aleo-0.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Aleo';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/static/restored/fonts/aleo-1.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Aleo';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(/static/restored/fonts/aleo-2.ttf) format('truetype');
+}

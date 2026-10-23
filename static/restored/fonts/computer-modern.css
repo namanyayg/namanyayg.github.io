@@ -1,0 +1,56 @@
+@font-face {
+	font-family: 'Computer Modern Sans';
+	src:url('/static/restored/fonts/cm-sans-0.woff') format('woff');
+	src:url('/static/restored/fonts/cm-sans-0.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Computer Modern Sans';
+	src:url('/static/restored/fonts/cm-sans-1.woff') format('woff');
+	src:url('/static/restored/fonts/cm-sans-1.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Computer Modern Sans';
+	src:url('/static/restored/fonts/cm-sans-2.woff') format('woff');
+	src:url('/static/restored/fonts/cm-sans-2.woff') format('woff');
+	font-weight: normal;
+	font-style: italic;
+}
+@font-face {
+	font-family: 'Computer Modern Sans';
+	src:url('/static/restored/fonts/cm-sans-3.woff') format('woff');
+	src:url('/static/restored/fonts/cm-sans-3.woff') format('woff');
+	font-weight: bold;
+	font-style: italic;
+}
+@font-face {
+	font-family: 'Computer Modern Serif';
+	src:url('/static/restored/fonts/cm-serif-0.woff') format('woff');
+	src:url('/static/restored/fonts/cm-serif-0.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Computer Modern Serif';
+	src:url('/static/restored/fonts/cm-serif-1.woff') format('woff');
+	src:url('/static/restored/fonts/cm-serif-1.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Computer Modern Serif';
+	src:url('/static/restored/fonts/cm-serif-2.woff') format('woff');
+	src:url('/static/restored/fonts/cm-serif-2.woff') format('woff');
+	font-weight: normal;
+	font-style: italic;
+}
+@font-face {
+	font-family: 'Computer Modern Serif';
+	src:url('/static/restored/fonts/cm-serif-3.woff') format('woff');
+	src:url('/static/restored/fonts/cm-serif-3.woff') format('woff');
+	font-weight: bold;
+	font-style: italic;
+}

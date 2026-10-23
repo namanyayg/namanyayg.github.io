@@ -8,7 +8,7 @@ The timeline was assembled on 22 October 2026 from existing portfolio records, o
 - Sympl: original Git history, 6 November 2012.
 - Win95 animation: original Git history, 4 June 2013.
 - MusiCose: a verified Wayback capture survives from 16 April 2013; local files have October 2013 timestamps. MinSlide: October 2013 file timestamps. Launch dates remain approximate.
-- First portfolio: October 2013 supporting files, January 2014 HTML snapshot. Original CSS and thumbnails are missing, so the page is represented by text rather than a fabricated visual restoration.
+- First portfolio: October 2013 supporting files and a January 2014 HTML snapshot. The June 2013 Wayback stylesheet remains missing. A separate July 2014 page was recovered with matching CSS, the original icon font and six original project images; that edition is now restored.
 - Agrobot / Cropstor: August 2014 file timestamps; displayed as approximate.
 - Code Warriors: Code Wars 2014 is named in the page; November 2014 files.
 - Code-in: original Git history, December 2014–January 2015.
@@ -59,12 +59,36 @@ The five projects without a reviewed visual exhibit use text entries. Techathlon
 
 The articles put project links and visual exhibits before the longer notes. Galleries show full-width images, with thumbnail navigation and direct full-size links. Phone screenshots retain a narrower measure. The timeline shows each entry’s image count.
 
-Nine standalone static sites are under `static/restored/`: Exun 2013, beta+, Nataco, Agrobot/Cropstor, Libo, Digital India, Code Warriors, and the 2018 and 2023 portfolios. Their archive bars explain the surviving material and any changes. The snapshots carry `noindex,follow` to keep search focused on the editorial Lab pages.
+The first nine standalone static sites under `static/restored/` are: Exun 2013, beta+, Nataco, Agrobot/Cropstor, Libo, Digital India, Code Warriors, and the 2018 and 2023 portfolios. Their archive bars explain the surviving material and any changes. The snapshots carry `noindex,follow` to keep search focused on the editorial Lab pages.
 
-Original executable scripts, analytics, forms and embeds are excluded. A restrictive Content Security Policy prevents application requests and form submissions. The only new executable file switches between Libo and Digital India’s original screen layouts locally. Libo retains disabled input fields with the original prototype placeholders and sample purchase amounts. Placeholder press claims from the unfinished Libo landing page are omitted.
+Original executable scripts, analytics, forms and embeds are excluded. A restrictive Content Security Policy prevents application requests and form submissions. A new local script switches between Libo and Digital India’s original screen layouts. Libo retains disabled input fields with the original prototype placeholders and sample purchase amounts. Placeholder press claims from the unfinished Libo landing page are omitted.
 
 The portfolio snapshots were serialized after rendering the original builds in an isolated browser. Animation-dependent hidden sections are made visible; still images replace unavailable portfolio videos. The dynamically calculated experience count and contact availability were removed from the 2023 snapshot. Contact forms are excluded from both editions. Missing Code Warriors background photography is left missing and identified in the caption. Only Nataco’s recovered homepage and services page are linked; obsolete enquiries are unavailable.
 
-New screenshots also show the current restored Clas, Sympl, Webstiles, MusiCose, MinSlide and Bulls and Cows demos, plus the original physics visualizations. Sympl’s demonstration page and MinSlide’s substitute colors remain identified as restorations. KeyZen’s start screen loads, but the hosted game did not start during verification; its article says so.
+New screenshots also show the current restored Clas, Sympl, Webstiles, MusiCose, MinSlide and Bulls and Cows demos, plus the original physics visualizations. Sympl’s demonstration page and MinSlide’s substitute colors remain identified as restorations. KeyZen was subsequently verified through a complete typing exercise: click Start Level, then press Enter. Its article now gives those instructions and includes gameplay captures.
 
-Backend-only or incomplete recoveries retain explicit limits instead of invented screenshots. This applies to Richie, Proxydo, Visionary, Karma and Techathlon. The 2013 portfolio’s missing stylesheet request returned a Wayback 404 during this pass; its previously verified homepage archive remains linked.
+Backend-only or incomplete recoveries retain explicit limits instead of invented screenshots. This applies to Richie, Proxydo, Visionary, Karma and Techathlon. The June 2013 portfolio’s stylesheet returned a Wayback 404; that earlier capture remains linked separately from the styled July 2014 restoration.
+
+
+## Matching styles and additional views
+
+A second recovery pass brings the catalogue to 100 images across 36 entries, with galleries on 30. The five entries without recovered interfaces remain text entries; DubMaps retains its labeled coordinate diagram. Recent captures are explicitly dated October 2026 when they show a current website rather than a historical build.
+
+Eight more standalone sites bring the total to 17:
+
+- July 2014 portfolio: HTML captured 25 July 2014, matching CSS captured 26 July, original icon font and six original project screenshots. This stylesheet is not used to recreate the different June 2013 design.
+- Nataco 2020: August 2020 HTML and its surviving original stylesheet. Scroll-dependent headings are held visible, with responsive adjustments. The 2021 restoration remains available separately.
+- Unexpend: August 2016 homepage with original CSS and background image. Shopping searches are disabled.
+- Karya: the original welcome page and three-priority interface. New local code saves the list in browser storage; accounts remain disconnected.
+- Code-in: the original angle-converter layout with a new local converter. A full circle now converts to 360 degrees, correcting the original calculation. The four tutorial transcriptions remain available on the article.
+- AI Indians: projects, people and communities from public static build `2295c93f8305efe70fd553b972706da0bac517ae`, dated 17 June 2024. Original layout styles are retained; unavailable avatar images are omitted. The directory is a dated snapshot, with no live leaderboard or submissions.
+- PlayTogether: the original simple landing page. Rooms and shared playback are disconnected.
+- Kevin: the recovered 2024 frontend rendered in isolation with WebSockets and external application requests blocked. The public snapshot preserves its layout and notes, removes API-key entry and scripts, and substitutes a disconnected terminal message. It cannot execute goals.
+
+The new snapshots use self-hosted fonts, a restrictive CSP, disabled remote integrations and `noindex,follow`. Keyboard focus and narrow-screen layout fixes are scoped to each restoration. Newly written adapters are limited to Karya storage and angle conversion.
+
+TLDR;Tech now includes another original homepage image recovered from the July 2014 portfolio. Its archived stylesheet is still missing; the stock Casper theme was rejected because it does not match the original design. Sympl’s archived landing page also lacks its original styles, while its separate working demo uses the original stylesheet.
+
+Additional captures show a complete KeyZen typing session, a Bulls and Cows solution, IndiaSmile’s surviving homepage, and Less Confusing C++’s public table of contents. The Air, Giga and Trend Analyzer galleries distinguish current 2026 interfaces from their older launch previews. Trend Analyzer was captured without starting a search. Giga’s introduction URL now redirects to its current website, so its link label and destination have been corrected.
+
+The new catalogue copy received a final literal-text humanizer pass. Historic writing inside the recovered artifacts is preserved, apart from the explicitly edited SFW Exun page and removed operational controls.

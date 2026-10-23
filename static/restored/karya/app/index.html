@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="default-src 'none'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; font-src 'self' data:; script-src 'self'; connect-src 'none'; form-action 'none'; base-uri 'none'; object-src 'none'" http-equiv="Content-Security-Policy"/><meta content="width=device-width,initial-scale=1" name="viewport"/><meta content="noindex,follow" name="robots"/><link href="/static/restored/recovery.css" rel="stylesheet"/><link href="/static/restored/fonts/lato.css" rel="stylesheet"/><link href="/static/restored/fonts/roboto.css" rel="stylesheet"/><link href="/static/restored/fonts/aleo.css" rel="stylesheet"/><link href="/static/restored/fonts/open-sans.css" rel="stylesheet"/><link href="/static/restored/fonts/archivo-black.css" rel="stylesheet"/><link href="/static/restored/fonts/source-code.css" rel="stylesheet"/><link href="/static/restored/fonts/space-grotesk.css" rel="stylesheet"/><title>Karya — three priorities</title></head><body data-archive-site="karya"><div id="recovery-note"><a href="/lab/karya/">Back to Karya</a><span>Original 2015 design. The three-item list works locally in this browser.</span></div><style>body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Source Code Pro';
+  color: #47627c;
+  background: #f1f4f7;
+  font-size: 1.25em;
+  line-height: 1.5;
+}
+input {
+  font-family: 'Source Code Pro';
+  font-size: 1em;
+  color: #555;
+}
+.wrap {
+  width: 44em;
+  max-width: 90%;
+  margin: 0 auto;
+}
+@media (max-width: 40em) {
+  body {
+    font-size: 1.125em;
+  }
+}
+a {
+  color: #0090ff;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+a:hover {
+  color: #005699;
+}
+.inf.err {
+  color: #ff6347;
+}
+.inf.ok {
+  color: #008000;
+}
+.page-title {
+  font-size: 1.5em;
+  font-weight: 700;
+  color: #0073cc;
+  border-bottom: 4px solid #0073cc;
+  padding-bottom: 0.1em;
+  margin: 0.5em 0 1em;
+}
+.page-title:before {
+  content: '→';
+  margin-right: 0.4em;
+  color: #d2dce5;
+}
+/* ==========================================================================
+   =HOME
+   ========================================================================== */
+.wip {
+  padding: 2em 0;
+}
+/* ==========================================================================
+   =FORM
+   ========================================================================== */
+.main-form label {
+  display: block;
+}
+/* ==========================================================================
+   =KARYA APP
+   ========================================================================== */
+.main-title {
+  font-weight: 900;
+  color: #fff;
+  font-size: 1.875em;
+  text-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.subtitle {
+  margin: 0 0 1.5em;
+  color: #5f82a3;
+}
+.not-visited {
+  display: none;
+}
+.karya-box {
+  border-radius: 6px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(120,122,123,0.1);
+}
+.karya-item {
+  border-bottom: 1px solid rgba(120,122,123,0.1);
+  position: relative;
+  padding: 2em 2em;
+}
+.karya-item.no-transition .check,
+.karya-item.no-transition .check:before,
+.karya-item.no-transition .strike,
+.karya-item.no-transition .inp {
+  transition: none;
+}
+input[type="checkbox"] {
+  display: none;
+}
+.check {
+  position: absolute;
+  left: 0.825em;
+  top: 1.55em;
+  z-index: 3;
+  border-radius: 2px;
+  height: 1em;
+  width: 1em;
+  background: #f1f4f7;
+  border: thin solid #d2dce5;
+  box-shadow: 0 1px 2px rgba(120,122,123,0.1);
+  transition: all 0.2s ease-out;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.check:before {
+  transition: all 0.3s ease;
+  content: '✓';
+  position: absolute;
+  top: -0.125em;
+  transform: scale(0);
+  width: 1em;
+  left: 0.125em;
+  opacity: 0;
+  font-size: 0.75em;
+}
+.strike {
+  position: absolute;
+  height: 2px;
+  left: 2.5em;
+  right: 100%;
+  top: 50%;
+  margin-top: 2px;
+  background: #c2cfdc;
+  transition: 0.2s ease-in;
+  z-index: 5;
+}
+input[type="checkbox"]:checked + label .check:before {
+  transform: scale(1);
+  opacity: 0.5;
+  background: #ebeff3;
+}
+input[type="checkbox"]:checked + label .strike {
+  right: 2.5em;
+}
+input[type="checkbox"]:checked + label + .inp {
+  background: #f1f4f7;
+  color: #94abc2;
+}
+.inp {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 1.5em;
+  padding-left: 3em;
+  transition: all 0.2s ease;
+  box-sizing: border-box;
+  width: 100%;
+  display: block;
+  border: none;
+}
+.inp:focus {
+  outline: none;
+  background: #f8fafb;
+}
+.howto {
+  font-size: 0.825em;
+  padding: 2em 1em;
+  margin: 2em 0 0;
+  text-align: left;
+  background: #e1e8ee;
+  border-radius: 2px;
+  color: #6f8eac;
+}
+.howto p {
+  margin: 1em;
+  text-align: left;
+}
+.howto ol {
+  margin-left: 1.5em;
+}
+.howto .heart {
+  color: #ff69b4;
+}
+.howto .byline {
+  margin-top: 1em;
+}
+body{font-family:monospace}</style><div class="wrap app-main"><h1 class="main-title">Karya</h1><p class="subtitle">Prioritize your todo list.<br/><strong>Three things I will do today:</strong></p><div class="karya-box"><div class="karya-item"><input aria-label="Complete priority 1" id="check-0" type="checkbox"/><label for="check-0"><span class="check"></span><span class="strike"></span></label><input aria-label="Priority 1" class="inp" placeholder="to do..." type="text"/></div><div class="karya-item"><input aria-label="Complete priority 2" id="check-1" type="checkbox"/><label for="check-1"><span class="check"></span><span class="strike"></span></label><input aria-label="Priority 2" class="inp" placeholder="to do..." type="text"/></div><div class="karya-item"><input aria-label="Complete priority 3" id="check-2" type="checkbox"/><label for="check-2"><span class="check"></span><span class="strike"></span></label><input aria-label="Priority 3" class="inp" placeholder="to do..." type="text"/></div></div><div class="howto"><p>Force yourself to focus and do things that matter.</p><p>Add three items to the list in the morning. Complete them and check them off by the night.</p></div></div><script defer="True" src="/static/restored/local-demos.js"></script></body></html>

@@ -68,7 +68,8 @@
         "The same grid at phone width. This demo page was rebuilt in 2026.",
         "portrait"
       ]
-    ]
+    ],
+    "restoreNote": "The working demo uses the original stylesheet. The older Wayback landing page has missing styles."
   },
   {
     "slug": "webstiles",
@@ -134,6 +135,16 @@
       [
         "Archived site · 12 June 2013",
         "https://web.archive.org/web/20130612053206/http://namanyayg.com/lab/win95anim/"
+      ]
+    ],
+    "gallery": [
+      [
+        "win95-animation.webp",
+        "A frame from the original CSS animation, rendered in October 2026."
+      ],
+      [
+        "win95-notes.webp",
+        "My original notes below the animation."
       ]
     ]
   },
@@ -217,7 +228,7 @@
     "dateNote": "October 2013 is the date recorded in the existing portfolio.",
     "links": [
       [
-        "Open original demo",
+        "Play KeyZen",
         "https://nmn.gl/KeyZen/"
       ],
       [
@@ -225,9 +236,18 @@
         "https://web.archive.org/web/20160104185051/http://projects.namanyayg.com/KeyZen/"
       ]
     ],
-    "restoreNote": "The original start screen survives, but the hosted game currently does not start.",
+    "restoreNote": "Click Start Level, then press Enter to begin typing.",
     "imageCaption": "The KeyZen start screen.",
-    "gallery": []
+    "gallery": [
+      [
+        "keyzen-typing.webp",
+        "The original keyboard and typing exercise in use."
+      ],
+      [
+        "keyzen-complete.webp",
+        "The result after completing the sample sentence."
+      ]
+    ]
   },
   {
     "slug": "portfolio-2013",
@@ -239,21 +259,49 @@
     "paragraphs": [
       "I was working as a freelance designer and front-end developer, and had started working with MakeUseOf. My portfolio included their main site, MakeUseOf TV, a music website and Webstiles.",
       "I’d already written out how I worked with clients, from the first questions through drafts and feedback to the finished site. Webstiles was both a project in the portfolio and something I used in that process.",
-      "The HTML remains, but the stylesheet and project thumbnails are missing. You can read the original introduction below; the old design hasn’t been reconstructed."
+      "I found a July 2014 version with its original stylesheet and six project images. You can browse that edition again. The earlier June 2013 page survives as text, but I haven’t recovered its styles."
     ],
-    "image": "/static/lab/portfolio-2013.png",
-    "dateNote": "The page’s supporting files are dated October 2013; its surviving HTML was last modified on 9 January 2014.",
+    "image": "/static/archive/portfolio-2014-home.webp",
+    "dateNote": "The page’s supporting files are dated October 2013; its surviving HTML was last modified on 9 January 2014. The restored page was captured on 25 July 2014; its matching CSS was captured on 26 July 2014.",
     "excerpt": "Hello, I’m Namanyay Goel, a freelance designer & front end developer. I also work at MakeUseOf as their UI designer/front end developer.",
-    "textOnly": true,
     "links": [
+      [
+        "Open July 2014 portfolio",
+        "/static/restored/portfolio-2014/"
+      ],
       [
         "Archived site · 18 June 2013",
         "https://web.archive.org/web/20130618011659/http://namanyayg.com/"
       ]
     ],
-    "previewText": "“Hello, I’m Namanyay Goel.”",
-    "previewCaption": "From the 2013–2014 homepage",
-    "restoreNote": "The homepage text survives in Wayback. The original stylesheet and project thumbnails are still missing."
+    "restoreNote": "The July 2014 edition is restored. The older Wayback link still has missing styles.",
+    "imageCaption": "My July 2014 portfolio, restored with its matching stylesheet.",
+    "gallery": [
+      [
+        "portfolio-2014-work-0.webp",
+        "My MakeUseOf work in the 2014 portfolio."
+      ],
+      [
+        "portfolio-2014-work-1.webp",
+        "Coin Market Basket, with its original market-table screenshot."
+      ],
+      [
+        "portfolio-2014-work-2.webp",
+        "The Technophilia podcast page I made for MakeUseOf."
+      ],
+      [
+        "portfolio-2014-work-3.webp",
+        "Oh, The Things You Can Buy, an earlier store design."
+      ],
+      [
+        "portfolio-2014-work-4.webp",
+        "Webstiles in the 2014 portfolio."
+      ],
+      [
+        "portfolio-2014-work-5.webp",
+        "TLDR;Tech, with a surviving screenshot of the original news page."
+      ]
+    ]
   },
   {
     "slug": "betaplus",
@@ -329,11 +377,15 @@
     "summary": "A tech news blog I started with two friends, with short summaries and a theme I designed.",
     "paragraphs": [
       "Two friends and I started TLDR;Tech to publish short tech news summaries. I spent a lot of time on the design and building the theme, but we only kept it going for a few weeks.",
-      "The screenshot is from June 2014. Wayback also has the homepage, with our news posts and the original design."
+      "I found two screenshots of the original design, including one saved with my 2014 portfolio. Wayback preserves the homepage’s news posts, but its stylesheet is still missing."
     ],
     "image": "/static/archive/tldrtech.webp",
     "dateNote": "I linked to tldrte.ch in a blog post on 28 May 2014. The earliest Wayback homepage capture is dated 2 June 2014; the screenshot shows news from 5 June. These are surviving records, not a confirmed launch date.",
     "links": [
+      [
+        "View original screenshot",
+        "/static/archive/tldrtech-portfolio.webp"
+      ],
       [
         "Archived site · 2 June 2014",
         "https://web.archive.org/web/20140602031309/http://tldrte.ch/"
@@ -341,6 +393,14 @@
       [
         "My notes on building the theme",
         "https://nmn.gl/blog/images-and-excerpts-a-few-practical-problems-with-ghost"
+      ]
+    ],
+    "restoreNote": "The original screenshots survive. The Wayback page is missing its stylesheet.",
+    "imageCaption": "The original TLDR;Tech screenshot showing news from June 2014.",
+    "gallery": [
+      [
+        "tldrtech-portfolio.webp",
+        "The TLDR;Tech homepage image saved with my July 2014 portfolio."
       ]
     ]
   },
@@ -447,9 +507,20 @@
       [
         "codein-wallpaper.webp",
         "An original LXDE wallpaper from the Code-in collection."
+      ],
+      [
+        "codein-converter.webp",
+        "The original angle-converter layout, running new local conversion code."
       ]
     ],
-    "reading": true
+    "reading": true,
+    "links": [
+      [
+        "Try the angle converter",
+        "/static/restored/code-in/"
+      ]
+    ],
+    "restoreNote": "The converter works locally. I corrected the original full-circle calculation."
   },
   {
     "slug": "physics",
@@ -490,15 +561,30 @@
     "summary": "My to-do app for choosing three priorities each day.",
     "paragraphs": [
       "I built Karya around a short list: three priorities in the morning, then a check-in at night. Choosing what goes on the list is part of using it.",
-      "You can try that idea below. This version saves your list in your browser and doesn’t use the original app’s accounts or server."
+      "I’ve restored the original interface as well as the small list below. Both save your priorities in your browser; the old account server is disconnected."
     ],
-    "image": "/static/archive/karya.webp",
+    "image": "/static/archive/karya-original.webp",
     "dateNote": "The first surviving commit is dated 11 May 2015; the last is from November 2015.",
     "interactive": "karya",
     "links": [
       [
+        "Try the original interface",
+        "/static/restored/karya/app/"
+      ],
+      [
         "Archived site · 13 December 2015",
         "https://web.archive.org/web/20151213040659/http://karya.namanyayg.com/"
+      ]
+    ],
+    "imageCaption": "Karya’s original three-priority interface.",
+    "gallery": [
+      [
+        "karya-priorities.webp",
+        "The restored list with example priorities and one item completed."
+      ],
+      [
+        "karya-roadmap.webp",
+        "The original welcome page and early roadmap."
       ]
     ]
   },
@@ -602,7 +688,12 @@
       ]
     ],
     "imageCaption": "The original Bulls and Cows interface.",
-    "gallery": []
+    "gallery": [
+      [
+        "bandc-solution.webp",
+        "The solver working through an example number."
+      ]
+    ]
   },
   {
     "slug": "unexpend",
@@ -613,16 +704,28 @@
     "summary": "My search engine for comparing prices across stores.",
     "paragraphs": [
       "I built Unexpend to compare products across stores. It had parsers for Amazon and Flipkart, and a cache for search results.",
-      "This is the original cover artwork. The shopping APIs and prices are no longer connected."
+      "I recovered the homepage’s stylesheet and background image. You can open that design again, though product searches and prices are no longer connected."
     ],
-    "image": "/static/archive/unexpend.webp",
+    "image": "/static/archive/unexpend-home.webp",
     "dateNote": "The surviving Git history begins on 23 June 2016 and continues into August 2016.",
     "links": [
+      [
+        "Open restored homepage",
+        "/static/restored/unexpend/"
+      ],
       [
         "Archived site · 11 August 2016",
         "https://web.archive.org/web/20160811135946/http://unexpend.com/"
       ]
-    ]
+    ],
+    "imageCaption": "The 2016 homepage with its original background and stylesheet.",
+    "gallery": [
+      [
+        "unexpend.webp",
+        "The original Unexpend cover artwork."
+      ]
+    ],
+    "restoreNote": "The homepage is restored; product search is disconnected."
   },
   {
     "slug": "playtogether",
@@ -636,7 +739,20 @@
       "This is the original prototype. The room server is no longer connected."
     ],
     "image": "/static/archive/playtogether.webp",
-    "dateNote": "The surviving repository contains four commits from 1 October 2016."
+    "dateNote": "The surviving repository contains four commits from 1 October 2016.",
+    "links": [
+      [
+        "Open original prototype",
+        "/static/restored/playtogether/"
+      ]
+    ],
+    "gallery": [
+      [
+        "playtogether-home.webp",
+        "The original landing page where a shared viewing room would begin."
+      ]
+    ],
+    "restoreNote": "The original interface survives. Rooms and shared playback are disconnected."
   },
   {
     "slug": "dubmaps",
@@ -727,7 +843,7 @@
     "summary": "I rewrote my school’s C++ coursework as a free book.",
     "paragraphs": [
       "I was frustrated with the study material for my introductory C++ course. I thought the structure could be much clearer, so I wrote the book I wanted to learn from.",
-      "I made it free because I was writing for other students. You can read Less Confusing C++ on Leanpub."
+      "I wrote it for other students. The book and a sample are still on Leanpub."
     ],
     "image": "/static/lab/lccpp.png",
     "dateNote": "June 2017 is the publication date recorded in the existing portfolio, rather than a verified manuscript start date.",
@@ -737,8 +853,18 @@
         "https://leanpub.com/lessconfusingcpp"
       ],
       [
+        "Read the sample PDF",
+        "https://leanpub.com/lessconfusingcpp/sample.pdf"
+      ],
+      [
         "Archived site · 26 August 2019",
         "https://web.archive.org/web/20190826044032/https://leanpub.com/lessconfusingcpp"
+      ]
+    ],
+    "gallery": [
+      [
+        "lccpp-contents.webp",
+        "The book’s table of contents on Leanpub, captured in October 2026."
       ]
     ]
   },
@@ -851,7 +977,18 @@
         "Archived site · 8 March 2021",
         "https://web.archive.org/web/20210308150157/https://indiasmile.org///"
       ]
-    ]
+    ],
+    "gallery": [
+      [
+        "indiasmile-home.webp",
+        "The surviving IndiaSmile homepage, rendered in October 2026."
+      ],
+      [
+        "indiasmile-categories.webp",
+        "The entertainment and learning sections from the lockdown site."
+      ]
+    ],
+    "restoreNote": "A record of the 2020 lockdown project. Its health information and community links may be out of date."
   },
   {
     "slug": "nataco",
@@ -862,7 +999,7 @@
     "summary": "My studio’s website, with custom illustrations and a 3D animation.",
     "paragraphs": [
       "At Nataco, we worked on web applications, Shopify sites and design subscriptions. Our website combined custom illustrations with expressive type and a 3D scene.",
-      "The original animation and illustrations are here too. Wayback also preserves an earlier Nataco homepage from August 2020, with a different design."
+      "I’ve restored both designs, including the earlier homepage captured in August 2020. The later site’s original animation and illustrations are here too."
     ],
     "image": "/static/archive/nataco-page.webp",
     "dateNote": "The recovered site repository starts on 23 February 2020 and includes a Dyeus → Nataco rename on 24 June 2021. A separate Nataco homepage was already archived on 13 August 2020; the repository rename does not date the brand’s beginning.",
@@ -886,11 +1023,23 @@
       [
         "nataco-illustration-2.svg",
         "Another illustration from the same collection."
+      ],
+      [
+        "nataco-2020-home.webp",
+        "The earlier Nataco homepage from August 2020, with its original stylesheet."
+      ],
+      [
+        "nataco-2020-about.webp",
+        "The studio introduction from the earlier design."
       ]
     ],
     "video": "nataco-hero.webm",
     "videoCaption": "The original Nataco hero animation. Use the player controls to watch or pause.",
     "links": [
+      [
+        "Open 2020 homepage",
+        "/static/restored/nataco-2020/"
+      ],
       [
         "Open restored site",
         "/static/restored/nataco/"
@@ -901,7 +1050,7 @@
       ]
     ],
     "imageCaption": "Nataco’s restored homepage and original 3D scene.",
-    "restoreNote": "The homepage and services page survive here. The original animation is also below."
+    "restoreNote": "Both editions are browsable. The earlier page holds its scroll-animated headings still; the later animation plays below."
   },
   {
     "slug": "kevin",
@@ -913,14 +1062,26 @@
     "paragraphs": [
       "I’d wanted to make a bot that could write code for me for a long time. Kevin was my open-source interface for an AI software engineer, inspired by Devin and named for Kevin Mitnick."
     ],
-    "image": "/static/lab/kevin.png",
+    "image": "/static/archive/kevin-interface.webp",
     "dateNote": "March 2024 is the date recorded in the existing portfolio.",
     "links": [
+      [
+        "Open recovered interface",
+        "/static/restored/kevin/"
+      ],
       [
         "Explore the source",
         "https://github.com/namanyayg/kevin-coder-ai"
       ]
-    ]
+    ],
+    "imageCaption": "The recovered 2024 Kevin interface, with its terminal disconnected.",
+    "gallery": [
+      [
+        "kevin-notes.webp",
+        "My original notes on why I built Kevin and what I planned to add."
+      ]
+    ],
+    "restoreNote": "A static view of the original interface. It does not ask for API keys or execute code."
   },
   {
     "slug": "aiindians",
@@ -932,9 +1093,13 @@
     "paragraphs": [
       "I made AI Indians to bring Indian AI startups into one directory, with a leaderboard tracking their growth."
     ],
-    "image": "/static/lab/aiindians.png",
-    "dateNote": "June 2024 is the date recorded in the existing portfolio.",
+    "image": "/static/archive/aiindians-projects.webp",
+    "dateNote": "The restored static build is from 17 June 2024. Wayback also preserves a homepage capture from 11 June.",
     "links": [
+      [
+        "Browse the saved directory",
+        "/static/restored/aiindians/"
+      ],
       [
         "Explore the source",
         "https://github.com/namanyayg/aiindians"
@@ -943,7 +1108,19 @@
         "Archived site · 11 June 2024",
         "https://web.archive.org/web/20240611143154/http://aiindians.org/"
       ]
-    ]
+    ],
+    "imageCaption": "The projects directory from the saved 17 June 2024 build.",
+    "gallery": [
+      [
+        "aiindians-people.webp",
+        "The people directory in the same June 2024 build."
+      ],
+      [
+        "aiindians-communities.webp",
+        "The original communities page."
+      ]
+    ],
+    "restoreNote": "Projects, people and communities are browsable. Some original profile photos are unavailable."
   },
   {
     "slug": "air",
@@ -966,6 +1143,16 @@
         "Archived site · 15 November 2024",
         "https://web.archive.org/web/20241115112513/https://air.nmn.gl/"
       ]
+    ],
+    "gallery": [
+      [
+        "air-current-home.webp",
+        "The live Air interface, captured in October 2026. The reading is from that capture."
+      ],
+      [
+        "air-current-details.webp",
+        "A further view of the current interface, rather than a 2024 archive capture."
+      ]
     ]
   },
   {
@@ -982,12 +1169,18 @@
     "dateNote": "January 2025 is the date recorded in the existing portfolio.",
     "links": [
       [
-        "Read the introduction",
-        "https://nmn.gl/blog/giga-intro"
+        "Visit Giga",
+        "https://gigamind.dev/context"
       ],
       [
         "Archived site · 11 March 2025",
         "https://web.archive.org/web/20250311091535/http://gigamind.dev/"
+      ]
+    ],
+    "gallery": [
+      [
+        "giga-current-home.webp",
+        "The current Giga website, captured in October 2026. The original launch preview is above."
       ]
     ]
   },
@@ -1011,6 +1204,12 @@
       [
         "Archived site · 19 June 2025",
         "https://web.archive.org/web/20250619095730/https://trends.nmn.gl/"
+      ]
+    ],
+    "gallery": [
+      [
+        "trends-current-interface.webp",
+        "The current Trend Analyzer interface, captured in October 2026 without running a search."
       ]
     ]
   }

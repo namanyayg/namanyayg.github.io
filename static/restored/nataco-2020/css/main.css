@@ -1,0 +1,771 @@
+/**
+ * Designed and developed by Namanyay Goel
+ * http://namanyayg.com/ | @namanyayg
+ */
+/* normalize.css v2.1.2 | MIT License | git.io/normalize */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+audio,
+canvas,
+video {
+  display: inline-block;
+}
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+[hidden] {
+  display: none;
+}
+html {
+  font-family: sans-serif; /* 1 */
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+body {
+  margin: 0;
+}
+a:focus {
+  outline: thin dotted;
+}
+a:active,
+a:hover {
+  outline: 0;
+}
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+b,
+strong {
+  font-weight: bold;
+}
+dfn {
+  font-style: italic;
+}
+hr {
+  box-sizing: content-box;
+  height: 0;
+}
+mark {
+  background: #ff0;
+  color: #000;
+}
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+pre {
+  white-space: pre-wrap;
+}
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+small {
+  font-size: 80%;
+}
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+img {
+  border: 0;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+figure {
+  margin: 0;
+}
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+legend {
+  border: 0; /* 1 */
+  padding: 0; /* 2 */
+}
+button,
+input,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 2 */
+  margin: 0; /* 3 */
+}
+button,
+input {
+  line-height: normal;
+}
+button,
+select {
+  text-transform: none;
+}
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button; /* 2 */
+  cursor: pointer; /* 3 */
+}
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+input[type="search"] {
+  -webkit-appearance: textfield; /* 1 */ /* 2 */
+  box-sizing: content-box;
+}
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+textarea {
+  overflow: auto; /* 1 */
+  vertical-align: top; /* 2 */
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Sympl.css v3.0.0 sympl.namanyayg.com | 
+Namanyay Goel | www.namanyayg.com | @namanyayg */
+body {
+  margin: 0;
+  padding: 0;
+  background: #11151d;
+}
+body,
+input,
+textarea,
+button,
+form,
+select {
+  font-size: 100%;
+  line-height: 1.5;
+  font-family: 'Roboto', 'Segoe UI Light', sans-serif;
+  color: #a6b1ce;
+}
+a,
+a:link,
+a:visited {
+  text-decoration: none;
+  transition: all 0.3s ease;
+  color: #0048ff;
+}
+a:hover,
+a:active,
+a:focus {
+  color: #003acc;
+  outline: none;
+}
+p {
+  margin: 0;
+}
+p + p {
+  margin-top: 1.5em;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+/* Set defaults for all headings here, 
+    you might want to change fonts or sizes */
+  color: #000e33;
+  font-family: 'Archivo Black', 'Roboto Black', sans-serif;
+}
+h1 {
+  font-size: 2em;
+  line-height: 1.5;
+  margin: 0.375em 0;
+}
+h2 {
+  font-size: 1.5em;
+  line-height: 1;
+  margin: 0.5em 0;
+}
+h3 {
+  font-size: 1.25em;
+  line-height: 1.2;
+  margin: 0.6em 0;
+}
+h4 {
+  font-size: 1.125em;
+  line-height: 1.333333;
+  margin: 0.666666em 0;
+}
+h5,
+h6 {
+  font-size: 1em;
+  line-height: 1.5;
+  margin: 0.75em 0;
+  text-transform: uppercase;
+}
+.stack {
+/* A set of grid items must be in a stack.
+  Use sympl-stack when you want a margin at the bottom */
+  clear: both;
+  margin: 0 0 0 -1.5em;
+}
+.stack--sympl {
+  padding-bottom: 1.5em;
+}
+.stack--clean {
+  padding-bottom: 0;
+  padding-top: 1.5em;
+}
+.stack--clean .sympl {
+  padding-bottom: 1.5em;
+}
+.sympl {
+/* Each grid item should have the sympl class, along with at least one class for size */
+  float: left;
+  padding: 0 0 0 1.5em;
+  box-sizing: border-box;
+}
+.stack:before,
+.stack:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+.stack:after {
+  clear: both;
+}
+.full {
+  width: 100%;
+}
+.half,
+.twoquarters,
+.threesixths {
+  width: 50%;
+}
+.onethird,
+.twosixths {
+  width: 33.333333%;
+}
+.twothirds,
+.foursixths {
+  width: 66.666666%;
+}
+.quarter {
+  width: 25%;
+}
+.three-quarters {
+  width: 75%;
+}
+.onefifth {
+  width: 20%;
+}
+.twofifths {
+  width: 40%;
+}
+.threefifths {
+  width: 60%;
+}
+.fourfifths {
+  width: 80%;
+}
+.onesixth {
+  width: 16.666666%;
+}
+.fivesixths {
+  width: 83.333333%;
+}
+@media (max-width: 60em) {
+  .l-full {
+    width: 100%;
+  }
+  .l-half,
+  .l-twoquarters,
+  .l-threesixths {
+    width: 50%;
+  }
+  .l-onethird,
+  .l-twosixths {
+    width: 33.333333%;
+  }
+  .l-twothirds,
+  .l-foursixths {
+    width: 66.666666%;
+  }
+  .l-quarter {
+    width: 25%;
+  }
+  .l-three-quarters {
+    width: 75%;
+  }
+  .l-onefifth {
+    width: 20%;
+  }
+  .l-twofifths {
+    width: 40%;
+  }
+  .l-threefifths {
+    width: 60%;
+  }
+  .l-fourfifths {
+    width: 80%;
+  }
+  .l-onesixth {
+    width: 16.666666%;
+  }
+  .l-fivesixths {
+    width: 83.333333%;
+  }
+  .hide-l-and-below {
+    display: none;
+    visibility: hidden;
+  }
+  .show-l-and-below {
+    display: block;
+    visibility: visible;
+  }
+}
+@media (max-width: 60em) and (min-width: 45em) {
+  .hide-on-l {
+    display: none;
+    visibility: hidden;
+  }
+  .show-on-l {
+    display: block;
+    visibility: visible;
+  }
+}
+@media (max-width: 45em) {
+  .m-full {
+    width: 100%;
+  }
+  .m-half,
+  .m-twoquarters {
+    width: 50%;
+  }
+  .m-onethird {
+    width: 33.333333%;
+  }
+  .m-twothirds {
+    width: 66.666666%;
+  }
+  .m-quarter {
+    width: 25%;
+  }
+  .m-three-quarters {
+    width: 75%;
+  }
+  .hide-m-and-below {
+    display: none;
+    visibility: hidden;
+  }
+  .show-m-and-below {
+    display: block;
+    visibility: visible;
+  }
+}
+@media (max-width: 45em) and (min-width: 30em) {
+  .hide-on-m {
+    display: none;
+    visibility: hidden;
+  }
+  .show-on-m {
+    display: block;
+    visibility: visible;
+  }
+}
+@media (max-width: 30em) {
+  .sympl {
+    width: 100%;
+  }
+  .s-full {
+    width: 100%;
+  }
+  .s-half,
+  .s-twoquarters {
+    width: 50%;
+  }
+  .s-onethird {
+    width: 33.333333%;
+  }
+  .s-twothirds {
+    width: 66.666666%;
+  }
+  .hide-on-s {
+    display: none;
+    visibility: hidden;
+  }
+  .show-on-s {
+    display: block;
+    visibility: visible;
+  }
+}
+input[type='button'],
+input[type='submit'],
+button,
+.button {
+  border: none;
+  background: transparent;
+  line-height: 1;
+  cursor: pointer;
+}
+input[type='button']:hover,
+input[type='submit']:hover,
+button:hover,
+.button:hover {
+  box-shadow: inset 0 0 10em rgba(0,0,0,0.1);
+}
+input[type='button']:focus,
+input[type='submit']:focus,
+button:focus,
+.button:focus,
+input[type='button']:active,
+input[type='submit']:active,
+button:active,
+.button:active {
+  box-shadow: inset 0 0 10em rgba(0,0,0,0.2);
+}
+input {
+  padding: 1em;
+  border: none;
+  outline: none;
+  background: #11151d;
+  box-sizing: border-box;
+  line-height: 1.5;
+}
+button,
+.btn {
+  padding: 1em;
+  background: #0048ff;
+  color: #fff;
+  border: none;
+  box-sizing: border-box;
+  line-height: 1.5;
+  border: thin solid #0048ff;
+  transition: all 0.15s ease;
+}
+button:hover,
+.btn:hover {
+  background: rgba(0,72,255,0);
+  color: #0048ff;
+}
+/* ==========================================================================
+
+    LET'S GET STARTED!
+
+   ========================================================================== */
+.wrap {
+  width: 75em;
+  max-width: 90%;
+  margin: 0 auto;
+}
+.info {
+  background: #d3d8e6;
+  padding: 1em;
+  text-align: center;
+}
+/* ==========================================================================
+   =NATACO
+   ========================================================================== */
+.nataco-container {
+  position: relative;
+}
+.nataco {
+  text-align: center;
+  font-size: 1em;
+  font-family: 'Archivo Black';
+  color: #0048ff;
+  letter-spacing: 5rem;
+  position: absolute;
+  top: 40vh;
+  left: 0;
+  right: 0;
+  margin: 10rem 0 0;
+  line-height: 1;
+}
+.nataco--normal {
+  position: static;
+  top: 0;
+  margin: 2em 0;
+}
+.horsey {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 100vh;
+  position: relative;
+}
+.horseman {
+  width: 45%;
+  position: relative;
+  z-index: 100;
+  opacity: 0.01;
+  margin-top: -5em;
+}
+.horseman:before {
+  position: absolute;
+  z-index: -1;
+  left: 10%;
+  top: -1.5em;
+  height: 20em;
+  right: 35%;
+  background: linear-gradient(#72b1ff, #0044dc);
+  content: '';
+}
+.horseman img {
+  margin-top: 50em;
+}
+.horsey__subtitle {
+  font-family: 'Roboto', 'Segoe UI Light', sans-serif;
+  font-weight: 100;
+  font-size: 0.5em;
+  left: 0;
+  right: 0;
+  text-align: center;
+  position: absolute;
+  color: #d3d8e6;
+  z-index: 102;
+  opacity: 0;
+  margin-top: -5rem;
+}
+.nmny:before {
+  right: 10%;
+  left: 35%;
+}
+img {
+  max-width: 100%;
+}
+/* ==========================================================================
+   =ABOUT
+   ========================================================================== */
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 8em 2em 9em;
+  margin: 19em -2em 9em;
+  border-bottom: 2px solid #222a3a;
+}
+.about__subtitle {
+  position: absolute;
+  bottom: -20rem;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 1.5em;
+  color: #0048ff;
+  font-weight: 300;
+  opacity: 0;
+}
+.about__main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 0px;
+          flex: 1 0 0;
+  font-family: 'Archivo Black', 'Roboto Black', sans-serif;
+  color: #0048ff;
+  font-weigh: 700;
+  font-size: 4em;
+  word-break: any;
+  margin: 0;
+}
+.about__sub {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 0px;
+          flex: 1 0 0;
+  margin: 0.5em 0 0;
+  font-size: 2em;
+  font-weight: 100;
+  text-align: left;
+  color: #d3d8e6;
+}
+/* ==========================================================================
+   =WORK
+   ========================================================================== */
+.work {
+  max-width: 100%;
+  overflow: hidden;
+}
+.work__header {
+  margin: 0 auto 6em;
+  text-align: center;
+}
+.work__title {
+  font-size: 3em;
+  color: #0048ff;
+  font-family: 'Archivo Black', 'Roboto Black', sans-serif;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 0px;
+          flex: 1 0 0;
+  margin-right: 1.5rem;
+  position: relative;
+}
+.work__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 0 4.5em;
+}
+.work__item:nth-child(even) {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+.work__item:nth-child(even) .work__item__image,
+.work__item:nth-child(even) .work__item__text {
+  margin-left: 0;
+  margin-right: -5%;
+}
+.work__item:nth-child(even) .work__item__text {
+  padding: 3em 2.5% 3em 22.5%;
+  background: linear-gradient(to left, #0048ff, #11151d);
+}
+.work__item:hover .work__item__image {
+  opacity: 1;
+}
+.work__item__image {
+  width: 50%;
+  opacity: 0.9;
+  transition: all 0.15s ease-in-out;
+  margin-left: -5%;
+}
+.work__item__text {
+  width: 40%;
+  margin-left: -5%;
+  padding: 3em 22.5% 3em 2.5%;
+  box-sizing: border-box;
+  color: #fff;
+  background: #0048ff;
+  background: linear-gradient(to right, #0048ff, #11151d);
+  position: relative;
+  text-align: center;
+}
+.work__item__title {
+  font-family: 'Archivo Black', 'Roboto Black', sans-serif;
+  font-size: 2em;
+  margin: 0 0 1.5rem;
+  line-height: 1;
+}
+.work__item__link {
+  margin: 1em 0 0;
+}
+.work__item__link a {
+  color: rgba(255,255,255,0.5);
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 0.5em 1em 0;
+  text-shadow: 1px 0 1px #0048ff;
+  text-decoration: underline;
+}
+.work__item__link a:hover {
+  color: #fff;
+}
+.work__item__link a:after {
+  margin-left: 0.5em;
+}
+.work__item__link span {
+  color: #4d7fff;
+}
+/* ==========================================================================
+   =COLOPHON
+   ========================================================================== */
+.colophon {
+  margin: 12em -2em 2em;
+  padding: 4em;
+  text-align: center;
+  background: #222a3a;
+  display: block;
+}
+.colophon .etched {
+  color: #090a0f;
+  text-shadow: 1px 1px rgba(166,177,206,0.1);
+}
+/* ==========================================================================
+   =CONTENT
+   ========================================================================== */
+.content {
+  margin: 0 -2em -10em;
+  padding: 3em 5em 4em;
+  background: #fff;
+  color: #333f58;
+}
+.content__title {
+  font-size: 2em;
+  text-align: center;
+  color: #0048ff;
+  margin: 0 0 3rem;
+}
+.career-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 0 3em;
+}
+.career-item__title {
+  font-size: 1.25em;
+  margin: 0 0 1rem;
+  color: #0048ff;
+  line-height: 1.25;
+}
+.career-item__details {
+  font-size: 0.875em;
+}
+.career-item__details ul {
+  margin: 0;
+  padding: 0 0 0 1.5em;
+  list-style: none;
+}
+.career-item__meta {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 0px;
+          flex: 1 0 0;
+  text-align: right;
+}
+.career-item__description {
+  -webkit-box-flex: 3;
+      -ms-flex: 3 0 0px;
+          flex: 3 0 0;
+  padding: 0 0 0 2em;
+}
